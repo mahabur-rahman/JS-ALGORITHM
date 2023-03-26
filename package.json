@@ -1,0 +1,23 @@
+{
+  "name": "js-algorithm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day1.js",
+  "scripts": {
+   "start": "nodemon day1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahabur-rahman/JS-ALGORITHM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahabur-rahman/JS-ALGORITHM/issues"
+  },
+  "homepage": "https://github.com/mahabur-rahman/JS-ALGORITHM#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
