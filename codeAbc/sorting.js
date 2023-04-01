@@ -6,15 +6,21 @@
 // console.log(result);
 
 function bubbleSort(arr) {
+  let isSwap;
   for (let i = 0; i < arr.length; i++) {
+    isSwap = false;
     for (let j = 0; j < arr.length - i - 1; j++) {
       console.log("to see", arr, arr[j], arr[j + 1]);
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j]; // 2
         arr[j] = arr[j + 1]; // 2 = 53
         arr[j + 1] = temp; // 53 = 2
+
+        isSwap = true;
       }
     }
+
+    if (!isSwap) break;
   }
 
   return arr;
