@@ -4,7 +4,7 @@ var twoSum = function (arr, target) {
     console.log("remaining", remaining);
 
     for (let j = i + 1; j < arr.length; j++) {
-      console.log(`i : ${i}, j : ${j}`);
+      console.log(`i : ${i}, j : ${j}, arr[i]: ${arr[i]}, arr[j], ${arr[j]}}`);
       if (remaining === arr[j]) return [i, j];
     }
   }
