@@ -1,22 +1,37 @@
+// var maxArea = function (heights) {
+//   let totalWater = 0;
+//   for (let i = 0; i < heights.length; i++) {
+//     for (let j = i + 1; j < heights.length; j++) {
+//       let height;
+
+//       if (heights[i] > heights[j]) {
+//         height = heights[j];
+//       } else {
+//         height = heights[i];
+//       }
+
+//       let width = j - i;
+
+//       let currentWater = height * width;
+
+//       if (totalWater < currentWater) {
+//         totalWater = currentWater;
+//       }
+//     }
+//   }
+
+//   return totalWater;
+// };
+
 var maxArea = function (heights) {
   let totalWater = 0;
   for (let i = 0; i < heights.length; i++) {
     for (let j = i + 1; j < heights.length; j++) {
-      let height;
-
-      if (heights[i] > heights[j]) {
-        height = heights[j];
-      } else {
-        height = heights[i];
-      }
-
+      let height = Math.min(heights[i], heights[j]);
       let width = j - i;
-
       let currentWater = height * width;
 
-      if (totalWater < currentWater) {
-        totalWater = currentWater;
-      }
+      totalWater = Math.max(currentWater, totalWater);
     }
   }
 
