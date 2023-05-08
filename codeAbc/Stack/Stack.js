@@ -14,7 +14,7 @@ class Stack {
   }
 
   lookUp() {
-    return this.arr[this.arr.length - 1];
+    this.arr[this.arr.length - 1];
   }
 }
 
