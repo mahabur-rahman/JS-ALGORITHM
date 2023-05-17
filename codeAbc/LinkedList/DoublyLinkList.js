@@ -91,11 +91,21 @@ class DoublyLinkList {
     this.length++;
     return this;
   }
+
+  showList() {
+    let arr = [];
+    let currentNode = this.head;
+    while (currentNode) {
+      arr.push(currentNode.value);
+      currentNode = currentNode.next;
+    }
+    return arr;
+  }
 }
 
 const list = new DoublyLinkList();
-// list.push(10);
-// list.push(15);
+list.push(10);
+list.push(15);
 // console.log(list);
 
 // console.log(list.pop());
@@ -106,3 +116,5 @@ const list = new DoublyLinkList();
 
 console.log(list.unshift(5));
 console.log(list.unshift(12));
+
+console.log(list.showList());
