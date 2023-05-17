@@ -77,15 +77,32 @@ class DoublyLinkList {
 
     return oldHead;
   }
+
+  unshift(value) {
+    let newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head.prev = newNode;
+      this.head = newNode;
+    }
+    this.length++;
+    return this;
+  }
 }
 
 const list = new DoublyLinkList();
-list.push(10);
-list.push(15);
-console.log(list);
+// list.push(10);
+// list.push(15);
+// console.log(list);
 
 // console.log(list.pop());
 // console.log(list.pop());
 
-console.log(list.shift());
-console.log(list.shift());
+// console.log(list.shift());
+// console.log(list.shift());
+
+console.log(list.unshift(5));
+console.log(list.unshift(12));
