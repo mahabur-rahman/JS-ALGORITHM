@@ -1,26 +1,16 @@
-// function getGrade(score) {
-//   if (score >= 80) {
-//     return "A";
-//   } else if (score >= 60) {
-//     return "B";
-//   } else if (score >= 40) {
-//     return "C";
-//   }
+const products = [
+  { name: "Laptop", price: 1000 },
+  { name: "Phone", price: 500 },
+  { name: "Mouse", price: 50 },
+];
 
-//   return "F";
-// }
+const discountedProducts = products.map((product) => {
+  const discountOfProduct = product.price - product.price * 0.2;
 
-// console.log(getGrade(85));
-// console.log(getGrade(65));
-// console.log(getGrade(45));
-// console.log(getGrade(30));
+  return {
+    ...product,
+    discountPrice: discountOfProduct,
+  };
+});
 
-
-// Arrow function 
-
-const result = (a, b) => {
-return a * b;
-}
-
-
-console.log(result(5, 10));
+console.log(discountedProducts);
