@@ -19,7 +19,7 @@
 **Solution আগে দেখবে না।** Hint system: `00-framework/02-hints-debug-edgecases.md`।
 
 ### দুটো অটল নিয়ম
-1. **Topic + তার problem একসাথে।** প্রতিটা topic শেখার সাথে সাথেই ওই topic-এর ★ problem solve — শুধু পড়ে এগোনো নেই।
+1. **আগে topic আলোচনা, তারপর problem — একই দিনে।** আমি topic আলোচনা করব ছোট code আর আসল output দিয়ে। তারপর **প্রতিটা problem (ছোট হলেও) Guided Build-এ**: ছোট ধাপে, প্রতিটা ধাপে তুমি পরের লাইন আন্দাজ করবে, আমি `console.log`-এর আসল output দিয়ে মিলিয়ে দেব, আর শেষে পূর্ণ solution (`00-framework/07-guided-build-method.md`)।
 2. **Topic পুরো না বুঝে পরের topic-এ যাওয়া নেই।** প্রতিটা topic শেষে **Gate Check** পাস করতে হবে:
    - সেই topic-এর সব ★ problem শেষ, কোনোটায় Hint 5+ লাগলে সেটা পরের দিন ফাঁকা editor থেকে আবার solve করে পাস
    - দিনের **"শেষ হয়েছে বুঝবে যখন"** মাপকাঠি পূরণ
@@ -50,7 +50,8 @@ live-coding/
 │   ├── 03-complexity-guide.md      Time/Space কীভাবে মাপতে হয় · JS built-in খরচ · Constraint
 │   ├── 04-patterns-and-skeletons.md Pattern চেনার টেবিল · ২৭টা code skeleton
 │   ├── 05-interview-communication.md English বাক্য · common ভুল · ৬০ সেকেন্ডের কাঠামো
-│   └── 06-daily-session-template.md প্রতিদিনের session · Reflection · Re-solve নিয়ম
+│   ├── 06-daily-session-template.md প্রতিদিনের session · Reflection · Re-solve নিয়ম
+│   └── 07-guided-build-method.md   ছোট ধাপে লাইন আন্দাজ + console.log output + শেষে পূর্ণ solution
 ├── month-1-october/           ← README + week-1..4
 ├── month-2-november/          ← README + week-1..4
 ├── month-3-december/          ← README + week-1..4 + final-days

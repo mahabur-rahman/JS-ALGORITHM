@@ -10,9 +10,8 @@
 | সময় | অংশ | কী করবে |
 |---|---|---|
 | ০–৫ মিনিট | **Warm-up** | গতকালের একটা ★ problem ফাঁকা editor-এ আবার (শুধু pseudocode হলেও চলবে) |
-| ৫–২০ | **Concept** | আজকের week file-এর "শিখবে" অংশ। নিজের ভাষায় খাতায় ৩–৫ লাইন লেখো |
-| ২০–২৫ | **Skeleton / Micro** | আজকের pattern-এর skeleton ফাঁকা editor-এ, বা ছোট output-আন্দাজ exercise |
-| ২৫–৭০ | **Main problems** | ★ problem গুলো — Blank Editor ১৪ ধাপে, Hint নিয়ম মেনে |
+| ৫–২৫ | **Topic আলোচনা (আগে)** | আমি topic আলোচনা করব ছোট code + আসল output দিয়ে; তুমি প্রশ্ন করবে। পুরো না বুঝে problem-এ যাবে না |
+| ২৫–৭০ | **Guided Build — প্রতিটা ★ problem** | ছোট ধাপে: প্রতিটা ধাপে তুমি পরের লাইন আন্দাজ করবে, আমি `console.log` output সহ মিলিয়ে দেব, শেষে পূর্ণ solution — তুমি নিজে টাইপ করে চালাবে (`07-guided-build-method.md`) |
 | ৭০–৮০ | **Complexity + তুলনা** | প্রতিটা problem-এ Time/Space + অন্তত একটা বিকল্প উপায়ের টেবিল |
 | ৮০–৮৫ | **বলো** | একটা problem English-এ ৬০ সেকেন্ডে জোরে ব্যাখ্যা |
 | ৮৫–৯০ | **Reflection + Tracker** | নিচের প্রশ্ন + `TRACKER.md` update (অথবা আমাকে জানাও, আমি update করব) |
