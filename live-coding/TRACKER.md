@@ -19,11 +19,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D1 — চলছে (শুরু রবি, ৪ অক্টোবর — নির্ধারিত দিনের এক দিন আগে) |
-| **পরের দিন** | W1 D2 — Operators & Coercion · Conditions |
+| **বর্তমান দিন** | W1 D1 — চলছে (৫ অক্টোবর শুরু; Topic 1-এর ৬ phase + ২টা ★ শেষ; ৬ অক্টোবর বাকি অংশ) |
+| **পরের কাজ** | ৬ অক্টোবর: warm-up re-solve (Swap, updateName) → ★ 1.3 addItem → Topic 1 Gate Check → Topic 2 Data Types (phase) → ★ 2.1 getType → তারপর W1 D2 |
 | **পিছিয়ে আছি?** | না |
-| **শেষ পাস করা Gate** | — (প্রথম gate: W1 D1-এর topic) |
-| **★ শেষ (মোট)** | 0 |
+| **শেষ পাস করা Gate** | — (প্রথম gate: Topic 1 Variables & Memory — ৬ অক্টোবর) |
+| **★ শেষ (মোট)** | 2 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -33,7 +33,7 @@
 
 | তারিখ | দিন | Topic | ★ শেষ / মোট | সবচেয়ে বেশি hint | আত্মবিশ্বাস (১–১০) | কোথায় আটকেছি (এক লাইন) |
 |---|---|---|---|---|---|---|
-| | | | | | | |
+| ৫ অক্টো | W1 D1 (চলছে) | Variables & Memory — phase 1.1–1.6 + Swap (৪ উপায়) + updateName | 2 / 4 | Hint 6 (updateName-এ `name: newName`) | — | `max`-এ let/const; `const` object-এ নতুন property যোগ করা যায়; primitive copy (`saved`); object-এ `key: value` আর shorthand-এর নিয়ম; spread = shallow |
 
 ---
 
@@ -43,7 +43,7 @@
 
 | Problem | Pattern | প্রথম তারিখ | Hint | কী মিস করেছিলাম | Re-solve +1 | +3 | +7 |
 |---|---|---|---|---|---|---|---|
-| | | | | | | | |
+| Update Without Mutating (`updateName`) | Variables & Memory (reference) | ৫ অক্টো | 6 | object-এ `key: value` — বাঁয়ে key, ডানে variable; shorthand শুধু নাম এক হলে; spread shallow + ক্রম | ৬ অক্টো | ৮ অক্টো | ১২ অক্টো |
 
 ---
 
@@ -51,7 +51,10 @@
 
 | তারিখ | Problem | ধাপ (+1 / +3 / +7) |
 |---|---|---|
-| | | |
+| ৬ অক্টো | Swap Two Values (temp + destructuring) | +1 |
+| ৬ অক্টো | Update Without Mutating | +1 |
+| ৮ অক্টো | Swap Two Values · Update Without Mutating | +3 |
+| ১২ অক্টো | Swap Two Values · Update Without Mutating | +7 |
 
 ---
 
@@ -121,4 +124,3 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 | তারিখ | পরিবর্তন | কারণ |
 |---|---|---|
 | ৪ অক্টোবর | Plan তৈরি — শুরু ৫ অক্টোবর (সোম) | — |
-| ৪ অক্টোবর | W1 D1 এক দিন আগে শুরু | তোমার ইচ্ছায় — বাকি তারিখ অপরিবর্তিত, এক দিন বাড়তি সময় হাতে |
