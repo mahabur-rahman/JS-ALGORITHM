@@ -204,6 +204,6 @@ var functionName = function (...) {
 
 1. **Topic আমি আগে আলোচনা করব — একবারে পুরোটা না, ছোট ছোট phase-এ।** প্রতিটা phase-এ শুধু **একটা ধারণা**: ছোট ব্যাখ্যা + **example** (code + আসল `console.log` output) + একটা ছোট যাচাই প্রশ্ন + **একটা ছোট problem** (শুধু ওই phase-এর ধারণা দিয়ে, ২–৫ লাইনের)। তুমি উত্তর দিলে তবেই পরের phase। সব phase শেষ হলে topic-এর বড় (LeetCode format) problem — basic থেকে ধাপে ধাপে কঠিন।
 2. **প্রতিটা problem — ছোট হোক বা বড় — এই ধাপে ধাপে পদ্ধতিতে।** একবারে কখনো পুরো solution না।
-3. **প্রতিটা problem-এর শেষে পূর্ণ solution** (পরিষ্কার code, debug log ছাড়া) + Time/Space — এক জায়গায় দেখার জন্য।
+3. **প্রতিটা problem-এর শেষে পূর্ণ solution** (পরিষ্কার code, debug log ছাড়া) + **Time/Space — কত, কেন, আর কীভাবে মাপলাম** (loop কতবার চলে, input ১০ গুণ হলে কী হয়, নতুন কী memory বানালাম)। প্রতিটা topic-এর শেষেও সেই topic-এর operation-গুলোর complexity আলোচনা।
 4. তুমি সেই পূর্ণ solution নিজের `practice/` file-এ **নিজের হাতে টাইপ করবে** (copy-paste না) আর `node` দিয়ে চালাবে।
 5. **Gate Check-এ শুধু ব্যতিক্রম:** topic শেষের যাচাই problem একা করবে — "নিজে পারি" সেটা প্রমাণের জন্য। না পারলে সেই topic-এ আরো guided problem।

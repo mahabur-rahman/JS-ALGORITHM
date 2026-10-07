@@ -19,11 +19,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D1 — চলছে (শুরু রবি, ৪ অক্টোবর — নির্ধারিত দিনের এক দিন আগে) |
-| **পরের দিন** | W1 D2 — Operators & Coercion · Conditions |
-| **পিছিয়ে আছি?** | না |
-| **শেষ পাস করা Gate** | — (প্রথম gate: W1 D1-এর topic) |
-| **★ শেষ (মোট)** | 0 |
+| **বর্তমান দিন** | ✅ W1 D1 সম্পূর্ণ (৫–৭ অক্টোবর) · পরের: **W1 D2** |
+| **পরের কাজ** | W1 D2 — warm-up variant (+3: object update without mutating) → Topic 3 Operators & Coercion (phase) → Topic 4 Conditions (phase) → ★ 3.1, 3.2, 4.1, 4.2, 4.3 |
+| **পিছিয়ে আছি?** | ২ দিন (W1 D1 তিন session-এ শেষ) — Gate নিয়ম মেনে, ঠিক আছে; ○ কমিয়ে ধরে ফেলব |
+| **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) |
+| **★ শেষ (মোট)** | 4 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -33,7 +33,9 @@
 
 | তারিখ | দিন | Topic | ★ শেষ / মোট | সবচেয়ে বেশি hint | আত্মবিশ্বাস (১–১০) | কোথায় আটকেছি (এক লাইন) |
 |---|---|---|---|---|---|---|
-| | | | | | | |
+| ৫ অক্টো | W1 D1 (১/৩) | Variables & Memory — phase 1.1–1.6 + Swap (৪ উপায়) + updateName | 2 / 4 | Hint 6 (updateName-এ `name: newName`) | — | `max`-এ let/const; `const` object-এ নতুন property যোগ করা যায়; primitive copy (`saved`); object-এ `key: value` আর shorthand-এর নিয়ম; spread = shallow |
+| ৬ অক্টো | W1 D1 (২/৩) | ★ 1.3 Add Item · Topic 1 Gate ✅ · Topic 2 phase 2.1–2.3 | 3 / 4 | Hint 3 (Add Item: `push` length ফেরত দেয়) | — | return value দেখে test করা, আসল input-ও print করতে হয়; `push` → length; যাচাই প্রশ্নের কারণ লেখা বাদ পড়ছে |
+| ৭ অক্টো | W1 D1 (৩/৩) ✅ | ★ 2.1 getType · Topic 2 Gate ✅ | 4 / 4 | Hint 2 (getType-এ value-এর বদলে নাম ফেরত) | — | `return` value বনাম type-এর নাম; guard-এর ক্রম |
 
 ---
 
@@ -43,7 +45,8 @@
 
 | Problem | Pattern | প্রথম তারিখ | Hint | কী মিস করেছিলাম | Re-solve +1 | +3 | +7 |
 |---|---|---|---|---|---|---|---|
-| | | | | | | | |
+| Update Without Mutating (`updateName`) | Variables & Memory (reference) | ৫ অক্টো | 6 | object-এ `key: value` — বাঁয়ে key, ডানে variable; shorthand শুধু নাম এক হলে; spread shallow + ক্রম | ✅ variant (Add Item, ৬ অক্টো) | W1 D2 (variant) | ১২ অক্টো (variant) |
+| Add Item: Two Ways | Variables & Memory (mutation) | ৬ অক্টো | 3 | `push` array না, নতুন length ফেরত দেয়; mutation-এ আসল input-ও print করে test | — | W1 D3 (variant) | ১৩ অক্টো (variant) |
 
 ---
 
@@ -51,7 +54,10 @@
 
 | তারিখ | Problem | ধাপ (+1 / +3 / +7) |
 |---|---|---|
-| | | |
+| ✅ ৬ অক্টো | Variant: Add Item (reference/mutation) — updateName-এর +1 | +1 |
+| W1 D2 শুরুতে | Variant: object update without mutating (নতুন গল্প) | +3 |
+| W1 D3 শুরুতে | Variant: array copy + `push`/`pop` return value | +3 |
+| ১২–১৩ অক্টো | Variant: reference copy + typeof/null মিশ্র | +7 |
 
 ---
 
@@ -121,4 +127,3 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 | তারিখ | পরিবর্তন | কারণ |
 |---|---|---|
 | ৪ অক্টোবর | Plan তৈরি — শুরু ৫ অক্টোবর (সোম) | — |
-| ৪ অক্টোবর | W1 D1 এক দিন আগে শুরু | তোমার ইচ্ছায় — বাকি তারিখ অপরিবর্তিত, এক দিন বাড়তি সময় হাতে |
