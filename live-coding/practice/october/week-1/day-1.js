@@ -228,17 +228,146 @@
 // };
 
 // console.log(swapValues(1, 2)); // [2, 1]
-// // console.log(swapValues("x", "y")); // ["y", "x"]
+// console.log(swapValues("x", "y")); // ["y", "x"]
 
-const updateName = function (user, newName) {
- return {
-    ...user, 
-    newName
- }
-};
+// const updateName = function (user, newName) {
+//  return {
+//     ...user,
+//     newName
+//  }
+// };
 
-const user = { name: "Rahim", age: 25 };
+// const user = { name: "Rahim", age: 25 };
 
-console.log(updateName(user, "Karim"));
+// console.log(updateName(user, "Karim"));
 
-console.log("User ; ", user )
+// console.log("User ; ", user )
+
+// ===== ৬ অক্টোবর: Add Item =====
+
+/**
+ * @param {string[]} cart
+ * @param {string} item
+ * @return {string[]}
+ */
+// var addItemPure = function (cart, item) {
+//   return [...cart, item];
+// };
+
+// var addItemMutate = function (cart, item) {
+//   cart.push(item);
+
+//   return cart;
+// };
+
+// const cart = ["apple"];
+// const result = addItemMutate(cart, "mango");
+// console.log("result : ", result);
+
+// console.log("original cart: ", cart);
+// console.log("same array : ", result === cart);
+
+// const settings = { theme: "dark" };
+// const copy = settings;
+// const clone = { ...settings };
+
+// copy.theme = "light";
+// clone.theme = "blue";
+
+// let count = 5;
+// let saved = count;
+// count = 10;
+
+// console.log(settings.theme, clone.theme, saved);
+
+// ===== Topic 2: Data Types =====
+
+// console.log(typeof Symbol("id"));
+
+// const values = [7, "7", true, "true"];
+// for (const v of values) {
+//   console.log(v, "→", typeof v);
+// }
+
+// console.log(typeof null);
+// console.log(typeof []);
+// console.log(typeof {});
+// console.log(typeof NaN);
+// console.log(typeof function () {});
+
+// console.log(Array.isArray([]), Array.isArray({}));
+// console.log(null === null);
+// console.log(Number.isNaN(NaN), Number.isNaN(5));
+
+// const items = [null, [1, 2], { a: 1 }, NaN];
+// for (const v of items) {
+//   console.log(typeof v);
+// }
+
+// let score;
+// console.log("1:", score);
+
+// const user = { name: "Rahim" };
+// console.log("2:", user.age);
+
+// function greet() {}
+// console.log("3:", greet());
+
+// let winner = null;
+// console.log("4:", winner);
+
+// console.log(null === undefined, null == undefined);
+// console.log(typeof undefined, typeof null);
+
+// const profile = {
+//     name: 'rahim',
+//     phone : null
+// }
+
+// console.log(profile.phone, profile.email)
+// console.log(profile.phone === null, profile.email === undefined)
+
+// ===== Problem: Get Type =====
+
+/**
+ * @param {*} value
+ * @return {string}
+ */
+// var getType = function (value) {
+//   // console.log(Array.isArray(value))
+//   // console.log(Number.isNaN(value))
+
+//   // console.log( null === value)
+  
+//   if (Array.isArray(value)) {
+//       return "array";
+//     }
+    
+//     if (Number.isNaN(value)) {
+//         return "nan";
+//     }
+    
+//     if (null === value) {
+//         return "null";
+//     }
+
+//     return typeof value
+
+// };
+
+// // const value = [1, 2]; // "array"
+// // const value = null // "null"
+// // const value = NaN; // "nan"
+// const value = 2
+
+// console.log(getType(value));
+
+
+// const data = {
+//     items : []
+// }
+
+
+// console.log(typeof data.items)
+// console.log(Array.isArray(data.items))
+// console.log(data.count)

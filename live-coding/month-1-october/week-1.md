@@ -45,8 +45,8 @@ console.log(typeof null, typeof [], typeof NaN, typeof function () {});
 **Problems:**
 - [x] ★ **1.1** দুটো variable-এর value অদলবদল — ৩ ভাবে: temp, destructuring, যোগ-বিয়োগ। `A` · O(1)
 - [x] ★ **1.2** `updateName(user, newName)` — আসল `user` না বদলে নতুন object ফেরত। প্রমাণ করো আসলটা বদলায়নি। `B` · O(k)
-- [ ] ★ **1.3** `addItem(cart, item)` দুইভাবে: (ক) আসল array বদলায় (খ) নতুন array ফেরত দেয়। কখন কোনটা ভালো — এক লাইনে। `B`
-- [ ] ★ **2.1** `getType(value)` → `"null" | "array" | "object" | "number" | "nan" | "string" | "boolean" | "undefined" | "function"`। ১০টা input-এ test। `B` · O(1)
+- [x] ★ **1.3** `addItem(cart, item)` দুইভাবে: (ক) আসল array বদলায় (খ) নতুন array ফেরত দেয়। কখন কোনটা ভালো — এক লাইনে। `B`
+- [x] ★ **2.1** `getType(value)` → `"null" | "array" | "object" | "number" | "nan" | "string" | "boolean" | "undefined" | "function"`। ১০টা input-এ test। `B` · O(1)
 - [ ] ○ **2.2** `isEmpty(value)` — `null, undefined, "", [], {}` → `true`। **আগে সিদ্ধান্ত নাও:** `0` আর `false` empty কিনা — interviewer-কে জিজ্ঞেস করার মতো লিখে রাখো। `C`
 
 **বলো (English):** *"Primitives are copied by value, objects by reference. So when I pass an array to a function and push to it, the original array changes, but reassigning the parameter doesn't affect the caller."*
