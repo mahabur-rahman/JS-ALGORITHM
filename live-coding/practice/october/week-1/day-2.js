@@ -130,35 +130,128 @@
 // answer[i] == "Buzz" if i is divisible by 5
 // answer[i] == i (as a string) if none of the above are true
 
-const fizzBuzz = function (n) {
-  const answer = [];
+// const fizzBuzz = function (n) {
+//   const answer = [];
 
-  for (let i = 1; i <= n; i++) {
-    // console.log(`${i}`)
+//   for (let i = 1; i <= n; i++) {
+//     // console.log(`${i}`)
 
-    let result;
+//     let result;
 
-    if (i % 3 === 0 && i % 5 === 0) {
-      // console.log(`${i} is divisible by 3 and 5`);
-      // answer.push(`FizzBuzz`);
-      result = "fizzBuzz"
-    } else if (i % 3 === 0) {
-      // console.log(`${i} is divisible by 3`);
-      // answer.push(`Fizz`);
-      result = "Fizz"
-    } else if (i % 5 === 0) {
-      // console.log(`${i} is divisible by 5`);
-      // answer.push(`Buzz`);
-      result = "Buzz"
-    }else {
-      // answer.push(String(i))
-      result = String(i)
-    }
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       // console.log(`${i} is divisible by 3 and 5`);
+//       // answer.push(`FizzBuzz`);
+//       result = "fizzBuzz"
+//     } else if (i % 3 === 0) {
+//       // console.log(`${i} is divisible by 3`);
+//       // answer.push(`Fizz`);
+//       result = "Fizz"
+//     } else if (i % 5 === 0) {
+//       // console.log(`${i} is divisible by 5`);
+//       // answer.push(`Buzz`);
+//       result = "Buzz"
+//     }else {
+//       // answer.push(String(i))
+//       result = String(i)
+//     }
 
-    answer.push(result)
+//     answer.push(result)
+//   }
+
+//   return answer;
+// };
+
+// console.log(fizzBuzz(15));
+
+// ===== Problem: Grade Calculator =====
+
+// /**
+//  * @param {*} score
+//  * @return {string}
+//  */
+// var grade = function (score) {
+
+// console.log(score )
+
+//   if(typeof score !== "number" || Number.isNaN(score) || score < 0 || score > 100) return 'Invalid'
+
+//   if(score >= 90){
+//     return "A"
+//   }else if(score >= 80) {
+//     return "B"
+//   }else if(score >= 70) {
+//     return "C"
+//   }else if(score >=60) {
+//     return 'D'
+//   }else {
+//     return "F"
+//   }
+// };
+
+// const score = 60
+// console.log(grade(score))
+
+// ===== Problem: Leap Year =====
+
+/**
+ * @param {number} year
+ * @return {boolean}
+ */
+// var isLeapYear = function (year) {
+//   //   if (year % 4 === 0) {
+//   //     return true;
+//   //   }
+
+//   //   if (year % 100 === 0) {
+//   //     return false;
+//   //   }
+
+//   //   if (year % 400 === 0) {
+//   //     return true;
+//   //   }
+
+//   if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+//    return true
+//   };
+
+//   return false;
+// };
+
+// console.log(isLeapYear(2024));
+// console.log(isLeapYear(2023));
+// console.log(isLeapYear(1900));
+// console.log(isLeapYear(2000));
+// console.log(isLeapYear(2100));
+
+
+
+// function check(x) {
+//   switch (x) {
+//     case 1: return "one";
+//     case 2:
+//     case 3: return "two-or-three";
+//     default: return "other";
+//   }
+// }
+// console.log(check(1), check(3), check(5), check("1"));
+
+
+function shipping(weight) {
+
+  if(typeof weight !== "number" || weight <= 0){
+    return "invalid"
+  }
+  
+  if(weight > 20) {
+    return 'frieght'
   }
 
-  return answer;
-};
+  if(weight > 5){
+    return "heavy"
+  }
 
-console.log(fizzBuzz(15));
+  return "standard"
+}
+console.log(shipping(3), shipping(5), shipping(12), shipping(25), shipping(0), shipping("2"));
+
+

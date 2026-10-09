@@ -87,8 +87,8 @@ console.log([] ? "truthy" : "falsy", "0" ? "truthy" : "falsy");
 - [x] ★ **3.1** `getPort(config)` — না থাকলে 3000; **`port: 0` হলে 0-ই থাকবে;** `config` নিজে `undefined` হলেও crash না। `B`
 - [x] ★ **3.2** `canAccess(user)` — user আছে, `isActive` true, role `"admin"` বা `"editor"` — এক লাইনে। `B`
 - [x] ★ **4.1** FizzBuzz 1..n (array ফেরত)। তারপর নতুন নিয়ম: 7 → "Bazz"। তোমার code কত সহজে বদলাল? `A` · O(n)
-- [ ] ★ **4.2** `grade(score)` — 90+ A, 80+ B, 70+ C, 60+ D, নিচে F; 0–100-এর বাইরে বা number না হলে `"Invalid"`। guard clause দিয়ে। `A`
-- [ ] ★ **4.3** `isLeapYear(year)` — নিয়ম নিজে খুঁজে (৪, ১০০, ৪০০)। ক্রমই চ্যালেঞ্জ। `B`
+- [x] ★ **4.2** `grade(score)` — 90+ A, 80+ B, 70+ C, 60+ D, নিচে F; 0–100-এর বাইরে বা number না হলে `"Invalid"`। guard clause দিয়ে। `A`
+- [x] ★ **4.3** `isLeapYear(year)` — নিয়ম নিজে খুঁজে (৪, ১০০, ৪০০)। ক্রমই চ্যালেঞ্জ। `B`
 - [ ] ○ **4.4** `triangleType(a, b, c)` → `"invalid" | "equilateral" | "isosceles" | "scalene"`। edge: 0, negative, a + b ≤ c। `C`
 
 **বলো:** *"I use early returns to handle invalid input first, so the main logic stays flat and readable."*
