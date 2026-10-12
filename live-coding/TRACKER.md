@@ -19,11 +19,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | ✅ W1 D2 সম্পূর্ণ (৭–৯ অক্টো) · পরের: **W1 D3** |
-| **পরের কাজ** | W1 D3 — warm-up variant (+3: array copy + push/pop return value) → Topic 5 Loops (phase) → ★ 5.1–5.4 |
+| **বর্তমান দিন** | W1 D3 — চলছে (৯–১২ অক্টো) · Topic 5 Loops-এর ৫ phase ✅ · ★ Odd-Index Sum, Good Pairs, Richest Wealth ✅ |
+| **পরের কাজ** | ★ 5.4 First Descent Index → Topic 5 Gate → W1 D3 সম্পূর্ণ, main-এ merge |
 | **পিছিয়ে আছি?** | ২ দিন (৯ অক্টো = ক্যালেন্ডারে D5, শেষ হলো D2) — Gate নিয়ম মেনে, ঠিক আছে; ○ কমিয়ে ধরে ফেলব |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) |
-| **★ শেষ (মোট)** | 9 |
+| **★ শেষ (মোট)** | 12 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -37,6 +37,7 @@
 | ৬ অক্টো | W1 D1 (২/৩) | ★ 1.3 Add Item · Topic 1 Gate ✅ · Topic 2 phase 2.1–2.3 | 3 / 4 | Hint 3 (Add Item: `push` length ফেরত দেয়) | — | return value দেখে test করা, আসল input-ও print করতে হয়; `push` → length; যাচাই প্রশ্নের কারণ লেখা বাদ পড়ছে |
 | ৭ অক্টো | W1 D1 (৩/৩) ✅ | ★ 2.1 getType · Topic 2 Gate ✅ | 4 / 4 | Hint 2 (getType-এ value-এর বদলে নাম ফেরত) | — | `return` value বনাম type-এর নাম; guard-এর ক্রম |
 | ৭–৯ অক্টো | W1 D2 ✅ | Warm-up Apply Discount · Topic 3 (৫ phase) + Gate ✅ · Topic 4 (৪ phase) · ★ getPort, canAccess, FizzBuzz, Grade, Leap Year · Topic 4 Gate ✅ | 5 / 5 | Hint 3 (Apply Discount: `price - percent` আর shorthand `result`) | — | shorthand-এ ভুল key (দ্বিতীয়বার); percent সূত্র; `&&` value ফেরত দেয় → `Boolean()`; `/` বনাম `%`; output string হুবহু (`FizzBuzz`); NaN-এর ফাঁদ (`typeof NaN` = number, `!== NaN` সবসময় true → `Number.isNaN`); `return` ছাড়া value হারায়; যাচাই প্রশ্নের "কেন" অংশ এখনো বাদ পড়ছে |
+| ৯–১২ অক্টো | W1 D3 (চলছে) | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth | 3 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ — trace টেবিলে উন্নতি; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে রাখতে হয় |
 
 ---
 
@@ -58,7 +59,7 @@
 |---|---|---|
 | ✅ ৬ অক্টো | Variant: Add Item (reference/mutation) — updateName-এর +1 | +1 |
 | ✅ ৭ অক্টো | Variant: Apply Discount — object update without mutating | +3 |
-| W1 D3 শুরুতে | Variant: array copy + `push`/`pop` return value | +3 |
+| ✅ ৯ অক্টো | Variant: `push` return value — Phase 5.1-এর ছোট problem-এ | +3 |
 | W2 Strings/Arrays-এর পর | LeetCode 1154 Day of the Year (isLeapYear কাজে লাগবে) · HackerRank Grading Students | variant |
 | ১২–১৩ অক্টো | Variant: reference copy + typeof/null মিশ্র | +7 |
 
