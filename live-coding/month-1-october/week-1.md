@@ -125,7 +125,7 @@ console.log([] ? "truthy" : "falsy", "0" ? "truthy" : "falsy");
 - [x] ★ **5.2** [LeetCode 1512 · Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) — nested loop `j = i + 1`; n = 5-এ কতটা জোড়া, সূত্র নিজে বের করো। `B` · O(n²)
 - [x] ★ **5.3** [LeetCode 1672 · Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) — nested loop: প্রতিটা row-এর যোগফল, তার max। `A` · O(m × n)
 - [ ] ○ **5.3b** `*` দিয়ে n সারির পিরামিড (LeetCode-এ নেই)। row → space/star সংখ্যার সম্পর্ক আগে টেবিল করে। `B`
-- [ ] ★ **5.4** প্রথম index যেখানে `nums[i] > nums[i + 1]`, না থাকলে `-1`। early exit + boundary। `C` · O(n)
+- [x] ★ **5.4** প্রথম index যেখানে `nums[i] > nums[i + 1]`, না থাকলে `-1`। early exit + boundary। `C` · O(n)
 - [ ] ○ **5.5** 2D matrix-এর প্রতিটা **column**-এর যোগফল। `C` · O(r × c)
 - [ ] ○ **5.6** [LeetCode 1295 · Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) — `while` দিয়ে digit গোনা। `A`
 

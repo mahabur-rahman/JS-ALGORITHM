@@ -213,20 +213,29 @@
 
 // First Descent Index
 
-var firstDescent = function (nums) {
-  for (let i = 0; i < nums.length - 1; i++) {
-    if (nums[i] > nums[i + 1]) {
+// var firstDescent = function (nums) {
+//   for (let i = 0; i < nums.length - 1; i++) {
+//     if (nums[i] > nums[i + 1]) {
 
-    console.log(`Value : ${nums[i]} and next value: ${nums[i + 1]}`)
-      return i;
-    }
-  }
+//     console.log(`Value : ${nums[i]} and next value: ${nums[i + 1]}`)
+//       return i;
+//     }
+//   }
 
-  return -1;
-};
+//   return -1;
+// };
 
-// Function invocation
-console.log(firstDescent([1, 3, 5, 4, 6])); // 2
-console.log(firstDescent([1, 2, 3])); // -1
-console.log(firstDescent([9, 1])); // 0
-console.log(firstDescent([])); // -1
+// // Function invocation
+// console.log(firstDescent([1, 3, 5, 4, 6])); // 2
+// console.log(firstDescent([1, 2, 3])); // -1
+// console.log(firstDescent([9, 1])); // 0
+// console.log(firstDescent([])); // -1
+
+
+// let total = 0;
+
+// for (let i = 1; i <= 5; i += 2) {
+//   total += i;
+// }
+
+// console.log(total);

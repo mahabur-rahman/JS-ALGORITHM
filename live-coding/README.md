@@ -44,6 +44,7 @@
 live-coding/
 ├── README.md                  ← তুমি এখানে
 ├── TRACKER.md                 ← progress, re-solve তালিকা, মূল্যায়ন (আমি update করব)
+├── LEARNED.md                 ← কী শিখেছি: প্রতিটা topic-এর নিয়ম, ফাঁদ, problem-এর complexity + সামনে কীভাবে শিখব
 ├── 00-framework/              ← মাথার operating system — প্রথম সপ্তাহে পড়বে, পরে দরকারমতো
 │   ├── 01-master-framework.md      ১৬ ধাপ · Anti-Freeze · Blank Editor · Interview time plan
 │   ├── 02-hints-debug-edgecases.md Hint 0–7 · Debug প্রশ্ন · Edge case checklist
