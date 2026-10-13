@@ -216,6 +216,8 @@
 var firstDescent = function (nums) {
   for (let i = 0; i < nums.length - 1; i++) {
     if (nums[i] > nums[i + 1]) {
+
+    console.log(`Value : ${nums[i]} and next value: ${nums[i + 1]}`)
       return i;
     }
   }

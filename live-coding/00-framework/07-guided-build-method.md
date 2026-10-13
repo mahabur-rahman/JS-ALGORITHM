@@ -207,3 +207,9 @@ var functionName = function (...) {
 3. **প্রতিটা problem-এর শেষে পূর্ণ solution** (পরিষ্কার code, debug log ছাড়া) + **Time/Space — কত, কেন, আর কীভাবে মাপলাম** (loop কতবার চলে, input ১০ গুণ হলে কী হয়, নতুন কী memory বানালাম)। প্রতিটা topic-এর শেষেও সেই topic-এর operation-গুলোর complexity আলোচনা।
 4. তুমি সেই পূর্ণ solution নিজের `practice/` file-এ **নিজের হাতে টাইপ করবে** (copy-paste না) আর `node` দিয়ে চালাবে।
 5. **Gate Check-এ শুধু ব্যতিক্রম:** topic শেষের যাচাই problem একা করবে — "নিজে পারি" সেটা প্রমাণের জন্য। না পারলে সেই topic-এ আরো guided problem।
+
+### নতুন নিয়ম (১৩ অক্টোবর) — প্রতিটা problem আর pattern-এ
+
+6. **বাস্তব জীবনের উদাহরণ আগে:** problem দেখানোর সাথে একটা real-life example (দোকান, bank, app, log, লাইন…) — যাতে problem-টা কী চাইছে সেটা সহজে বোঝা যায়।
+7. **কীভাবে চিন্তা করতে হয় — solve-এর আগে:** কোন কোন জিনিস নিয়ে ভাবতে হবে (input/output কী, ছোট example, হাতে solve, কী মনে রাখছি → variable, কী বারবার করছি → loop, edge case, brute force → bottleneck → pattern) — `01-master-framework.md`-এর ধাপ ধরে। তারপর ধাপে ধাপে পুরো solve।
+8. **Time/Space complexity — কীভাবে মাপলাম সহ:** n কী, প্রতিটা loop কতবার চলে (গুনে), nested = গুণ / পরপর = যোগ, built-in-এর লুকানো খরচ, নতুন কী memory বানালাম, "n ১০ গুণ হলে কাজ কত গুণ"। শুধু O(…) লেখা চলবে না।
