@@ -200,13 +200,11 @@
 // ===== Phase 6.5 (খ): Repeat =====
 // নাম: repeat · ঢোকে: n (কতবার) আর fn (কী করবে) · বের হয়: কিছু না, শুধু fn চালায়
 
-function repeat(n, fn) {
-  for (let i = 0; i < n; i++) {
-    fn(i); // প্রতি ঘুরে callback-কে ডাকো, ঘুরের নম্বর পাঠিয়ে
-  }
-}
+// function repeat(n, fn) {
+//   for (let i = 0; i < n; i++) {
+//     fn(i); // প্রতি ঘুরে callback-কে ডাকো, ঘুরের নম্বর পাঠিয়ে
+//   }
+// }
 
-repeat(3, (i) => console.log("hi", i));
-// hi 0
-// hi 1
-// hi 2
+// repeat(3, (i) => console.log("hi", i));
+

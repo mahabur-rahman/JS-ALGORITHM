@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৩ অক্টোবর ২০২৬ · W1 D3 শেষ, W1 D4 (Functions) শুরু
+**শেষ update:** ১৪ অক্টোবর ২০২৬ · W1 D4 (Functions) — Phase 6.1–6.4 শেষ, 6.5 চলছে
 
 ---
 
@@ -113,6 +113,29 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 5.4 First Descent Index | Search → early return; `i < n - 1`; `[]`-এ loop একবারও চলে না | O(n) — worst case n − 1 তুলনা | O(1) — শুধু `i` |
 | Gate: `countIncreases` | আগেরটার সাথে তুলনা → loop `i = 1` থেকে (`counts[i - 1]` লাগে) | O(n) — n − 1 তুলনা | O(1) — শুধু `count` |
 
+### Topic 6 — Functions 🔄 (Phase 6.1–6.4 ✅, 6.5 চলছে)
+
+**মূল কথা:** function = জুস মেশিন — input → কাজ → `return` output। লেখার আগে ৩ প্রশ্ন: **নাম? কী ঢোকে? কী বের হয়?**
+
+- **তিন উপায়:** declaration (পুরোটা hoist — আগে ডাকা যায়) · expression আর arrow (variable-এর নিয়ম: `const` → ReferenceError/TDZ, `var` → TypeError কারণ value `undefined`)। নিয়ম: আগে ঘোষণা, পরে ডাকো।
+- **Arrow ফাঁদ:** `{}` দিলে `return` বাধ্যতামূলক, নইলে `undefined`। object ফেরত দিতে `() => ({ ... })`।
+- **`return` বনাম `console.log`:** log শুধু দেখায়, `return` হাতে দেয়। `return` না থাকলে → `undefined` → পরে `+ 10` করলে `NaN`।
+- **Default parameter:** বসে শুধু `undefined`-এ, `null`-এ না (`null` আটকাতে `??`)।
+- **Rest `...args`:** সব argument একটা আসল array-তে; কিছু না দিলে `[]`; সবসময় শেষে।
+- **Destructuring parameter:** `({ title = "Unknown", price = 0 } = {})` — শেষের `= {}` না দিলে কিছু না দিয়ে ডাকলে TypeError।
+- **Guard কখন লাগে না:** guard ছাড়াই main logic ঠিক উত্তর দিলে (যেমন `args.length` খালি হলে নিজেই 0)।
+- **Pure বনাম side effect:** pure = একই input → একই output, বাইরের কিছু বদলায় না, test সহজ। algorithm problem-এ সবসময় pure।
+- **দশমিক টাকা:** `0.1 + 0.2`, `100 * 1.15 = 114.99999999999999`। দুই ঘর রাখতে `Math.round(x * 100) / 100` (শুধু `Math.round` পয়সা মুছে দেয়)।
+- **Callback:** যে function অন্য function-কে value হিসেবে পাঠানো হয়, আর সে পরে তাকে ডাকে। নাম ছাড়া (anonymous) function-ও পাঠানো যায়।
+
+| Problem | মূল শিক্ষা | Time | Space |
+|---|---|---|---|
+| LC 2703 Return Length of Arguments Passed ✅ | `...args` + `args.length`; বাড়তি guard লাগে না | O(1) — length জমা থাকে | O(n) — rest array |
+| P6.3e `describeProduct` | destructuring default + `= {}`; output হুবহু (`Unknown`) | O(1) | O(1) |
+| P6.4b `withVat` | pure বনাম impure (`log.push`); দশমিক round | O(1) | O(1) / impure-এ log বাড়ে |
+| P6.5a `calculate` | function-কে value হিসেবে পাঠানো | O(1) | O(1) |
+| P6.5b `repeat(n, fn)` | callback n বার, ঘুরের নম্বর পাঠিয়ে | O(n) | O(1) |
+
 ---
 
 ## অংশ ৩ — বারবার যে ভুলগুলো হয় (চোখ রাখো)
@@ -121,7 +144,9 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 2. **Return value না দেখে test** — mutation হলে আসল input-ও print করো।
 3. **Index বনাম value** গুলিয়ে ফেলা (label-এ)।
 4. **"কেন" / dry-run অংশ বাদ** দেওয়া — উত্তরের সাথে সবসময় কারণ লিখবে।
-5. **একটা example মিললেই ঠিক ভাবা** — অন্তত ২টা input + ১টা edge case।
+5. **একটা example মিললেই ঠিক ভাবা** — অন্তত ২টা input + ১টা edge case। (`Math.round` VAT-এ আবার হলো)
+6. **Output হুবহু না মেলানো** — `"fizzBuzz"`, `"unknown"` — বড়-ছোট হাতের অক্ষরও মেলাও।
+7. **File save না করে "done"** — চালানোর আগে `Ctrl+S`, আর আসল output দেখে তবেই done।
 
 ---
 
@@ -129,7 +154,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
-| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | 🔄 চলছে |
+| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | 🔄 চলছে (6.5) |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
