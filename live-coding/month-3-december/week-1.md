@@ -1,4 +1,7 @@
 # December · Week 1 (সামগ্রিক W9) — ৩০ নভেম্বর থেকে ৬ ডিসেম্বর
+
+> 📌 **বিস্তারিত plan এখন [december-plan.md](december-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Binary Tree (শেষ) · BST · Heap · Intervals
 
 **সপ্তাহের লক্ষ্য:**

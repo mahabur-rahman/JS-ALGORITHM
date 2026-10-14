@@ -1,4 +1,7 @@
 # December · Week 4 (সামগ্রিক W12) — ২১ থেকে ২৭ ডিসেম্বর
+
+> 📌 **বিস্তারিত plan এখন [december-plan.md](december-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Greedy (শেষ) · Dynamic Programming (1D + 2D-র শুরু)
 
 **সপ্তাহের লক্ষ্য:**

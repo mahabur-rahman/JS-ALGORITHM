@@ -1,4 +1,7 @@
 # December · Week 2 (সামগ্রিক W10) — ৭ থেকে ১৩ ডিসেম্বর
+
+> 📌 **বিস্তারিত plan এখন [december-plan.md](december-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Matrix · Graph (BFS/DFS) · Topological Sort
 
 **সপ্তাহের লক্ষ্য:**

@@ -1,4 +1,7 @@
 # November · Week 3 (সামগ্রিক W7) — ১৬ থেকে ২২ নভেম্বর
+
+> 📌 **বিস্তারিত plan এখন [november-plan.md](november-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Recursion · Linked List
 
 **সপ্তাহের লক্ষ্য:**

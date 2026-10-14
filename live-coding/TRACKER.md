@@ -6,7 +6,7 @@
 ### Sync নিয়ম (একই তথ্য দুই জায়গায় থাকবে না)
 | তথ্য | একমাত্র জায়গা |
 |---|---|
-| কোন problem শেষ হয়েছে | **week file-এর checkbox** (`- [x]`) |
+| কোন problem / phase শেষ হয়েছে | **মাসের plan file** (`october-plan.md`, `november-plan.md`, `december-plan.md`) — <span style="color:red">**🔴 DONE**</span> চিহ্ন |
 | এখন কোথায়, মোট সংখ্যা | এই file — "এখন কোথায়" |
 | দিনের সারাংশ (এক লাইন) | এই file — "দৈনিক Log" |
 | শুধু কঠিন problem (Hint ≥ 3 বা re-solve fail) | এই file — "Problem Log" |

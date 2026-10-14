@@ -1,4 +1,7 @@
 # November · Week 1 (সামগ্রিক W5) — ২ থেকে ৮ নভেম্বর
+
+> 📌 **বিস্তারিত plan এখন [november-plan.md](november-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Searching & Binary Search · Two Pointers
 
 **সপ্তাহের লক্ষ্য:**

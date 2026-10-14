@@ -10,7 +10,7 @@
 
 ## কীভাবে ব্যবহার করবে
 
-1. **আজ কোন দিন?** নিচের ক্যালেন্ডার থেকে week file খোলো → সেই দিনের অংশ।
+1. **আজ কোন দিন?** মাসের plan file খোলো — [october-plan.md](month-1-october/october-plan.md) · [november-plan.md](month-2-november/november-plan.md) · [december-plan.md](month-3-december/december-plan.md) → সেই দিনের অংশ (concept phase, ছোট problem, LeetCode problem — সব English + বাংলা + real-life সহ)।
 2. **Session চালাও** — `00-framework/06-daily-session-template.md` অনুযায়ী (৬০–৯০ মিনিট)।
 3. **Code লেখো** — `practice/<month>/week-N/day-N.js`।
 4. **আটকে গেলে** — আমাকে (Claude) লেখো: `W2 D3 Valid Palindrome — Hint 2`। একবারে একটা hint।
@@ -53,9 +53,9 @@ live-coding/
 │   ├── 05-interview-communication.md English বাক্য · common ভুল · ৬০ সেকেন্ডের কাঠামো
 │   ├── 06-daily-session-template.md প্রতিদিনের session · Reflection · Re-solve নিয়ম
 │   └── 07-guided-build-method.md   ছোট ধাপে লাইন আন্দাজ + console.log output + শেষে পূর্ণ solution
-├── month-1-october/           ← README + week-1..4
-├── month-2-november/          ← README + week-1..4
-├── month-3-december/          ← README + week-1..4 + final-days
+├── month-1-october/           ← october-plan.md ★ (পুরো মাসের বিস্তারিত plan) + README + week-1..4 (পুরনো সংক্ষিপ্ত রূপ)
+├── month-2-november/          ← november-plan.md ★ + README + week-1..4
+├── month-3-december/          ← december-plan.md ★ + README + week-1..4 + final-days
 ├── after-december/            ← January থেকে চলমান system
 └── practice/                  ← তোমার code (প্রতিদিন নতুন file)
 ```

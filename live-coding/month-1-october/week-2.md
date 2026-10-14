@@ -1,4 +1,7 @@
 # October · Week 2 (সামগ্রিক W2) — ১২ থেকে ১৮ অক্টোবর
+
+> 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Big-O · Strings · Arrays (শুরু)
 
 **সপ্তাহের লক্ষ্য:**

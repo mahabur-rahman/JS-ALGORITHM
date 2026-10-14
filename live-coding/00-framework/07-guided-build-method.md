@@ -195,6 +195,7 @@ var functionName = function (...) {
 তারপর Guided Build ধাপগুলো। শেষে পূর্ণ solution + Time/Space।
 - আসল LeetCode problem হলে নম্বর আর নাম আসলটাই, যাতে পরে LeetCode-এ submit করতে পারো।
 - plan-এর নিজস্ব problem হলে একই format, নম্বর ছাড়া।
+- **LeetCode-এ মিলে যায় এমন problem হলে link দেব** (হুবহু একই, নাকি কাছাকাছি — সেটাও বলব), যাতে solve শেষে submit করতে পারো। (নিয়ম যোগ: ১৩ অক্টোবর)
 
 **কেন এই format:** বড় problem-ও আসলে এই একই গঠনের — description, example, constraint। প্রতিদিন এই গঠন পড়তে পড়তে বড় description দেখলেও ভয় কমবে: *"input কী, output কী, example কী বলছে, constraint কত"* — এই চারটা খুঁজলেই শুরু হয়ে যায়।
 
@@ -213,3 +214,5 @@ var functionName = function (...) {
 6. **বাস্তব জীবনের উদাহরণ আগে:** problem দেখানোর সাথে একটা real-life example (দোকান, bank, app, log, লাইন…) — যাতে problem-টা কী চাইছে সেটা সহজে বোঝা যায়।
 7. **কীভাবে চিন্তা করতে হয় — solve-এর আগে:** কোন কোন জিনিস নিয়ে ভাবতে হবে (input/output কী, ছোট example, হাতে solve, কী মনে রাখছি → variable, কী বারবার করছি → loop, edge case, brute force → bottleneck → pattern) — `01-master-framework.md`-এর ধাপ ধরে। তারপর ধাপে ধাপে পুরো solve।
 8. **Time/Space complexity — কীভাবে মাপলাম সহ:** n কী, প্রতিটা loop কতবার চলে (গুনে), nested = গুণ / পরপর = যোগ, built-in-এর লুকানো খরচ, নতুন কী memory বানালাম, "n ১০ গুণ হলে কাজ কত গুণ"। শুধু O(…) লেখা চলবে না।
+9. **দিনের ক্রম (নতুন):** আগে দিনের সব concept **বাংলায়, ধাপে ধাপে** — প্রতিটা ছোট ধারণার পরেই ছোট ছোট practical problem (output আন্দাজ, ২–৫ লাইনের কাজ)। concept পুরো পরিষ্কার হলে তবেই LeetCode-pattern problem, আর প্রতিটা problem-এর **পূর্ণ বাংলা version**-ও থাকবে।
+10. **বড় problem-এর আগে ভাঙা শেখা:** problem-টাকে কীভাবে ছোট ছোট অংশে ভাবতে হয় (কোন অংশ আলাদা helper, কোনটা আগে, কোনটা পরে) — আগে সেটা, তারপর প্রতিটা লাইনের পেছনের চিন্তা দিয়ে লাইন। কারণ: "code দেখলে বুঝি, কিন্তু problem দিলে কীভাবে ভাবব মাথায় আসে না" — এই ফাঁকটাই পূরণ করা লক্ষ্য।

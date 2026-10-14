@@ -1,4 +1,7 @@
 # October · Week 4 (সামগ্রিক W4) — ২৬ অক্টোবর থেকে ১ নভেম্বর
+
+> 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Scope/Closure/`this` · Class & OOP · Sorting · Month-1 Review
 
 **সপ্তাহের লক্ষ্য:**

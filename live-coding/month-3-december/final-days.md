@@ -1,4 +1,7 @@
 # December · শেষ ৪ দিন — ২৮ থেকে ৩১ ডিসেম্বর
+
+> 📌 **বিস্তারিত plan এখন [december-plan.md](december-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
+
 ## Bit Manipulation · Trie · Math & Number Theory · ৩ মাসের চূড়ান্ত মূল্যায়ন
 
 > এই ৪ দিনে বাকি তিনটা topic-এর **core** শেষ হবে — কোনো topic বাদ থাকবে না।
