@@ -595,7 +595,7 @@ Example 3: Input: nums = []               Output: -1
 - **P6.5a · Calculate With Operation** 🟢 <span style="color:red">**🔴 DONE**</span>
   - **EN:** Write `calculate(a, b, op)` where `op` is a function. `calculate(6, 3, (x, y) => x - y)` → `3`; with multiply → `18`.
   - **বাংলা:** কোন হিসাব হবে সেটা function হিসেবে পাঠাও।
-- **P6.5b · Repeat** 🟢 ⬜
+- **P6.5b · Repeat** 🟢 <span style="color:red">**🔴 DONE**</span>
   - 🌍 alarm-কে বলা "৩ বার বাজো"।
   - **EN:** Write `repeat(n, fn)` that calls `fn(i)` for `i = 0..n-1`. `repeat(3, i => console.log("hi", i))` → `hi 0`, `hi 1`, `hi 2`.
 - **P6.5c · 2667. Create Hello World Function** 🟢 ⬜ · 🔗 [LC 2667](https://leetcode.com/problems/create-hello-world-function/) (হুবহু)

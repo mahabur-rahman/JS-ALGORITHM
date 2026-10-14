@@ -187,12 +187,26 @@
 // ===== Phase 6.5 (ক): Callback =====
 // Callback কী? — যে function অন্য একটা function-কে value হিসেবে পাঠানো হয়, আর সেই function পরে দরকার মতো তাকে ডাকে।
 
-function calculate(a, b, operation) {
-  return operation(a, b);
+// function calculate(a, b, operation) {
+//   return operation(a, b);
+// }
+
+// const subtract = (x, y) => x - y;
+
+// console.log(calculate(6, 3, subtract)); // 3
+// console.log(calculate(6, 3, (x, y) => x * y)); // 18
+// console.log(calculate(6, 3, (x, y) => x / y)); // 2
+
+// ===== Phase 6.5 (খ): Repeat =====
+// নাম: repeat · ঢোকে: n (কতবার) আর fn (কী করবে) · বের হয়: কিছু না, শুধু fn চালায়
+
+function repeat(n, fn) {
+  for (let i = 0; i < n; i++) {
+    fn(i); // প্রতি ঘুরে callback-কে ডাকো, ঘুরের নম্বর পাঠিয়ে
+  }
 }
 
-const subtract = (x, y) => x - y;
-
-console.log(calculate(6, 3, subtract)); // 3
-console.log(calculate(6, 3, (x, y) => x * y)); // 18
-console.log(calculate(6, 3, (x, y) => x / y)); // 2
+repeat(3, (i) => console.log("hi", i));
+// hi 0
+// hi 1
+// hi 2
