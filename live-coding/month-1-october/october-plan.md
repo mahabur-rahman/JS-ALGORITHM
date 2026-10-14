@@ -561,7 +561,7 @@ Example 3: Input: nums = []               Output: -1
 - **P6.2c · Arrow Returning Object** 🟢 <span style="color:red">**🔴 DONE**</span> — `(name) => { name: name }` → `undefined`; `({ ... })` দিলে object।
 - **P6.2d · Make Point** 🟢 <span style="color:red">**🔴 DONE**</span> — `makePoint(2, 5)` → `{ x: 2, y: 5 }`; shorthand `{ x, y }` কেন চলে?
 
-**Phase 6.3 — Parameters: default · rest · destructuring** 🟡
+**Phase 6.3 — Parameters: default · rest · destructuring** <span style="color:red">**🔴 DONE**</span>
 - (ক) **Default** <span style="color:red">**🔴 DONE**</span> — 🌍 চিনি না বললে দোকানদার ১ চামচ দেয়। default বসে শুধু `undefined`-এ, `null`-এ না।
   - **P6.3a · Greet Guest** 🟢 <span style="color:red">**🔴 DONE**</span> — `greet()` → `"Hello, Guest"`; `greet(null)` → `"Hello, null"`
 - (খ) **Rest `...`** <span style="color:red">**🔴 DONE**</span> — 🌍 বাজারের ব্যাগ: যত জিনিস, সব এক ব্যাগে। আসল array; সবসময় শেষে।
@@ -569,9 +569,9 @@ Example 3: Input: nums = []               Output: -1
   - **P6.3c · 2703. Return Length of Arguments Passed** 🟢 <span style="color:red">**🔴 DONE**</span> · 🔗 [LC 2703](https://leetcode.com/problems/return-length-of-arguments-passed/) (হুবহু) — **Accepted** ✅
     - **EN:** Write a function `argumentsLength` that returns the count of arguments passed to it. `argumentsLength({}, null, "3")` → `3`
     - **বাংলা:** যতগুলো argument দেওয়া হয়েছে, সেই সংখ্যা ফেরত দাও। Time O(1) · Space O(n)
-- (গ) **Destructuring parameter** 🟡 — 🌍 courier-এর প্যাকেট থেকে দরজাতেই দরকারি জিনিস বের করা। `({ name, age = 18 } = {})`
+- (গ) **Destructuring parameter** <span style="color:red">**🔴 DONE**</span> — 🌍 courier-এর প্যাকেট থেকে দরজাতেই দরকারি জিনিস বের করা। `({ name, age = 18 } = {})`
   - **P6.3d · Show User** 🟢 <span style="color:red">**🔴 DONE**</span> — `showUser()` → TypeError কেন; `= {}` দিয়ে ঠিক।
-  - **P6.3e · Describe Product** 🟢 ⬜
+  - **P6.3e · Describe Product** 🟢 <span style="color:red">**🔴 DONE**</span>
     - 🌍 online দোকানের product card।
     - **EN:** Write `describeProduct({ title, price })` that returns `"<title> costs <price>"`. Missing `price` → `0`. Called with nothing → `"Unknown costs 0"`.
     ```
@@ -581,18 +581,18 @@ Example 3: Input: nums = []               Output: -1
     ```
     - **বাংলা:** product-এর নাম আর দাম দিয়ে বাক্য বানাও; দাম না থাকলে 0, কিছু না দিলেও crash না।
 
-**Phase 6.4 — Pure function বনাম side effect** ⬜
+**Phase 6.4 — Pure function বনাম side effect** <span style="color:red">**🔴 DONE**</span>
 🌍 pure = ক্যালকুলেটর: একই input → সবসময় একই output, বাইরের কিছু বদলায় না। side effect = এমন মেশিন যেটা কাজের সাথে বাইরের খাতাও বদলে দেয়।
-- **P6.4a · Spot the Impure** 🟢 ⬜
+- **P6.4a · Spot the Impure** 🟢 <span style="color:red">**🔴 DONE**</span>
   - **EN:** Which is pure? `let total = 0; function addToTotal(x) { total += x; return total; }` vs `function add(a, b) { return a + b; }`. Call each twice with the same input and compare outputs.
   - **বাংলা:** কোনটা একই input-এ আলাদা উত্তর দেয়? কেন?
-- **P6.4b · Pure Tax** 🟢 ⬜
+- **P6.4b · Pure Tax** 🟢 <span style="color:red">**🔴 DONE**</span>
   - 🌍 দামে ১৫% VAT।
   - **EN:** Write a pure `withVat(price)` that returns `price * 1.15` without changing any outside variable. Then write an impure version that pushes to an outside `log` array, and explain why it's harder to test.
 
-**Phase 6.5 — Callback আর Higher-Order Function** ⬜
+**Phase 6.5 — Callback আর Higher-Order Function** 🟡 চলছে
 🌍 রেস্টুরেন্টে order দিয়ে ফোন নম্বর রেখে আসা — খাবার হলে **তারা তোমাকে ফোন করবে** (callback)। function-কে value-এর মতো পাঠানো যায়, ফেরতও দেওয়া যায়।
-- **P6.5a · Calculate With Operation** 🟢 ⬜
+- **P6.5a · Calculate With Operation** 🟢 <span style="color:red">**🔴 DONE**</span>
   - **EN:** Write `calculate(a, b, op)` where `op` is a function. `calculate(6, 3, (x, y) => x - y)` → `3`; with multiply → `18`.
   - **বাংলা:** কোন হিসাব হবে সেটা function হিসেবে পাঠাও।
 - **P6.5b · Repeat** 🟢 ⬜

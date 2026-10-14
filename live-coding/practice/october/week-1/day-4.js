@@ -122,7 +122,6 @@
 // console.log(argumentsLength({}, null, "3"));
 // console.log(argumentsLength());
 
-
 // function showUser({ name, age = 18 } = {}) {
 //   return name + " is " + age;
 // }
@@ -131,5 +130,69 @@
 // console.log(showUser({ name: "Karim" }));
 // console.log(showUser())
 
+// function describeProduct({ title = "Unknown", price = 0 } = {}) {
+//   return `${title} costs ${price}`;
+// }
+
+// const product1 = { title: "Pen", price: 100 };
+// const product2 = { title: "Book" };
+
+// console.log(describeProduct(product1));
+// console.log(describeProduct(product2));
+// console.log(describeProduct());
 
 
+// let total = 0;
+// function addToTotal(x) {
+//   total += x;          
+//   return total;
+// }
+
+// function add(a, b) {
+//   return a + b;        
+// }
+
+// console.log(addToTotal(5), addToTotal(5));
+// console.log(add(2, 3), add(2, 3));
+
+
+// pure function 
+
+
+// Pure function
+// function withVat(price) {
+//   return Math.round(price * 1.15) / 100;
+// }
+
+// console.log(withVat(100));
+// console.log(withVat(100));
+
+// // Impure function
+// const log = [];
+
+
+// function withVatLogged(price){
+//  const result = Math.round(price * 1.15) / 100;
+
+//  log.push(result)
+
+//  return result
+// }
+
+// console.log(withVatLogged(100))
+
+// console.log(withVatLogged(100))
+
+// console.log("log : ", log)
+// ===== Phase 6.5 (ক): Callback =====
+// Callback কী? — যে function অন্য একটা function-কে value হিসেবে পাঠানো হয়, আর সেই function পরে দরকার মতো তাকে ডাকে।
+
+function calculate(a, b, operation) {
+  return operation(a, b);
+}
+
+const subtract = (x, y) => x - y;
+
+console.log(calculate(6, 3, subtract)); // 3
+console.log(calculate(6, 3, (x, y) => x * y)); // 18
+console.log(calculate(6, 3, (x, y) => x / y)); // 2
