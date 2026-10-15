@@ -141,23 +141,20 @@
 // console.log(describeProduct(product2));
 // console.log(describeProduct());
 
-
 // let total = 0;
 // function addToTotal(x) {
-//   total += x;          
+//   total += x;
 //   return total;
 // }
 
 // function add(a, b) {
-//   return a + b;        
+//   return a + b;
 // }
 
 // console.log(addToTotal(5), addToTotal(5));
 // console.log(add(2, 3), add(2, 3));
 
-
-// pure function 
-
+// pure function
 
 // Pure function
 // function withVat(price) {
@@ -169,7 +166,6 @@
 
 // // Impure function
 // const log = [];
-
 
 // function withVatLogged(price){
 //  const result = Math.round(price * 1.15) / 100;
@@ -208,3 +204,68 @@
 
 // repeat(3, (i) => console.log("hi", i));
 
+// function makeGreeter(greeting) {
+//   return function (name) {
+//     return greeting + ", " + name;
+//   };
+// }
+
+// const sayHello = makeGreeter("Hello");
+// const sayHi = makeGreeter("Hi");
+
+// console.log(sayHello("Rahim"));
+// console.log(sayHi("Apple"));
+// console.log(typeof sayHello);
+
+// /**
+//  * @return {Function}
+//  */
+// var createHelloWorld = function () {
+//   return () => "Hello World";
+// };
+
+// const f = createHelloWorld();
+// console.log(f());
+
+// console.log(f({}, null, 42));
+
+// function isAdult(person) {
+//   return person.age >= 18;
+// }
+
+// function isCitizen(person) {
+//   return person.country === "BD";
+// }
+
+// function canVote(person) {
+//   return isAdult(person) && isCitizen(person);
+// }
+
+// console.log(canVote({ age: 20, country: "BD" }));
+// console.log(canVote({ age: 16, country: "BD" }));
+// console.log(canVote({ age: 30, country: "IN" }));
+
+// function hasLength4(pin) {
+//   return pin.length === 4;
+// }
+
+// function allDigits(pin) {
+//   for (const ch of pin) {
+//     // console.log(typeof ch) // sting
+
+//     if (ch < "0" || ch > "9") {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// function isValidPin(pin) {
+//   return hasLength4(pin) && allDigits(pin);
+// }
+
+// console.log(isValidPin("1234"));
+// console.log(isValidPin("12a4"));
+// console.log(isValidPin("123"));
+// console.log(isValidPin("12345"));
