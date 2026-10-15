@@ -590,7 +590,7 @@ Example 3: Input: nums = []               Output: -1
   - 🌍 দামে ১৫% VAT।
   - **EN:** Write a pure `withVat(price)` that returns `price * 1.15` without changing any outside variable. Then write an impure version that pushes to an outside `log` array, and explain why it's harder to test.
 
-**Phase 6.5 — Callback আর Higher-Order Function** 🟡 চলছে
+**Phase 6.5 — Callback আর Higher-Order Function** <span style="color:red">**🔴 DONE**</span>
 🌍 রেস্টুরেন্টে order দিয়ে ফোন নম্বর রেখে আসা — খাবার হলে **তারা তোমাকে ফোন করবে** (callback)। function-কে value-এর মতো পাঠানো যায়, ফেরতও দেওয়া যায়।
 - **P6.5a · Calculate With Operation** 🟢 <span style="color:red">**🔴 DONE**</span>
   - **EN:** Write `calculate(a, b, op)` where `op` is a function. `calculate(6, 3, (x, y) => x - y)` → `3`; with multiply → `18`.
@@ -598,7 +598,7 @@ Example 3: Input: nums = []               Output: -1
 - **P6.5b · Repeat** 🟢 <span style="color:red">**🔴 DONE**</span>
   - 🌍 alarm-কে বলা "৩ বার বাজো"।
   - **EN:** Write `repeat(n, fn)` that calls `fn(i)` for `i = 0..n-1`. `repeat(3, i => console.log("hi", i))` → `hi 0`, `hi 1`, `hi 2`.
-- **P6.5c · 2667. Create Hello World Function** 🟢 ⬜ · 🔗 [LC 2667](https://leetcode.com/problems/create-hello-world-function/) (হুবহু)
+- **P6.5c · 2667. Create Hello World Function** 🟢 <span style="color:red">**🔴 DONE**</span> · 🔗 [LC 2667](https://leetcode.com/problems/create-hello-world-function/) (হুবহু)
   - **EN:** Write a function `createHelloWorld`. It should return a new function that always returns `"Hello World"`.
   ```
   Example 1: Input: args = []         Output: "Hello World"
@@ -607,9 +607,9 @@ Example 3: Input: nums = []               Output: -1
   ```
   - **বাংলা:** এমন function লেখো যেটা **একটা function ফেরত দেয়**, আর সেই function যা-ই পাক, সবসময় "Hello World" দেয়।
 
-**Phase 6.6 — বড় কাজকে helper-এ ভাগ করা** ⬜
+**Phase 6.6 — বড় কাজকে helper-এ ভাগ করা** <span style="color:red">**🔴 DONE**</span>
 🌍 রান্না: "ভাত রান্না" না ভেবে — চাল ধোয়া, পানি দেওয়া, চুলায় বসানো — প্রতিটা আলাদা ছোট কাজ।
-- **P6.6 · Valid PIN** 🟢 ⬜
+- **P6.6 · Valid PIN** 🟢 <span style="color:red">**🔴 DONE**</span>
   - 🌍 ATM PIN যাচাই।
   - **EN:** A PIN is valid if it has exactly 4 characters and every character is a digit. Write helpers `hasLength4(pin)` and `allDigits(pin)`, then `isValidPin(pin)` that uses both. `"1234"` → `true`, `"12a4"` → `false`, `"123"` → `false`.
   - **বাংলা:** আগে প্রতিটা নিয়ম আলাদা helper, তারপর main function শুধু helper-গুলো ডাকবে।
@@ -726,7 +726,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 **🧠 ভাবনা:** খালি array-তে কী? (init)
 
 ### 🔗 Functions বোঝার জন্য আরো LeetCode
-[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) · [2629 Function Composition](https://leetcode.com/problems/function-composition/) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
+[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
 
 ### 🚪 Gate — Topic 6 ⬜
 ৩–৫টা concept প্রশ্ন + ১টা নাম-ছাড়া ছোট problem, একা, hint ছাড়া।

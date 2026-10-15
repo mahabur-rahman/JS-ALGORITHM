@@ -20,9 +20,9 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D4 — Functions (১৩–১৪ অক্টো) · Phase 6.1–6.4 ✅ · 6.5 চলছে (P6.5a, P6.5b ✅) · LC 2703 Accepted ✅ |
-| **পরের কাজ** | `repeat` ঢেকে নিজে আবার লেখা (২ মিনিট) → P6.5c LC 2667 Create Hello World → Phase 6.6 helper → 6.7 recursion → ★ 6.1–6.4 → Topic 6 Gate · (বাকি: Topic 5 Gate যাচাই — `countIncreases` নিজে টাইপ + ৩টা "কেন") |
-| **পিছিয়ে আছি?** | ~৫ দিন (১৩ অক্টো = ক্যালেন্ডারে W2 D2, শুরু হলো W1 D4) — ○ কমিয়ে ধরে ফেলব |
+| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN-এ সর্বশেষ কাজ থেমেছিল (ব্যবহারকারীর নিশ্চিতকরণ) · October plan-এ Phase 6.5–6.6 ও LC 2667 DONE · LC 2703 Accepted ✅ |
+| **পরের কাজ** | P6.6 Valid PIN code ফাঁকা editor থেকে নিজে লেখা/যাচাই → Phase 6.7 recursion (base case, countdown, sumTo) → ★ Functions problem → Topic 6 Gate · (বাকি: Topic 5 Gate যাচাই — `countIncreases` নিজে টাইপ + ৩টা "কেন") |
+| **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D4। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ⚠️ Topic 5 Loops (১৩ অক্টো) — উত্তর ঠিক, কিন্তু নিজে-লেখা যাচাই বাকি (D4 warm-up-এ) |
 | **★ শেষ (মোট)** | 13 |
 | **★ Day +7 re-solve পাস** | 0 |
@@ -39,7 +39,7 @@
 | ৭ অক্টো | W1 D1 (৩/৩) ✅ | ★ 2.1 getType · Topic 2 Gate ✅ | 4 / 4 | Hint 2 (getType-এ value-এর বদলে নাম ফেরত) | — | `return` value বনাম type-এর নাম; guard-এর ক্রম |
 | ৭–৯ অক্টো | W1 D2 ✅ | Warm-up Apply Discount · Topic 3 (৫ phase) + Gate ✅ · Topic 4 (৪ phase) · ★ getPort, canAccess, FizzBuzz, Grade, Leap Year · Topic 4 Gate ✅ | 5 / 5 | Hint 3 (Apply Discount: `price - percent` আর shorthand `result`) | — | shorthand-এ ভুল key (দ্বিতীয়বার); percent সূত্র; `&&` value ফেরত দেয় → `Boolean()`; `/` বনাম `%`; output string হুবহু (`FizzBuzz`); NaN-এর ফাঁদ (`typeof NaN` = number, `!== NaN` সবসময় true → `Number.isNaN`); `return` ছাড়া value হারায়; যাচাই প্রশ্নের "কেন" অংশ এখনো বাদ পড়ছে |
 | ৯–১৩ অক্টো | W1 D3 ✅ | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth, 5.4 First Descent · Topic 5 Gate (উত্তর ঠিক, যাচাই বাকি) | 4 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে; Gate-এর উত্তর chat-এ paste হয়েছে, `countIncreases` file-এ নিজে টাইপ হয়নি আর "কেন" follow-up বাদ গেছে |
-| ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1 (৩ উপায়, hoisting, arrow ফাঁদ) · 6.2 return বনাম log · 6.3 default/rest/destructuring · 6.4 pure বনাম side effect · 6.5 callback (calculate, repeat) · LC 2703 ✅ | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a আর P6.5b Claude লিখে দিয়েছে (নিজে আবার লেখা বাকি) |
+| ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1–6.4 · 6.5 callback (calculate, repeat) · LC 2703 ✅ · October plan-এ 6.5–6.6 ও LC 2667 DONE | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a/P6.5b নিজের হাতে আবার লেখা বাকি |
 
 ---
 
@@ -136,3 +136,4 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 |---|---|---|
 | ৪ অক্টোবর | Plan তৈরি — শুরু ৫ অক্টোবর (সোম) | — |
 | ১৩ অক্টোবর | নিয়ম ৬–৮ যোগ (real-life example, solve-এর আগে ভাবনা, complexity মাপার পদ্ধতি) · `LEARNED.md` তৈরি · Claude `practice/`-এ কিছু লিখবে না | তোমার অনুরোধ |
+| ১৫ অক্টোবর | Tracker ও Learned-কে W1 D4-এর সাম্প্রতিক plan marker-এর সাথে sync · একবারে একটি concept/problem ধাপে শেখানোর পছন্দ নথিভুক্ত · P6.6 Valid PIN-এ resume point নিশ্চিত | তোমার অনুরোধ |

@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৪ অক্টোবর ২০২৬ · W1 D4 (Functions) — Phase 6.1–6.4 শেষ, 6.5 চলছে
+**শেষ update:** ১৫ অক্টোবর ২০২৬ · W1 D4 (Functions) — October plan-এ Phase 6.1–6.6 ও LC 2667 শেষ চিহ্নিত; Topic 6 Gate বাকি
 
 ---
 
@@ -23,6 +23,15 @@
 | 7 | **🔁 Re-solve** | Day +1, +3, +7 — ফাঁকা editor থেকে |
 
 Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে একটা level, 0–7)।
+
+### Session-এ শেখানোর পছন্দ
+
+- একবারে **একটি concept** এবং **একটি problem-এর একটি ছোট ধাপ**; পুরো topic বা solution একসাথে নয়।
+- Problem দেওয়ার আগে English LeetCode-ধাঁচের statement, সহজ বাংলা সংস্করণ, LeetCode link (মিলে গেলে), এবং বাস্তব জীবনের উদাহরণ দাও।
+- সমাধানের আগে problem ভাঙা শেখাও: input/output → ছোট উদাহরণ → হাতে সমাধান → brute force → bottleneck/pattern → pseudocode → এক লাইন করে code।
+- প্রতিটি ধাপে আগে আমাকে পরের সিদ্ধান্ত বা লাইন অনুমান করতে দাও; ভুল হলে output ও কারণ দিয়ে বোঝাও, একবারে একটি hint দাও।
+- প্রতিটি ★ problem শেষে test, edge case, Time/Space কীভাবে মাপা হলো, এবং বিকল্প পদ্ধতি আলোচনা করো। পূর্ণ সমাধান দেখালে আমি নিজে file-এ টাইপ করে চালাব।
+- লক্ষ্য problem-এর সংখ্যা নয়; pattern বুঝে অচেনা problem-এ নিজে চিন্তা শুরু করতে পারা। Gate ও প্রয়োজনীয় re-solve পাস না করে topic এগোবে না।
 
 ---
 
@@ -113,7 +122,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 5.4 First Descent Index | Search → early return; `i < n - 1`; `[]`-এ loop একবারও চলে না | O(n) — worst case n − 1 তুলনা | O(1) — শুধু `i` |
 | Gate: `countIncreases` | আগেরটার সাথে তুলনা → loop `i = 1` থেকে (`counts[i - 1]` লাগে) | O(n) — n − 1 তুলনা | O(1) — শুধু `count` |
 
-### Topic 6 — Functions 🔄 (Phase 6.1–6.4 ✅, 6.5 চলছে)
+### Topic 6 — Functions 🔄 (Phase 6.1–6.6 plan-এ ✅; Gate বাকি)
 
 **মূল কথা:** function = জুস মেশিন — input → কাজ → `return` output। লেখার আগে ৩ প্রশ্ন: **নাম? কী ঢোকে? কী বের হয়?**
 
@@ -135,6 +144,8 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | P6.4b `withVat` | pure বনাম impure (`log.push`); দশমিক round | O(1) | O(1) / impure-এ log বাড়ে |
 | P6.5a `calculate` | function-কে value হিসেবে পাঠানো | O(1) | O(1) |
 | P6.5b `repeat(n, fn)` | callback n বার, ঘুরের নম্বর পাঠিয়ে | O(n) | O(1) |
+| LC 2667 `createHelloWorld` | outer function inner function ফেরত দেয়; inner function arguments উপেক্ষা করে স্থির string ফেরায় | O(1) প্রতি call | O(1) |
+| P6.6 `isValidPin` | বড় কাজকে `hasLength4` ও `allDigits` helper-এ ভাঙা; `allDigits` একা O(n), কিন্তু `isValidPin`-এ ঠিক ৪ অক্ষর হলেই scan হওয়ায় মোট O(1) | O(1) |
 
 ---
 
@@ -154,7 +165,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
-| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | 🔄 চলছে (6.5) |
+| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | 🔄 চলছে — Phase 6.1–6.6 plan-এ শেষ; 6.7 recursion, ★ problem ও Gate বাকি |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
