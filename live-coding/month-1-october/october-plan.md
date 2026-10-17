@@ -617,7 +617,7 @@ Example 3: Input: nums = []               Output: -1
 
 **Phase 6.7 — Recursion-এর পরিচয়** ⬜
 🌍 দুটো আয়না মুখোমুখি — ভেতরে ভেতরে একই ছবি। কিন্তু function-কে কোথাও **থামতে** হয় (base case)।
-- **P6.7a · Countdown Recursive** 🟢 ⬜ — **EN:** `countDown(3)` prints `3 2 1 Done!` using recursion, no loop. **বাংলা:** base case কী? (n === 0)
+- **P6.7a · Countdown Recursive** 🟢 🔴 **DONE** — **EN:** `countDown(3)` prints `3 2 1 Done!` using recursion, no loop. **বাংলা:** base case কী? (n === 0)
 - **P6.7b · Sum to N** 🟢 ⬜ — **EN:** `sumTo(4)` → `10` (4+3+2+1) recursively. **বাংলা:** `sumTo(n) = n + sumTo(n - 1)` — কোথায় থামবে?
 
 ### ★ মূল problem (concept পরিষ্কার হলে তবেই)

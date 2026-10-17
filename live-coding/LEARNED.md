@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৫ অক্টোবর ২০২৬ · W1 D4 (Functions) — October plan-এ Phase 6.1–6.6 ও LC 2667 শেষ চিহ্নিত; Topic 6 Gate বাকি
+**শেষ update:** ১৭ অক্টোবর ২০২৬ · W1 D4 (Functions) — P6.7a Countdown করা হয়েছে; P6.7b Sum to N code review এবং ★6.1 `sum(...nums)` লেখা হয়েছে; দুটির runtime/edge-case output নিশ্চিত করা বাকি
 
 ---
 
@@ -146,6 +146,9 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | P6.5b `repeat(n, fn)` | callback n বার, ঘুরের নম্বর পাঠিয়ে | O(n) | O(1) |
 | LC 2667 `createHelloWorld` | outer function inner function ফেরত দেয়; inner function arguments উপেক্ষা করে স্থির string ফেরায় | O(1) প্রতি call | O(1) |
 | P6.6 `isValidPin` | বড় কাজকে `hasLength4` ও `allDigits` helper-এ ভাঙা; `allDigits` একা O(n), কিন্তু `isValidPin`-এ ঠিক ৪ অক্ষর হলেই scan হওয়ায় মোট O(1) | O(1) |
+| P6.7a `countDown` | base case `n === 0`; প্রতিবার `n - 1` দিয়ে self-call; সর্বোচ্চ n+1 call stack-এ | O(n) | O(n) |
+| P6.7b `sumTo` | `n + sumTo(n - 1)`; base case 0; code review ঠিক, `sumTo(4)` runtime output নিশ্চিত বাকি | O(n) | O(n) call stack |
+| ★6.1 `sum(...nums)` | rest parameter সব argument-কে array-তে রাখে; accumulator 0 থেকে শুরু, loop-এ যোগ; খালি input-এ 0 হওয়ার কথা, runtime check বাকি | O(n) | O(n) rest array |
 
 ---
 

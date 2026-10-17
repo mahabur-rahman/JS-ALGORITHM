@@ -251,7 +251,7 @@
 
 // function allDigits(pin) {
 //   for (const ch of pin) {
-//     // console.log(typeof ch) // sting
+// console.log(typeof ch) // sting
 
 //     if (ch < "0" || ch > "9") {
 //       return false;
@@ -269,3 +269,60 @@
 // console.log(isValidPin("12a4"));
 // console.log(isValidPin("123"));
 // console.log(isValidPin("12345"));
+
+// P6.7a. Recursive Countdown
+
+// /**
+//  * @param {number} n
+//  * @return {void}
+//  */
+// function countDown(n) {
+//   if (n === 0) {
+//     console.log("Done");
+//     return;
+//   }
+
+//   console.log(n);
+//   countDown(n - 1);
+// }
+
+// countDown(3);
+
+// P6.7b. Sum to N Using Recursion
+
+// /**
+//  * @param {number} n
+//  * @return {number}
+//  */
+// function sumTo(n) {
+
+//   if (n === 0) return 0
+
+//   console.log('Number : ', n);
+//   return n + sumTo(n - 1);
+
+// }
+
+// // console.log(sumTo(4));
+// // console.log(sumTo(3))
+// // console.log(sumTo(1))
+// console.log(sumTo(0))
+
+// Sum of Any Number of Arguments
+
+/**
+ * @param {...number} nums
+ * @return {number}
+ */
+function sum(...nums) {
+  // ...nums collects all arguments into an array, e.g. [5, 5, 6]
+  let total = 0;
+
+  for (const num of nums) {
+    total += num;
+  }
+
+  return total;
+}
+
+console.log(sum(5, 5, 6));

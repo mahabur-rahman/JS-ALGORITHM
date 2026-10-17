@@ -20,8 +20,8 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN-এ সর্বশেষ কাজ থেমেছিল (ব্যবহারকারীর নিশ্চিতকরণ) · October plan-এ Phase 6.5–6.6 ও LC 2667 DONE · LC 2703 Accepted ✅ |
-| **পরের কাজ** | P6.6 Valid PIN code ফাঁকা editor থেকে নিজে লেখা/যাচাই → Phase 6.7 recursion (base case, countdown, sumTo) → ★ Functions problem → Topic 6 Gate · (বাকি: Topic 5 Gate যাচাই — `countIncreases` নিজে টাইপ + ৩টা "কেন") |
+| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN সম্পন্ন · P6.7a Countdown-এর output ও base case যাচাই ✅ · P6.7b Sum to N-এর code review হয়েছে; runtime output নিশ্চিত করা বাকি · ★6.1 `sum(...nums)` লেখা হয়েছে; empty input যাচাই বাকি · LC 2703 Accepted ✅ |
+| **পরের কাজ** | `sumTo(4)`-এর output `10` এবং `sum()`-এর output `0` চালিয়ে নিশ্চিত করা → তারপর ★6.2a LC 2635 Map → ★6.2b LC 2634 Filter → ★6.3 Apply N Times → ★6.4 Check Password → Topic 6 Gate · পাশাপাশি বাকি Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" |
 | **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D4। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ⚠️ Topic 5 Loops (১৩ অক্টো) — উত্তর ঠিক, কিন্তু নিজে-লেখা যাচাই বাকি (D4 warm-up-এ) |
 | **★ শেষ (মোট)** | 13 |
@@ -40,6 +40,7 @@
 | ৭–৯ অক্টো | W1 D2 ✅ | Warm-up Apply Discount · Topic 3 (৫ phase) + Gate ✅ · Topic 4 (৪ phase) · ★ getPort, canAccess, FizzBuzz, Grade, Leap Year · Topic 4 Gate ✅ | 5 / 5 | Hint 3 (Apply Discount: `price - percent` আর shorthand `result`) | — | shorthand-এ ভুল key (দ্বিতীয়বার); percent সূত্র; `&&` value ফেরত দেয় → `Boolean()`; `/` বনাম `%`; output string হুবহু (`FizzBuzz`); NaN-এর ফাঁদ (`typeof NaN` = number, `!== NaN` সবসময় true → `Number.isNaN`); `return` ছাড়া value হারায়; যাচাই প্রশ্নের "কেন" অংশ এখনো বাদ পড়ছে |
 | ৯–১৩ অক্টো | W1 D3 ✅ | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth, 5.4 First Descent · Topic 5 Gate (উত্তর ঠিক, যাচাই বাকি) | 4 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে; Gate-এর উত্তর chat-এ paste হয়েছে, `countIncreases` file-এ নিজে টাইপ হয়নি আর "কেন" follow-up বাদ গেছে |
 | ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1–6.4 · 6.5 callback (calculate, repeat) · LC 2703 ✅ · October plan-এ 6.5–6.6 ও LC 2667 DONE | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a/P6.5b নিজের হাতে আবার লেখা বাকি |
+| ১৫–১৭ অক্টো | W1 D4 (চলছে) | P6.6 Valid PIN নিশ্চিত · P6.7a Countdown · P6.7b Sum to N · ★6.1 `sum(...nums)` code লেখা | 0 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `sumTo(4)` ও `sum()` edge case-এর runtime output এখনো নিশ্চিত করতে হবে |
 
 ---
 
