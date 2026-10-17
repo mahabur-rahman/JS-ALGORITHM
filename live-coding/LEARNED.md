@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৭ অক্টোবর ২০২৬ · W1 D4 (Functions) — P6.7a Countdown, P6.7b Sum to N, ★6.1 `sum(...nums)`, ★6.2a LC 2635 সমাধান সম্পন্ন; পরের problem ★6.2b (LC 2634)
+**শেষ update:** ১৭ অক্টোবর ২০২৬ · W1 D4 (Functions) — P6.7a Countdown, P6.7b Sum to N, ★6.1 `sum(...nums)`, ★6.2a LC 2635, ★6.2b LC 2634 সমাধান; LC 2634 submission result নথিভুক্ত করা বাকি
 
 ---
 
@@ -150,6 +150,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | P6.7b `sumTo` | `n + sumTo(n - 1)`; base case 0; `sumTo(4) → 10` যাচাই | O(n) | O(n) call stack |
 | ★6.1 `sum(...nums)` | rest parameter সব argument-কে array-তে রাখে; accumulator 0 থেকে শুরু, loop-এ যোগ; খালি input-এ 0 যাচাই | O(n) | O(n) rest array |
 | ★6.2a LC 2635 `map` | নতুন result array বানিয়ে প্রতিটি `arr[i]`-এর জন্য `fn(arr[i], i)` চালানো; callback-এ value ও index পাঠানো | O(n) | O(n) result array |
+| ★6.2b LC 2634 `filter` | `fn(arr[i], i)` truthy হলে মূল element নতুন array-তে রাখা; `0`/`false`/`""` হলে বাদ | O(n) | O(k) output array; worst O(n) |
 
 ---
 

@@ -359,3 +359,30 @@
 // };
 
 // console.log(map(arr, fn)); // [1, 3, 5]
+
+// 2634. Filter Elements from Array
+
+// /**
+//  * @param {number[]} arr
+//  * @param {Function} fn
+//  * @return {number[]}
+//  */
+// var filter = function (arr, fn) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (fn(arr[i], i)) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result;
+// };
+
+// // Example 3
+// const arr = [-2, -1, 0, 1, 2];
+
+// const fn = n => n + 1;
+
+// console.log(filter(arr, fn));
+// // Output: [-2, 0, 1, 2]

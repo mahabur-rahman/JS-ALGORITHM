@@ -657,7 +657,7 @@ Explanation: fn receives the element and its index.
 **🧠 ভাবনা:** ৬ কাজের কোনটা? (Build) → loop-এর আগে `result = []`। `fn`-কে কয়টা জিনিস পাঠাব?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ 6.2b · 2634. Filter Elements from Array 🟢 Easy ⬜
+#### ★ 6.2b · 2634. Filter Elements from Array 🟢 Easy 🔴 **DONE**
 🔗 [LC 2634](https://leetcode.com/problems/filter-elements-from-array/) (হুবহু)
 🌍 **Real-life:** online shop-এ "৫০০ টাকার নিচে" filter।
 
