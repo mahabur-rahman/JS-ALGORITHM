@@ -310,19 +310,52 @@
 
 // Sum of Any Number of Arguments
 
-/**
- * @param {...number} nums
- * @return {number}
- */
-function sum(...nums) {
-  // ...nums collects all arguments into an array, e.g. [5, 5, 6]
-  let total = 0;
+// /**
+//  * @param {...number} nums
+//  * @return {number}
+//  */
+// function sum(...nums) {
+//   // ...nums collects all arguments into an array, e.g. [5, 5, 6]
+//   let total = 0;
 
-  for (const num of nums) {
-    total += num;
-  }
+//   for (const num of nums) {
+//     total += num;
+//   }
 
-  return total;
-}
+//   return total;
+// }
 
-console.log(sum(5, 5, 6));
+// console.log(sum(5, 5, 6));
+
+// 2635. Apply Transform Over Each Element in Array
+// /**
+//  * @param {number[]} arr
+//  * @param {Function} fn
+//  * @return {number[]}
+//  */
+// var map = function (arr, fn) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     // result.push(fn(arr[i]));
+//     // console.log(fn(arr[i], i))
+//     result.push(fn(arr[i], i))
+//   }
+
+//   return result;
+// };
+
+// const arr = [1, 2, 3];
+
+// function fn(n) {
+//   return n + 1;
+// }
+
+// console.log(map(arr, fn));
+
+// const arr = [1, 2, 3];
+// const fn = function plusI(n, i) {
+//   return n + i;
+// };
+
+// console.log(map(arr, fn)); // [1, 3, 5]

@@ -618,11 +618,11 @@ Example 3: Input: nums = []               Output: -1
 **Phase 6.7 — Recursion-এর পরিচয়** ⬜
 🌍 দুটো আয়না মুখোমুখি — ভেতরে ভেতরে একই ছবি। কিন্তু function-কে কোথাও **থামতে** হয় (base case)।
 - **P6.7a · Countdown Recursive** 🟢 🔴 **DONE** — **EN:** `countDown(3)` prints `3 2 1 Done!` using recursion, no loop. **বাংলা:** base case কী? (n === 0)
-- **P6.7b · Sum to N** 🟢 ⬜ — **EN:** `sumTo(4)` → `10` (4+3+2+1) recursively. **বাংলা:** `sumTo(n) = n + sumTo(n - 1)` — কোথায় থামবে?
+- **P6.7b · Sum to N** 🟢 🔴 **DONE** — **EN:** `sumTo(4)` → `10` (4+3+2+1) recursively. **বাংলা:** `sumTo(n) = n + sumTo(n - 1)` — কোথায় থামবে?
 
 ### ★ মূল problem (concept পরিষ্কার হলে তবেই)
 
-#### ★ 6.1 · Sum of Any Number of Arguments 🟢 Easy ⬜
+#### ★ 6.1 · Sum of Any Number of Arguments 🟢 Easy 🔴 **DONE**
 🔗 কাছাকাছি: [LC 2703](https://leetcode.com/problems/return-length-of-arguments-passed/) (rest parameter)
 🌍 **Real-life:** দোকানের bill — যত item, সবার দাম যোগ।
 
@@ -638,7 +638,7 @@ Example 3: Input: sum()          Output: 0
 **🧠 ভাবনা:** ৬ মৌলিক কাজের কোনটা? (accumulation) → loop-এর আগে কী? খালি হলে loop চলে কি?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n) (rest array)
 
-#### ★ 6.2a · 2635. Apply Transform Over Each Element in Array 🟢 Easy ⬜
+#### ★ 6.2a · 2635. Apply Transform Over Each Element in Array 🟢 Easy 🔴 **DONE**
 🔗 [LC 2635](https://leetcode.com/problems/apply-transform-over-each-element-in-array/) (হুবহু)
 🌍 **Real-life:** দোকানের সব দামে ১০ টাকা যোগ — প্রতিটা item-এ একই কাজ।
 
