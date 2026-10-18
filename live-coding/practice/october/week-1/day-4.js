@@ -359,3 +359,234 @@
 // };
 
 // console.log(map(arr, fn)); // [1, 3, 5]
+
+// 2634. Filter Elements from Array
+
+// /**
+//  * @param {number[]} arr
+//  * @param {Function} fn
+//  * @return {number[]}
+//  */
+// var filter = function (arr, fn) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (fn(arr[i], i)) {
+//       result.push(arr[i]);
+//     }
+//   }
+
+//   return result;
+// };
+
+// // Example 3
+// const arr = [-2, -1, 0, 1, 2];
+
+// const fn = n => n + 1;
+
+// console.log(filter(arr, fn));
+// // Output: [-2, 0, 1, 2]
+
+// Function Signature
+
+// /**
+//  * @param {Function} fn
+//  * @param {number} n
+//  * @param {number} x
+//  * @return {number}
+//  */
+// var applyNTimes = function (fn, n, x) {
+//   let result = x;
+
+//   for (let i = 0; i < n; i++) {
+//     // console.log(result)
+//     result = fn(result);
+//   }
+
+//   return result;
+// };
+
+// // const fn = (x) => x * 2;
+
+// // console.log("final : ", applyNTimes(fn, 3, 1));
+// // fn = x => x * 2
+// // n = 3
+// // x = 1
+
+// const fn2 = (x) => x + 10;
+// const n2 = 0;
+// const x2 = 5;
+
+// console.log(applyNTimes(fn2, n2, x2)); // Expected: 5
+
+// 2629. Function Composition - LeetCode
+
+// /**
+//  * @param {Function[]} functions
+//  * @return {Function}
+//  */
+// var compose = function (functions) {
+//   return function (x) {
+//     // console.log('x : ', x )
+
+//     // console.log(functions.length)
+
+//     for (let i = functions.length - 1; i >= 0; i--) {
+//       // console.log(i)
+
+//       // console.log(functions[i])
+
+//       x = functions[i](x);
+//     }
+
+//     return x;
+//   };
+// };
+
+// const functions = [
+//   (x) => x + 1, // 65
+//   (x) => x * x, // 64
+//   (x) => 2 * x, // 8
+// ];
+
+// const result1 = compose(functions);
+
+// console.log(result1(4));
+
+// const functions2 = [
+//   x => 10 * x,
+//   x => 10 * x,
+//   x => 10 * x
+// ];
+
+// const result2 = compose(functions2);
+
+// console.log(result2(1)); // Expected: 1000
+
+// const functions3 = [];
+
+// const result3 = compose(functions3);
+
+// console.log(result3(42)); // Expected: 42
+
+// ★6.4 Check Password - LeetCode
+
+// Edge Case : --------------------------------
+// "length" — pw must have at least 8 characters.
+// "digit" — pw must contain at least one digit.
+// "uppercase" — pw must contain at least one uppercase letter.
+// "space" — pw must not contain a space.
+
+// --------------------------------
+
+/**
+ * @param {string} pw
+ * @return {string[]}
+ */
+// var checkPassword = function (pw) {
+//   const errors = [];
+
+//   function hasValidLength(pw){
+//     return pw.length >= 8
+//   }
+
+//   function hasDigit(pw){
+//     return /[0-9]/.test(pw)
+//   }
+
+//   function hasUppercase(pw){
+//     return /[A-Z]/.test(pw)
+//   }
+
+//   function hasNoSpace(pw){
+//     return !pw.includes(' ')
+//   }
+
+//   if(!hasValidLength(pw)){
+//     errors.push('length')
+//   }
+
+//   if(!hasDigit(pw)){
+//     errors.push('digit')
+//   }
+
+//   if(!hasUppercase(pw)){
+//     errors.push('uppercase')
+//   }
+
+//   if(!hasNoSpace(pw)){
+//     errors.push('space')
+//   }
+
+//   return errors;
+// };
+
+// Example 1
+// console.log(checkPassword("Hello"));
+// Output: ["length", "digit"]
+
+// Example 2
+// console.log(checkPassword("hello"));
+// Output: ["length", "digit", "uppercase"]
+
+// Example 3
+// console.log(checkPassword("Hello 1234"));
+// Output: ["space"]
+
+// Extra example
+// console.log(checkPassword("abc"));
+// Output: ["length", "digit", "uppercase"]
+
+// Extra example
+// console.log(checkPassword("PASSWORD123"));
+// Output: []
+
+// Gate Problem - Custom
+
+// /**
+//  * @param {number[]} prices
+//  * @return {{itemCount: number, totalPrice: number, hasPremiumItem: boolean}}
+//  */
+// function summarizePrices(prices) {
+//   let total = 0;
+
+//   let hasPremiumItem = false;
+
+//   for (const price of prices) {
+//     console.log(price);
+//     total = total + price;
+
+// check any item more than 100
+
+//     if (price >= 100) {
+//       hasPremiumItem = true;
+//     }
+//   }
+
+//   return {
+//     itemCount: prices.length,
+//     totalPrice : total,
+//     hasPremiumItem
+//   }
+// }
+
+// const prices = [25, 120, 40];
+// const price1 = [10, 20, 30];
+// const price2 = []
+
+// console.log(summarizePrices(price2));
+// function countIncreases(counts) {
+//   let count = 0;
+
+//   for (let i = 1; i < counts.length; i++) {
+//     if (counts[i] > counts[i - 1]) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(countIncreases([3, 5, 5, 2, 8])); // 2
+// console.log(countIncreases([4, 6, 9, 3]));    // 2
+// console.log(countIncreases([]));              // 0

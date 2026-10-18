@@ -20,10 +20,10 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN সম্পন্ন · P6.7a Countdown যাচাই ✅ · P6.7b Sum to N যাচাই ✅ · ★6.1 `sum(...nums)` যাচাই ✅ · ★6.2a LC 2635 solution লেখা ও review ✅ · LC 2703 Accepted ✅ |
-| **পরের কাজ** | ★6.2b LC 2634 Filter Elements → ★6.3 Apply N Times → ★6.4 Check Password → Topic 6 Gate · পাশাপাশি বাকি Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" |
-| **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D4। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
-| **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ⚠️ Topic 5 Loops (১৩ অক্টো) — উত্তর ঠিক, কিন্তু নিজে-লেখা যাচাই বাকি (D4 warm-up-এ) |
+| **বর্তমান দিন** | W1 D5 — Topic 7: Numbers & Math শুরু · W1 D4 সম্পূর্ণ; Topic 5 warm-up Gate ও Topic 6 Gate পাস ✅ · LC 2629 verdict ও LC 2634 submission result জানানো বাকি |
+| **পরের কাজ** | Phase 7.1 — Floating point, NaN, Infinity · P7.1 Price Total · আলাদা pending: LC 2629 verdict, LC 2634 submission result; LC 2299 related practice (rules আলাদা) |
+| **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D5। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
+| **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) |
 | **★ শেষ (মোট)** | 13 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
@@ -40,7 +40,7 @@
 | ৭–৯ অক্টো | W1 D2 ✅ | Warm-up Apply Discount · Topic 3 (৫ phase) + Gate ✅ · Topic 4 (৪ phase) · ★ getPort, canAccess, FizzBuzz, Grade, Leap Year · Topic 4 Gate ✅ | 5 / 5 | Hint 3 (Apply Discount: `price - percent` আর shorthand `result`) | — | shorthand-এ ভুল key (দ্বিতীয়বার); percent সূত্র; `&&` value ফেরত দেয় → `Boolean()`; `/` বনাম `%`; output string হুবহু (`FizzBuzz`); NaN-এর ফাঁদ (`typeof NaN` = number, `!== NaN` সবসময় true → `Number.isNaN`); `return` ছাড়া value হারায়; যাচাই প্রশ্নের "কেন" অংশ এখনো বাদ পড়ছে |
 | ৯–১৩ অক্টো | W1 D3 ✅ | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth, 5.4 First Descent · Topic 5 Gate (উত্তর ঠিক, যাচাই বাকি) | 4 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে; Gate-এর উত্তর chat-এ paste হয়েছে, `countIncreases` file-এ নিজে টাইপ হয়নি আর "কেন" follow-up বাদ গেছে |
 | ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1–6.4 · 6.5 callback (calculate, repeat) · LC 2703 ✅ · October plan-এ 6.5–6.6 ও LC 2667 DONE | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a/P6.5b নিজের হাতে আবার লেখা বাকি |
-| ১৫–১৭ অক্টো | W1 D4 (চলছে) | P6.6 Valid PIN নিশ্চিত · P6.7a Countdown ✅ · P6.7b Sum to N ✅ · ★6.1 `sum(...nums)` ✅ · ★6.2a LC 2635 solution ✅ | 2 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ প্রতিটি value-এর সঙ্গে index callback-এ পাঠানো |
+| ১৫–১৮ অক্টো | W1 D4 ✅ | P6.6 Valid PIN · P6.7a Countdown · P6.7b Sum to N · ★6.1–★6.4 · Topic 6 Gate · Topic 5 warm-up Gate সম্পন্ন | 4 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy; repeated function call-এ current value; output string exact match করতে হবে (`length` lowercase); loop boundary, nested-pair count ও early-return complexity যাচাই |
 
 ---
 
@@ -65,7 +65,7 @@
 | ✅ ৯ অক্টো | Variant: `push` return value — Phase 5.1-এর ছোট problem-এ | +3 |
 | W2 Strings/Arrays-এর পর | LeetCode 1154 Day of the Year (isLeapYear কাজে লাগবে) · HackerRank Grading Students | variant |
 | ১২–১৩ অক্টো | Variant: reference copy + typeof/null মিশ্র | +7 |
-| ১৪ অক্টো (D4 warm-up) | Topic 5 Gate যাচাই: `countIncreases` ফাঁকা editor থেকে নিজে টাইপ + ৩টা "কেন" (i = 0 থেকে শুরু করলে? · nested-এ 3+2+1+0 · firstDescent-এ n−1 আর best case) | Gate |
+| ✅ ১৮ অক্টো | Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" (loop boundary · nested pair count · firstDescent-এর best/worst case) | Gate |
 | ১৪ / ১৬ / ২০ অক্টো | 5.4 First Descent · 5.2 Good Pairs | +1 / +3 / +7 |
 
 ---
