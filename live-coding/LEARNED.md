@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 (Functions) — ★6.4 Check Password ব্যবহারকারীর নিশ্চিতকরণে সম্পন্ন; rule name-এর output হুবহু রাখতে হবে (`"length"` lowercase); এখন Topic 6 Gate বাকি
+**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 সম্পন্ন; W1 D5 Topic 7 Numbers & Math শুরু — প্রথমে Phase 7.1 Floating point, NaN, Infinity
 
 ---
 
@@ -103,7 +103,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 4.3 `isLeapYear` | `year % 400 === 0 \|\| (year % 4 === 0 && year % 100 !== 0)` | O(1) | O(1) |
 | Gate: `shipping` | guard → বড় সীমা আগে | O(1) | O(1) |
 
-### Topic 5 — Loops ⚠️ (Gate-এর উত্তর ঠিক, নিজে-লেখা যাচাই D4 warm-up-এ)
+### Topic 5 — Loops ✅ (Gate পাস ১৮ অক্টো)
 
 - **`for`-এর তিন সিদ্ধান্ত:** কোথা থেকে শুরু · কোথায় থামব · কত ধাপ (`i++`, `i += 2`, `i--`)।
 - **কোন loop কখন:** `for` (index লাগে) · `for...of` (শুধু value) · `while` (কতবার জানি না, যেমন বারবার অর্ধেক করা) · `for...in` (object key; array-তে index **string** হিসেবে আসে — এড়াও)।
@@ -120,9 +120,9 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 5.2 Good Pairs (LC 1512) | pair loop `j = i + 1` | O(n²) — `n(n-1)/2` তুলনা | O(1) |
 | 5.3 Richest Wealth (LC 1672) | row-এর sum বাইরের loop-এর ভেতরে reset | O(m × n) — m row × n column | O(1) |
 | 5.4 First Descent Index | Search → early return; `i < n - 1`; `[]`-এ loop একবারও চলে না | O(n) — worst case n − 1 তুলনা | O(1) — শুধু `i` |
-| Gate: `countIncreases` | আগেরটার সাথে তুলনা → loop `i = 1` থেকে (`counts[i - 1]` লাগে) | O(n) — n − 1 তুলনা | O(1) — শুধু `count` |
+| Gate: `countIncreases` | প্রথমটির আগের value নেই, তাই loop `i = 1` থেকে; `i = 0` হলে `counts[-1]` = `undefined` | O(n) — n − 1 তুলনা | O(1) — শুধু `count` |
 
-### Topic 6 — Functions 🔄 (Phase 6.1–6.6 plan-এ ✅; Gate বাকি)
+### Topic 6 — Functions ✅ (Gate পাস ১৮ অক্টো)
 
 **মূল কথা:** function = জুস মেশিন — input → কাজ → `return` output। লেখার আগে ৩ প্রশ্ন: **নাম? কী ঢোকে? কী বের হয়?**
 
@@ -173,8 +173,8 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
-| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | 🔄 চলছে — Phase 6.1–6.6 plan-এ শেষ; 6.7 recursion, ★ problem ও Gate বাকি |
-| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | |
+| 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
+| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | 🔄 শুরু — Phase 7.1: Floating point, NaN, Infinity |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |

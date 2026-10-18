@@ -469,10 +469,7 @@
 
 // console.log(result3(42)); // Expected: 42
 
-
-
 // ★6.4 Check Password - LeetCode
-
 
 // Edge Case : --------------------------------
 // "length" — pw must have at least 8 characters.
@@ -482,55 +479,50 @@
 
 // --------------------------------
 
-
 /**
  * @param {string} pw
  * @return {string[]}
  */
-var checkPassword = function (pw) {
-  const errors = [];
+// var checkPassword = function (pw) {
+//   const errors = [];
 
+//   function hasValidLength(pw){
+//     return pw.length >= 8
+//   }
 
-  function hasValidLength(pw){
-    return pw.length >= 8
-  }
+//   function hasDigit(pw){
+//     return /[0-9]/.test(pw)
+//   }
 
+//   function hasUppercase(pw){
+//     return /[A-Z]/.test(pw)
+//   }
 
-  function hasDigit(pw){
-    return /[0-9]/.test(pw)
-  }
+//   function hasNoSpace(pw){
+//     return !pw.includes(' ')
+//   }
 
-  function hasUppercase(pw){
-    return /[A-Z]/.test(pw)
-  }
+//   if(!hasValidLength(pw)){
+//     errors.push('length')
+//   }
 
-  function hasNoSpace(pw){
-    return !pw.includes(' ')
-  }
+//   if(!hasDigit(pw)){
+//     errors.push('digit')
+//   }
 
+//   if(!hasUppercase(pw)){
+//     errors.push('uppercase')
+//   }
 
-  if(!hasValidLength(pw)){
-    errors.push('length')
-  }
+//   if(!hasNoSpace(pw)){
+//     errors.push('space')
+//   }
 
-  if(!hasDigit(pw)){
-    errors.push('digit')
-  }
-
-
-  if(!hasUppercase(pw)){
-    errors.push('uppercase')
-  }
-
-  if(!hasNoSpace(pw)){
-    errors.push('space')
-  }
-
-  return errors;
-};
+//   return errors;
+// };
 
 // Example 1
-console.log(checkPassword("Hello"));
+// console.log(checkPassword("Hello"));
 // Output: ["length", "digit"]
 
 // Example 2
@@ -548,3 +540,53 @@ console.log(checkPassword("Hello"));
 // Extra example
 // console.log(checkPassword("PASSWORD123"));
 // Output: []
+
+// Gate Problem - Custom
+
+// /**
+//  * @param {number[]} prices
+//  * @return {{itemCount: number, totalPrice: number, hasPremiumItem: boolean}}
+//  */
+// function summarizePrices(prices) {
+//   let total = 0;
+
+//   let hasPremiumItem = false;
+
+//   for (const price of prices) {
+//     console.log(price);
+//     total = total + price;
+
+// check any item more than 100
+
+//     if (price >= 100) {
+//       hasPremiumItem = true;
+//     }
+//   }
+
+//   return {
+//     itemCount: prices.length,
+//     totalPrice : total,
+//     hasPremiumItem
+//   }
+// }
+
+// const prices = [25, 120, 40];
+// const price1 = [10, 20, 30];
+// const price2 = []
+
+// console.log(summarizePrices(price2));
+// function countIncreases(counts) {
+//   let count = 0;
+
+//   for (let i = 1; i < counts.length; i++) {
+//     if (counts[i] > counts[i - 1]) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(countIncreases([3, 5, 5, 2, 8])); // 2
+// console.log(countIncreases([4, 6, 9, 3]));    // 2
+// console.log(countIncreases([]));              // 0

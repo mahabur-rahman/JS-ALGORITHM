@@ -58,13 +58,13 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
-| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D4) |
+| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D5) |
 | **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | ⬜ |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (১৪ অক্টো) আমরা W1 D4-এ — ক্যালেন্ডার থেকে প্রায় ৬ দিন পিছিয়ে। ঠিক আছে।
+> এখন (১৮ অক্টো) শেখার অবস্থান W1 D5 — ক্যালেন্ডার থেকে প্রায় ৭ দিন পিছিয়ে। ঠিক আছে।
 
 ---
 ---
@@ -522,16 +522,15 @@ Example 3: Input: nums = []               Output: -1
 🔗 [LC 1295](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) (হুবহু)
 🌍 কোন invoice নম্বরে জোড় সংখ্যক digit। **EN:** Return how many numbers in `nums` have an even number of digits. `[12,345,2,6,7896]` → `2`. **বাংলা:** `while` দিয়ে digit গোনো (string ছাড়া)।
 
-### 🚪 Gate — Topic 5 ⚠️ যাচাই বাকি
-- Concept প্রশ্ন ৫টা — উত্তর ঠিক ✅
-- Gate problem **Count Increases** ⚠️ — 🌍 parking lot sensor। `[3, 5, 5, 2, 8]` → `2`। নিজে টাইপ করে চালানো আর ৩টা "কেন" বাকি (Day 4-এর warm-up-এ)।
+### 🚪 Gate — Topic 5 🔴 **DONE**
+- Concept প্রশ্ন ও **Count Increases** Gate সম্পন্ন (১৮ অক্টো); নিজে টাইপ করে চালানো এবং ৩টি কারণ ব্যাখ্যা যাচাই করা হয়েছে।
 
 ### 🔗 Loops বোঝার জন্য আরো LeetCode (সময় পেলে)
 [1480 Running Sum](https://leetcode.com/problems/running-sum-of-1d-array/) · [1929 Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) · [1431 Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) · [1365 How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) · [2011 Final Value of Variable After Performing Operations](https://leetcode.com/problems/final-value-of-variable-after-performing-operations/)
 
 ---
 
-## Day 4 · W1 D4 · বৃহস্পতি ৮ অক্টো — Topic 6: Functions 🟡 চলছে (আসল শুরু: ১৩ অক্টো)
+## Day 4 · W1 D4 · বৃহস্পতি ৮ অক্টো — Topic 6: Functions ✅ সম্পন্ন (আসল শুরু: ১৩ অক্টো)
 
 **আজকের লক্ষ্য:** বড় problem-কে ছোট helper function-এ ভাগ করার অভ্যাস — live coding-এর সবচেয়ে কাজের কৌশল।
 
@@ -541,7 +540,7 @@ Example 3: Input: nums = []               Output: -1
 3. **কী বের হয়?** — `return` (কখনো `console.log` না!)
 - আটকে গেলে: *"এই অংশটা `isValid()` — পরে লিখব"* বলে helper-এর নাম দিয়ে এগিয়ে যাও।
 
-### 🔥 Warm-up — Topic 5 Gate যাচাই ⬜
+### 🔥 Warm-up — Topic 5 Gate যাচাই 🔴 **DONE**
 - `countIncreases` ফাঁকা editor থেকে নিজে টাইপ করে চালাও (`[3,5,5,2,8]` → `2`)।
 - ৩টা "কেন": (ক) loop `i = 0` থেকে শুরু করলে `counts[i - 1]` কী? (খ) n = 4-এর pair loop: `3 + ? + ? + ?` (গ) `firstDescent`-এ worst আর best case-এ কতবার তুলনা?
 
@@ -728,14 +727,14 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 ### 🔗 Functions বোঝার জন্য আরো LeetCode
 [2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) (নিজে solve + submit; verdict pending) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
 
-### 🚪 Gate — Topic 6 ⬜
+### 🚪 Gate — Topic 6 🔴 **DONE**
 ৩–৫টা concept প্রশ্ন + ১টা নাম-ছাড়া ছোট problem, একা, hint ছাড়া।
 
 **শেষ হয়েছে বুঝবে যখন:** যেকোনো problem দেখে প্রথমে function-এর খোলস (নাম, parameter, return-এর type) লিখতে পারো, আর বড় কাজ দেখলে helper-এ ভাগ করার কথা মাথায় আসে।
 
 ---
 
-## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ ⬜
+## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ 🟡 চলছে
 
 **আজকের লক্ষ্য:** digit-এর কাজ আর number-এর ফাঁদ — easy round-এ খুব আসে।
 
@@ -747,9 +746,9 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 7.1 — Floating point · NaN · Infinity** ⬜
+**Phase 7.1 — Floating point · NaN · Infinity** 🟡 চলছে
 `0.1 + 0.2 !== 0.3`; `Infinity` min/max-এর শুরু হিসেবে; বড় সংখ্যা → `BigInt`।
-- **P7.1 · Price Total** 🟢 ⬜
+- **P7.1 · Price Total** 🟢 ⬜ — পরের অনুশীলন; `day-5.js`-এ scaffold তৈরি
   - 🌍 দোকানে ০.১০ আর ০.২০ টাকার দুটো জিনিস।
   - **EN:** Print `0.1 + 0.2` and `0.1 + 0.2 === 0.3`. Then return the total rounded to 2 decimals as a number. → `0.30000000000000004`, `false`, `0.3`
   - **বাংলা:** দশমিক যোগে কেন গোলমাল, আর টাকার হিসাবে কীভাবে ঠিক রাখবে।
