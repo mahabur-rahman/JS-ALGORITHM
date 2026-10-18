@@ -421,50 +421,50 @@
 
 // 2629. Function Composition - LeetCode
 
-/**
- * @param {Function[]} functions
- * @return {Function}
- */
-var compose = function (functions) {
-  return function (x) {
-    // console.log('x : ', x )
+// /**
+//  * @param {Function[]} functions
+//  * @return {Function}
+//  */
+// var compose = function (functions) {
+//   return function (x) {
+//     // console.log('x : ', x )
 
-    // console.log(functions.length)
+//     // console.log(functions.length)
 
-    for (let i = functions.length - 1; i >= 0; i--) {
-      // console.log(i)
+//     for (let i = functions.length - 1; i >= 0; i--) {
+//       // console.log(i)
 
-      // console.log(functions[i])
+//       // console.log(functions[i])
 
-      x = functions[i](x);
-    }
+//       x = functions[i](x);
+//     }
 
-    return x;
-  };
-};
+//     return x;
+//   };
+// };
 
-const functions = [
-  (x) => x + 1, // 65
-  (x) => x * x, // 64
-  (x) => 2 * x, // 8
-];
+// const functions = [
+//   (x) => x + 1, // 65
+//   (x) => x * x, // 64
+//   (x) => 2 * x, // 8
+// ];
 
-const result1 = compose(functions);
+// const result1 = compose(functions);
 
-console.log(result1(4));
+// console.log(result1(4));
 
-const functions2 = [
-  x => 10 * x,
-  x => 10 * x,
-  x => 10 * x
-];
+// const functions2 = [
+//   x => 10 * x,
+//   x => 10 * x,
+//   x => 10 * x
+// ];
 
-const result2 = compose(functions2);
+// const result2 = compose(functions2);
 
-console.log(result2(1)); // Expected: 1000
+// console.log(result2(1)); // Expected: 1000
 
-const functions3 = [];
+// const functions3 = [];
 
-const result3 = compose(functions3);
+// const result3 = compose(functions3);
 
-console.log(result3(42)); // Expected: 42
+// console.log(result3(42)); // Expected: 42
