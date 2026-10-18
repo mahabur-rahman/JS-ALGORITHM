@@ -20,8 +20,8 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN সম্পন্ন · P6.7a Countdown যাচাই ✅ · P6.7b Sum to N যাচাই ✅ · ★6.1 `sum(...nums)` যাচাই ✅ · ★6.2a LC 2635 solution ✅ · ★6.2b LC 2634 solution লেখা ও review ✅ (LeetCode submission pending) · LC 2703 Accepted ✅ |
-| **পরের কাজ** | ★6.2b LC 2634 LeetCode-এ submit করে result নথিভুক্ত করা → ★6.3 Apply N Times → ★6.4 Check Password → Topic 6 Gate · পাশাপাশি বাকি Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" |
+| **বর্তমান দিন** | W1 D4 — Functions · P6.6 Valid PIN সম্পন্ন · P6.7a Countdown যাচাই ✅ · P6.7b Sum to N যাচাই ✅ · ★6.1 `sum(...nums)` যাচাই ✅ · ★6.2a LC 2635 solution ✅ · ★6.2b LC 2634 solution review ✅ (LeetCode submission result জানানো বাকি) · ★6.3 `applyNTimes` code লেখা ও review; runtime example যাচাই বাকি |
+| **পরের কাজ** | ★6.3-এর `n = 0` ও `n = 3` output চালিয়ে নিশ্চিত করা → LeetCode 2629-এ related problem submit → ★6.4 Check Password → Topic 6 Gate · পাশাপাশি LC 2634 submission result নথিভুক্ত করা এবং বাকি Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" |
 | **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D4। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ⚠️ Topic 5 Loops (১৩ অক্টো) — উত্তর ঠিক, কিন্তু নিজে-লেখা যাচাই বাকি (D4 warm-up-এ) |
 | **★ শেষ (মোট)** | 13 |
@@ -40,7 +40,7 @@
 | ৭–৯ অক্টো | W1 D2 ✅ | Warm-up Apply Discount · Topic 3 (৫ phase) + Gate ✅ · Topic 4 (৪ phase) · ★ getPort, canAccess, FizzBuzz, Grade, Leap Year · Topic 4 Gate ✅ | 5 / 5 | Hint 3 (Apply Discount: `price - percent` আর shorthand `result`) | — | shorthand-এ ভুল key (দ্বিতীয়বার); percent সূত্র; `&&` value ফেরত দেয় → `Boolean()`; `/` বনাম `%`; output string হুবহু (`FizzBuzz`); NaN-এর ফাঁদ (`typeof NaN` = number, `!== NaN` সবসময় true → `Number.isNaN`); `return` ছাড়া value হারায়; যাচাই প্রশ্নের "কেন" অংশ এখনো বাদ পড়ছে |
 | ৯–১৩ অক্টো | W1 D3 ✅ | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth, 5.4 First Descent · Topic 5 Gate (উত্তর ঠিক, যাচাই বাকি) | 4 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে; Gate-এর উত্তর chat-এ paste হয়েছে, `countIncreases` file-এ নিজে টাইপ হয়নি আর "কেন" follow-up বাদ গেছে |
 | ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1–6.4 · 6.5 callback (calculate, repeat) · LC 2703 ✅ · October plan-এ 6.5–6.6 ও LC 2667 DONE | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a/P6.5b নিজের হাতে আবার লেখা বাকি |
-| ১৫–১৭ অক্টো | W1 D4 (চলছে) | P6.6 Valid PIN নিশ্চিত · P6.7a Countdown ✅ · P6.7b Sum to N ✅ · ★6.1 `sum(...nums)` ✅ · ★6.2a LC 2635 ✅ · ★6.2b LC 2634 solution ✅ | 2 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy দিয়ে item রাখা বা বাদ দেওয়া |
+| ১৫–১৮ অক্টো | W1 D4 (চলছে) | P6.6 Valid PIN নিশ্চিত · P6.7a Countdown ✅ · P6.7b Sum to N ✅ · ★6.1 `sum(...nums)` ✅ · ★6.2a LC 2635 ✅ · ★6.2b LC 2634 solution ✅ · ★6.3 `applyNTimes` লেখা | 2 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy; repeated function call-এ current value ধরে রাখা; ★6.3 runtime output যাচাই বাকি |
 
 ---
 

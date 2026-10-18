@@ -386,3 +386,35 @@
 
 // console.log(filter(arr, fn));
 // // Output: [-2, 0, 1, 2]
+
+// Function Signature
+
+// /**
+//  * @param {Function} fn
+//  * @param {number} n
+//  * @param {number} x
+//  * @return {number}
+//  */
+// var applyNTimes = function (fn, n, x) {
+//   let result = x;
+
+//   for (let i = 0; i < n; i++) {
+//     // console.log(result)
+//     result = fn(result);
+//   }
+
+//   return result;
+// };
+
+// // const fn = (x) => x * 2;
+
+// // console.log("final : ", applyNTimes(fn, 3, 1));
+// // fn = x => x * 2
+// // n = 3
+// // x = 1
+
+// const fn2 = (x) => x + 10;
+// const n2 = 0;
+// const x2 = 5;
+
+// console.log(applyNTimes(fn2, n2, x2)); // Expected: 5
