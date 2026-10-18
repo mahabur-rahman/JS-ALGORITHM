@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 (Functions) — ★6.3 `applyNTimes` code লেখা ও review হয়েছে; runtime-এ `n = 0` এবং `n = 3` output যাচাই বাকি
+**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 (Functions) — ★6.3 `applyNTimes` এবং related LC 2629 Function Composition locally সমাধান ও examples review সম্পন্ন; LC 2629 submission result জানানো বাকি; পরের ধাপ ★6.4
 
 ---
 
@@ -151,7 +151,8 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★6.1 `sum(...nums)` | rest parameter সব argument-কে array-তে রাখে; accumulator 0 থেকে শুরু, loop-এ যোগ; খালি input-এ 0 যাচাই | O(n) | O(n) rest array |
 | ★6.2a LC 2635 `map` | নতুন result array বানিয়ে প্রতিটি `arr[i]`-এর জন্য `fn(arr[i], i)` চালানো; callback-এ value ও index পাঠানো | O(n) | O(n) result array |
 | ★6.2b LC 2634 `filter` | `fn(arr[i], i)` truthy হলে মূল element নতুন array-তে রাখা; `0`/`false`/`""` হলে বাদ | O(n) | O(k) output array; worst O(n) |
-| ★6.3 `applyNTimes(fn, n, x)` | `result`-এ বর্তমান value ধরে প্রতিবার `fn(result)` চালিয়ে নতুন value রাখা; runtime check বাকি | O(n) যদি `fn` O(1) হয় | O(1) অতিরিক্ত space |
+| ★6.3 `applyNTimes(fn, n, x)` | `result`-এ বর্তমান value ধরে প্রতিবার `fn(result)` চালিয়ে নতুন value রাখা; `n = 0` হলে `x` অপরিবর্তিত ফেরে | O(n) যদি `fn` O(1) হয় | O(1) অতিরিক্ত space |
+| LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
 
 ---
 

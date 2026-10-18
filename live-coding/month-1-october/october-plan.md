@@ -678,7 +678,7 @@ Explanation: -1 + 1 = 0 is falsy, so -1 is removed.
 **🧠 ভাবনা:** Example 3 — `fn` boolean না দিয়ে সংখ্যা দিলে? (truthy/falsy, Topic 4!)
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ 6.3 · Apply N Times 🟢 Easy ⬜
+#### ★ 6.3 · Apply N Times 🟢 Easy 🔴 **DONE**
 🔗 কাছাকাছি: [LC 2629 · Function Composition](https://leetcode.com/problems/function-composition/)
 🌍 **Real-life:** ব্যাংকে টাকা প্রতি বছর দ্বিগুণ — ৩ বছর পর কত?
 
@@ -726,7 +726,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 **🧠 ভাবনা:** খালি array-তে কী? (init)
 
 ### 🔗 Functions বোঝার জন্য আরো LeetCode
-[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
+[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) (নিজে solve + examples review; submission result pending) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
 
 ### 🚪 Gate — Topic 6 ⬜
 ৩–৫টা concept প্রশ্ন + ১টা নাম-ছাড়া ছোট problem, একা, hint ছাড়া।
