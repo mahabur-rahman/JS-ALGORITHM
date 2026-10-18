@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 (Functions) — ★6.3 `applyNTimes` এবং related LC 2629 Function Composition locally সমাধান ও examples review সম্পন্ন; LC 2629 submission result জানানো বাকি; পরের ধাপ ★6.4
+**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 (Functions) — ★6.4 Check Password ব্যবহারকারীর নিশ্চিতকরণে সম্পন্ন; rule name-এর output হুবহু রাখতে হবে (`"length"` lowercase); এখন Topic 6 Gate বাকি
 
 ---
 
@@ -153,6 +153,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★6.2b LC 2634 `filter` | `fn(arr[i], i)` truthy হলে মূল element নতুন array-তে রাখা; `0`/`false`/`""` হলে বাদ | O(n) | O(k) output array; worst O(n) |
 | ★6.3 `applyNTimes(fn, n, x)` | `result`-এ বর্তমান value ধরে প্রতিবার `fn(result)` চালিয়ে নতুন value রাখা; `n = 0` হলে `x` অপরিবর্তিত ফেরে | O(n) যদি `fn` O(1) হয় | O(1) অতিরিক্ত space |
 | LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
+| ★6.4 `checkPassword(pw)` | প্রতিটি নিয়ম আলাদা helper-এ পরীক্ষা; ভাঙা rule name-গুলো exact lowercase string হিসেবে array-তে রাখা | O(n) — চারটি fixed scan | O(1) — সর্বোচ্চ ৪টি rule name |
 
 ---
 

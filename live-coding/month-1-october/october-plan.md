@@ -693,7 +693,7 @@ Example 2: Input: fn = x => x + 10, n = 0, x = 5  Output: 5
 **🧠 ভাবনা:** কী মনে রাখতে হবে? (বর্তমান value) প্রতি ঘুরে সেটা কীভাবে বদলায়?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
-#### ★ 6.4 · Check Password 🟡 Medium ⬜
+#### ★ 6.4 · Check Password 🟡 Medium 🔴 **DONE**
 🔗 কাছাকাছি: [LC 2299 · Strong Password Checker II](https://leetcode.com/problems/strong-password-checker-ii/) (নিয়ম আলাদা — পরে ওটাও করো)
 🌍 **Real-life:** signup form-এ password-এর নিচে লাল লেখা — "একটা uppercase লাগবে"।
 
@@ -726,7 +726,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 **🧠 ভাবনা:** খালি array-তে কী? (init)
 
 ### 🔗 Functions বোঝার জন্য আরো LeetCode
-[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) (নিজে solve + examples review; submission result pending) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
+[2667 Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) <span style="color:red">**🔴 DONE**</span> · [2629 Function Composition](https://leetcode.com/problems/function-composition/) (নিজে solve + submit; verdict pending) · [2703 Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/) <span style="color:red">**🔴 DONE**</span>
 
 ### 🚪 Gate — Topic 6 ⬜
 ৩–৫টা concept প্রশ্ন + ১টা নাম-ছাড়া ছোট problem, একা, hint ছাড়া।

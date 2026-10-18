@@ -468,3 +468,83 @@
 // const result3 = compose(functions3);
 
 // console.log(result3(42)); // Expected: 42
+
+
+
+// ★6.4 Check Password - LeetCode
+
+
+// Edge Case : --------------------------------
+// "length" — pw must have at least 8 characters.
+// "digit" — pw must contain at least one digit.
+// "uppercase" — pw must contain at least one uppercase letter.
+// "space" — pw must not contain a space.
+
+// --------------------------------
+
+
+/**
+ * @param {string} pw
+ * @return {string[]}
+ */
+var checkPassword = function (pw) {
+  const errors = [];
+
+
+  function hasValidLength(pw){
+    return pw.length >= 8
+  }
+
+
+  function hasDigit(pw){
+    return /[0-9]/.test(pw)
+  }
+
+  function hasUppercase(pw){
+    return /[A-Z]/.test(pw)
+  }
+
+  function hasNoSpace(pw){
+    return !pw.includes(' ')
+  }
+
+
+  if(!hasValidLength(pw)){
+    errors.push('length')
+  }
+
+  if(!hasDigit(pw)){
+    errors.push('digit')
+  }
+
+
+  if(!hasUppercase(pw)){
+    errors.push('uppercase')
+  }
+
+  if(!hasNoSpace(pw)){
+    errors.push('space')
+  }
+
+  return errors;
+};
+
+// Example 1
+console.log(checkPassword("Hello"));
+// Output: ["length", "digit"]
+
+// Example 2
+// console.log(checkPassword("hello"));
+// Output: ["length", "digit", "uppercase"]
+
+// Example 3
+// console.log(checkPassword("Hello 1234"));
+// Output: ["space"]
+
+// Extra example
+// console.log(checkPassword("abc"));
+// Output: ["length", "digit", "uppercase"]
+
+// Extra example
+// console.log(checkPassword("PASSWORD123"));
+// Output: []
