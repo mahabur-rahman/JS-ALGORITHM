@@ -757,6 +757,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 **Phase 7.2 — `floor` / `ceil` / `round` / `trunc`** 🟡 চলছে
 negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5)` = -2।
 - **P7.2 · Pages Needed** 🟢 <span style="color:red">**🔴 DONE**</span> — `Math.ceil(items / perPage)`; Time O(1), Auxiliary Space O(1)
+- Negative input-এ `Math.floor` বনাম `Math.trunc` output check সম্পন্ন: `-4.2` → `-5` বনাম `-4`; পরের ছোট concept `Math.round`।
   - 🌍 ব্লগে প্রতি page-এ ১০টা post — ৩৫টা post-এ কয় page? (pagination)
   - **EN:** Return the number of pages for `items` items with `perPage` per page. `pages(35, 10)` → `4`, `pages(30, 10)` → `3`, `pages(0, 10)` → `0`.
   - **বাংলা:** কয় page লাগবে — floor, ceil নাকি round?
