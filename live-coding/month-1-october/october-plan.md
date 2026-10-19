@@ -772,7 +772,7 @@ negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5
 
 **Phase 7.4 — Conversion** 🟡 চলছে
 `Number()`, `parseInt(s, 10)`, unary `+`, `toFixed` (string দেয়!), `n.toString(2)`।
-- `Number`, `parseInt`, unary `+`, `toFixed()`-এর ছোট check সম্পন্ন; radix conversion বাকি।
+- `Number`, `parseInt`, unary `+`, `toFixed()`, binary `toString(2)`-এর ছোট check সম্পন্ন; hexadecimal conversion বাকি।
 - **P7.4 · Parse Output** 🟢 🟡 — `parseInt("12px")` ও `Number("12px")` check সম্পন্ন; radix conversion (`(10).toString(2)`, `(255).toString(16)`) বাকি → `"1010"`, `"ff"`
 
 **Phase 7.5 — Digit-এর দুই অস্ত্র** ⬜

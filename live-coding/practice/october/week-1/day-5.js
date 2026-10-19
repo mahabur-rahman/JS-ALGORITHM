@@ -168,3 +168,12 @@
 // const price = 6
 
 // console.log(typeof price.toFixed(2))
+
+// Radix conversion — binary
+// console.log((10).toString(2)); // "1010"
+// console.log((12).toString(2)); // "1100"; 12 = 8 + 4, so 2s and 1s places are 0
+
+
+
+// console.log((10).toString(2));  // "1010"
+// console.log((10).toString(16)); // "a"
