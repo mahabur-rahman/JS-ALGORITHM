@@ -770,9 +770,9 @@ negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5
   - **EN:** `toHM(135)` → `"2h 15m"`, `toHM(60)` → `"1h 0m"`, `toHM(45)` → `"0h 45m"`.
   - **বাংলা:** ভাগফল = ঘণ্টা, ভাগশেষ = মিনিট।
 
-**Phase 7.4 — Conversion** ⬜
+**Phase 7.4 — Conversion** 🟡 চলছে
 `Number()`, `parseInt(s, 10)`, unary `+`, `toFixed` (string দেয়!), `n.toString(2)`।
-- **P7.4 · Parse Output** 🟢 ⬜ — Predict: `parseInt("12px")`, `Number("12px")`, `(10).toString(2)`, `(255).toString(16)` → `12 NaN "1010" "ff"`
+- **P7.4 · Parse Output** 🟢 🟡 — `parseInt("12px")` ও `Number("12px")` check সম্পন্ন; radix conversion (`(10).toString(2)`, `(255).toString(16)`) বাকি → `"1010"`, `"ff"`
 
 **Phase 7.5 — Digit-এর দুই অস্ত্র** ⬜
 - **P7.5a · Last Digit & Rest** 🟢 ⬜ — 🌍 মোবাইল নম্বরের শেষ সংখ্যা। `1234 % 10` → `4`, `Math.floor(1234 / 10)` → `123`

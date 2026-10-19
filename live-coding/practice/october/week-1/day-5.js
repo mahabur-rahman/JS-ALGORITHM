@@ -152,3 +152,11 @@
 // console.log(-7 % 3); // -1
 
 // console.log(-8 % 3); // -2; quotient truncates toward 0, remainder keeps dividend sign
+
+
+// console.log(Number("12px"));       // NaN
+// console.log(parseInt("12px", 10)); // 12
+
+// Number vs parseInt — decimal-prefix check
+// console.log(Number("8.5px"));       // NaN
+// console.log(parseInt("8.5px", 10)); // 8
