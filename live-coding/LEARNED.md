@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · P7.3 Minutes to Hours সম্পন্ন; Phase 7.3-এ পরেরটি negative `%` remainder
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.3 সম্পন্ন; পরেরটি number conversion
 
 ---
 
@@ -166,6 +166,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - `Math.floor(x)` নিচের পূর্ণসংখ্যায় যায়; `Math.trunc(x)` দশমিক অংশ বাদ দিয়ে শূন্যের দিকে যায়। Negative-এ তাই `Math.floor(-4.2) = -5`, কিন্তু `Math.trunc(-4.2) = -4`।
 - JavaScript-এ `Math.round`-এর exact half positive দিকের পূর্ণসংখ্যায় যায়: `Math.round(2.5) = 3`, `Math.round(-2.5) = -2`।
 - Non-negative minutes-কে ঘণ্টায় ভাঙতে `Math.floor(minutes / 60)` পূর্ণ ঘণ্টা দেয়, আর `minutes % 60` বাকি মিনিট দেয়।
+- JavaScript `%` remainder দেয়; remainder-এর sign dividend (বাম পাশের সংখ্যা) থেকে আসে। Integer quotient শূন্যের দিকে truncate হয়: `-8 % 3 = -2` (`-8 - (-2 × 3)`)।
 
 | Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|

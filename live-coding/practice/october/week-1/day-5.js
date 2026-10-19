@@ -147,3 +147,8 @@
 // console.log(toHM(0));   // "0h 0m"
 
 // Complexity: O(1) time and O(1) auxiliary space.
+
+// console.log(7 % 3);  // 1
+// console.log(-7 % 3); // -1
+
+// console.log(-8 % 3); // -2; quotient truncates toward 0, remainder keeps dividend sign

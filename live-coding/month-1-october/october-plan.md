@@ -762,9 +762,10 @@ negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5
   - **EN:** Return the number of pages for `items` items with `perPage` per page. `pages(35, 10)` → `4`, `pages(30, 10)` → `3`, `pages(0, 10)` → `0`.
   - **বাংলা:** কয় page লাগবে — floor, ceil নাকি round?
 
-**Phase 7.3 — Integer division আর `%`** 🟡 চলছে
+**Phase 7.3 — Integer division আর `%`** <span style="color:red">**🔴 DONE**</span>
 `Math.floor(a / b)`; `%` negative-এ negative (`-7 % 3 === -1`)।
 - **P7.3 · Minutes to Hours** 🟢 <span style="color:red">**🔴 DONE**</span> — `Math.floor(minutes / 60)` ও `minutes % 60`; Time O(1), Auxiliary Space O(1)
+- Negative remainder check সম্পন্ন: `-8 % 3 === -2`; ভাগশেষের sign dividend-এর মতো, quotient শূন্যের দিকে truncate হয়।
   - 🌍 সিনেমার দৈর্ঘ্য ১৩৫ মিনিট — কত ঘণ্টা কত মিনিট?
   - **EN:** `toHM(135)` → `"2h 15m"`, `toHM(60)` → `"1h 0m"`, `toHM(45)` → `"0h 45m"`.
   - **বাংলা:** ভাগফল = ঘণ্টা, ভাগশেষ = মিনিট।
