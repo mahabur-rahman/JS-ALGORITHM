@@ -1,34 +1,70 @@
 // W1 D5 — Topic 7: Numbers & Math
-// Phase 7.1 — Floating-point decimals
 
-// P7.1 · Price Total
-//
-// English:
-// Given two item prices a and b, return their total rounded to two decimal
-// places as a number. First inspect the raw result of 0.1 + 0.2 and whether
-// 0.1 + 0.2 === 0.3.
-//
-// বাংলা:
-// দুটি জিনিসের দাম a ও b দেওয়া আছে। যোগফল দশমিকের পরে দুই ঘর পর্যন্ত ঠিক
-// করে number হিসেবে ফেরত দাও। আগে 0.1 + 0.2-এর সরাসরি ফল এবং সেটি 0.3-এর
-// সমান কি না, তা পরীক্ষা করো।
-//
-// Input: a = 0.1, b = 0.2
-// Raw sum: 0.30000000000000004
-// Strict equality: false
-// Expected rounded total: 0.3
-// Constraints: এই অনুশীলনে নির্দিষ্ট সীমা নেই।
+// const a = 0.1;
+// const b = 0.2;
 
-/**
- * @param {number} a
- * @param {number} b
- * @return {number}
- */
-function priceTotal(a, b) {
-  // TODO: আগে raw sum ও strict equality নিজে যাচাই করো,
-  // তারপর total-কে দুই decimal place-এ round করে ফেরত দাও।
-}
+// const total = a + b;
 
-// console.log(0.1 + 0.2);
-// console.log(0.1 + 0.2 === 0.3);
-// console.log(priceTotal(0.1, 0.2)); // Expected: 0.3
+// const sum = Math.round(total * 100) / 100;
+// console.log(sum === 0.3);
+
+// function priceTotal(a, b) {
+//   const total = Math.round((a + b) * 100) / 100;
+//   return total;
+// }
+
+// console.log(priceTotal(0.1, 0.2)); // 0.3
+// console.log(priceTotal(0.1, 0.3)); // 0.4
+// console.log(priceTotal(0.2, 0.4)); // 0.6
+
+
+// const value = Number("abc");
+// console.log(value); // NaN
+
+// console.log(Number.isNaN(value)); // true
+// console.log(typeof value); // "number"
+
+
+// const value = Number("12");
+// console.log(Number.isNaN(value));
+
+
+// const scores = [-8, -3, -11];
+// console.log("scores:", scores); // scores: [ -8, -3, -11 ]
+
+// let max = -Infinity;
+// console.log("শুরুর max:", max); // শুরুর max: -Infinity
+
+// for (const score of scores) {
+//   console.log("এখনকার score:", score);
+
+//   if (score > max) {
+//     max = score;
+//   }
+
+//   console.log("এখন পর্যন্ত max:", max);
+// }
+
+// console.log("শেষের max:", max); // শেষের max: -3
+
+// Mini problem — Find Highest Temperature
+
+
+// function findHighestTemp(temp){
+
+//   let max = -Infinity;
+
+//   for(const temperature of temp){
+//     if(temperature > max){
+//       max = temperature
+//     }
+//   }
+
+//   return max
+
+// }
+
+
+// console.log(findHighestTemp([-5, -1, -7]))
+// console.log(findHighestTemp([3, 8, -5, 90]))
+// console.log(findHighestTemp([-10, -4, -7]))

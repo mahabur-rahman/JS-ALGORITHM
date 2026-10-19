@@ -748,7 +748,8 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 
 **Phase 7.1 — Floating point · NaN · Infinity** 🟡 চলছে
 `0.1 + 0.2 !== 0.3`; `Infinity` min/max-এর শুরু হিসেবে; বড় সংখ্যা → `BigInt`।
-- **P7.1 · Price Total** 🟢 ⬜ — পরের অনুশীলন; `day-5.js`-এ scaffold তৈরি
+- **P7.1 · Price Total** 🟢 <span style="color:red">**🔴 DONE**</span> — `day-5.js`-এ সমাধান ও তিনটি input যাচাই
+- `Number.isNaN` এবং maximum-এর জন্য `-Infinity` দিয়ে শুরু — ছোট concept practice সম্পন্ন; `findHighestTemp`-এ Time O(n), Auxiliary Space O(1)। বড় integer ও `BigInt` এখনো বাকি।
   - 🌍 দোকানে ০.১০ আর ০.২০ টাকার দুটো জিনিস।
   - **EN:** Print `0.1 + 0.2` and `0.1 + 0.2 === 0.3`. Then return the total rounded to 2 decimals as a number. → `0.30000000000000004`, `false`, `0.3`
   - **বাংলা:** দশমিক যোগে কেন গোলমাল, আর টাকার হিসাবে কীভাবে ঠিক রাখবে।

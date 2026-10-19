@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 সম্পন্ন; W1 D5 Topic 7 Numbers & Math শুরু — প্রথমে Phase 7.1 Floating point, NaN, Infinity
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · P7.1 Price Total এবং `NaN`/`Infinity`-এর ছোট practice সম্পন্ন; Phase 7.1-এ পরের ছোট concept বড় integer ও `BigInt`
 
 ---
 
@@ -154,6 +154,18 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★6.3 `applyNTimes(fn, n, x)` | `result`-এ বর্তমান value ধরে প্রতিবার `fn(result)` চালিয়ে নতুন value রাখা; `n = 0` হলে `x` অপরিবর্তিত ফেরে | O(n) যদি `fn` O(1) হয় | O(1) অতিরিক্ত space |
 | LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
 | ★6.4 `checkPassword(pw)` | প্রতিটি নিয়ম আলাদা helper-এ পরীক্ষা; ভাঙা rule name-গুলো exact lowercase string হিসেবে array-তে রাখা | O(n) — চারটি fixed scan | O(1) — সর্বোচ্চ ৪টি rule name |
+
+### Topic 7 — Numbers & Math 🔄 (W1 D5)
+
+- Decimal fraction যেমন `0.1` ও `0.2` binary floating-point-এ নিখুঁতভাবে উপস্থাপিত নাও হতে পারে; তাই `0.1 + 0.2 === 0.3` → `false`।
+- দুই decimal place-এ round করার অনুশীলন: যোগফলকে 100 দিয়ে গুণ → `Math.round` → 100 দিয়ে ভাগ। Raw যোগফল আলাদা থাকে; rounded মান নতুন result।
+- `Number("abc")` → `NaN`; `Number.isNaN(value)` দিয়ে নির্ভরযোগ্যভাবে পরীক্ষা করা যায়। `Number("12")` হলো number `12`, তাই `Number.isNaN(...)` → `false`।
+- Maximum খোঁজায় `max = -Infinity` দিয়ে শুরু করলে সব মান negative হলেও সঠিক maximum পাওয়া যায়; `0` দিয়ে শুরু করলে সব input negative হলে ভুল হয়।
+
+| Problem | মূল শিক্ষা | Time | Auxiliary Space |
+|---|---|---|---|
+| P7.1 `priceTotal(a, b)` | `(a + b)`-কে cents-এ scale করে round, পরে আবার 100 দিয়ে ভাগ; function-এ `return` করতে হবে, শুধু log নয় | O(1) | O(1) |
+| Mini: `findHighestTemp(temps)` | `-Infinity` দিয়ে শুরু; প্রতিটি temperature-এর সঙ্গে তুলনা করে max update | O(n) | O(1) |
 
 ---
 
