@@ -754,9 +754,9 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
   - **EN:** Print `0.1 + 0.2` and `0.1 + 0.2 === 0.3`. Then return the total rounded to 2 decimals as a number. → `0.30000000000000004`, `false`, `0.3`
   - **বাংলা:** দশমিক যোগে কেন গোলমাল, আর টাকার হিসাবে কীভাবে ঠিক রাখবে।
 
-**Phase 7.2 — `floor` / `ceil` / `round` / `trunc`** 🟡 শুরু হবে পরের সেশনে
+**Phase 7.2 — `floor` / `ceil` / `round` / `trunc`** 🟡 চলছে
 negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5)` = -2।
-- **P7.2 · Pages Needed** 🟢 ⬜
+- **P7.2 · Pages Needed** 🟢 <span style="color:red">**🔴 DONE**</span> — `Math.ceil(items / perPage)`; Time O(1), Auxiliary Space O(1)
   - 🌍 ব্লগে প্রতি page-এ ১০টা post — ৩৫টা post-এ কয় page? (pagination)
   - **EN:** Return the number of pages for `items` items with `perPage` per page. `pages(35, 10)` → `4`, `pages(30, 10)` → `3`, `pages(0, 10)` → `0`.
   - **বাংলা:** কয় page লাগবে — floor, ceil নাকি round?

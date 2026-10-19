@@ -97,3 +97,21 @@
 // If k is the number of bits in the BigInt values, addition takes O(k) time.
 // The returned result can use O(k) space; only a fixed number of named
 // variables are used. Runtime-internal memory is implementation-dependent.
+
+
+
+
+// console.log(Math.ceil(3.1))
+
+// P7.2 — Pages Needed
+
+// function pagesNeeded(items, perPage) {
+//   return Math.ceil(items / perPage);
+// }
+
+// console.log(pagesNeeded(35, 10)); // 4
+// console.log(pagesNeeded(20, 10)); // 2
+// console.log(pagesNeeded(21, 10)); // 3
+// console.log(pagesNeeded(0, 10));  // 0
+
+// Complexity: O(1) time and O(1) auxiliary space.
