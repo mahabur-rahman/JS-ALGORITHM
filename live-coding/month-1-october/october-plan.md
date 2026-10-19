@@ -746,30 +746,33 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 7.1 — Floating point · NaN · Infinity** 🟡 চলছে
+**Phase 7.1 — Floating point · NaN · Infinity · BigInt** <span style="color:red">**🔴 DONE**</span>
 `0.1 + 0.2 !== 0.3`; `Infinity` min/max-এর শুরু হিসেবে; বড় সংখ্যা → `BigInt`।
-- **P7.1 · Price Total** 🟢 ⬜ — পরের অনুশীলন; `day-5.js`-এ scaffold তৈরি
+- **P7.1 · Price Total** 🟢 <span style="color:red">**🔴 DONE**</span> — `day-5.js`-এ সমাধান ও তিনটি input যাচাই
+- `Number.isNaN`, maximum-এর জন্য `-Infinity`, এবং বড় integer-এ `BigInt` — ছোট concept practice সম্পন্ন। `findHighestTemp`: Time O(n), Auxiliary Space O(1); `addLargeTotals`: k-bit BigInt-এ Time O(k), result space O(k)।
   - 🌍 দোকানে ০.১০ আর ০.২০ টাকার দুটো জিনিস।
   - **EN:** Print `0.1 + 0.2` and `0.1 + 0.2 === 0.3`. Then return the total rounded to 2 decimals as a number. → `0.30000000000000004`, `false`, `0.3`
   - **বাংলা:** দশমিক যোগে কেন গোলমাল, আর টাকার হিসাবে কীভাবে ঠিক রাখবে।
 
-**Phase 7.2 — `floor` / `ceil` / `round` / `trunc`** ⬜
+**Phase 7.2 — `floor` / `ceil` / `round` / `trunc`** <span style="color:red">**🔴 DONE**</span>
 negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5)` = -2।
-- **P7.2 · Pages Needed** 🟢 ⬜
+- **P7.2 · Pages Needed** 🟢 <span style="color:red">**🔴 DONE**</span> — `Math.ceil(items / perPage)`; Time O(1), Auxiliary Space O(1)
+- Negative input-এ `Math.floor` বনাম `Math.trunc` check সম্পন্ন: `-4.2` → `-5` বনাম `-4`; `Math.round`-এ half tie positive দিকের integer-এ যায়: `-3.5` → `-3`।
   - 🌍 ব্লগে প্রতি page-এ ১০টা post — ৩৫টা post-এ কয় page? (pagination)
   - **EN:** Return the number of pages for `items` items with `perPage` per page. `pages(35, 10)` → `4`, `pages(30, 10)` → `3`, `pages(0, 10)` → `0`.
   - **বাংলা:** কয় page লাগবে — floor, ceil নাকি round?
 
-**Phase 7.3 — Integer division আর `%`** ⬜
+**Phase 7.3 — Integer division আর `%`** <span style="color:red">**🔴 DONE**</span>
 `Math.floor(a / b)`; `%` negative-এ negative (`-7 % 3 === -1`)।
-- **P7.3 · Minutes to Hours** 🟢 ⬜
+- **P7.3 · Minutes to Hours** 🟢 <span style="color:red">**🔴 DONE**</span> — `Math.floor(minutes / 60)` ও `minutes % 60`; Time O(1), Auxiliary Space O(1)
+- Negative remainder check সম্পন্ন: `-8 % 3 === -2`; ভাগশেষের sign dividend-এর মতো, quotient শূন্যের দিকে truncate হয়।
   - 🌍 সিনেমার দৈর্ঘ্য ১৩৫ মিনিট — কত ঘণ্টা কত মিনিট?
   - **EN:** `toHM(135)` → `"2h 15m"`, `toHM(60)` → `"1h 0m"`, `toHM(45)` → `"0h 45m"`.
   - **বাংলা:** ভাগফল = ঘণ্টা, ভাগশেষ = মিনিট।
 
-**Phase 7.4 — Conversion** ⬜
+**Phase 7.4 — Conversion** 🟡 চলছে
 `Number()`, `parseInt(s, 10)`, unary `+`, `toFixed` (string দেয়!), `n.toString(2)`।
-- **P7.4 · Parse Output** 🟢 ⬜ — Predict: `parseInt("12px")`, `Number("12px")`, `(10).toString(2)`, `(255).toString(16)` → `12 NaN "1010" "ff"`
+- **P7.4 · Parse Output** 🟢 🟡 — `parseInt("12px")` ও `Number("12px")` check সম্পন্ন; radix conversion (`(10).toString(2)`, `(255).toString(16)`) বাকি → `"1010"`, `"ff"`
 
 **Phase 7.5 — Digit-এর দুই অস্ত্র** ⬜
 - **P7.5a · Last Digit & Rest** 🟢 ⬜ — 🌍 মোবাইল নম্বরের শেষ সংখ্যা। `1234 % 10` → `4`, `Math.floor(1234 / 10)` → `123`

@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৮ অক্টোবর ২০২৬ · W1 D4 সম্পন্ন; W1 D5 Topic 7 Numbers & Math শুরু — প্রথমে Phase 7.1 Floating point, NaN, Infinity
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.4-এ `Number`/`parseInt` check সম্পন্ন; পরেরটি unary `+` conversion
 
 ---
 
@@ -154,6 +154,28 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★6.3 `applyNTimes(fn, n, x)` | `result`-এ বর্তমান value ধরে প্রতিবার `fn(result)` চালিয়ে নতুন value রাখা; `n = 0` হলে `x` অপরিবর্তিত ফেরে | O(n) যদি `fn` O(1) হয় | O(1) অতিরিক্ত space |
 | LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
 | ★6.4 `checkPassword(pw)` | প্রতিটি নিয়ম আলাদা helper-এ পরীক্ষা; ভাঙা rule name-গুলো exact lowercase string হিসেবে array-তে রাখা | O(n) — চারটি fixed scan | O(1) — সর্বোচ্চ ৪টি rule name |
+
+### Topic 7 — Numbers & Math 🔄 (W1 D5)
+
+- Decimal fraction যেমন `0.1` ও `0.2` binary floating-point-এ নিখুঁতভাবে উপস্থাপিত নাও হতে পারে; তাই `0.1 + 0.2 === 0.3` → `false`।
+- দুই decimal place-এ round করার অনুশীলন: যোগফলকে 100 দিয়ে গুণ → `Math.round` → 100 দিয়ে ভাগ। Raw যোগফল আলাদা থাকে; rounded মান নতুন result।
+- `Number("abc")` → `NaN`; `Number.isNaN(value)` দিয়ে নির্ভরযোগ্যভাবে পরীক্ষা করা যায়। `Number("12")` হলো number `12`, তাই `Number.isNaN(...)` → `false`।
+- Maximum খোঁজায় `max = -Infinity` দিয়ে শুরু করলে সব মান negative হলেও সঠিক maximum পাওয়া যায়; `0` দিয়ে শুরু করলে সব input negative হলে ভুল হয়।
+- `BigInt` literal-এর শেষে `n` থাকে; খুব বড় integer-এ নির্ভুলতা রাখে। `BigInt` ও `Number` সরাসরি arithmetic-এ মেশানো যায় না—একই type করতে হয়।
+- Pagination-এ page-এর ভগ্নাংশ চলবে না; `Math.ceil(items / perPage)` দিয়ে প্রয়োজনীয় page সংখ্যা উপরের পূর্ণসংখ্যায় নেওয়া হয়।
+- `Math.floor(x)` নিচের পূর্ণসংখ্যায় যায়; `Math.trunc(x)` দশমিক অংশ বাদ দিয়ে শূন্যের দিকে যায়। Negative-এ তাই `Math.floor(-4.2) = -5`, কিন্তু `Math.trunc(-4.2) = -4`।
+- JavaScript-এ `Math.round`-এর exact half positive দিকের পূর্ণসংখ্যায় যায়: `Math.round(2.5) = 3`, `Math.round(-2.5) = -2`।
+- Non-negative minutes-কে ঘণ্টায় ভাঙতে `Math.floor(minutes / 60)` পূর্ণ ঘণ্টা দেয়, আর `minutes % 60` বাকি মিনিট দেয়।
+- JavaScript `%` remainder দেয়; remainder-এর sign dividend (বাম পাশের সংখ্যা) থেকে আসে। Integer quotient শূন্যের দিকে truncate হয়: `-8 % 3 = -2` (`-8 - (-2 × 3)`)।
+- `Number(text)` পুরো string বৈধ number কি না দেখে (`Number("8.5px") → NaN`); `parseInt(text, 10)` শুরু থেকে integer prefix পড়ে, decimal point বা non-digit এ থামে (`parseInt("8.5px", 10) → 8`)।
+
+| Problem | মূল শিক্ষা | Time | Space |
+|---|---|---|---|
+| P7.1 `priceTotal(a, b)` | `(a + b)`-কে cents-এ scale করে round, পরে আবার 100 দিয়ে ভাগ; function-এ `return` করতে হবে, শুধু log নয় | O(1) | O(1) |
+| Mini: `findHighestTemp(temps)` | `-Infinity` দিয়ে শুরু; প্রতিটি temperature-এর সঙ্গে তুলনা করে max update | O(n) | O(1) |
+| Mini: `addLargeTotals(a, b)` | একই type-এর `BigInt` যোগ; k = input-এর bit সংখ্যা হলে arbitrary-size addition-এর সময় O(k), result রাখতে O(k) space; named auxiliary variable O(1) | O(k) | O(k) result; O(1) named auxiliary variable |
+| P7.2 `pagesNeeded(items, perPage)` | ভাগফল ভগ্নাংশ হলে `Math.ceil` দিয়ে পরের পূর্ণসংখ্যা; শূন্য item হলে 0 page | O(1) | O(1) |
+| P7.3 `toHM(minutes)` | `Math.floor(minutes / 60)` দিয়ে ঘণ্টা, `% 60` দিয়ে বাকি মিনিট; non-negative input | O(1) | O(1) |
 
 ---
 
