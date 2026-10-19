@@ -119,3 +119,6 @@
 
 // console.log(Math.floor(-2.4)); // -3: নিচের পূর্ণসংখ্যা
 // console.log(Math.trunc(-2.4)); // -2: দশমিক অংশ বাদ, শূন্যের দিকে
+
+
+// console.log(Math.round(-3.5)); // -3: half হলে positive দিকের পূর্ণসংখ্যা

@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1, P7.2 Pages Needed, negative-এ `floor`/`trunc` check সম্পন্ন; পরেরটি `Math.round`
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.2 সম্পন্ন; পরেরটি integer division ও `%` remainder
 
 ---
 
@@ -164,6 +164,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - `BigInt` literal-এর শেষে `n` থাকে; খুব বড় integer-এ নির্ভুলতা রাখে। `BigInt` ও `Number` সরাসরি arithmetic-এ মেশানো যায় না—একই type করতে হয়।
 - Pagination-এ page-এর ভগ্নাংশ চলবে না; `Math.ceil(items / perPage)` দিয়ে প্রয়োজনীয় page সংখ্যা উপরের পূর্ণসংখ্যায় নেওয়া হয়।
 - `Math.floor(x)` নিচের পূর্ণসংখ্যায় যায়; `Math.trunc(x)` দশমিক অংশ বাদ দিয়ে শূন্যের দিকে যায়। Negative-এ তাই `Math.floor(-4.2) = -5`, কিন্তু `Math.trunc(-4.2) = -4`।
+- JavaScript-এ `Math.round`-এর exact half positive দিকের পূর্ণসংখ্যায় যায়: `Math.round(2.5) = 3`, `Math.round(-2.5) = -2`।
 
 | Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|
