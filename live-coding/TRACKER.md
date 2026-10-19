@@ -20,8 +20,8 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D5 — Topic 7: Numbers & Math · Phase 7.1–7.3 সম্পন্ন ✅ · Phase 7.4-এ `Number`, `parseInt`, unary `+` check সম্পন্ন · W1 D4 সম্পূর্ণ · LC 2629 verdict ও LC 2634 submission result জানানো বাকি |
-| **পরের কাজ** | Phase 7.4 — `toFixed()` কী type ফেরায় · P7.4 Parse Output-এর radix conversion বাকি · আলাদা pending: LC 2629 verdict, LC 2634 submission result; LC 2299 related practice (rules আলাদা) |
+| **বর্তমান দিন** | W1 D5 — Topic 7: Numbers & Math · Phase 7.1–7.3 সম্পন্ন ✅ · Phase 7.4-এ `Number`, `parseInt`, unary `+`, `toFixed` check সম্পন্ন · W1 D4 সম্পূর্ণ · LC 2629 verdict ও LC 2634 submission result জানানো বাকি |
+| **পরের কাজ** | Phase 7.4 — `n.toString(radix)` দিয়ে base conversion · P7.4 Parse Output-এর radix conversion বাকি · আলাদা pending: LC 2629 verdict, LC 2634 submission result; LC 2299 related practice (rules আলাদা) |
 | **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D5। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) |
 | **★ শেষ (মোট)** | 13 |

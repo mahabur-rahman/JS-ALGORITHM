@@ -154,3 +154,17 @@
 // console.log(+"42px"); // NaN
 
 // console.log(+" 8.5 ")
+
+
+// const price = (12.3).toFixed(2);
+// console.log(price);        // "12.30"
+// console.log(typeof price); // "string"
+
+// console.log((8).toFixed(2));        // "8.00"
+// console.log(typeof (8).toFixed(2)); // "string"
+
+
+
+// const price = 6
+
+// console.log(typeof price.toFixed(2))

@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.4-এ `Number`, `parseInt`, unary `+` check সম্পন্ন; পরেরটি `toFixed()` return type
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.4-এ `Number`, `parseInt`, unary `+`, `toFixed()` check সম্পন্ন; পরেরটি radix conversion
 
 ---
 
@@ -169,6 +169,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - JavaScript `%` remainder দেয়; remainder-এর sign dividend (বাম পাশের সংখ্যা) থেকে আসে। Integer quotient শূন্যের দিকে truncate হয়: `-8 % 3 = -2` (`-8 - (-2 × 3)`)।
 - `Number(text)` পুরো string বৈধ number কি না দেখে (`Number("8.5px") → NaN`); `parseInt(text, 10)` শুরু থেকে integer prefix পড়ে, decimal point বা non-digit এ থামে (`parseInt("8.5px", 10) → 8`)।
 - Unary `+` numeric string-কে `Number`-এ রূপান্তর করে এবং চারপাশের whitespace উপেক্ষা করে: `+" 8.5 " → 8.5`; invalid string হলে `NaN`।
+- `toFixed(digits)` নির্দিষ্ট decimal ঘরসহ string ফেরত দেয়: `(8).toFixed(2) → "8.00"`; সংখ্যা হিসেবে arithmetic দরকার হলে string-কে আবার convert করতে হবে।
 
 | Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|
