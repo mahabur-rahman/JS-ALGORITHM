@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · P7.1 Price Total এবং `NaN`/`Infinity`-এর ছোট practice সম্পন্ন; Phase 7.1-এ পরের ছোট concept বড় integer ও `BigInt`
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1 (floating point, `NaN`, `Infinity`, `BigInt`) সম্পন্ন; পরেরটি Phase 7.2 rounding
 
 ---
 
@@ -161,11 +161,13 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - দুই decimal place-এ round করার অনুশীলন: যোগফলকে 100 দিয়ে গুণ → `Math.round` → 100 দিয়ে ভাগ। Raw যোগফল আলাদা থাকে; rounded মান নতুন result।
 - `Number("abc")` → `NaN`; `Number.isNaN(value)` দিয়ে নির্ভরযোগ্যভাবে পরীক্ষা করা যায়। `Number("12")` হলো number `12`, তাই `Number.isNaN(...)` → `false`।
 - Maximum খোঁজায় `max = -Infinity` দিয়ে শুরু করলে সব মান negative হলেও সঠিক maximum পাওয়া যায়; `0` দিয়ে শুরু করলে সব input negative হলে ভুল হয়।
+- `BigInt` literal-এর শেষে `n` থাকে; খুব বড় integer-এ নির্ভুলতা রাখে। `BigInt` ও `Number` সরাসরি arithmetic-এ মেশানো যায় না—একই type করতে হয়।
 
-| Problem | মূল শিক্ষা | Time | Auxiliary Space |
+| Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|
 | P7.1 `priceTotal(a, b)` | `(a + b)`-কে cents-এ scale করে round, পরে আবার 100 দিয়ে ভাগ; function-এ `return` করতে হবে, শুধু log নয় | O(1) | O(1) |
 | Mini: `findHighestTemp(temps)` | `-Infinity` দিয়ে শুরু; প্রতিটি temperature-এর সঙ্গে তুলনা করে max update | O(n) | O(1) |
+| Mini: `addLargeTotals(a, b)` | একই type-এর `BigInt` যোগ; k = input-এর bit সংখ্যা হলে arbitrary-size addition-এর সময় O(k), result রাখতে O(k) space; named auxiliary variable O(1) | O(k) | O(k) result; O(1) named auxiliary variable |
 
 ---
 

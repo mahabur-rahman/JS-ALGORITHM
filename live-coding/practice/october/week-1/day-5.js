@@ -68,3 +68,32 @@
 // console.log(findHighestTemp([-5, -1, -7]))
 // console.log(findHighestTemp([3, 8, -5, 90]))
 // console.log(findHighestTemp([-10, -4, -7]))
+
+
+// console.log(9007199254740993n + 2n);
+
+// const bigCount = 10n;
+// console.log(typeof bigCount); // "bigint"
+
+// const regularCount = 3;
+// console.log(typeof regularCount); // "number"
+
+// try {
+//   console.log(bigCount + regularCount);
+// } catch (error) {
+//   console.log(error.name); // "TypeError"
+// }
+
+
+// Mini problem — Add Large Totals
+
+// function addLargeTotals(a, b) {
+//   return a + b;
+// }
+
+// console.log(addLargeTotals(9007199254740993n, 2n)); // 9007199254740995n
+
+// Complexity note:
+// If k is the number of bits in the BigInt values, addition takes O(k) time.
+// The returned result can use O(k) space; only a fixed number of named
+// variables are used. Runtime-internal memory is implementation-dependent.
