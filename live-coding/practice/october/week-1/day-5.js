@@ -177,3 +177,4 @@
 
 // console.log((10).toString(2));  // "1010"
 // console.log((10).toString(16)); // "a"
+// console.log((255).toString(16)); // "ff"

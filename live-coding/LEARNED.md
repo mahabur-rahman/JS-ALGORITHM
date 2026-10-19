@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.4-এ `Number`, `parseInt`, unary `+`, `toFixed()`, binary conversion check সম্পন্ন; পরেরটি hexadecimal
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.4 সম্পন্ন; পরেরটি `% 10` ও `Math.floor(n / 10)` দিয়ে digit বের করা
 
 ---
 
@@ -171,6 +171,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - Unary `+` numeric string-কে `Number`-এ রূপান্তর করে এবং চারপাশের whitespace উপেক্ষা করে: `+" 8.5 " → 8.5`; invalid string হলে `NaN`।
 - `toFixed(digits)` নির্দিষ্ট decimal ঘরসহ string ফেরত দেয়: `(8).toFixed(2) → "8.00"`; সংখ্যা হিসেবে arithmetic দরকার হলে string-কে আবার convert করতে হবে।
 - `number.toString(2)` binary string দেয়; bit-এর place values ডান দিক থেকে `1, 2, 4, 8, ...`। `12 = 8 + 4`, তাই binary `"1100"`; ফলের type string।
+- `number.toString(16)` hexadecimal string দেয়; hex digit `a`–`f` মানে 10–15। `255 = 15 × 16 + 15`, তাই `(255).toString(16) → "ff"`।
 
 | Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|
@@ -199,7 +200,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
-| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | 🔄 শুরু — Phase 7.1: Floating point, NaN, Infinity |
+| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | 🔄 চলছে — Phase 7.1–7.4 সম্পন্ন; Phase 7.5 digit practice শুরু |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
