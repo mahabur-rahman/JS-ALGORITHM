@@ -122,3 +122,28 @@
 
 
 // console.log(Math.round(-3.5)); // -3: half হলে positive দিকের পূর্ণসংখ্যা
+
+
+// function toHM(min) {
+
+//     const perHour = Math.floor(min / 60)
+
+//     const perMin = min % 60
+
+//     const finalOutput = perHour + 'h' + " " + perMin + "m"
+
+
+//     return finalOutput
+
+// }
+
+
+// const minutes = 0
+
+// console.log(toHM(minutes))
+// console.log(toHM(135)); // "2h 15m"
+// console.log(toHM(45));  // "0h 45m"
+// console.log(toHM(60));  // "1h 0m"
+// console.log(toHM(0));   // "0h 0m"
+
+// Complexity: O(1) time and O(1) auxiliary space.

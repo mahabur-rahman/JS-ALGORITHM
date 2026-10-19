@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.2 সম্পন্ন; পরেরটি integer division ও `%` remainder
+**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · P7.3 Minutes to Hours সম্পন্ন; Phase 7.3-এ পরেরটি negative `%` remainder
 
 ---
 
@@ -165,6 +165,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - Pagination-এ page-এর ভগ্নাংশ চলবে না; `Math.ceil(items / perPage)` দিয়ে প্রয়োজনীয় page সংখ্যা উপরের পূর্ণসংখ্যায় নেওয়া হয়।
 - `Math.floor(x)` নিচের পূর্ণসংখ্যায় যায়; `Math.trunc(x)` দশমিক অংশ বাদ দিয়ে শূন্যের দিকে যায়। Negative-এ তাই `Math.floor(-4.2) = -5`, কিন্তু `Math.trunc(-4.2) = -4`।
 - JavaScript-এ `Math.round`-এর exact half positive দিকের পূর্ণসংখ্যায় যায়: `Math.round(2.5) = 3`, `Math.round(-2.5) = -2`।
+- Non-negative minutes-কে ঘণ্টায় ভাঙতে `Math.floor(minutes / 60)` পূর্ণ ঘণ্টা দেয়, আর `minutes % 60` বাকি মিনিট দেয়।
 
 | Problem | মূল শিক্ষা | Time | Space |
 |---|---|---|---|
@@ -172,6 +173,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | Mini: `findHighestTemp(temps)` | `-Infinity` দিয়ে শুরু; প্রতিটি temperature-এর সঙ্গে তুলনা করে max update | O(n) | O(1) |
 | Mini: `addLargeTotals(a, b)` | একই type-এর `BigInt` যোগ; k = input-এর bit সংখ্যা হলে arbitrary-size addition-এর সময় O(k), result রাখতে O(k) space; named auxiliary variable O(1) | O(k) | O(k) result; O(1) named auxiliary variable |
 | P7.2 `pagesNeeded(items, perPage)` | ভাগফল ভগ্নাংশ হলে `Math.ceil` দিয়ে পরের পূর্ণসংখ্যা; শূন্য item হলে 0 page | O(1) | O(1) |
+| P7.3 `toHM(minutes)` | `Math.floor(minutes / 60)` দিয়ে ঘণ্টা, `% 60` দিয়ে বাকি মিনিট; non-negative input | O(1) | O(1) |
 
 ---
 
