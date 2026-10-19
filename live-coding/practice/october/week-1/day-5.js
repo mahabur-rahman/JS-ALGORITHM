@@ -17,17 +17,14 @@
 // console.log(priceTotal(0.1, 0.3)); // 0.4
 // console.log(priceTotal(0.2, 0.4)); // 0.6
 
-
 // const value = Number("abc");
 // console.log(value); // NaN
 
 // console.log(Number.isNaN(value)); // true
 // console.log(typeof value); // "number"
 
-
 // const value = Number("12");
 // console.log(Number.isNaN(value));
-
 
 // const scores = [-8, -3, -11];
 // console.log("scores:", scores); // scores: [ -8, -3, -11 ]
@@ -49,7 +46,6 @@
 
 // Mini problem — Find Highest Temperature
 
-
 // function findHighestTemp(temp){
 
 //   let max = -Infinity;
@@ -64,11 +60,9 @@
 
 // }
 
-
 // console.log(findHighestTemp([-5, -1, -7]))
 // console.log(findHighestTemp([3, 8, -5, 90]))
 // console.log(findHighestTemp([-10, -4, -7]))
-
 
 // console.log(9007199254740993n + 2n);
 
@@ -84,7 +78,6 @@
 //   console.log(error.name); // "TypeError"
 // }
 
-
 // Mini problem — Add Large Totals
 
 // function addLargeTotals(a, b) {
@@ -97,9 +90,6 @@
 // If k is the number of bits in the BigInt values, addition takes O(k) time.
 // The returned result can use O(k) space; only a fixed number of named
 // variables are used. Runtime-internal memory is implementation-dependent.
-
-
-
 
 // console.log(Math.ceil(3.1))
 
@@ -116,13 +106,10 @@
 
 // Complexity: O(1) time and O(1) auxiliary space.
 
-
 // console.log(Math.floor(-2.4)); // -3: নিচের পূর্ণসংখ্যা
 // console.log(Math.trunc(-2.4)); // -2: দশমিক অংশ বাদ, শূন্যের দিকে
 
-
 // console.log(Math.round(-3.5)); // -3: half হলে positive দিকের পূর্ণসংখ্যা
-
 
 // function toHM(min) {
 
@@ -132,11 +119,9 @@
 
 //     const finalOutput = perHour + 'h' + " " + perMin + "m"
 
-
 //     return finalOutput
 
 // }
-
 
 // const minutes = 0
 
@@ -153,10 +138,19 @@
 
 // console.log(-8 % 3); // -2; quotient truncates toward 0, remainder keeps dividend sign
 
-
 // console.log(Number("12px"));       // NaN
 // console.log(parseInt("12px", 10)); // 12
 
 // Number vs parseInt — decimal-prefix check
 // console.log(Number("8.5px"));       // NaN
 // console.log(parseInt("8.5px", 10)); // 8
+
+// Unary plus converts a numeric string to Number, trimming surrounding spaces.
+// console.log(+" 8.5 "); // 8.5
+
+
+
+// console.log(+"42");   // 42
+// console.log(+"42px"); // NaN
+
+// console.log(+" 8.5 ")
