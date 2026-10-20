@@ -148,13 +148,10 @@
 // Unary plus converts a numeric string to Number, trimming surrounding spaces.
 // console.log(+" 8.5 "); // 8.5
 
-
-
 // console.log(+"42");   // 42
 // console.log(+"42px"); // NaN
 
 // console.log(+" 8.5 ")
-
 
 // const price = (12.3).toFixed(2);
 // console.log(price);        // "12.30"
@@ -162,8 +159,6 @@
 
 // console.log((8).toFixed(2));        // "8.00"
 // console.log(typeof (8).toFixed(2)); // "string"
-
-
 
 // const price = 6
 
@@ -173,8 +168,102 @@
 // console.log((10).toString(2)); // "1010"
 // console.log((12).toString(2)); // "1100"; 12 = 8 + 4, so 2s and 1s places are 0
 
-
-
 // console.log((10).toString(2));  // "1010"
 // console.log((10).toString(16)); // "a"
 // console.log((255).toString(16)); // "ff"
+
+// function lastDigitAndRest(n) {
+//   const lastDigit = n % 10;
+//   const rest = Math.floor(n / 10);
+
+//   return {
+//     lastDigit,
+//     rest
+//   };
+// }
+
+// console.log(lastDigitAndRest(4821)); // { lastDigit: 1, rest: 482 }
+// console.log(lastDigitAndRest(589));  // { lastDigit: 9, rest: 58 }
+// console.log(lastDigitAndRest(7));    // { lastDigit: 7, rest: 0 }
+
+// function countDigits(n) {
+//   if (n === 0) return 1;
+
+//   let count = 0;
+
+//   while (n > 0) {
+//     count++;
+//     n = Math.floor(n / 10);
+//   }
+
+//   return count;
+// }
+
+// console.log(countDigits(0));    // 1
+// console.log(countDigits(589));  // 3
+// console.log(countDigits(4821)); // 4
+
+// function findDivisorPairs(n) {
+//   for (let i = 1; i * i <= n; i++) {
+//     if (n % i === 0) {
+//       const other = n / i;
+//       console.log(`(${i}, ${other})`);
+//     }
+//   }
+// }
+
+// findDivisorPairs(24);
+
+// ★7.1 — 1281. Subtract the Product and Sum of Digits - LeetCode problem
+
+// console.log(123 % 10); // ?
+// console.log(Math.floor(123 / 10)); // ?
+
+// var subtractProductAndSum = function(n) {
+//   let sum = 0;
+//   let product = 1;
+
+//   while (n > 0) {
+//     const digit = n % 10;
+
+//     sum += digit;
+//     product *= digit;
+
+//     n = Math.floor(n / 10);
+//   }
+
+//   return product - sum;
+// };
+
+// console.log(subtractProductAndSum(234));  // 15
+// console.log(subtractProductAndSum(4421)); // 21
+// console.log(subtractProductAndSum(123));  // 0
+
+// ★7.2 — 7. Reverse Integer
+
+
+// var reverse = function(x) {
+//   let result = 0;
+
+//   while (x !== 0) {
+//     const digit = x % 10;
+
+//     result = result * 10 + digit;
+
+//     x = Math.trunc(x / 10);
+//   }
+
+//   if (result < -2147483648 || result > 2147483647) {
+//     return 0;
+//   }
+
+//   return result;
+// };
+
+// console.log(reverse(345));         // 543
+// console.log(reverse(123));         // 321
+// console.log(reverse(-987));        // -789
+// console.log(reverse(120));         // 21
+// console.log(reverse(-120));        // -21
+// console.log(reverse(1534236469));  // 0 (overflow)
+
