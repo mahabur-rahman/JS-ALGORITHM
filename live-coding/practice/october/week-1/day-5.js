@@ -241,7 +241,6 @@
 
 // ★7.2 — 7. Reverse Integer
 
-
 // var reverse = function(x) {
 //   let result = 0;
 
@@ -267,3 +266,55 @@
 // console.log(reverse(-120));        // -21
 // console.log(reverse(1534236469));  // 0 (overflow)
 
+// var isPalindrome = function (x) {
+//   // Step 1: এখানে negative number-এর condition লেখো
+// if(x < 0) return false;
+
+//   // Step 2: এখানে শেষ digit 0 হলে কী হবে, সেই condition লেখো
+// if(x !== 0 && x % 10 === 0) return false
+
+//   // Step 3: reversed variable initialize করো
+// let reversed = 0;
+
+//   // Step 4: while loop লেখো, যাতে number-এর অর্ধেক reverse করা যায়
+//   // Hint: x এবং reversed compare করবে
+
+//   while(x > reversed) {
+//     let digit = x % 10;
+
+//     reversed = reversed * 10 + digit
+
+//     x = Math.floor(x / 10)
+//   }
+
+//   // Step 5: শেষের return condition লেখো
+//   // Hint: even ও odd digit-এর জন্য কীভাবে compare করবে, ভাবো
+
+//   return x === reversed || x === Math.floor(reversed / 10)
+
+// };
+
+// // Test cases
+// console.log(isPalindrome(121));   // true
+// console.log(isPalindrome(1221));  // true
+// console.log(isPalindrome(123));   // false
+// console.log(isPalindrome(-121));  // false
+// console.log(isPalindrome(10));    // false
+// console.log(isPalindrome(0));     // true
+
+// var isPrime = function (n) {
+//   if (n < 2) return false;
+
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) return false;
+//   }
+
+//   return true;
+// };
+
+// console.log(isPrime(0)); // false
+// console.log(isPrime(1)); // false
+// console.log(isPrime(2)); // true
+// console.log(isPrime(6)); // false
+// console.log(isPrime(9)); // false
+// console.log(isPrime(7)); // true
