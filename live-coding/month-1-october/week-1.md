@@ -182,13 +182,15 @@ console.log((10).toString(2), (255).toString(16));
 ```
 
 **Problems (string-এ রূপান্তর নিষেধ যেখানে বলা আছে):**
-- [ ] ★ **7.1** `sumOfDigits(n)` — string ছাড়া। 1234 → 10। `A` · O(digits)
-- [ ] ★ **7.2** `reverseNumber(n)` — -123 → -321, 120 → 21। negative কীভাবে? `B`
-- [ ] ★ **7.3** `isPalindromeNumber(n)` — string ছাড়া। negative palindrome হয়? `B` · O(digits), O(1)
-- [ ] ★ **7.4** `isPrime(n)` — আগে O(n), তারপর O(√n)। **কেন √n যথেষ্ট — English-এ।** edge: 0, 1, 2। `C`
-- [ ] ○ **7.5** 1..n-এর সব Armstrong number (153 = 1³ + 5³ + 3³)। কোন helper লাগবে? `C`
+- [x] ★ **7.1** [LeetCode 1281](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) — digit-এর product − sum, string ছাড়া। O(digits), O(1)
+- [x] ★ **7.2** [LeetCode 7](https://leetcode.com/problems/reverse-integer/) — `-123 → -321`, `120 → 21`, 32-bit overflow check। O(digits), O(1)
+- [x] ★ **7.3** [LeetCode 9](https://leetcode.com/problems/palindrome-number/) — half-reversal, string ছাড়া; negative ও trailing-zero edge। O(digits), O(1)
+- [x] ★ **7.4** `isPrime(n)` — O(n) থেকে O(√n); √n-এর কারণ ইংরেজিতে ব্যাখ্যা; 0, 1, 2 edge cases। O(√n), O(1)
+- [ ] ○ **7.5** 1..n-এর সব Armstrong number (ঐচ্ছিক—skip করা হয়েছে; Day 5 complete-এর শর্ত নয়)
 
 **বলো:** *"If n has a divisor larger than its square root, it must also have one smaller than the square root, so checking up to √n is enough."*
+
+**Topic 7 Gate:** ২১ অক্টোবর পাস ✅ — তিনটি concept প্রশ্ন এবং নতুন digit-sum problem, test case ও complexity hint ছাড়া সম্পন্ন। Day 5 complete; Armstrong ঐচ্ছিক বলে বাদ।
 
 ---
 
