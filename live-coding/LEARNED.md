@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২১ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.6 ও ★7.1–7.4 সম্পন্ন; Topic 7 Gate বাকি, ○7.5 Armstrong ঐচ্ছিক বলে skip
+**শেষ update:** ২১ অক্টোবর ২০২৬ · W1 D5 সম্পন্ন · Phase 7.1–7.6, ★7.1–7.4 ও Topic 7 Gate পাস; ○7.5 Armstrong ঐচ্ছিক বলে skip
 
 ---
 
@@ -155,7 +155,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
 | ★6.4 `checkPassword(pw)` | প্রতিটি নিয়ম আলাদা helper-এ পরীক্ষা; ভাঙা rule name-গুলো exact lowercase string হিসেবে array-তে রাখা | O(n) — চারটি fixed scan | O(1) — সর্বোচ্চ ৪টি rule name |
 
-### Topic 7 — Numbers & Math ⏳ Gate বাকি (W1 D5)
+### Topic 7 — Numbers & Math ✅ সম্পন্ন (W1 D5)
 
 - Decimal fraction যেমন `0.1` ও `0.2` binary floating-point-এ নিখুঁতভাবে উপস্থাপিত নাও হতে পারে; তাই `0.1 + 0.2 === 0.3` → `false`।
 - দুই decimal place-এ round করার অনুশীলন: যোগফলকে 100 দিয়ে গুণ → `Math.round` → 100 দিয়ে ভাগ। Raw যোগফল আলাদা থাকে; rounded মান নতুন result।
@@ -187,6 +187,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★7.2 LC 7 `reverse(x)` | digit উল্টে `result * 10 + digit`; sign ধরে রাখা এবং signed 32-bit সীমা check | O(d) | O(1) |
 | ★7.3 LC 9 `isPalindrome(x)` | negative ও trailing zero বাদ; অর্ধেক digit reverse; even/odd length আলাদা তুলনা | O(d) | O(1) |
 | ★7.4 `isPrime(n)` | আগে `2..n-1`, পরে `i * i <= n`; divisor pair থেকে √n যথেষ্ট | O(√n) optimized | O(1) |
+| Gate mini `sumEvenDigits(n)` | শেষ digit `% 10` দিয়ে নাও; জোড় হলে sum-এ যোগ; `Math.floor(n / 10)` দিয়ে এগোও; `n = 0`-এ 0 | O(d) | O(1) |
 
 ---
 
@@ -207,7 +208,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
-| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ⏳ Required phases/problems complete; Topic 7 Gate pending; optional Armstrong skipped |
+| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |

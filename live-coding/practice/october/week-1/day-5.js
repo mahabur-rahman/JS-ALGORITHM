@@ -332,3 +332,28 @@
 
 // console.log(isPrime(49)); // false
 // console.log(isPrime(47)); // true
+
+// Topic 7 Gate — Sum Even Digits
+// function sumEvenDigits(n) {
+//   let sum = 0;
+
+//   while (n > 0) {
+//     const digit = n % 10;
+
+//     if (digit % 2 === 0) {
+//       sum += digit;
+//     }
+
+//     n = Math.floor(n / 10);
+//   }
+
+//   return sum;
+// }
+
+// console.log(sumEvenDigits(4821)); // 10
+// console.log(sumEvenDigits(135));  // 0
+// console.log(sumEvenDigits(0));    // 0
+// console.log(sumEvenDigits(2468)); // 20
+// console.log(sumEvenDigits(1234)); // 6
+// Time: O(d), where d is the number of digits; each digit is processed once.
+// Auxiliary Space: O(1), because the number of extra variables stays fixed.

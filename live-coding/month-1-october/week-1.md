@@ -190,6 +190,8 @@ console.log((10).toString(2), (255).toString(16));
 
 **বলো:** *"If n has a divisor larger than its square root, it must also have one smaller than the square root, so checking up to √n is enough."*
 
+**Topic 7 Gate:** ২১ অক্টোবর পাস ✅ — তিনটি concept প্রশ্ন এবং নতুন digit-sum problem, test case ও complexity hint ছাড়া সম্পন্ন। Day 5 complete; Armstrong ঐচ্ছিক বলে বাদ।
+
 ---
 
 ## Day 6 — শনি, ১০ অক্টোবর — Basic Problem Solving ★ (৬টা মৌলিক কাজ)

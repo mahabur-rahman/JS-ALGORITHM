@@ -58,13 +58,13 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
-| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D5) |
+| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D6) |
 | **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | ⬜ |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (১৮ অক্টো) শেখার অবস্থান W1 D5 — ক্যালেন্ডার থেকে প্রায় ৭ দিন পিছিয়ে। ঠিক আছে।
+> এখন (২১ অক্টো) শেখার অবস্থান W1 D6 — পরিকল্পিত দিনের তুলনায় প্রায় ১১ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
 
 ---
 ---
@@ -734,7 +734,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 
 ---
 
-## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ 🟡 Gate বাকি
+## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ <span style="color:red">**🔴 DONE**</span>
 
 **আজকের লক্ষ্য:** digit-এর কাজ আর number-এর ফাঁদ — easy round-এ খুব আসে।
 
@@ -870,8 +870,8 @@ Example 3: Input: n = 9   Output: false   (3 × 3)
 ### 🔗 Numbers বোঝার জন্য আরো LeetCode
 [1342 Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) · [258 Add Digits](https://leetcode.com/problems/add-digits/) · [1523 Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) · [2469 Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/)
 
-### 🚪 Gate — Topic 7 ⬜
-একাই, hint ছাড়া ৩–৫টি number concept প্রশ্নের উত্তর এবং একটি ছোট, আগে না দেখা digit/number problem solve করবে। Complexity-ও কারণসহ বলবে। Gate পাস হলে Day 5 সম্পূর্ণ।
+### 🚪 Gate — Topic 7 <span style="color:red">**🔴 DONE · ২১ অক্টো**</span>
+৩টি concept প্রশ্ন এবং নতুন `sumEvenDigits(n)` problem hint ছাড়া সমাধান; test case ও O(d) time, O(1) auxiliary space কারণসহ ব্যাখ্যা।
 
 ---
 
