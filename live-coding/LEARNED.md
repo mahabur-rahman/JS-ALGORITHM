@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৯ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.4 সম্পন্ন; পরেরটি `% 10` ও `Math.floor(n / 10)` দিয়ে digit বের করা
+**শেষ update:** ২১ অক্টোবর ২০২৬ · W1 D5 · Phase 7.1–7.6 ও ★7.1–7.4 সম্পন্ন; Topic 7 Gate বাকি, ○7.5 Armstrong ঐচ্ছিক বলে skip
 
 ---
 
@@ -155,7 +155,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | LC 2629 `compose(functions)` | composition ডান দিকের function থেকে চালু; খালি array হলে identity—input অপরিবর্তিত | O(m) প্রতি returned-function call | O(1) অতিরিক্ত space |
 | ★6.4 `checkPassword(pw)` | প্রতিটি নিয়ম আলাদা helper-এ পরীক্ষা; ভাঙা rule name-গুলো exact lowercase string হিসেবে array-তে রাখা | O(n) — চারটি fixed scan | O(1) — সর্বোচ্চ ৪টি rule name |
 
-### Topic 7 — Numbers & Math 🔄 (W1 D5)
+### Topic 7 — Numbers & Math ⏳ Gate বাকি (W1 D5)
 
 - Decimal fraction যেমন `0.1` ও `0.2` binary floating-point-এ নিখুঁতভাবে উপস্থাপিত নাও হতে পারে; তাই `0.1 + 0.2 === 0.3` → `false`।
 - দুই decimal place-এ round করার অনুশীলন: যোগফলকে 100 দিয়ে গুণ → `Math.round` → 100 দিয়ে ভাগ। Raw যোগফল আলাদা থাকে; rounded মান নতুন result।
@@ -180,6 +180,13 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | Mini: `addLargeTotals(a, b)` | একই type-এর `BigInt` যোগ; k = input-এর bit সংখ্যা হলে arbitrary-size addition-এর সময় O(k), result রাখতে O(k) space; named auxiliary variable O(1) | O(k) | O(k) result; O(1) named auxiliary variable |
 | P7.2 `pagesNeeded(items, perPage)` | ভাগফল ভগ্নাংশ হলে `Math.ceil` দিয়ে পরের পূর্ণসংখ্যা; শূন্য item হলে 0 page | O(1) | O(1) |
 | P7.3 `toHM(minutes)` | `Math.floor(minutes / 60)` দিয়ে ঘণ্টা, `% 60` দিয়ে বাকি মিনিট; non-negative input | O(1) | O(1) |
+| P7.5a `lastDigitAndRest(n)` | `% 10` শেষ digit দেয়; `Math.floor(n / 10)` শেষ digit বাদ দেয় | O(1) | O(1) |
+| P7.5b `countDigits(n)` | বারবার 10 দিয়ে ভাগ; `n === 0` হলে 1 digit | O(d) | O(1) |
+| P7.6 `findDivisorPairs(n)` | `i * i <= n` পর্যন্ত divisor check; factor pair-এর একটি √n-এর বেশি হলে অন্যটি কম | O(√n) | O(1) |
+| ★7.1 LC 1281 `subtractProductAndSum(n)` | `sum = 0`, `product = 1`; `% 10` দিয়ে digit নিয়ে যোগ ও গুণ; শেষে product − sum | O(d) | O(1) |
+| ★7.2 LC 7 `reverse(x)` | digit উল্টে `result * 10 + digit`; sign ধরে রাখা এবং signed 32-bit সীমা check | O(d) | O(1) |
+| ★7.3 LC 9 `isPalindrome(x)` | negative ও trailing zero বাদ; অর্ধেক digit reverse; even/odd length আলাদা তুলনা | O(d) | O(1) |
+| ★7.4 `isPrime(n)` | আগে `2..n-1`, পরে `i * i <= n`; divisor pair থেকে √n যথেষ্ট | O(√n) optimized | O(1) |
 
 ---
 
@@ -200,7 +207,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | Topic | কোথায় | অবস্থা |
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
-| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | 🔄 চলছে — Phase 7.1–7.4 সম্পন্ন; Phase 7.5 digit practice শুরু |
+| 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ⏳ Required phases/problems complete; Topic 7 Gate pending; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |

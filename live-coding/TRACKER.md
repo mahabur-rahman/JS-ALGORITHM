@@ -20,11 +20,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D5 — Topic 7: Numbers & Math · Phase 7.1–7.4 সম্পন্ন ✅ · Phase 7.5 digit practice শুরু · W1 D4 সম্পূর্ণ · LC 2629 verdict ও LC 2634 submission result জানানো বাকি |
-| **পরের কাজ** | Phase 7.5a — `% 10` দিয়ে শেষ digit, `Math.floor(n / 10)` দিয়ে বাকি অংশ · এরপর P7.5a, P7.5b · আলাদা pending: LC 2629 verdict, LC 2634 submission result; LC 2299 related practice (rules আলাদা) |
-| **পিছিয়ে আছি?** | ক্যালেন্ডারে W2 চলছে, শেখার অবস্থান W1 D5। Gate পাস না করে পরের topic-এ যাব না; ○ Bonus কমিয়ে প্রয়োজনে সরাব। |
+| **বর্তমান দিন** | W1 D5 — Topic 7: Numbers & Math · Phase 7.1–7.6 ও ★7.1–7.4 সম্পন্ন ✅ · Topic 7 Gate বাকি · W1 D4 সম্পূর্ণ |
+| **পরের কাজ** | Topic 7 Gate: ৩–৫টি concept প্রশ্ন + নতুন ছোট number problem, hint ছাড়া; তারপর W1 D6 · ○7.5 Armstrong ঐচ্ছিক—skip করা হয়েছে · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
+| **পিছিয়ে আছি?** | Day 5-এর বাধ্যতামূলক practice শেষ, Gate এখনো পাস হয়নি। Week 1 এখনো সম্পূর্ণ নয়; D6/D7-ও বাকি। ○ Bonus Gate-এর শর্ত নয়। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) |
-| **★ শেষ (মোট)** | 13 |
+| **★ শেষ (মোট)** | 17 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -41,6 +41,7 @@
 | ৯–১৩ অক্টো | W1 D3 ✅ | Topic 5 Loops (৫ phase) · ★ Odd-Index Sum (সামনে + পেছনে), 1512 Good Pairs, 1672 Richest Wealth, 5.4 First Descent · Topic 5 Gate (উত্তর ঠিক, যাচাই বাকি) | 4 / 4 | Hint 2 | — | label-এ index বনাম value গুলিয়ে ফেলা; "কেন"/dry-run অংশ বাদ; nested-এ ভেতরের accumulator বাইরের loop-এর ভেতরে; Gate-এর উত্তর chat-এ paste হয়েছে, `countIncreases` file-এ নিজে টাইপ হয়নি আর "কেন" follow-up বাদ গেছে |
 | ১৩–১৪ অক্টো | W1 D4 (চলছে) | Topic 6 Functions — 6.1–6.4 · 6.5 callback (calculate, repeat) · LC 2703 ✅ · October plan-এ 6.5–6.6 ও LC 2667 DONE | 0 / 4 | Hint 2 (describeProduct) | — | "কেন" অংশ বারবার বাদ; output হুবহু না (`unknown` বনাম `Unknown`); অদরকারি `if`; `Math.round` দশমিক মুছে দেয় — একটা input-এ test; file save না করে "done"; P6.5a/P6.5b নিজের হাতে আবার লেখা বাকি |
 | ১৫–১৮ অক্টো | W1 D4 ✅ | P6.6 Valid PIN · P6.7a Countdown · P6.7b Sum to N · ★6.1–★6.4 · Topic 6 Gate · Topic 5 warm-up Gate সম্পন্ন | 4 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy; repeated function call-এ current value; output string exact match করতে হবে (`length` lowercase); loop boundary, nested-pair count ও early-return complexity যাচাই |
+| ২০–২১ অক্টো | W1 D5 (Gate বাকি) | Topic 7 Numbers & Math — Phase 7.1–7.6, ★7.1–7.4 সম্পন্ন; ○7.5 Armstrong skip | 4 / 4 | — | — | Digit extraction/count, divisor pairs, product−sum, reverse overflow, half-reversal palindrome, prime O(n)→O(√n); English √n reasoning ঠিক। Gate বাকি |
 
 ---
 

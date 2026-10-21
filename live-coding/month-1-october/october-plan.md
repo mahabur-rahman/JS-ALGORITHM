@@ -734,7 +734,7 @@ Example 2: Input: nums = [], fn = function sum(accum, curr) { return 0; }, init 
 
 ---
 
-## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ 🟡 চলছে
+## Day 5 · W1 D5 · শুক্র ৯ অক্টো — Topic 7: Numbers & Math ★ 🟡 Gate বাকি
 
 **আজকের লক্ষ্য:** digit-এর কাজ আর number-এর ফাঁদ — easy round-এ খুব আসে।
 
@@ -775,22 +775,22 @@ negative-এ পার্থক্য: `Math.floor(-2.5)` = -3, `Math.trunc(-2.5
 - `Number`, `parseInt`, unary `+`, `toFixed()`, binary/hexadecimal `toString(radix)` check সম্পন্ন।
 - **P7.4 · Parse Output** 🟢 <span style="color:red">**🔴 DONE**</span> — `parseInt("12px")` → 12, `Number("12px")` → NaN, `(10).toString(2)` → `"1010"`, `(255).toString(16)` → `"ff"`
 
-**Phase 7.5 — Digit-এর দুই অস্ত্র** 🟡 চলছে
-- **P7.5a · Last Digit & Rest** 🟢 ⬜ — 🌍 মোবাইল নম্বরের শেষ সংখ্যা। `1234 % 10` → `4`, `Math.floor(1234 / 10)` → `123`
-- **P7.5b · Count Digits** 🟢 ⬜
+**Phase 7.5 — Digit-এর দুই অস্ত্র** <span style="color:red">**🔴 DONE**</span>
+- **P7.5a · Last Digit & Rest** 🟢 <span style="color:red">**🔴 DONE**</span> — `% 10` দিয়ে শেষ digit, `Math.floor(n / 10)` দিয়ে বাকি অংশ
+- **P7.5b · Count Digits** 🟢 <span style="color:red">**🔴 DONE**</span> — `0`-এর জন্য `1` digit edge case-সহ
   - 🌍 OTP কত digit-এর?
   - **EN:** Return the number of digits in a positive integer without converting to a string. `countDigits(4821)` → `4`, `countDigits(7)` → `1`.
   - **বাংলা:** string ছাড়া `while` দিয়ে digit গোনো। `0` দিলে কী হবে?
 
-**Phase 7.6 — Divisor আর √n** ⬜
-- **P7.6 · Divisor Pairs** 🟢 ⬜
+**Phase 7.6 — Divisor আর √n** <span style="color:red">**🔴 DONE**</span>
+- **P7.6 · Divisor Pairs** 🟢 <span style="color:red">**🔴 DONE**</span> — `i * i <= n` পর্যন্ত পরীক্ষা; square root-এ জোড়া একই হলে একবার print
   - 🌍 ৩৬টা চকলেট সমান ভাগে কতভাবে ভাগ করা যায়?
   - **EN:** Print all divisors of 36 as pairs `(i, 36 / i)` for `i` from 1 while `i * i <= 36`. → `(1,36) (2,18) (3,12) (4,9) (6,6)`
   - **বাংলা:** লক্ষ করো — √36 = 6-এর পরে জোড়াগুলো উল্টে আবার আসে। তাই prime check-এ √n পর্যন্ত যথেষ্ট।
 
 ### ★ মূল problem
 
-#### ★ 7.1 · 1281. Subtract the Product and Sum of Digits of an Integer 🟢 Easy ⬜
+#### ★ 7.1 · 1281. Subtract the Product and Sum of Digits of an Integer 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 [LC 1281](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) (হুবহু — sumOfDigits-এর বড় ভাই) · কাছাকাছি: [LC 258 · Add Digits](https://leetcode.com/problems/add-digits/)
 🌍 **Real-life:** barcode-এর check digit হিসাব — digit-গুলোর যোগফল/গুণফল।
 
@@ -808,7 +808,7 @@ Explanation: Product = 32, Sum = 11, Result = 21
 **🧠 ভাবনা:** দুটো জিনিস মনে রাখতে হবে (product, sum) — শুরুর value কত? (product-এর শুরু 0 দিলে কী হয়?) প্রতি ঘুরে শেষ digit নাও, তারপর বাদ দাও।
 **⏱️ লক্ষ্য:** Time O(d) — d = digit সংখ্যা (≈ log₁₀ n) · Space O(1)
 
-#### ★ 7.2 · 7. Reverse Integer 🟡 Medium ⬜
+#### ★ 7.2 · 7. Reverse Integer 🟡 Medium <span style="color:red">**🔴 DONE**</span>
 🔗 [LC 7](https://leetcode.com/problems/reverse-integer/) (হুবহু)
 🌍 **Real-life:** ATM-এ PIN উল্টো করে দিলে alarm — PIN উল্টানো।
 
@@ -825,7 +825,7 @@ Example 3: Input: x = 120    Output: 21
 **🧠 ভাবনা:** নতুন সংখ্যা কীভাবে বানাব? (`result = result * 10 + lastDigit`) — ছোট example-এ হাতে করো: 123 → 3 → 32 → 321। negative-এর জন্য আলাদা কী করব?
 **⏱️ লক্ষ্য:** Time O(d) · Space O(1)
 
-#### ★ 7.3 · 9. Palindrome Number 🟢 Easy ⬜
+#### ★ 7.3 · 9. Palindrome Number 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 [LC 9](https://leetcode.com/problems/palindrome-number/) (হুবহু)
 🌍 **Real-life:** গাড়ির নম্বর প্লেট 1221 — সামনে-পেছনে একই?
 
@@ -845,7 +845,7 @@ Example 3: Input: x = 10     Output: false
 **🧠 ভাবনা:** 7.2-এর reverse কাজে লাগাও — নতুন কী লাগবে? negative কি কখনো palindrome হয়?
 **⏱️ লক্ষ্য:** Time O(d) · Space O(1)
 
-#### ★ 7.4 · Is Prime 🟢 Easy ⬜
+#### ★ 7.4 · Is Prime 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 কাছাকাছি: [LC 204 · Count Primes](https://leetcode.com/problems/count-primes/) (December-এ sieve দিয়ে)
 🌍 **Real-life:** password encryption (RSA) prime সংখ্যার উপর চলে।
 
@@ -864,12 +864,14 @@ Example 3: Input: n = 9   Output: false   (3 × 3)
 #### ○ 7.5 · Armstrong Numbers ⬜
 🔗 [LC 1134 · Armstrong Number](https://leetcode.com/problems/armstrong-number/) (premium)
 🌍 153 = 1³ + 5³ + 3³ — অদ্ভুত সংখ্যা।
-**EN:** Return all Armstrong numbers from 1 to n (a k-digit number equal to the sum of its digits each raised to the power k). **বাংলা:** কোন কোন helper লাগবে? (`countDigits`, `sumOfPowers`)
+**LC EN:** Given an integer `n`, return `true` if and only if it is an Armstrong number (a k-digit number equal to the sum of its digits each raised to the power k). **বাংলা:** `n` Armstrong number হলে `true`, না হলে `false` ফেরত দাও।
+**ঐচ্ছিক project extension:** `1` থেকে `n` পর্যন্ত সব Armstrong number বের করো; `countDigits` ও `sumOfPowers` helper লাগতে পারে।
 
 ### 🔗 Numbers বোঝার জন্য আরো LeetCode
 [1342 Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) · [258 Add Digits](https://leetcode.com/problems/add-digits/) · [1523 Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) · [2469 Convert the Temperature](https://leetcode.com/problems/convert-the-temperature/)
 
 ### 🚪 Gate — Topic 7 ⬜
+একাই, hint ছাড়া ৩–৫টি number concept প্রশ্নের উত্তর এবং একটি ছোট, আগে না দেখা digit/number problem solve করবে। Complexity-ও কারণসহ বলবে। Gate পাস হলে Day 5 সম্পূর্ণ।
 
 ---
 
