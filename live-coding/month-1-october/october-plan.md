@@ -976,7 +976,7 @@ Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
 **🧠 ভাবনা:** দুটো জিনিস — "এখনকার ধারা কত লম্বা" আর "সবচেয়ে লম্বা কত"। আগেরটার সাথে মিললে কী, না মিললে কী?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
-#### ★ 8.5 · First Negative Balance (unseen) 🟡 Medium ⬜
+#### ★ 8.5 · First Negative Balance (unseen) 🟡 Medium <span style="color:red">**🔴 DONE**</span>
 🔗 কাছাকাছি: [LC 1732 · Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 🌍 **Real-life:** bKash/bank account — প্রথম কোন দিন balance মাইনাসে গেল?
 
@@ -991,11 +991,12 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 **বাংলা:** শুরু 0 টাকা; প্রতিদিন টাকা আসে বা যায়। প্রথম কোন দিন balance শূন্যের নিচে নামল? না নামলে -1।
 **🧠 ভাবনা:** ৬ কাজের কোন দুটোর মিশ্রণ? (Accumulation + Search) নিজে চেনো — এটাই আজকের আসল অনুশীলন।
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**অগ্রগতি:** `firstNegativeBalance(transactions)`-এ running balance, প্রথম negative-এ early return, না পেলে `-1`; Time O(n), Auxiliary Space O(1) সম্পন্ন (২২ অক্টো)।
 
 ### 🔗 Basic Problem Solving বোঝার জন্য আরো LeetCode
 [485 Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) · [1732 Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) · [414 Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) · [1491 Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
 
-**Day 6 status (২২ অক্টো):** P8.1–P8.4 এবং ★8.1–★8.4 সম্পন্ন। ★8.5 First Negative Balance এবং Topic 8 Gate বাকি।
+**Day 6 status (২২ অক্টো):** P8.1–P8.4 এবং ★8.1–★8.5 সম্পন্ন। Topic 8 Gate বাকি।
 
 ### 🚪 Gate — Topic 8 ⬜
 

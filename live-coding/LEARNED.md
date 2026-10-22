@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২২ অক্টোবর ২০২৬ · W1 D6 চলছে · P8.1–P8.4, ★8.1–8.4 শেষ; ★8.5 ও Topic 8 Gate বাকি
+**শেষ update:** ২২ অক্টোবর ২০২৬ · W1 D6-এর P8.1–P8.4 ও ★8.1–8.5 শেষ; Topic 8 Gate বাকি
 
 ---
 
@@ -207,6 +207,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★8.4 `longestRun(nums)` / LC 1446 | পাশাপাশি সমান হলে `currentRun++`, না হলে 1; `maxRun` ধরে রাখো | O(n) | O(1) |
 | ★8.1 `findLargest(nums)` | empty হলে `null`; `nums[0]` থেকে শুরু; প্রতিটি সংখ্যাকে বর্তমান largest-এর সঙ্গে তুলনা | O(n) | O(1) |
 | ★8.2 `countVowelsAndConsonants(s)` | `toLowerCase()` করে ASCII letter যাচাই; space/digit/punctuation বাদ; vowel ও consonant আলাদা count | O(n) | O(n) lowercase copy |
+| ★8.5 `firstNegativeBalance(transactions)` | running balance জমাও; প্রথম negative হলেই day index return, না হলে `-1` | O(n) | O(1) |
 | Mini `countVowels(word)` | পূর্ণ vowel/consonant problem-এর আগে case-insensitive vowel-count warm-up | O(n) | O(n) lowercase copy |
 
 ---
@@ -229,7 +230,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
-| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | 🟡 চলছে — P8.1–P8.4, ★8.1–8.4 শেষ; ★8.5 ও Gate বাকি |
+| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | 🟡 চলছে — P8.1–P8.4 ও ★8.1–8.5 শেষ; Topic 8 Gate বাকি |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |

@@ -279,3 +279,39 @@
 
 // // console.log(countVowelsAndConsonants("Hello World"));
 // console.log(countVowelsAndConsonants("Sky 2026"));
+
+// ★8.5 — First Negative Balance
+
+// Edge case :
+
+// If it never becomes negative, return -1.
+// balance = 0;
+
+// - loop & update balance ( + / -)
+
+// return index if balance negative otherwise -1
+
+// function firstNegativeBalance(transactions) {
+//   let balance = 0;
+
+//   for (let i = 0; i < transactions.length; i++) {
+//     // console.log(i)
+//     // console.log(transactions[i])
+
+//     // console.log('balance : ', balance)
+
+//     balance = balance + transactions[i];
+
+//     if (balance < 0) {
+//       return i;
+//     }
+//   }
+
+//   // return balance;
+
+//   return -1;
+// }
+
+// // console.log(firstNegativeBalance([100, -50, -80, 30])); // 2
+
+// console.log(firstNegativeBalance([10, -5, 20])); // Expected: -1

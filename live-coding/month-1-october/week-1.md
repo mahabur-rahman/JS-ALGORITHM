@@ -223,9 +223,9 @@ console.log((10).toString(2), (255).toString(16));
 - [x] ★ **8.2** string-এ vowel আর consonant আলাদা গোনো। space, digit, uppercase? `B` · Time O(n), auxiliary space O(n) (`toLowerCase()` copy)।
 - [x] ★ **8.3** **দ্বিতীয় বৃহত্তম distinct** — `[5,5,4]` → 4, `[3,3]` → `null`। **এক loop-এ।** `C` · O(n), O(1)
 - [x] ★ **8.4** পাশাপাশি সমান element-এর সবচেয়ে লম্বা ধারা — `[1,1,2,2,2,3]` → 3। `C` · O(n), O(1) — কাছাকাছি LeetCode 1446 submit করা হয়েছে।
-- [ ] ★ **8.5 (unseen)** দৈনিক লেনদেন `[100, -50, -80, 30]`, শুরু 0 — **প্রথম কোন দিন balance negative?** না হলে -1। ৬টার কোনগুলোর মিশ্রণ — নিজে চেনো। `C`
+- [x] ★ **8.5 (unseen)** দৈনিক লেনদেন `[100, -50, -80, 30]`, শুরু 0 — **প্রথম কোন দিন balance negative?** না হলে -1। ৬টার কোনগুলোর মিশ্রণ — নিজে চেনো। `C` · Time O(n), Auxiliary Space O(1)
 
-**Day 6 checkpoint (২২ অক্টো):** Input/Output, ছয়টি মৌলিক pattern চেনা, all-negative max-এর initial value, P8.4 trace table ও ★8.1–★8.4 সম্পন্ন। বাকি: ★8.5; শেষে Topic 8 Gate।
+**Day 6 checkpoint (২২ অক্টো):** Input/Output, ছয়টি মৌলিক pattern চেনা, all-negative max-এর initial value, P8.4 trace table ও ★8.1–★8.5 সম্পন্ন। বাকি: Topic 8 Gate।
 
 **বলো:** *"I'll track the largest and second-largest values in one pass. When I see a new maximum, the old maximum becomes the second largest."*
 
