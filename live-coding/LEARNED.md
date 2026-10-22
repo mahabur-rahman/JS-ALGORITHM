@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২১ অক্টোবর ২০২৬ · W1 D5 সম্পন্ন · Phase 7.1–7.6, ★7.1–7.4 ও Topic 7 Gate পাস; ○7.5 Armstrong ঐচ্ছিক বলে skip
+**শেষ update:** ২২ অক্টোবর ২০২৬ · W1 D6 চলছে · P8.1–P8.4, ★8.1–8.4 শেষ; ★8.5 ও Topic 8 Gate বাকি
 
 ---
 
@@ -189,6 +189,26 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★7.4 `isPrime(n)` | আগে `2..n-1`, পরে `i * i <= n`; divisor pair থেকে √n যথেষ্ট | O(√n) optimized | O(1) |
 | Gate mini `sumEvenDigits(n)` | শেষ digit `% 10` দিয়ে নাও; জোড় হলে sum-এ যোগ; `Math.floor(n / 10)` দিয়ে এগোও; `n = 0`-এ 0 | O(d) | O(1) |
 
+### Topic 8 — Basic Problem Solving 🟡 চলছে (W1 D6)
+
+- **Input → Process → Output:** আগে input/output type, ছোট example ও empty-input contract পরিষ্কার করো। Average-এর mini exercise-এ array-র sum বের করে length দিয়ে ভাগ করা হয়েছে।
+- **ছয়টি মৌলিক কাজ:** Counting (`count = 0`), Accumulation (`total = 0`), Min/Max (array-এর বাস্তব মান দিয়ে initialize), Search (match পেলে early return), Build (`result = []`), Track two values (`largest`, `secondLargest`)।
+- **Initial value:** সব negative হতে পারে এমন max/min-এ `0` ধরে শুরু করলে ভুল হতে পারে; non-empty array হলে `arr[0]` দিয়ে শুরু করো। Empty input-এর return contract আলাদা করে ঠিক করো।
+- **Trace table:** even-count on `[3, 8, 5, 2]` → count `0 → 0 → 1 → 1 → 2`; odd value-তে count অপরিবর্তিত থাকে, even value-তে এক বাড়ে।
+
+| Problem | মূল শিক্ষা | Time | Auxiliary Space |
+|---|---|---|---|
+| Mini `countPassed(scores)` | শর্ত মিলে গেলে count বাড়ে; খালি array-তে 0 | O(n) | O(1) |
+| Mini `totalBill(prices)` | প্রতিটি price running total-এ যোগ; খালি array-তে 0 | O(n) | O(1) |
+| Mini `findMinPrice(prices)` | `prices[0]` থেকে শুরু; loop index 1 থেকে; empty হলে `null` | O(n) | O(1) |
+| Mini `findAdmin(names)` | exact match পেলে early return; case-sensitive | O(n) worst, O(1) best | O(1) |
+| Mini `toUppercaseNames(names)` | প্রতিটি নাম রূপান্তর করে নতুন array-তে push | O(n·k) | O(n·k), output array |
+| ★8.3 `secondLargestDistinct(nums)` | largest/secondLargest এক pass-এ track; duplicate maximum-কে দ্বিতীয় মান ধরা যাবে না | O(n) | O(1) |
+| ★8.4 `longestRun(nums)` / LC 1446 | পাশাপাশি সমান হলে `currentRun++`, না হলে 1; `maxRun` ধরে রাখো | O(n) | O(1) |
+| ★8.1 `findLargest(nums)` | empty হলে `null`; `nums[0]` থেকে শুরু; প্রতিটি সংখ্যাকে বর্তমান largest-এর সঙ্গে তুলনা | O(n) | O(1) |
+| ★8.2 `countVowelsAndConsonants(s)` | `toLowerCase()` করে ASCII letter যাচাই; space/digit/punctuation বাদ; vowel ও consonant আলাদা count | O(n) | O(n) lowercase copy |
+| Mini `countVowels(word)` | পূর্ণ vowel/consonant problem-এর আগে case-insensitive vowel-count warm-up | O(n) | O(n) lowercase copy |
+
 ---
 
 ## অংশ ৩ — বারবার যে ভুলগুলো হয় (চোখ রাখো)
@@ -209,7 +229,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
-| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | |
+| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | 🟡 চলছে — P8.1–P8.4, ★8.1–8.4 শেষ; ★8.5 ও Gate বাকি |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |

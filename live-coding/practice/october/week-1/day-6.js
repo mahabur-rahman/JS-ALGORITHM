@@ -182,17 +182,13 @@
 // console.log(longestRun([3, 4, 5, 6, 0, 0, 8])); // 2
 // console.log(longestRun([7, 7, 7, 2, 2])); // 3
 
-
 // Problem 2 — Count Vowels
-
-
 
 // function countVowels(word) {
 
 //   if(word === undefined){
 //    return 0
 //   }
-
 
 //   let count = 0;
 //   let coveredWordToLowerCase = word.toLowerCase()
@@ -208,6 +204,78 @@
 //   return count
 // }
 
-// // console.log(countVowels("education")); 
+// // console.log(countVowels("education"));
 // // console.log(countVowels("programming"))
 // console.log(countVowels("BeAutIfula"))
+
+// function findLargest(nums) {
+//   if (nums.length === 0) return null;
+
+//   let result = nums[0];
+
+//   for (const num of nums) {
+//     if (result < num) {
+//       result = num;
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(findLargest([3, 9, 2]));       // 9
+// console.log(findLargest([10, 4, 7]));      // 10
+// console.log(findLargest([-5, -2, -9]));    // -2
+// console.log(findLargest([8]));             // 8
+// console.log(findLargest([]));              // null
+// console.log(findLargest([3, 9, 12]));      // 12
+
+// ★8.2 — Count Vowels and Consonants
+
+// Edge case : -----------------------
+// - empty space check
+// - digit check 2, 0, 6
+
+// - vowel : somthing
+// - consonants : something
+// - loop every letter
+// - condition check both for vowel || consonants
+// - if vowel match like : vowel++
+// - if consonants match : consonants++
+// - return {vowel : 0, consonants : 0}
+
+// function countVowelsAndConsonants(s) {
+//   let vowels = 0;
+//   let consonants = 0;
+
+//   const convertedSting = s.toLowerCase();
+
+//   for (const cha of convertedSting) {
+//     if (cha === " " || (cha >= "0" && cha <= "9")) {
+//       continue;
+//     }
+
+//     if (cha < "a" || cha > "z") {
+//       continue;
+//     }
+
+//     if (
+//       cha === "a" ||
+//       cha === "i" ||
+//       cha === "o" ||
+//       cha === "u" ||
+//       cha === "e"
+//     ) {
+//       vowels++;
+//     } else {
+//       consonants++;
+//     }
+//   }
+
+//   return {
+//     vowels,
+//     consonants,
+//   };
+// }
+
+// // console.log(countVowelsAndConsonants("Hello World"));
+// console.log(countVowelsAndConsonants("Sky 2026"));

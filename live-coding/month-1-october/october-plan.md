@@ -64,7 +64,7 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (২১ অক্টো) শেখার অবস্থান W1 D6 — পরিকল্পিত দিনের তুলনায় প্রায় ১১ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
+> এখন (২২ অক্টো) শেখার অবস্থান W1 D6 — পরিকল্পিত দিনের তুলনায় প্রায় ১২ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
 
 ---
 ---
@@ -875,7 +875,7 @@ Example 3: Input: n = 9   Output: false   (3 × 3)
 
 ---
 
-## Day 6 · W1 D6 · শনি ১০ অক্টো — Topic 8: Basic Problem Solving ★ (৬টা মৌলিক কাজ) ⬜
+## Day 6 · W1 D6 · শনি ১০ অক্টো — Topic 8: Basic Problem Solving ★ (৬টা মৌলিক কাজ) 🟡 চলছে
 
 **আজকের লক্ষ্য:** Week 1-এর সবচেয়ে জরুরি দিন। "কোথা থেকে শুরু করব" — তার প্রথম পূর্ণ উত্তর।
 **আজ থেকে:** প্রতিটা ★ problem-এ Blank Editor header comment লিখে শুরু (`00-framework/01-master-framework.md` অংশ ৫)।
@@ -893,22 +893,22 @@ Example 3: Input: n = 9   Output: false   (3 × 3)
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 8.1 — Input → Process → Output** ⬜
+**Phase 8.1 — Input → Process → Output** <span style="color:red">**🔴 DONE**</span>
 code-এর আগে লেখো: input type, output type, একটা example।
-- **P8.1 · Write the Header Only** 🟢 ⬜ — 🌍 রান্নার আগে recipe পড়া। **EN:** For "return the average of an array", write only: input type, output type, one example, and what to return for `[]`. No code.
+- **P8.1 · Write the Header Only** 🟢 <span style="color:red">**🔴 DONE**</span> — 🌍 রান্নার আগে recipe পড়া। **EN:** For "return the average of an array", write only: input type, output type, one example, and what to return for `[]`. No code.
 
-**Phase 8.2 — ৬ কাজ চেনা** ⬜
-- **P8.2 · Name the Task** 🟢 ⬜ — **EN:** For each statement, name the task(s) only, no code: (a) how many students passed (b) total bill (c) cheapest item (d) does the list contain "admin" (e) all names in uppercase (f) the top two scores. **বাংলা:** প্রতিটা বাক্য পড়ে বলো কোন কাজ — এটাই pattern চেনার প্রথম ধাপ।
+**Phase 8.2 — ৬ কাজ চেনা** <span style="color:red">**🔴 DONE**</span>
+- **P8.2 · Name the Task** 🟢 <span style="color:red">**🔴 DONE**</span> — **EN:** For each statement, name the task(s) only, no code: (a) how many students passed (b) total bill (c) cheapest item (d) does the list contain "admin" (e) all names in uppercase (f) the top two scores. **বাংলা:** প্রতিটা বাক্য পড়ে বলো কোন কাজ — এটাই pattern চেনার প্রথম ধাপ।
 
-**Phase 8.3 — শুরুর value-এর ফাঁদ** ⬜
-- **P8.3 · All Negative Max** 🟢 ⬜ — 🌍 শীতের রাতের তাপমাত্রা সব মাইনাসে। **EN:** Run a max-finder that starts at `max = 0` on `[-5, -2, -9]`. What's wrong? Fix it. → should be `-2`
+**Phase 8.3 — শুরুর value-এর ফাঁদ** <span style="color:red">**🔴 DONE**</span>
+- **P8.3 · All Negative Max** 🟢 <span style="color:red">**🔴 DONE**</span> — 🌍 শীতের রাতের তাপমাত্রা সব মাইনাসে। **EN:** Run a max-finder that starts at `max = 0` on `[-5, -2, -9]`. What's wrong? Fix it. → should be `-2`
 
-**Phase 8.4 — Dry-run টেবিল** ⬜
-- **P8.4 · Trace Table** 🟢 ⬜ — **EN:** For count-evens on `[3, 8, 5, 2]`, fill a table `| num | even? | count |` by hand before running. **বাংলা:** হাতে trace করা — interview-এ test-এর সবচেয়ে শক্তিশালী উপায়।
+**Phase 8.4 — Dry-run টেবিল** <span style="color:red">**🔴 DONE**</span>
+- **P8.4 · Trace Table** 🟢 <span style="color:red">**🔴 DONE**</span> — **EN:** For count-evens on `[3, 8, 5, 2]`, fill a table `| num | even? | count |` by hand before running. **বাংলা:** হাতে trace করা — interview-এ test-এর সবচেয়ে শক্তিশালী উপায়। → count: `0 → 1 → 1 → 2`।
 
 ### ★ মূল problem
 
-#### ★ 8.1 · Largest Number 🟢 Easy ⬜
+#### ★ 8.1 · Largest Number 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 LeetCode-এ হুবহু নেই
 🌍 **Real-life:** মাসের সবচেয়ে বড় বিক্রির দিন।
 
@@ -923,8 +923,9 @@ Example 3: Input: nums = []             Output: null
 **বাংলা:** সবচেয়ে বড় সংখ্যা। সব negative হলে? খালি হলে কী ফেরত দেবে — জিজ্ঞেস করো।
 **🧠 ভাবনা:** ৬ কাজের কোনটা? শুরুর value কী হলে সব negative-এও ঠিক থাকে?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**অগ্রগতি:** `findLargest(nums)`-এ empty array → `null`, `nums[0]` দিয়ে শুরু, negative input-সহ test এবং O(n)/O(1) complexity সম্পন্ন (২২ অক্টো)।
 
-#### ★ 8.2 · Count Vowels and Consonants 🟢 Easy ⬜
+#### ★ 8.2 · Count Vowels and Consonants 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 কাছাকাছি: [LC 1704 · Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)
 🌍 **Real-life:** নাম সুন্দর শোনায় কিনা — ভাষাবিদরা vowel/consonant গোনে।
 
@@ -936,10 +937,11 @@ Example 2: Input: s = "Sky 2026"      Output: { vowels: 0, consonants: 3 }
 **Function:** `var countLetters = function (s) {}`
 
 **বাংলা:** string-এ vowel আর consonant আলাদা গোনো; space, digit বাদ; বড়-ছোট হাতের অক্ষর একই।
+**অগ্রগতি:** `countVowelsAndConsonants(s)`-এ lowercase করে ASCII letter filter, vowel/consonant count এবং Time O(n), Auxiliary Space O(n) বিশ্লেষণ সম্পন্ন (২২ অক্টো)।
 **🧠 ভাবনা:** দুটো counter। একটা অক্ষর "letter" কিনা কীভাবে বুঝব? vowel কিনা দ্রুত বুঝতে কী রাখব (`"aeiou".includes`)?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
-#### ★ 8.3 · Second Largest Distinct 🟡 Medium ⬜
+#### ★ 8.3 · Second Largest Distinct 🟡 Medium <span style="color:red">**🔴 DONE**</span>
 🔗 কাছাকাছি: [LC 414 · Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) · [LC 1796 · Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/)
 🌍 **Real-life:** দৌড় প্রতিযোগিতায় দ্বিতীয় স্থানের সময় (একই সময়ের দুজন হলে একজনই ধরা হবে)।
 
@@ -955,7 +957,7 @@ Example 3: Input: nums = [1, 7, 3, 7] Output: 3
 **🧠 ভাবনা:** দুটো জিনিস track (first, second)। নতুন সংখ্যা first-এর চেয়ে বড় হলে কী কী বদলায় (ক্রম!)? first-এর সমান হলে কী করব?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
-#### ★ 8.4 · 1446. Consecutive Characters (Longest Equal Run) 🟢 Easy ⬜
+#### ★ 8.4 · 1446. Consecutive Characters (Longest Equal Run) 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 [LC 1446](https://leetcode.com/problems/consecutive-characters/) (হুবহু string version) · [LC 485 · Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) (কাছাকাছি)
 🌍 **Real-life:** টানা কত দিন বৃষ্টি হলো — সবচেয়ে লম্বা streak।
 
@@ -970,6 +972,7 @@ Explanation: The substring "eeeee" is of length 5 with the character 'e' only.
 **Function:** `var maxPower = function (s) {}`
 
 **বাংলা:** পাশাপাশি একই অক্ষরের সবচেয়ে লম্বা ধারা কত লম্বা।
+**অগ্রগতি:** array-তে longest equal run-এর practice এবং কাছাকাছি LeetCode string problem submit করা হয়েছে (২২ অক্টো)।
 **🧠 ভাবনা:** দুটো জিনিস — "এখনকার ধারা কত লম্বা" আর "সবচেয়ে লম্বা কত"। আগেরটার সাথে মিললে কী, না মিললে কী?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
@@ -991,6 +994,8 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 
 ### 🔗 Basic Problem Solving বোঝার জন্য আরো LeetCode
 [485 Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) · [1732 Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) · [414 Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) · [1491 Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
+
+**Day 6 status (২২ অক্টো):** P8.1–P8.4 এবং ★8.1–★8.4 সম্পন্ন। ★8.5 First Negative Balance এবং Topic 8 Gate বাকি।
 
 ### 🚪 Gate — Topic 8 ⬜
 
