@@ -181,3 +181,33 @@
 // console.log(longestRun([1, 2, 1])); // 1
 // console.log(longestRun([3, 4, 5, 6, 0, 0, 8])); // 2
 // console.log(longestRun([7, 7, 7, 2, 2])); // 3
+
+
+// Problem 2 — Count Vowels
+
+
+
+// function countVowels(word) {
+
+//   if(word === undefined){
+//    return 0
+//   }
+
+
+//   let count = 0;
+//   let coveredWordToLowerCase = word.toLowerCase()
+
+//   for(const character of coveredWordToLowerCase){
+//     // console.log(vowel)
+
+//     if(character === "a" || character === "e" || character === "i" || character === "o" || character === "u"){
+//       count++
+//     }
+//   }
+
+//   return count
+// }
+
+// // console.log(countVowels("education")); 
+// // console.log(countVowels("programming"))
+// console.log(countVowels("BeAutIfula"))
