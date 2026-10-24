@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২২ অক্টোবর ২০২৬ · W1 D6-এর P8.1–P8.4 ও ★8.1–8.5 শেষ; Topic 8 Gate বাকি
+**শেষ update:** ২৪ অক্টোবর ২০২৬ · W1 D6 Topic 8 ও Gate সম্পন্ন; এখন W1 D7 Revision
 
 ---
 
@@ -189,7 +189,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★7.4 `isPrime(n)` | আগে `2..n-1`, পরে `i * i <= n`; divisor pair থেকে √n যথেষ্ট | O(√n) optimized | O(1) |
 | Gate mini `sumEvenDigits(n)` | শেষ digit `% 10` দিয়ে নাও; জোড় হলে sum-এ যোগ; `Math.floor(n / 10)` দিয়ে এগোও; `n = 0`-এ 0 | O(d) | O(1) |
 
-### Topic 8 — Basic Problem Solving 🟡 চলছে (W1 D6)
+### Topic 8 — Basic Problem Solving ✅ সম্পন্ন (W1 D6, Gate ২৪ অক্টো)
 
 - **Input → Process → Output:** আগে input/output type, ছোট example ও empty-input contract পরিষ্কার করো। Average-এর mini exercise-এ array-র sum বের করে length দিয়ে ভাগ করা হয়েছে।
 - **ছয়টি মৌলিক কাজ:** Counting (`count = 0`), Accumulation (`total = 0`), Min/Max (array-এর বাস্তব মান দিয়ে initialize), Search (match পেলে early return), Build (`result = []`), Track two values (`largest`, `secondLargest`)।
@@ -208,6 +208,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | ★8.1 `findLargest(nums)` | empty হলে `null`; `nums[0]` থেকে শুরু; প্রতিটি সংখ্যাকে বর্তমান largest-এর সঙ্গে তুলনা | O(n) | O(1) |
 | ★8.2 `countVowelsAndConsonants(s)` | `toLowerCase()` করে ASCII letter যাচাই; space/digit/punctuation বাদ; vowel ও consonant আলাদা count | O(n) | O(n) lowercase copy |
 | ★8.5 `firstNegativeBalance(transactions)` | running balance জমাও; প্রথম negative হলেই day index return, না হলে `-1` | O(n) | O(1) |
+| Gate `countScoresAboveAverage(scores)` | প্রথম pass-এ sum/average, দ্বিতীয় pass-এ average-এর বেশি score count; empty input → 0 | O(n) | O(1) |
 | Mini `countVowels(word)` | পূর্ণ vowel/consonant problem-এর আগে case-insensitive vowel-count warm-up | O(n) | O(n) lowercase copy |
 
 ---
@@ -230,7 +231,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 |---|---|---|
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
-| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | 🟡 চলছে — P8.1–P8.4 ও ★8.1–8.5 শেষ; Topic 8 Gate বাকি |
+| 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | ✅ সম্পন্ন — P8.1–P8.4, ★8.1–8.5 ও Gate (২৪ অক্টো) |
 | 9 Big-O | W2 D1–D2 | |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |

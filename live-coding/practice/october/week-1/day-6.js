@@ -315,3 +315,41 @@
 // // console.log(firstNegativeBalance([100, -50, -80, 30])); // 2
 
 // console.log(firstNegativeBalance([10, -5, 20])); // Expected: -1
+
+// Gate Problem — Count Scores Above Average
+
+// Edge case : --------------
+// - scores [...] - done
+// loop each score got  - done
+// - total scores like : value + value - done
+// - average score : total / total count each value
+// - score > average : return their count not value
+// - if [] return 0 - done
+// - if any score value not greater than average return 0
+
+// function countScoresAboveAverage(scores) {
+//   const scoreLength = scores.length;
+//   let result = 0;
+
+//   if (scoreLength === 0) return 0;
+
+//   let total = 0;
+
+//   for (const score of scores) {
+//     total += score;
+//   }
+
+//   let averageScore = total / scoreLength;
+
+//   for (const compareScore of scores) {
+//     if (compareScore > averageScore) {
+//       result++;
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(countScoresAboveAverage([10, 20, 30, 40])); // 2
+// // console.log(countScoresAboveAverage([5, 5, 5]));        // 0
+// // console.log(countScoresAboveAverage([]));               // 0

@@ -58,13 +58,13 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
-| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D6) |
+| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D7) |
 | **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | ⬜ |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (২২ অক্টো) শেখার অবস্থান W1 D6 — পরিকল্পিত দিনের তুলনায় প্রায় ১২ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
+> এখন (২৪ অক্টো) শেখার অবস্থান W1 D7 — পরিকল্পিত দিনের তুলনায় প্রায় ১৩ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
 
 ---
 ---
@@ -875,7 +875,7 @@ Example 3: Input: n = 9   Output: false   (3 × 3)
 
 ---
 
-## Day 6 · W1 D6 · শনি ১০ অক্টো — Topic 8: Basic Problem Solving ★ (৬টা মৌলিক কাজ) 🟡 চলছে
+## Day 6 · W1 D6 · শনি ১০ অক্টো — Topic 8: Basic Problem Solving ★ (৬টা মৌলিক কাজ) <span style="color:red">**🔴 DONE**</span>
 
 **আজকের লক্ষ্য:** Week 1-এর সবচেয়ে জরুরি দিন। "কোথা থেকে শুরু করব" — তার প্রথম পূর্ণ উত্তর।
 **আজ থেকে:** প্রতিটা ★ problem-এ Blank Editor header comment লিখে শুরু (`00-framework/01-master-framework.md` অংশ ৫)।
@@ -996,13 +996,13 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 ### 🔗 Basic Problem Solving বোঝার জন্য আরো LeetCode
 [485 Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) · [1732 Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) · [414 Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) · [1491 Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
 
-**Day 6 status (২২ অক্টো):** P8.1–P8.4 এবং ★8.1–★8.5 সম্পন্ন। Topic 8 Gate বাকি।
+**Day 6 status (২৪ অক্টো):** P8.1–P8.4, ★8.1–★8.5 এবং Topic 8 Gate সম্পন্ন। Gate-এর unseen `countScoresAboveAverage(scores)`-এ দুই pass—প্রথমে sum/average, পরে average-এর বেশি score count; Time O(n), Auxiliary Space O(1)।
 
-### 🚪 Gate — Topic 8 ⬜
+### 🚪 Gate — Topic 8 <span style="color:red">**🔴 DONE**</span>
 
 ---
 
-## Day 7 · W1 D7 · রবি ১১ অক্টো — Revision · Anti-Freeze Drill · Week Review ⬜
+## Day 7 · W1 D7 · রবি ১১ অক্টো — Revision · Anti-Freeze Drill · Week Review 🟡 চলছে
 
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + মাথা ফাঁকা হলে কী করব, হাতে-কলমে।
 
