@@ -1007,7 +1007,7 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + মাথা ফাঁকা হলে কী করব, হাতে-কলমে।
 
 ### 🔁 Re-solve (ফাঁকা editor, timer — প্রতিটা ≤ ১০ মিনিট)
-- ⬜ 4.1 Fizz Buzz · ⬜ 5.4 First Descent · ⬜ 7.2 Reverse Integer · ⬜ 8.3 Second Largest · ⬜ 8.5 First Negative Balance
+- 🔴 DONE 4.1 Fizz Buzz (২৪ অক্টো) · ⬜ 5.4 First Descent · ⬜ 7.2 Reverse Integer · ⬜ 8.3 Second Largest · ⬜ 8.5 First Negative Balance
 
 ### 🧊 Anti-Freeze Drill (২০ মিনিট)
 লক্ষ্য solve করা না — লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ধাপগুলো editor-এ **comment হিসেবে লেখা**, তারপর code।
