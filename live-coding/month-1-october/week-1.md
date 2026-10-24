@@ -194,7 +194,7 @@ console.log((10).toString(2), (255).toString(16));
 
 ---
 
-## Day 6 — শনি, ১০ অক্টোবর — Basic Problem Solving ★ (৬টা মৌলিক কাজ)
+## Day 6 — শনি, ১০ অক্টোবর — Basic Problem Solving ★ (৬টা মৌলিক কাজ) 🔴 সম্পন্ন
 
 **আজকের লক্ষ্য:** Phase A-র সবচেয়ে জরুরি দিন। "কোথা থেকে শুরু করব" — তার প্রথম পূর্ণ উত্তর।
 
@@ -219,17 +219,19 @@ console.log((10).toString(2), (255).toString(16));
 **আজ থেকে:** প্রতিটা ★ problem-এ Blank Editor header comment লিখে শুরু করবে।
 
 **Problems (`Math.max`, `sort`, `reduce` নিষেধ):**
-- [ ] ★ **8.1** সবচেয়ে বড় সংখ্যা। সব negative? খালি array? `A` · O(n), O(1)
-- [ ] ★ **8.2** string-এ vowel আর consonant আলাদা গোনো। space, digit, uppercase? `B`
-- [ ] ★ **8.3** **দ্বিতীয় বৃহত্তম distinct** — `[5,5,4]` → 4, `[3,3]` → `null`। **এক loop-এ।** `C` · O(n), O(1)
-- [ ] ★ **8.4** পাশাপাশি সমান element-এর সবচেয়ে লম্বা ধারা — `[1,1,2,2,2,3]` → 3। `C` · O(n), O(1)
-- [ ] ★ **8.5 (unseen)** দৈনিক লেনদেন `[100, -50, -80, 30]`, শুরু 0 — **প্রথম কোন দিন balance negative?** না হলে -1। ৬টার কোনগুলোর মিশ্রণ — নিজে চেনো। `C`
+- [x] ★ **8.1** সবচেয়ে বড় সংখ্যা। সব negative? খালি array? `A` · O(n), O(1) — `findLargest`, empty হলে `null`; negative case-সহ যাচাই।
+- [x] ★ **8.2** string-এ vowel আর consonant আলাদা গোনো। space, digit, uppercase? `B` · Time O(n), auxiliary space O(n) (`toLowerCase()` copy)।
+- [x] ★ **8.3** **দ্বিতীয় বৃহত্তম distinct** — `[5,5,4]` → 4, `[3,3]` → `null`। **এক loop-এ।** `C` · O(n), O(1)
+- [x] ★ **8.4** পাশাপাশি সমান element-এর সবচেয়ে লম্বা ধারা — `[1,1,2,2,2,3]` → 3। `C` · O(n), O(1) — কাছাকাছি LeetCode 1446 submit করা হয়েছে।
+- [x] ★ **8.5 (unseen)** দৈনিক লেনদেন `[100, -50, -80, 30]`, শুরু 0 — **প্রথম কোন দিন balance negative?** না হলে -1। ৬টার কোনগুলোর মিশ্রণ — নিজে চেনো। `C` · Time O(n), Auxiliary Space O(1)
+
+**Day 6 checkpoint (২৪ অক্টো):** Input/Output, ছয়টি মৌলিক pattern চেনা, all-negative max-এর initial value, P8.4 trace table, ★8.1–★8.5 এবং Topic 8 Gate সম্পন্ন। Gate problem `countScoresAboveAverage`-এ accumulation + counting; Time O(n), Auxiliary Space O(1)।
 
 **বলো:** *"I'll track the largest and second-largest values in one pass. When I see a new maximum, the old maximum becomes the second largest."*
 
 ---
 
-## Day 7 — রবি, ১১ অক্টোবর — Revision · Anti-Freeze Drill · Week Review
+## Day 7 — রবি, ১১ অক্টোবর — Revision · Anti-Freeze Drill · Week Review 🟡 চলছে
 
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + Anti-Freeze protocol হাতে-কলমে।
 
