@@ -20,11 +20,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W1 D7 — Topic 8 Basic Problem Solving ও Gate সম্পন্ন (২৪ অক্টো) · D5 Topic 7 Gate ✅ · ○7.5 Armstrong skip |
-| **পরের কাজ** | Week Review reflection · LC 674 implementation/complexity সম্পন্ন, সঠিক trace output 4; submission status জানানো হয়নি · আগে সমাধান করা 8.3 ও 8.5 repeat skip · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
-| **পিছিয়ে আছি?** | শেখার অবস্থান W1 D7; problem-solving অংশ সম্পন্ন, Week Review বাকি। |
+| **বর্তমান দিন** | W2 D1 — Topic 9: Big-O ১ · Week 1 / W1 D7 সম্পূর্ণ (user confirmation, ২৫ অক্টো) · Topic 8 Gate ✅ · ○7.5 Armstrong skip |
+| **পরের কাজ** | W2 D1 Phase 9.1 — P9.1 Count by Hand; তারপর plan-এর ক্রমে Big-O exercise · আগে করা exact problem repeat বাধ্যতামূলক নয় · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
+| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D1; October plan অনুযায়ী প্রায় ১৩ দিন পিছিয়ে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) |
-| **★ শেষ (মোট)** | 22 |
+| **★ শেষ (মোট)** | 23 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -43,7 +43,8 @@
 | ১৫–১৮ অক্টো | W1 D4 ✅ | P6.6 Valid PIN · P6.7a Countdown · P6.7b Sum to N · ★6.1–★6.4 · Topic 6 Gate · Topic 5 warm-up Gate সম্পন্ন | 4 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy; repeated function call-এ current value; output string exact match করতে হবে (`length` lowercase); loop boundary, nested-pair count ও early-return complexity যাচাই |
 | ২০–২১ অক্টো | W1 D5 ✅ | Topic 7 Numbers & Math — Phase 7.1–7.6, ★7.1–7.4 ও Gate সম্পন্ন; ○7.5 Armstrong skip | 4 / 4 | — | — | Digit extraction/count, divisor pairs, product−sum, reverse overflow, half-reversal palindrome, prime O(n)→O(√n); English √n reasoning; নতুন sumEvenDigits problem ও complexity Gate-এ ঠিক |
 | ২২–২৪ অক্টো | W1 D6 ✅ | Topic 8 Basic Problem Solving — P8.1–P8.4, ★8.1–8.5 ও Gate সম্পন্ন | 5 / 5 | — | — | Min/Max-এ data থেকে শুরু; Search-এ early return; Build-এ output array; second max-এ duplicate বাদ; run-এ current/max length; trace: `[3,8,5,2]`-এ count `0→1→1→2`; vowel/consonant O(n)/O(n); first negative balance O(n)/O(1); Gate-এ average বের করতে accumulation, পরে count — O(n)/O(1) |
-| ২৪–২৫ অক্টো | W1 D7 (চলছে) | Problem-solving অংশ সম্পন্ন: FizzBuzz, First Descent, Reverse Integer; 8.3 ও 8.5 duplicate বলে skip; D7.1 LC 674 code/complexity ও সঠিক trace output 4 | 1 / 1 | — | — | একই problem আগের দিনে solve থাকলে repeat বাধ্যতামূলক নয়; Week Review বাকি, LC submission status অজানা |
+| ২৪–২৫ অক্টো | W1 D7 ✅ | User-confirmed Week 1 complete; FizzBuzz, First Descent, Reverse Integer; D7.1 LC 674 solution/trace/complexity; 8.3/8.5 duplicate বলে skip | 1 / 1 | — | — | পুনরায় একই problem বাধ্যতামূলক নয়; LCIS example-এর সঠিক output 4; Week Review complete বলে user নিশ্চিত করেছেন, বিস্তারিত উত্তর নথিভুক্ত নয় |
+| ২৫ অক্টো | W2 D1 (চলছে) | Topic 9 Big-O 1 — Time Complexity; branch ও practice file তৈরি, P9.1 থেকে শুরু | 0 / 1 | — | — | Big-O: input size n-এর সাথে operation count কীভাবে বাড়ে; duplicate W1 complexity exercise B2 skip |
 
 ---
 

@@ -2,6 +2,8 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
+**বর্তমান অবস্থান:** W2 D1 শুরু (২৫ অক্টো); W1 সম্পূর্ণ। আগে সমাধান করা একই problem/complexity exercise বাধ্যতামূলকভাবে repeat নয়।
+
 ## Big-O · Strings · Arrays (শুরু)
 
 **সপ্তাহের লক্ষ্য:**
@@ -17,7 +19,7 @@
 
 ---
 
-## Day 1 — সোম, ১২ অক্টোবর — Big-O ১: Time Complexity ★
+## Day 1 — সোম, ১২ অক্টোবর — Big-O ১: Time Complexity ★ 🟡 চলছে (২৫ অক্টো)
 
 **পড়বে:** `00-framework/03-complexity-guide.md` — অংশ ১, ২, ৩ (পুরোটা মনোযোগ দিয়ে)।
 
@@ -49,7 +51,7 @@ function f(n) { if (n <= 1) return 1; return f(n - 1) + f(n - 1); }
 // (h)
 function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 ```
-- [ ] ★ **B2** তোমার W1-এর ৫টা ★ problem-এর complexity লেখো (8.1, 8.3, 8.4, 7.4, 5.2)।
+- ⏭️ ★ **B2** তোমার W1-এর ৫টা ★ problem-এর complexity লেখো (8.1, 8.3, 8.4, 7.4, 5.2) — আগেই complexity করা হয়েছে, তাই duplicate exercise skip।
 - [ ] ○ **B3** n = 1,000,000 হলে O(n), O(n log n), O(n²) — আনুমানিক কত operation? কোনটা ১ সেকেন্ডে চলবে?
 
 **বলো:** *"The outer loop runs n times and the inner loop runs n times for each, so it's O(n²). If n doubles, the work roughly quadruples."*

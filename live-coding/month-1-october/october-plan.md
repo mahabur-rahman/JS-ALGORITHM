@@ -58,13 +58,13 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
-| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | 🟡 চলছে (D7) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | ⬜ |
+| **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1, ২৫ অক্টো) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (২৫ অক্টো) শেখার অবস্থান W1 D7 — পরিকল্পিত দিনের তুলনায় প্রায় ১৪ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
+> এখন (২৫ অক্টো) শেখার অবস্থান W2 D1 — W1 D7 ও Week 1 সম্পন্ন। পরিকল্পিত দিনের তুলনায় প্রায় ১৩ দিন পিছিয়ে; Gate পাস না করে পরের topic-এ যাব না, duplicate problem repeat বাধ্যতামূলক নয়।
 
 ---
 ---
@@ -1002,7 +1002,7 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 
 ---
 
-## Day 7 · W1 D7 · রবি ১১ অক্টো — Revision · Anti-Freeze Drill · Week Review 🟡 চলছে
+## Day 7 · W1 D7 · রবি ১১ অক্টো — Revision · Anti-Freeze Drill · Week Review <span style="color:red">**🔴 DONE**</span> (২৫ অক্টো)
 
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + মাথা ফাঁকা হলে কী করব, হাতে-কলমে।
 
@@ -1031,7 +1031,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 **বাংলা:** পাশাপাশি টানা বাড়তে থাকা অংশের সবচেয়ে বড় দৈর্ঘ্য। (`[3,4,5,2,6,7,8,1]` → `4`)
 **🧠 ভাবনা:** 8.4-এর সাথে মিল দেখছ? শুধু শর্তটা বদলেছে — "সমান" থেকে "বড়"। এটাই pattern!
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
-**অগ্রগতি (২৫ অক্টো):** implementation ও complexity সম্পন্ন (Time O(n), Auxiliary Space O(1))। হাতে trace করলে `[3,4,5,2,6,7,8,1]`-এর সঠিক output `4`; আগের `3` হিসাবটি সংশোধন করা হয়েছে। LeetCode submission status জানানো হয়নি।
+**অগ্রগতি (২৫ অক্টো):** implementation ও complexity সম্পন্ন (Time O(n), Auxiliary Space O(1))। হাতে trace করলে `[3,4,5,2,6,7,8,1]`-এর সঠিক output `4`; আগের `3` হিসাবটি সংশোধন করা হয়েছে। User Day 7 সম্পূর্ণ নিশ্চিত করেছেন।
 
 #### ○ D7.2 · Gap Between First and Second ⏭️ SKIP (D6-এ second-largest সম্পন্ন)
 🌍 ক্লাসের প্রথম আর দ্বিতীয় স্থানের নম্বরের পার্থক্য। **EN:** Return `first - second` (distinct). Two students with the same top score? Decide and write it down. **বাংলা:** 8.3-এর ব্যবহার।
@@ -1043,7 +1043,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 
 **বলো (English, ৬০ সেকেন্ড):** সপ্তাহের যেকোনো একটা problem — `05-interview-communication.md` অংশ ৩-এর কাঠামোয়।
 
-**Day 7 checkpoint (২৫ অক্টো):** problem-solving অংশ সম্পন্ন—আগে solve করা duplicate re-solve skip, D7.1 সম্পন্ন। Week Review reflection বাকি; LeetCode 674 submission status নিশ্চিত নয়।
+**Day 7 checkpoint (২৫ অক্টো):** user-এর নিশ্চিতকরণ অনুযায়ী Day 7 ও Week 1 সম্পূর্ণ। আগে solve করা duplicate re-solve skip; D7.1 solution, trace ও complexity সম্পন্ন। Week Review-এর বিস্তারিত reflection উত্তর tracker-এ লেখা হয়নি।
 
 ---
 
@@ -1063,7 +1063,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 
 ---
 
-## Day 8 · W2 D1 · সোম ১২ অক্টো — Topic 9: Big-O ১ — Time Complexity ★ ⬜
+## Day 8 · W2 D1 · সোম ১২ অক্টো — Topic 9: Big-O ১ — Time Complexity ★ 🟡 চলছে (২৫ অক্টো)
 
 **পড়বে:** `00-framework/03-complexity-guide.md` — অংশ ১, ২, ৩।
 
@@ -1119,7 +1119,7 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 **বাংলা:** প্রতিটা snippet-এর Time আর Space লেখো, আর **কেন** — গুনে দেখাও।
 
 #### ★ B2 · Your Week 1 Problems ⬜
-**EN:** Write Time/Space with reasons for 8.1, 8.3, 8.4, 7.4, 5.2. **বাংলা:** নিজের লেখা code-এর complexity — কোন loop কতবার চলে?
+**EN:** Write Time/Space with reasons for 8.1, 8.3, 8.4, 7.4, 5.2. **বাংলা:** নিজের লেখা code-এর complexity — কোন loop কতবার চলে? **⏭️ SKIP:** এগুলোর complexity আগের দিনগুলোতে ইতিমধ্যে নির্ণয় করা হয়েছে; একই exercise repeat নয়।
 
 #### ○ B3 · Operations for n = 1,000,000 ⬜
 **EN:** Estimate operations for O(n), O(n log n), O(n²) at n = 10⁶. Which runs in ~1 second (≈10⁸ ops)? **বাংলা:** কোনটা ১ সেকেন্ডে চলবে?

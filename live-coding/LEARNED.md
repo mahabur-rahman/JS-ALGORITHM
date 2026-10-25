@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২৫ অক্টোবর ২০২৬ · W1 D6 সম্পন্ন; W1 D7 Revision চলছে; একই problem বাধ্যতামূলকভাবে repeat নয়
+**শেষ update:** ২৫ অক্টোবর ২০২৬ · user-confirmed W1 D1–D7 সম্পন্ন; এখন W2 D1 Topic 9 Big-O ১
 
 ---
 
@@ -37,7 +37,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 ### W1 D7 progress
 
 - FizzBuzz, First Descent, Reverse Integer re-solve করা হয়েছে; Day 6-এ আগে সম্পন্ন Second Largest ও First Negative Balance duplicate বলে skip। ভবিষ্যতে আগে নিজে solve করা একই problem পুনরাবৃত্তি বাধ্যতামূলক নয়।
-- LC 674-এর implementation ও complexity complete (O(n)/O(1)); হাতে trace-এ `[3,4,5,2,6,7,8,1]`-এর সঠিক ফল `4`। Submission status জানানো হয়নি; Week Review বাকি।
+- LC 674-এর implementation ও complexity complete (O(n)/O(1)); হাতে trace-এ `[3,4,5,2,6,7,8,1]`-এর সঠিক ফল `4`। User Day 7/Week 1 সম্পূর্ণ নিশ্চিত করেছেন; reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়।
 
 ---
 
@@ -238,7 +238,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | ✅ সম্পন্ন — P8.1–P8.4, ★8.1–8.5 ও Gate (২৪ অক্টো) |
-| 9 Big-O | W2 D1–D2 | |
+| 9 Big-O (Time Complexity) | W2 D1–D2 | 🟡 শুরু — W2 D1 (২৫ অক্টো) |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |
 | 17–24 Binary Search · Two Pointers · Sliding Window · Prefix Sum · Recursion · Linked List · Stack · Queue | November | |

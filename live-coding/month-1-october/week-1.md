@@ -2,6 +2,8 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
+**Week 1 status:** user-এর নিশ্চিতকরণ অনুযায়ী W1 D1–D7 সম্পূর্ণ (২৫ অক্টো)। আগে করা duplicate problem repeat না করে skip করা হয়েছে।
+
 ## Phase A: JavaScript ভিত্তি + Framework
 
 **সপ্তাহের লক্ষ্য:** যেকোনো easy problem দেখে ১ মিনিটে বলতে পারা — *"loop-এর আগে এটা, ভেতরে এটা, পরে এটা"* — আর প্রথম ৩ লাইন দ্বিধা ছাড়া লেখা।
@@ -231,7 +233,7 @@ console.log((10).toString(2), (255).toString(16));
 
 ---
 
-## Day 7 — রবি, ১১ অক্টোবর — Revision · Anti-Freeze Drill · Week Review 🟡 চলছে
+## Day 7 — রবি, ১১ অক্টোবর — Revision · Anti-Freeze Drill · Week Review 🔴 সম্পন্ন (২৫ অক্টো)
 
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + Anti-Freeze protocol হাতে-কলমে।
 
@@ -244,7 +246,7 @@ console.log((10).toString(2), (255).toString(16));
 - [x] ★ **D7.1** *"একটা দোকানের দৈনিক বিক্রির array দেওয়া আছে। সবচেয়ে লম্বা ক্রমাগত দিনের ধারা বের করো যেখানে প্রতিদিনের বিক্রি আগের দিনের চেয়ে বেশি।"* (`[3,4,5,2,6,7,8,1]` → 4) — code ও O(n)/O(1) complexity সম্পন্ন; হাতে trace-এ ফল 4 নিশ্চিত। LC submission status জানানো হয়নি।
 - ⏭️ ○ **D7.2** *"একটা ক্লাসের নম্বরের list — প্রথম ও দ্বিতীয় স্থানের ছাত্রের নম্বরের পার্থক্য বের করো।"* (একই নম্বর দুজনের হলে?) — D6-এর second-largest problem-এর পুনরাবৃত্তি, ঐচ্ছিক হিসেবে skip।
 
-**Day 7 checkpoint (২৫ অক্টো):** problem-solving অংশ সম্পন্ন—duplicate re-solve-গুলো skip/complete, D7.1 solution ও complexity complete। Week Review বাকি; LC submission status জানানো হয়নি।
+**Day 7 checkpoint (২৫ অক্টো):** user নিশ্চিত করেছেন Week 1 ও Day 7 সম্পূর্ণ। আগে করা duplicate re-solve skip করা হয়েছে; D7.1 solution, trace ও complexity সম্পন্ন।
 
 **Week Review (Reflection — `TRACKER.md`-এ):**
 1. Loop Template কি এখন স্বয়ংক্রিয়? কোন problem-এ "loop-এর আগে কী" ভাবতে দেরি হয়েছে?
@@ -252,3 +254,5 @@ console.log((10).toString(2), (255).toString(16));
 3. আত্মবিশ্বাস ১–১০।
 
 **বলো:** সপ্তাহের যেকোনো একটা problem — ৬০ সেকেন্ডের কাঠামোয় (`05-interview-communication.md` অংশ ৩)।
+
+**Week Review status (২৫ অক্টো):** user Day 7/Week 1 সম্পূর্ণ নিশ্চিত করেছেন; reflection-এর বিস্তারিত উত্তর এখানে বা Tracker-এ নথিভুক্ত নয়।
