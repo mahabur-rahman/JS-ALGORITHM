@@ -1007,7 +1007,9 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + মাথা ফাঁকা হলে কী করব, হাতে-কলমে।
 
 ### 🔁 Re-solve (ফাঁকা editor, timer — প্রতিটা ≤ ১০ মিনিট)
-- 🔴 DONE 4.1 Fizz Buzz (২৪ অক্টো) · 🔴 DONE 5.4 First Descent (২৫ অক্টো) · ⬜ 7.2 Reverse Integer · ⬜ 8.3 Second Largest · ⬜ 8.5 First Negative Balance
+- 🔴 DONE 4.1 Fizz Buzz (২৪ অক্টো) · 🔴 DONE 5.4 First Descent (২৫ অক্টো) · 🔴 DONE 7.2 Reverse Integer (২৫ অক্টো) · ⏭️ SKIP 8.3 Second Largest (D6-এ সম্পন্ন) · ⏭️ SKIP 8.5 First Negative Balance (D6-এ সম্পন্ন)
+
+**নিয়ম:** আগের দিনে নিজে সম্পন্ন করা একই problem আবার বাধ্যতামূলক নয়; duplicate re-solve skip করে নতুন কাজে এগোবে।
 
 ### 🧊 Anti-Freeze Drill (২০ মিনিট)
 লক্ষ্য solve করা না — লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ধাপগুলো editor-এ **comment হিসেবে লেখা**, তারপর code।
@@ -1029,8 +1031,9 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 **বাংলা:** পাশাপাশি টানা বাড়তে থাকা অংশের সবচেয়ে বড় দৈর্ঘ্য। (`[3,4,5,2,6,7,8,1]` → `4`)
 **🧠 ভাবনা:** 8.4-এর সাথে মিল দেখছ? শুধু শর্তটা বদলেছে — "সমান" থেকে "বড়"। এটাই pattern!
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**অগ্রগতি (২৫ অক্টো):** implementation ও complexity লেখা হয়েছে। `[3,4,5,2,6,7,8,1]`-এর expected output `4`; এই test ও LeetCode submission নিশ্চিত করা বাকি।
 
-#### ○ D7.2 · Gap Between First and Second ⬜
+#### ○ D7.2 · Gap Between First and Second ⏭️ SKIP (D6-এ second-largest সম্পন্ন)
 🌍 ক্লাসের প্রথম আর দ্বিতীয় স্থানের নম্বরের পার্থক্য। **EN:** Return `first - second` (distinct). Two students with the same top score? Decide and write it down. **বাংলা:** 8.3-এর ব্যবহার।
 
 ### 📝 Week Review (`TRACKER.md`-এ)

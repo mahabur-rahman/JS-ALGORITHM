@@ -101,8 +101,35 @@
 
 //   return -1
 
-
 // };
 
 // console.log(firstDescent([1, 3, 5, 4, 6])); // 2
 // console.log(firstDescent([1, 2, 3]));
+
+// /**
+//  * @param {number} x
+//  * @return {number}
+//  */
+// var reverse = function (x) {
+//   let reverse = 0;
+
+//   while (x !== 0) {
+//     let lastDigit = x % 10;
+
+//     x = Math.trunc(x / 10);
+
+//     reverse = reverse * 10 + lastDigit;
+
+//    if (reverse < -2147483648 || reverse > 2147483647) {
+//   return 0;
+// }
+//   }
+
+//   return reverse;
+// };
+
+// console.log(reverse(123));          // 321
+// console.log(reverse(-123));         // -321
+// console.log(reverse(120));          // 21
+// console.log(reverse(1534236469));   // 0
+// console.log(reverse(0));             // 0
