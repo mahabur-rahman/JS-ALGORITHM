@@ -31,6 +31,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - সমাধানের আগে problem ভাঙা শেখাও: input/output → ছোট উদাহরণ → হাতে সমাধান → brute force → bottleneck/pattern → pseudocode → এক লাইন করে code।
 - প্রতিটি ধাপে আগে আমাকে পরের সিদ্ধান্ত বা লাইন অনুমান করতে দাও; ভুল হলে output ও কারণ দিয়ে বোঝাও, একবারে একটি hint দাও।
 - প্রতিটি ★ problem শেষে test, edge case, Time/Space কীভাবে মাপা হলো, এবং বিকল্প পদ্ধতি আলোচনা করো। পূর্ণ সমাধান দেখালে আমি নিজে file-এ টাইপ করে চালাব।
+- আগে সম্পন্ন করা একই problem আবার বাধ্যতামূলকভাবে করাবে না। আগের দিনে নিজে solve করা থাকলে revision checklist-এ সেটি skip/waived করে নতুন কাজ এগিয়ে নেবে; আমি চাইলে তবেই repeat করব।
 - লক্ষ্য problem-এর সংখ্যা নয়; pattern বুঝে অচেনা problem-এ নিজে চিন্তা শুরু করতে পারা। Gate ও প্রয়োজনীয় re-solve পাস না করে topic এগোবে না।
 
 ---
