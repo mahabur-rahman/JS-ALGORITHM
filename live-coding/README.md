@@ -81,7 +81,7 @@ live-coding/
 | | [শেষ ৪ দিন](month-3-december/final-days.md) | ২৮–৩১ ডিসেম্বর | Bit · Trie · Math · **চূড়ান্ত মূল্যায়ন** |
 | **January →** | [চলমান system](after-december/README.md) | ১ জানুয়ারি থেকে | ○ Bonus · ⏳ Hard · Advanced DS · JS master · নিয়মিত Mock |
 
-**প্রতি সপ্তাহের Day 7 (রবিবার):** নতুন topic না — re-solve + Practical JS + unseen problem + (W8 থেকে) Mock interview।
+**প্রতি সপ্তাহের Day 7 (রবিবার):** নতুন topic না — আগে সম্পন্ন একই problem বাধ্যতামূলকভাবে repeat নয়; দরকারি নতুন variation/Practical JS/unseen problem ও Week Review। (W8 থেকে Mock interview।)
 
 ---
 

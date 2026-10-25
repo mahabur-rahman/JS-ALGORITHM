@@ -1014,7 +1014,7 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 ### 🧊 Anti-Freeze Drill (২০ মিনিট)
 লক্ষ্য solve করা না — লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ধাপগুলো editor-এ **comment হিসেবে লেখা**, তারপর code।
 
-#### ★ D7.1 · 674. Longest Continuous Increasing Subsequence 🟢 Easy ⬜
+#### ★ D7.1 · 674. Longest Continuous Increasing Subsequence 🟢 Easy <span style="color:red">**🔴 DONE**</span>
 🔗 [LC 674](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) (হুবহু)
 🌍 **Real-life:** দোকানের বিক্রি টানা কত দিন বাড়ল — সবচেয়ে লম্বা উত্থানের ধারা।
 
@@ -1031,7 +1031,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 **বাংলা:** পাশাপাশি টানা বাড়তে থাকা অংশের সবচেয়ে বড় দৈর্ঘ্য। (`[3,4,5,2,6,7,8,1]` → `4`)
 **🧠 ভাবনা:** 8.4-এর সাথে মিল দেখছ? শুধু শর্তটা বদলেছে — "সমান" থেকে "বড়"। এটাই pattern!
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
-**অগ্রগতি (২৫ অক্টো):** implementation ও complexity লেখা হয়েছে। `[3,4,5,2,6,7,8,1]`-এর expected output `4`; এই test ও LeetCode submission নিশ্চিত করা বাকি।
+**অগ্রগতি (২৫ অক্টো):** implementation ও complexity সম্পন্ন (Time O(n), Auxiliary Space O(1))। হাতে trace করলে `[3,4,5,2,6,7,8,1]`-এর সঠিক output `4`; আগের `3` হিসাবটি সংশোধন করা হয়েছে। LeetCode submission status জানানো হয়নি।
 
 #### ○ D7.2 · Gap Between First and Second ⏭️ SKIP (D6-এ second-largest সম্পন্ন)
 🌍 ক্লাসের প্রথম আর দ্বিতীয় স্থানের নম্বরের পার্থক্য। **EN:** Return `first - second` (distinct). Two students with the same top score? Decide and write it down. **বাংলা:** 8.3-এর ব্যবহার।
@@ -1042,6 +1042,8 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 3. আত্মবিশ্বাস ১–১০।
 
 **বলো (English, ৬০ সেকেন্ড):** সপ্তাহের যেকোনো একটা problem — `05-interview-communication.md` অংশ ৩-এর কাঠামোয়।
+
+**Day 7 checkpoint (২৫ অক্টো):** problem-solving অংশ সম্পন্ন—আগে solve করা duplicate re-solve skip, D7.1 সম্পন্ন। Week Review reflection বাকি; LeetCode 674 submission status নিশ্চিত নয়।
 
 ---
 

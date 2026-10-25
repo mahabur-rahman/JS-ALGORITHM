@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২৪ অক্টোবর ২০২৬ · W1 D6 Topic 8 ও Gate সম্পন্ন; এখন W1 D7 Revision
+**শেষ update:** ২৫ অক্টোবর ২০২৬ · W1 D6 সম্পন্ন; W1 D7 Revision চলছে; একই problem বাধ্যতামূলকভাবে repeat নয়
 
 ---
 
@@ -20,7 +20,7 @@
 | 4 | **🔨 Guided Build** | আমি পরের লাইন আন্দাজ করি, Claude `console.log` দিয়ে মিলিয়ে দেয়; শেষে পরিষ্কার solution, নিজের হাতে টাইপ |
 | 5 | **⏱️ Complexity, মাপার পদ্ধতি সহ** | n কী · loop কতবার (গুনে) · nested = গুণ, পরপর = যোগ · লুকানো খরচ · নতুন memory · "n ১০ গুণ হলে?" |
 | 6 | **🚪 Gate Check** | topic শেষে একা, hint ছাড়া: ৩–৫ concept প্রশ্ন + ১টা নাম-ছাড়া problem |
-| 7 | **🔁 Re-solve** | Day +1, +3, +7 — ফাঁকা editor থেকে |
+| 7 | **🔁 Re-solve** | প্রয়োজন হলে Day +1, +3, +7 — আগে সমাধান করা duplicate বাধ্যতামূলক নয় |
 
 Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে একটা level, 0–7)।
 
@@ -33,6 +33,11 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - প্রতিটি ★ problem শেষে test, edge case, Time/Space কীভাবে মাপা হলো, এবং বিকল্প পদ্ধতি আলোচনা করো। পূর্ণ সমাধান দেখালে আমি নিজে file-এ টাইপ করে চালাব।
 - আগে সম্পন্ন করা একই problem আবার বাধ্যতামূলকভাবে করাবে না। আগের দিনে নিজে solve করা থাকলে revision checklist-এ সেটি skip/waived করে নতুন কাজ এগিয়ে নেবে; আমি চাইলে তবেই repeat করব।
 - লক্ষ্য problem-এর সংখ্যা নয়; pattern বুঝে অচেনা problem-এ নিজে চিন্তা শুরু করতে পারা। Gate ও প্রয়োজনীয় re-solve পাস না করে topic এগোবে না।
+
+### W1 D7 progress
+
+- FizzBuzz, First Descent, Reverse Integer re-solve করা হয়েছে; Day 6-এ আগে সম্পন্ন Second Largest ও First Negative Balance duplicate বলে skip। ভবিষ্যতে আগে নিজে solve করা একই problem পুনরাবৃত্তি বাধ্যতামূলক নয়।
+- LC 674-এর implementation ও complexity complete (O(n)/O(1)); হাতে trace-এ `[3,4,5,2,6,7,8,1]`-এর সঠিক ফল `4`। Submission status জানানো হয়নি; Week Review বাকি।
 
 ---
 
