@@ -241,8 +241,10 @@ console.log((10).toString(2), (255).toString(16));
 **Revision পছন্দ:** আগের দিনে নিজে সম্পন্ন করা একই problem আবার বাধ্যতামূলক নয়; duplicate হলে skip করে নতুন কাজে এগোবে।
 
 **Anti-Freeze Drill (২০ মিনিট):** নিচের problem — **solve করা লক্ষ্য না।** লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ১৩ ধাপ editor-এ comment হিসেবে লেখা, ধাপ 1 থেকে 12 পর্যন্ত, তারপর code।
-- [ ] ★ **D7.1** *"একটা দোকানের দৈনিক বিক্রির array দেওয়া আছে। সবচেয়ে লম্বা ক্রমাগত দিনের ধারা বের করো যেখানে প্রতিদিনের বিক্রি আগের দিনের চেয়ে বেশি।"* (`[3,4,5,2,6,7,8,1]` → 4) — code ও complexity লেখা; example output যাচাই ও LC submission বাকি।
+- [x] ★ **D7.1** *"একটা দোকানের দৈনিক বিক্রির array দেওয়া আছে। সবচেয়ে লম্বা ক্রমাগত দিনের ধারা বের করো যেখানে প্রতিদিনের বিক্রি আগের দিনের চেয়ে বেশি।"* (`[3,4,5,2,6,7,8,1]` → 4) — code ও O(n)/O(1) complexity সম্পন্ন; হাতে trace-এ ফল 4 নিশ্চিত। LC submission status জানানো হয়নি।
 - ⏭️ ○ **D7.2** *"একটা ক্লাসের নম্বরের list — প্রথম ও দ্বিতীয় স্থানের ছাত্রের নম্বরের পার্থক্য বের করো।"* (একই নম্বর দুজনের হলে?) — D6-এর second-largest problem-এর পুনরাবৃত্তি, ঐচ্ছিক হিসেবে skip।
+
+**Day 7 checkpoint (২৫ অক্টো):** problem-solving অংশ সম্পন্ন—duplicate re-solve-গুলো skip/complete, D7.1 solution ও complexity complete। Week Review বাকি; LC submission status জানানো হয়নি।
 
 **Week Review (Reflection — `TRACKER.md`-এ):**
 1. Loop Template কি এখন স্বয়ংক্রিয়? কোন problem-এ "loop-এর আগে কী" ভাবতে দেরি হয়েছে?

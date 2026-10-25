@@ -48,9 +48,9 @@
 
 ## Re-solve নিয়ম (Spaced Repetition)
 
-প্রতিটা ★ problem:
-- **Day +1:** warm-up-এ pseudocode থেকে code
-- **Day +3:** ফাঁকা editor থেকে পুরো code
-- **Day +7:** week-এর Day 7-এ (বা পরের সপ্তাহে) ফাঁকা editor থেকে, timer দিয়ে
+Re-solve হবে শেখার প্রয়োজনে, বাধ্যতামূলক সংখ্যা পূরণ করতে নয়:
+- **Day +1 / +3 / +7:** প্রয়োজন হলে pseudocode থেকে code, অথবা ফাঁকা editor থেকে timed practice
+- আগে নিজে সম্পন্ন করা একই problem হলে default হিসেবে skip করে পরের নতুন problem-এ যাও; user চাইলে তবেই repeat করো
+- নতুন variation হলে সেটি duplicate নয়—variation-এর পার্থক্যটি practice করো
 
-**কোনো problem "শেষ" ধরা হবে শুধু তখন, যখন Day +7-এ hint ছাড়া ১৫–২০ মিনিটে solve করতে পারবে।**
+Problem complete হিসেবে নথিভুক্ত হবে user-এর নিজের solution, প্রয়োজনীয় test ও complexity ব্যাখ্যার ভিত্তিতে; Day +7 repeat সব problem-এর বাধ্যতামূলক gate নয়।
