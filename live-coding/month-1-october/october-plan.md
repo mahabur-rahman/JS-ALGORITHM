@@ -64,7 +64,7 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (২৪ অক্টো) শেখার অবস্থান W1 D7 — পরিকল্পিত দিনের তুলনায় প্রায় ১৩ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
+> এখন (২৫ অক্টো) শেখার অবস্থান W1 D7 — পরিকল্পিত দিনের তুলনায় প্রায় ১৪ দিন পিছিয়ে। Gate পাস না করে পরের topic-এ যাব না; প্রয়োজনে ○ Bonus বাদ দেব।
 
 ---
 ---
@@ -1007,7 +1007,7 @@ Example 2: Input: transactions = [10, -5, 20]          Output: -1
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + মাথা ফাঁকা হলে কী করব, হাতে-কলমে।
 
 ### 🔁 Re-solve (ফাঁকা editor, timer — প্রতিটা ≤ ১০ মিনিট)
-- 🔴 DONE 4.1 Fizz Buzz (২৪ অক্টো) · ⬜ 5.4 First Descent · ⬜ 7.2 Reverse Integer · ⬜ 8.3 Second Largest · ⬜ 8.5 First Negative Balance
+- 🔴 DONE 4.1 Fizz Buzz (২৪ অক্টো) · 🔴 DONE 5.4 First Descent (২৫ অক্টো) · ⬜ 7.2 Reverse Integer · ⬜ 8.3 Second Largest · ⬜ 8.5 First Negative Balance
 
 ### 🧊 Anti-Freeze Drill (২০ মিনিট)
 লক্ষ্য solve করা না — লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ধাপগুলো editor-এ **comment হিসেবে লেখা**, তারপর code।

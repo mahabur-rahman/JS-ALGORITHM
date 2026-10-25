@@ -236,7 +236,7 @@ console.log((10).toString(2), (255).toString(16));
 **আজকের লক্ষ্য:** সপ্তাহের ★ গুলো ফাঁকা editor থেকে আবার + Anti-Freeze protocol হাতে-কলমে।
 
 **Re-solve (ফাঁকা editor, timer — প্রতিটা ≤ ১০ মিনিট):**
-- [x] 4.1 FizzBuzz · [ ] 5.4 first descent · [ ] 7.2 reverseNumber · [ ] 8.3 second largest · [ ] 8.5 balance
+- [x] 4.1 FizzBuzz · [x] 5.4 first descent · [ ] 7.2 reverseNumber · [ ] 8.3 second largest · [ ] 8.5 balance
 
 **Anti-Freeze Drill (২০ মিনিট):** নিচের problem — **solve করা লক্ষ্য না।** লক্ষ্য হলো `01-master-framework.md` অংশ ৪-এর ১৩ ধাপ editor-এ comment হিসেবে লেখা, ধাপ 1 থেকে 12 পর্যন্ত, তারপর code।
 - [ ] ★ **D7.1** *"একটা দোকানের দৈনিক বিক্রির array দেওয়া আছে। সবচেয়ে লম্বা ক্রমাগত দিনের ধারা বের করো যেখানে প্রতিদিনের বিক্রি আগের দিনের চেয়ে বেশি।"* (`[3,4,5,2,6,7,8,1]` → 4)

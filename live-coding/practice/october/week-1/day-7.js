@@ -71,3 +71,38 @@
 // };
 
 // console.log(fizzBuzz(1));
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+
+// Edge Case :
+// - number : [] - input
+// - if pass [] return -1
+
+// - use for loop because of need index also
+// - compare nums[i] > nums[i + 1] - nums[i] means current value and nums[i + 1] means next value
+// - return their index - if true
+
+// var firstDescent = function (nums) {
+//   if (nums.length === 0) return -1;
+
+//   for (let i = 0; i < nums.length; i++) {
+//     // console.log(i)
+//     // console.log(nums[i])
+
+//     if (nums[i] > nums[i + 1]) {
+//     //   console.log("i value : ", i, " ", " i + 1 value : ", nums[i + 1]);
+
+//       return i
+//     }
+//   }
+
+//   return -1
+
+
+// };
+
+// console.log(firstDescent([1, 3, 5, 4, 6])); // 2
+// console.log(firstDescent([1, 2, 3]));

@@ -21,7 +21,7 @@
 | | |
 |---|---|
 | **বর্তমান দিন** | W1 D7 — Topic 8 Basic Problem Solving ও Gate সম্পন্ন (২৪ অক্টো) · D5 Topic 7 Gate ✅ · ○7.5 Armstrong skip |
-| **পরের কাজ** | W1 D7 re-solve: 5.4 First Descent → 7.2 Reverse Integer → 8.3 Second Largest → 8.5 First Negative Balance; এরপর Anti-Freeze Drill & Week Review · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
+| **পরের কাজ** | W1 D7 re-solve: 7.2 Reverse Integer → 8.3 Second Largest → 8.5 First Negative Balance; এরপর Anti-Freeze Drill & Week Review · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
 | **পিছিয়ে আছি?** | শেখার অবস্থান W1 D7; Week 1 শেষ করতে Day 7-এর revision ও review বাকি। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) |
 | **★ শেষ (মোট)** | 22 |
@@ -43,7 +43,7 @@
 | ১৫–১৮ অক্টো | W1 D4 ✅ | P6.6 Valid PIN · P6.7a Countdown · P6.7b Sum to N · ★6.1–★6.4 · Topic 6 Gate · Topic 5 warm-up Gate সম্পন্ন | 4 / 4 | — | — | Recursion-এর base case ও call stack; `sum`-এ accumulator, rest array; `map`-এ index callback-এ পাঠানো; `filter`-এ truthy/falsy; repeated function call-এ current value; output string exact match করতে হবে (`length` lowercase); loop boundary, nested-pair count ও early-return complexity যাচাই |
 | ২০–২১ অক্টো | W1 D5 ✅ | Topic 7 Numbers & Math — Phase 7.1–7.6, ★7.1–7.4 ও Gate সম্পন্ন; ○7.5 Armstrong skip | 4 / 4 | — | — | Digit extraction/count, divisor pairs, product−sum, reverse overflow, half-reversal palindrome, prime O(n)→O(√n); English √n reasoning; নতুন sumEvenDigits problem ও complexity Gate-এ ঠিক |
 | ২২–২৪ অক্টো | W1 D6 ✅ | Topic 8 Basic Problem Solving — P8.1–P8.4, ★8.1–8.5 ও Gate সম্পন্ন | 5 / 5 | — | — | Min/Max-এ data থেকে শুরু; Search-এ early return; Build-এ output array; second max-এ duplicate বাদ; run-এ current/max length; trace: `[3,8,5,2]`-এ count `0→1→1→2`; vowel/consonant O(n)/O(n); first negative balance O(n)/O(1); Gate-এ average বের করতে accumulation, পরে count — O(n)/O(1) |
-| ২৪ অক্টো | W1 D7 (চলছে) | FizzBuzz re-solve সম্পন্ন (১/৫); D7.1 LC 674-এ increasing run; example 2 যাচাই বাকি | 0 / 1 | — | — | FizzBuzz-এ divisibility condition ও string array; Time O(n), result-space O(n) |
+| ২৪–২৫ অক্টো | W1 D7 (চলছে) | FizzBuzz ও First Descent re-solve সম্পন্ন (২/৫); D7.1 LC 674-এ increasing run; example 2 যাচাই বাকি | 0 / 1 | — | — | FizzBuzz-এ divisibility ও output array O(n); First Descent-এ adjacent comparison, worst-case O(n), space O(1); শেষ index-এ `nums[i+1]` undefined comparison এড়াতে loop bound `i < length - 1` করা যায় |
 
 ---
 
@@ -69,7 +69,7 @@
 | W2 Strings/Arrays-এর পর | LeetCode 1154 Day of the Year (isLeapYear কাজে লাগবে) · HackerRank Grading Students | variant |
 | ১২–১৩ অক্টো | Variant: reference copy + typeof/null মিশ্র | +7 |
 | ✅ ১৮ অক্টো | Topic 5 Gate যাচাই: `countIncreases` নিজে টাইপ + ৩টা "কেন" (loop boundary · nested pair count · firstDescent-এর best/worst case) | Gate |
-| ১৪ / ১৬ / ২০ অক্টো | 5.4 First Descent · 5.2 Good Pairs | +1 / +3 / +7 |
+| ✅ ২৫ অক্টো / 5.2 pending | 5.4 First Descent re-solve সম্পন্ন; Good Pairs | Day 7 / +1 / +3 / +7 |
 
 ---
 
