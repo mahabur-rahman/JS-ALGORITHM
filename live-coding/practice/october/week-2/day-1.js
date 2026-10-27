@@ -79,9 +79,6 @@
 // console.log(countTotalVisits([101, 102], [])); // Expected: 2
 // console.log(countTotalVisits([], [])); // Expected: 0
 
-
-
-
 // function checkCustomers(n) {
 //   for (let i = 0; i < n; i++) {
 //     for (let j = 0; j < 5; j++) {
@@ -91,3 +88,38 @@
 // }
 
 // checkCustomers(3);
+
+// Problem — Count the Checks - custom
+
+/**
+ * @param {number} n - Number of customers
+ * @return {number} - Total number of checks
+ */
+
+// problem statement :
+
+// - loop use - for
+// - calculate - total loop count * 5 (5 fixed setting)
+
+// - return total number of checks
+
+// var countChecks = function (n) {
+//   const setting = 5;
+//   let result = 0;
+//   let total = 0;
+
+//   for (let i = 0; i < n; i++) {
+//     // console.log(i)
+//     result++;
+//   }
+
+//   // console.log(result)
+
+//   total = result * setting;
+
+//   return total;
+// };
+
+// console.log(countChecks(4)); // Expected: 20
+// console.log(countChecks(1)); // Expected: 5
+// console.log(countChecks(0)); // Expected: 0
