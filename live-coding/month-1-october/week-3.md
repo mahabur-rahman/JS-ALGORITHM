@@ -113,7 +113,7 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 প্রতিটা `?` নিজে লেখো — তারপর পুরো function।
 
 **Problems:**
-- [ ] ★ **H1 Contains Duplicate** — (ক) O(n²) (খ) sort (গ) Set। তিনটার টেবিল। `A`
+- ⏭️ ★ **H1 Contains Duplicate** — W2 D2-তে LC 217 একবার solve হবে; একই problem repeat নয়।
 - [ ] ★ **H2 Two Sum** — index ফেরত। brute force → Map। **কেন "আগে check, পরে store" — উল্টো করলে কোন input-এ ভুল?** `B` · O(n), O(n)
 - [ ] ★ **H3 Intersection of Two Arrays** — unique common element। (ক) Set (খ) দুটোই sorted হলে দুই pointer। `A`
 - [ ] ○ **H4 Jewels and Stones** `A`

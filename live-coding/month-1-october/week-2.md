@@ -88,12 +88,14 @@ function hasDuplicate(arr) {
 function process(queue) { while (queue.length) { const x = queue.shift(); /* O(1) কাজ */ } }
 function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.push(s.slice(0, i)); return out; }
 ```
-- [ ] ★ **B6** Constraint থেকে আন্দাজ: (ক) n ≤ 20 (খ) n ≤ 2000 (গ) n ≤ 2 × 10⁵ (ঘ) n ≤ 10⁹ — প্রতিটায় সবচেয়ে ধীর কোন complexity চলবে?
-- [ ] ○ **B7** recursive `sum(arr, i)` লেখো — time আর space কত? iterative-এর সাথে তুলনা।
+- ⏭️ ★ **B6** Constraint থেকে আন্দাজ — P9.10-এ একই সীমাগুলো থাকায় duplicate exercise skip।
+- [ ] ○ **B7** Recursive Sum — optional নতুন array-recursion variant; এখানে করলে November-এর একই exercise skip হবে।
 
 **বলো:** *"`includes` inside the loop is O(n) on its own, so the whole thing is O(n²). Using a Set makes each lookup O(1), bringing it down to O(n) time but O(n) space."*
 
 ---
+
+**পুনরাবৃত্তি নিয়ম:** LC 217 এখানে একবারই solve হবে; October Week 3-এর H1 occurrence skip হবে।
 
 ## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★
 

@@ -1144,8 +1144,8 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 **Phase 9.7 — Auxiliary space** ⬜
 - **P9.7** 🟢 ⬜ — **EN:** Space of (a) summing an array with one variable, (b) building a doubled copy, (c) a Set of all elements. → `O(1), O(n), O(n)`
 
-**Phase 9.8 — Recursion stack = সর্বোচ্চ গভীরতা** ⬜
-- **P9.8** 🟢 ⬜ — 🌍 থালার উপর থালা — কতগুলো একসাথে জমে? **EN:** Space of recursive `sumTo(n)`? → `O(n)` (n frames at once)
+**Phase 9.8 — Recursion stack = সর্বোচ্চ গভীরতা** ✅ (W2 D1-এ শেখা; পুনরাবৃত্তি নয়)
+- **P9.8** ⏭️ **SKIP** — W2 D1-এ recursive call depth বনাম call count, `O(n)` ও `O(log n)` stack space বোঝা হয়েছে।
 
 **Phase 9.9 — JS built-in-এর খরচ** ⬜
 - **P9.9 · Cost Table** 🟢 ⬜ — **EN:** Write the cost of `push, pop, shift, unshift, includes, slice, sort, Map.get`. → `1, 1, n, n, n, k, n log n, 1`
@@ -1155,7 +1155,7 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 
 ### ★ মূল problem
 
-#### ★ B4 · 217. Contains Duplicate 🟢 Easy ⬜
+#### ★ B4 · 217. Contains Duplicate 🟢 Easy ⬜ (একমাত্র solve: W2 D2)
 🔗 [LC 217](https://leetcode.com/problems/contains-duplicate/) (হুবহু)
 🌍 **Real-life:** signup-এ একই email দুবার দেওয়া হয়েছে কিনা।
 
@@ -1191,10 +1191,10 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 ```
 **বাংলা:** `shift` আর `slice`-এর ভেতরের খরচ গুনে মোট complexity।
 
-#### ★ B6 · Guess From Constraints ⬜
+#### ★ B6 · Guess From Constraints ⏭️ SKIP (P9.10-এর একই constraint exercise)
 **EN:** (a) n ≤ 20 (b) n ≤ 2000 (c) n ≤ 2 × 10⁵ (d) n ≤ 10⁹ — slowest complexity that still passes, and one possible pattern for each.
 
-#### ○ B7 · Recursive Sum ⬜
+#### ○ B7 · Recursive Sum ⬜ (ঐচ্ছিক নতুন variant; করলে November-এর একই exercise skip)
 **EN:** Write `sum(arr, i)` recursively. Time and Space? Compare with the iterative version. **বাংলা:** recursion-এর space কেন O(n)?
 
 **বলো:** *"`includes` inside the loop is O(n) on its own, so the whole thing is O(n²). Using a Set makes each lookup O(1), bringing it down to O(n) time but O(n) space."*
@@ -1884,7 +1884,7 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 
 ### ★ মূল problem
 
-#### ★ H1 · 217. Contains Duplicate (৩ উপায়) 🟢 Easy ⬜
+#### ★ H1 · 217. Contains Duplicate (৩ উপায়) ⏭️ SKIP (W2 D2-তে একই LC problem solve হবে)
 🔗 [LC 217](https://leetcode.com/problems/contains-duplicate/) (হুবহু)
 🌍 **Real-life:** একই phone নম্বরে দুটো account।
 **EN:** Return `true` if any value appears at least twice. `[1,2,3,1]` → `true`; `[1,2,3,4]` → `false`.

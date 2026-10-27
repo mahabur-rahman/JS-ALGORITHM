@@ -1026,7 +1026,7 @@ Example 2: Input: nums = [1,2,3], k = 3   Output: 2
 - **P21.3 · Factorial Stack** 🟢 ⬜ — **EN:** Draw the boxes for `factorial(4)` going down and the values coming back up. → `4 × 6 = 24`
 
 **Phase 21.4 — `slice` বনাম index** ⬜
-- **P21.4** 🟢 ⬜ — **EN:** Rewrite P21.2 as `sum(arr, i)` with no `slice`. Why is it O(n) instead of O(n²)?
+- **P21.4** 🟢 ⏭️ SKIP if W2 D2 B7 is completed — একই `sum(arr, i)` exercise একবারই করব।
 
 ### ★ মূল problem
 

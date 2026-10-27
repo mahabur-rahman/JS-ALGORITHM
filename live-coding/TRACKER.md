@@ -21,7 +21,7 @@
 | | |
 |---|---|
 | **বর্তমান দিন** | W2 D2 — Topic 9: Big-O ২ · W2 D1 Time Complexity সম্পন্ন (২৭ অক্টো) · Week 1 / W1 D7 সম্পূর্ণ · Topic 8 Gate ✅ · ○7.5 Armstrong skip |
-| **পরের কাজ** | W2 D2 Phase 9.7 — input, auxiliary ও output space আলাদা করা; আগের exact problem repeat নয় · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
+| **পরের কাজ** | W2 D2 Phase 9.7 checkpoint — input, auxiliary ও output space আলাদা করা; P9.8 আগেই covered, skip · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
 | **পিছিয়ে আছি?** | শেখার অবস্থান W2 D2; October plan অনুযায়ী প্রায় ১৪ দিন পিছিয়ে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) |
 | **★ শেষ (মোট)** | 23 |
