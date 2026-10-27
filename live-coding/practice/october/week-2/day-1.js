@@ -123,3 +123,46 @@
 // console.log(countChecks(4)); // Expected: 20
 // console.log(countChecks(1)); // Expected: 5
 // console.log(countChecks(0)); // Expected: 0
+
+// const n = 3;
+// let j = 0;
+
+// for (let i = 0; i < n; i++) {
+//   while (j < n) {
+//     j++;
+//     console.log("i:", i, "j:", j);
+//   }
+// }
+
+// const n = 4;
+// let j = 0;
+
+// for(let i = 0; i < n; i++){
+//     while(j < n){
+//         j++;
+//         console.log('i : ', i, "j : ", j)
+//     }
+// }
+
+// function visit(n) {
+//   console.log("call:", n);
+
+//   if (n <= 1) return;
+
+//   visit(n - 1);
+//   visit(n - 1);
+// }
+
+// visit(5);
+
+// var countCalls = function (n) {
+//   // base condition
+//   if (n <= 1) return 1;
+
+// //   return 2 ** n - 1;
+
+// return 1 + countCalls(n -1 ) + countCalls(n -1 )
+// };
+
+
+// console.log(countCalls(5))
