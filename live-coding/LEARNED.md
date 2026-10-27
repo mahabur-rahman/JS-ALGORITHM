@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২৫ অক্টোবর ২০২৬ · user-confirmed W1 D1–D7 সম্পন্ন; এখন W2 D1 Topic 9 Big-O ১
+**শেষ update:** ২৭ অক্টোবর ২০২৬ · W1 সম্পন্ন; W2 D1 Big-O Time Complexity সম্পন্ন; এখন W2 D2 Space Complexity শুরু
 
 ---
 
@@ -38,6 +38,14 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 - FizzBuzz, First Descent, Reverse Integer re-solve করা হয়েছে; Day 6-এ আগে সম্পন্ন Second Largest ও First Negative Balance duplicate বলে skip। ভবিষ্যতে আগে নিজে solve করা একই problem পুনরাবৃত্তি বাধ্যতামূলক নয়।
 - LC 674-এর implementation ও complexity complete (O(n)/O(1)); হাতে trace-এ `[3,4,5,2,6,7,8,1]`-এর সঠিক ফল `4`। User Day 7/Week 1 সম্পূর্ণ নিশ্চিত করেছেন; reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়।
+
+### W2 D1 progress — Big-O Time Complexity
+
+- Single loop `O(n)`; দুই full nested loop `O(n²)`; consecutive loops `O(n+m)`; repeated doubling/halving `O(log n)`।
+- Fixed inner loop-এ প্রতিটি outer iteration-এ constant কাজ: `5n` → `O(n)`। শুধু `n * 5` return করা code নিজে `O(1)`—গণনা করা কাজ ও বাস্তবে চালানো কাজ আলাদা।
+- Shared `j` reset না হলে inner `while` পুরো execution জুড়ে মোট `n` বার চলে; outer `for`-সহ মোট `O(n)`।
+- Two-branch recursion `O(2^n)` time / `O(n)` stack; one-branch halving recursion `O(log n)` time / `O(log n)` stack।
+- আগের pair-count ও Week 1 complexity repeat বাদ; B3 ঐচ্ছিক বলে user এগিয়ে গেছেন।
 
 ---
 
@@ -238,7 +246,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | ✅ সম্পন্ন — P8.1–P8.4, ★8.1–8.5 ও Gate (২৪ অক্টো) |
-| 9 Big-O (Time Complexity) | W2 D1–D2 | 🟡 শুরু — W2 D1 (২৫ অক্টো) |
+| 9 Big-O (Time · Space · hidden costs · constraints) | W2 D1–D2 | 🟡 D1 সম্পন্ন; D2 শুরু (২৭ অক্টো) |
 | 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |
 | 17–24 Binary Search · Two Pointers · Sliding Window · Prefix Sum · Recursion · Linked List · Stack · Queue | November | |

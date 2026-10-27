@@ -164,5 +164,15 @@
 // return 1 + countCalls(n -1 ) + countCalls(n -1 )
 // };
 
-
 // console.log(countCalls(5))
+
+
+
+// function g(n) {
+//   if (n <= 1) return 1;
+//   return g(n / 2) + 1;
+// }
+
+
+
+// console.log(g(7))

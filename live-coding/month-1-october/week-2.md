@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 শুরু (২৫ অক্টো); W1 সম্পূর্ণ। আগে সমাধান করা একই problem/complexity exercise বাধ্যতামূলকভাবে repeat নয়।
+**বর্তমান অবস্থান:** W2 D1 সম্পূর্ণ; W2 D2 শুরু (২৭ অক্টো)। আগে সমাধান করা একই problem/complexity exercise বাধ্যতামূলকভাবে repeat নয়।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -19,7 +19,7 @@
 
 ---
 
-## Day 1 — সোম, ১২ অক্টোবর — Big-O ১: Time Complexity ★ 🟡 চলছে (২৫ অক্টো)
+## Day 1 — সোম, ১২ অক্টোবর — Big-O ১: Time Complexity ★ 🔴 সম্পন্ন (২৭ অক্টো)
 
 **পড়বে:** `00-framework/03-complexity-guide.md` — অংশ ১, ২, ৩ (পুরোটা মনোযোগ দিয়ে)।
 
@@ -31,7 +31,7 @@
 - Recursion: tree আঁকো — branching^depth।
 
 **Exercise (এটাই আজকের "problem") — প্রতিটার Time আর Space লেখো + কেন:**
-- [ ] ★ **B1** নিচের ৮টা snippet:
+- [x] ★ **B1** নিচের ৮টা snippet — নতুন pattern-গুলো ছোট অনুশীলনে covered; আগে করা pair-count ও exact complexity repeat বাদ:
 ```js
 // (a)
 for (let i = 0; i < n; i++) total += arr[i];
@@ -52,13 +52,15 @@ function f(n) { if (n <= 1) return 1; return f(n - 1) + f(n - 1); }
 function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 ```
 - ⏭️ ★ **B2** তোমার W1-এর ৫টা ★ problem-এর complexity লেখো (8.1, 8.3, 8.4, 7.4, 5.2) — আগেই complexity করা হয়েছে, তাই duplicate exercise skip।
-- [ ] ○ **B3** n = 1,000,000 হলে O(n), O(n log n), O(n²) — আনুমানিক কত operation? কোনটা ১ সেকেন্ডে চলবে?
+- ⏭️ ○ **B3** n = 1,000,000 হলে O(n), O(n log n), O(n²) — optional estimate; user পরের topic-এ যেতে বলেছেন।
 
 **বলো:** *"The outer loop runs n times and the inner loop runs n times for each, so it's O(n²). If n doubles, the work roughly quadruples."*
 
+**Day 1 checkpoint (২৭ অক্টো):** user-এর সাথে P9.1–P9.6-এর নতুন pattern অনুশীলন ও complexity reasoning সম্পন্ন। P9.2 ও B2 আগেই করা pattern হওয়ায় repeat নয়; B3 optional skip।
+
 ---
 
-## Day 2 — মঙ্গল, ১৩ অক্টোবর — Big-O ২: Space · লুকানো খরচ · Constraint ★
+## Day 2 — মঙ্গল, ১৩ অক্টোবর — Big-O ২: Space · লুকানো খরচ · Constraint ★ 🟡 শুরু (২৭ অক্টো)
 
 **পড়বে:** `03-complexity-guide.md` — অংশ ৪, ৫, ৬, ৭।
 

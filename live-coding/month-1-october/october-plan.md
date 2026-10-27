@@ -1063,7 +1063,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 
 ---
 
-## Day 8 · W2 D1 · সোম ১২ অক্টো — Topic 9: Big-O ১ — Time Complexity ★ 🟡 চলছে (২৫ অক্টো)
+## Day 8 · W2 D1 · সোম ১২ অক্টো — Topic 9: Big-O ১ — Time Complexity ★ 🔴 সম্পন্ন (২৭ অক্টো)
 
 **পড়বে:** `00-framework/03-complexity-guide.md` — অংশ ১, ২, ৩।
 
@@ -1094,7 +1094,7 @@ Explanation: [2] — strictly increasing requires each next element to be bigger
 
 ### ★ মূল problem (আজকের "problem" = exercise)
 
-#### ★ B1 · Complexity of 8 Snippets ⬜
+#### ★ B1 · Complexity of 8 Snippets ✅
 🌍 code review-এ senior জিজ্ঞেস করল: "এটা ১ লাখ user-এ চলবে?"
 **EN:** For each snippet, write Time and Space with the reason.
 ```js
@@ -1121,14 +1121,16 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 #### ★ B2 · Your Week 1 Problems ⬜
 **EN:** Write Time/Space with reasons for 8.1, 8.3, 8.4, 7.4, 5.2. **বাংলা:** নিজের লেখা code-এর complexity — কোন loop কতবার চলে? **⏭️ SKIP:** এগুলোর complexity আগের দিনগুলোতে ইতিমধ্যে নির্ণয় করা হয়েছে; একই exercise repeat নয়।
 
-#### ○ B3 · Operations for n = 1,000,000 ⬜
+#### ○ B3 · Operations for n = 1,000,000 ⏭️ SKIP (optional; user এগোতে বলেছেন)
 **EN:** Estimate operations for O(n), O(n log n), O(n²) at n = 10⁶. Which runs in ~1 second (≈10⁸ ops)? **বাংলা:** কোনটা ১ সেকেন্ডে চলবে?
 
 **বলো:** *"The outer loop runs n times and the inner loop runs n times for each, so it's O(n²). If n doubles, the work roughly quadruples."*
 
+**Day 1 checkpoint (২৭ অক্টো):** P9.1–P9.6-এর নতুন complexity pattern আলোচনা ও হাতে গোনা সম্পন্ন। আগের pair-count pattern P9.2, Week 1 complexity review B2 duplicate বলে বাদ। B1-এর patternগুলো আলাদা ছোট অনুশীলনে covered; একই pattern পুনরাবৃত্তি নয়। Optional B3 user-এর “next” নির্দেশে skip।
+
 ---
 
-## Day 9 · W2 D2 · মঙ্গল ১৩ অক্টো — Topic 9: Big-O ২ — Space · লুকানো খরচ · Constraint ★ ⬜
+## Day 9 · W2 D2 · মঙ্গল ১৩ অক্টো — Topic 9: Big-O ২ — Space · লুকানো খরচ · Constraint ★ 🟡 শুরু (২৭ অক্টো)
 
 **পড়বে:** `03-complexity-guide.md` — অংশ ৪, ৫, ৬, ৭।
 
