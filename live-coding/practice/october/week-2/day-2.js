@@ -19,5 +19,28 @@
 // ★ B6 — SKIPPED: duplicates the constraint exercise in Phase 9.10.
 // ○ B7 — Optional new array-recursion variant; if solved here, skip the November duplicate.
 
+// function countItems(nums) {
+//   let count = 0;
 
+//   if (!Array.isArray(nums)) return 0;
 
+//   for (const num of nums) {
+//     count++;
+//   }
+
+//   return count;
+// }
+
+// console.log(countItems([10, 20])); // 3
+// console.log(countItems([])); // 0
+// console.log(countItems())
+
+// const nums = [10, 20, 30];
+
+// nums.push(40);    // শেষে যোগ: O(1) amortized
+// nums.pop();       // শেষ থেকে সরায়: O(1)
+// nums.includes(20); // খোঁজে: O(n)
+// nums.slice(0, 2); // নতুন array-তে কপি: O(k)
+// nums.shift();     // শুরু থেকে সরায়: O(n)
+
+// console.log(nums.shift())
