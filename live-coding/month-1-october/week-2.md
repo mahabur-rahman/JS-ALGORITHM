@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 সম্পূর্ণ; W2 D2 শুরু (২৭ অক্টো)। আগে সমাধান করা একই problem/complexity exercise বাধ্যতামূলকভাবে repeat নয়।
+**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ (২৯ অক্টো)। আগে সমাধান করা একই problem/complexity exercise repeat নয়।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -97,7 +97,9 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 **P9.9 cost table ✅ (আলোচনা ২৯ অক্টো):** `push/pop` average O(1), `shift/unshift/includes` O(n), arbitrary-position `splice` O(n), `slice(0,k)` O(k), `sort` সাধারণত O(n log n), `Map.get` average O(1)।
 
-**এখনো বাকি:** P9.7 space category-র explicit mini-checkpoint এবং P9.10 constraints-to-complexity mini-exercise।
+**P9.10 checkpoint ✅ (২৯ অক্টো):** `n=50,000`-এ pair-check ~1.25B comparison বনাম sort-then-scan ~800K sort comparison + ≤50K scan; learner `O(n log n)` বেছে নিয়েছে এবং Set-এর average `O(n)` time / `O(n)` space trade-off উল্লেখ করেছে।
+
+**Topic 9 Gate ✅ (২৯ অক্টো):** LC 349 Intersection of Two Arrays code ও complexity সম্পন্ন। Average Time O(n+m), Auxiliary Space O(n+m), Output Space O(min(n,m))। LeetCode submission status নিশ্চিত করা হয়নি। W3 H3 slot এখানে cover, তাই repeat নয়।
 
 ---
 

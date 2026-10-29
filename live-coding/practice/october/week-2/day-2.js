@@ -10,6 +10,7 @@
 // Phase 9.8 — SKIPPED: stack depth O(n)/O(log n) already covered in W2 D1.
 // Phase 9.9 — Hidden costs of JavaScript built-ins.
 // Phase 9.10 — Use input constraints to estimate the slowest feasible complexity.
+// P9.7, P9.9, P9.10 checkpoints discussed; only the Topic 9 Gate remains.
 
 // ★ B4 — LeetCode 217: Contains Duplicate — SOLVED + submitted (29 Oct).
 // Complexity checkpoint passed: average O(n) time, O(n) auxiliary space,
@@ -88,3 +89,68 @@
 // };
 
 // console.log(containsDuplicate([1, 2, 3, 1])); // Expected: true
+
+// Topic 9 Gate — LC 349 Intersection of Two Arrays — code + complexity complete (29 Oct).
+// Average time O(n+m), auxiliary space O(n+m), output space O(min(n,m)).
+// LeetCode submission status was not confirmed; W3 duplicate remains skipped.
+
+// LeetCode 349 — Intersection of Two Arrays
+
+// Case for approach :
+// - Two set declare and push value on this both set
+// - loop each array using for...of
+// - if set.has() no value then added it on this set
+// - print the repeatable value
+// - return in array repeatable value
+
+// var intersection = function (nums1, nums2) {
+//   let firstNumSet = new Set();
+//   let secondNumSet = new Set();
+//   let commonValue = []
+
+//   for (const num1 of nums1) {
+//     // console.log(num1)
+
+//     if (firstNumSet.has(num1)) {
+//     //   console.log("Duplicate value : ", num1);
+//     }
+
+//     firstNumSet.add(num1);
+//   }
+
+//   for (const num2 of nums2) {
+//     if (secondNumSet.has(num2)) {
+//     //   console.log("Duplicate value : ", num2);
+//     }
+
+//     secondNumSet.add(num2);
+//   }
+
+
+//   for(const value of firstNumSet){
+//     console.log('value : ', value)
+
+//     if(secondNumSet.has(value)) {
+//         commonValue.push(value)
+//     }
+//   }
+
+
+//   return commonValue
+
+// };
+
+// console.log(intersection([1, 2, 2, 1], [2, 2]));
+// Expected: [2]
+
+// console.log(intersection([4, 9, 5], [9, 4, 9, 8, 4]));
+// Expected: [9, 4] or [4, 9]
+
+// console.log(intersection([1, 2, 3], [4, 5, 6]));
+// Expected: []
+
+// console.log(intersection([1, 2, 3], [1, 2, 3]));
+// Expected: [1, 2, 3]
+
+// console.log(intersection([1, 1, 1], [1, 1]));
+// Expected: [1]

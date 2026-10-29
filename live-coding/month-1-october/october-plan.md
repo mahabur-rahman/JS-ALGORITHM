@@ -1130,7 +1130,7 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 
 ---
 
-## Day 9 · W2 D2 · মঙ্গল ১৩ অক্টো — Topic 9: Big-O ২ — Space · লুকানো খরচ · Constraint ★ 🟡 শুরু (২৭ অক্টো)
+## Day 9 · W2 D2 · মঙ্গল ১৩ অক্টো — Topic 9: Big-O ২ — Space · লুকানো খরচ · Constraint ★ ✅ সম্পন্ন (২৯ অক্টো)
 
 **পড়বে:** `03-complexity-guide.md` — অংশ ৪, ৫, ৬, ৭।
 
@@ -1150,12 +1150,12 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 **Phase 9.9 — JS built-in-এর খরচ** ✅ (২৯ অক্টো; common costs আলোচনা)
 - **P9.9 · Cost Table** 🟢 ✅ — `push/pop` average O(1), `shift/unshift/includes` O(n), `slice(0,k)` O(k), `sort` সাধারণত O(n log n), `Map.get` average O(1); arbitrary-position `splice` O(n)।
 
-**Phase 9.10 — Constraint → লক্ষ্য** ⬜
-- **P9.10** 🟢 ⬜ — **EN:** n ≤ 20, n ≤ 2000, n ≤ 2×10⁵, n ≤ 10⁹ — slowest allowed complexity for each? → `2ⁿ, n², n log n, log n`
+**Phase 9.10 — Constraint → লক্ষ্য** ✅ (২৯ অক্টো)
+- **P9.10** 🟢 ✅ (২৯ অক্টো) — `n = 50,000`-এ pair-check ≈ 1.25B তুলনা বনাম sort-then-scan ≈ 800K sort তুলনা + সর্বোচ্চ 50K scan; learner `O(n log n)` বেছে নিয়েছে। `Set` average `O(n)` time / `O(n)` extra space trade-off-ও উল্লেখ করেছে।
 
 ### ★ মূল problem
 
-#### ★ B4 · 217. Contains Duplicate 🟢 Easy ✅ (২৯ অক্টো; W2 D2-তে code + submission complete, complexity checkpoint pending; অক্টোবর Week 3 duplicate skip)
+#### ★ B4 · 217. Contains Duplicate 🟢 Easy ✅ (২৯ অক্টো; W2 D2-তে code + submission + complexity complete; অক্টোবর Week 3 duplicate skip)
 🔗 [LC 217](https://leetcode.com/problems/contains-duplicate/) (হুবহু)
 🌍 **Real-life:** signup-এ একই email দুবার দেওয়া হয়েছে কিনা।
 
@@ -1199,7 +1199,9 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 **বলো:** *"`includes` inside the loop is O(n) on its own, so the whole thing is O(n²). Using a Set makes each lookup O(1), bringing it down to O(n) time but O(n) space."*
 
-### 🚪 Gate — Topic 9 (Big-O) ⬜
+### 🚪 Gate — Topic 9 (Big-O) ✅ (২৯ অক্টো)
+
+**Gate problem:** W3-এর H3 · LC 349 Intersection of Two Arrays এখানে একবার solve হয়েছে; পরে W3-তে একই problem skip। Complexity: average Time O(n+m), Auxiliary Space O(n+m), Output Space O(min(n,m))।
 
 ---
 
@@ -1910,7 +1912,7 @@ Example 3: Input: nums = [3,3], target = 6         Output: [0,1]
 **🧠 ভাবনা:** **কেন "আগে check, পরে store"? উল্টো করলে কোন input-এ ভুল?** (`[3,2,4]`, target 6 — 3 নিজেই নিজের জোড়া হয়ে যাবে!)
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ H3 · 349. Intersection of Two Arrays 🟢 Easy ⬜
+#### ★ H3 · 349. Intersection of Two Arrays ⏭️ (W2 D2 Gate-এ সম্পন্ন; Week 3-তে repeat নয়)
 🔗 [LC 349](https://leetcode.com/problems/intersection-of-two-arrays/) (হুবহু)
 🌍 **Real-life:** দুই বন্ধুর Facebook-এর mutual friends।
 

@@ -115,7 +115,7 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 **Problems:**
 - ⏭️ ★ **H1 Contains Duplicate** — W2 D2-তে LC 217 একবার solve হবে; একই problem repeat নয়।
 - [ ] ★ **H2 Two Sum** — index ফেরত। brute force → Map। **কেন "আগে check, পরে store" — উল্টো করলে কোন input-এ ভুল?** `B` · O(n), O(n)
-- [ ] ★ **H3 Intersection of Two Arrays** — unique common element। (ক) Set (খ) দুটোই sorted হলে দুই pointer। `A`
+- ⏭️ ★ **H3 Intersection of Two Arrays** — W2 D2 Topic 9 Gate-এ সম্পন্ন; Week 3-তে একই problem repeat নয়।
 - [ ] ○ **H4 Jewels and Stones** `A`
 
 **বলো:** *"For each number, I check whether its complement is already in the map. If yes, I've found the pair. If not, I store the current number with its index. One pass, O(n) time and O(n) space."*
