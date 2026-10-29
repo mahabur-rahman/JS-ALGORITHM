@@ -11,9 +11,8 @@
 // Phase 9.9 — Hidden costs of JavaScript built-ins.
 // Phase 9.10 — Use input constraints to estimate the slowest feasible complexity.
 
-// ★ B4 — LeetCode 217: Contains Duplicate (solve once here; skip October W3 duplicate)
-// First analyze the provided array/includes approach; then consider a Set approach.
-// Do not write a solution before the concept and problem have been discussed.
+// ★ B4 — LeetCode 217: Contains Duplicate — SOLVED + submitted (29 Oct).
+// October W3 duplicate is skipped. Complexity explanation is the next checkpoint.
 
 // ★ B5 — Find hidden costs in queue.shift() and string.slice() loops.
 // ★ B6 — SKIPPED: duplicates the constraint exercise in Phase 9.10.
@@ -44,3 +43,45 @@
 // nums.shift();     // শুরু থেকে সরায়: O(n)
 
 // console.log(nums.shift())
+
+// const seen = new Set()
+
+// seen.add(5)
+// seen.add(7)
+// seen.add(5)
+
+// console.log(seen.has(4))
+// console.log(seen.has(5)
+// )
+
+// console.log(seen)
+
+// Problem: 217. Contains Duplicate
+
+// Learner's approach: scan each number, check whether Set has seen it,
+// return true on the first repeat; otherwise add it to the Set.
+
+// var containsDuplicate = function (nums) {
+//   const seen = new Set();
+
+//   let result = 0;
+
+//   for (const num of nums) {
+//     if (seen.has(num)) {
+//       console.log("Duplicate value:", num);
+//     }
+
+//     seen.add(num);
+//   }
+
+// //   console.log(seen);
+
+//   for(const value of seen) {
+//     // console.log(typeof value)
+//     result += value
+//   }
+
+//   return result
+// };
+
+// console.log(containsDuplicate([1, 2, 3, 1])); // Expected: true
