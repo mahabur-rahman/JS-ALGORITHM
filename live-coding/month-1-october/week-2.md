@@ -60,7 +60,7 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 
 ---
 
-## Day 2 — মঙ্গল, ১৩ অক্টোবর — Big-O ২: Space · লুকানো খরচ · Constraint ★ 🟡 শুরু (২৭ অক্টো)
+## Day 2 — মঙ্গল, ১৩ অক্টোবর — Big-O ২: Space · লুকানো খরচ · Constraint ★ ✅ সম্পন্ন (২৯ অক্টো)
 
 **পড়বে:** `03-complexity-guide.md` — অংশ ৪, ৫, ৬, ৭।
 
