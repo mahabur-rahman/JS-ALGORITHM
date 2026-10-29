@@ -21,7 +21,7 @@
 | | |
 |---|---|
 | **বর্তমান দিন** | W2 D2 — Topic 9: Big-O ২ · W2 D1 Time Complexity সম্পন্ন (২৭ অক্টো) · Week 1 / W1 D7 সম্পূর্ণ · Topic 8 Gate ✅ · ○7.5 Armstrong skip |
-| **পরের কাজ** | W2 D2 Phase 9.7 checkpoint — input, auxiliary ও output space আলাদা করা; P9.8 আগেই covered, skip · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
+| **পরের কাজ** | W2 D2 P9.10-এর নতুন constraint scenario, তারপর Topic 9 Gate · আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
 | **পিছিয়ে আছি?** | শেখার অবস্থান W2 D2; October plan অনুযায়ী প্রায় ১৪ দিন পিছিয়ে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) |
 | **★ শেষ (মোট)** | 23 |
@@ -45,7 +45,7 @@
 | ২২–২৪ অক্টো | W1 D6 ✅ | Topic 8 Basic Problem Solving — P8.1–P8.4, ★8.1–8.5 ও Gate সম্পন্ন | 5 / 5 | — | — | Min/Max-এ data থেকে শুরু; Search-এ early return; Build-এ output array; second max-এ duplicate বাদ; run-এ current/max length; trace: `[3,8,5,2]`-এ count `0→1→1→2`; vowel/consonant O(n)/O(n); first negative balance O(n)/O(1); Gate-এ average বের করতে accumulation, পরে count — O(n)/O(1) |
 | ২৪–২৫ অক্টো | W1 D7 ✅ | User-confirmed Week 1 complete; FizzBuzz, First Descent, Reverse Integer; D7.1 LC 674 solution/trace/complexity; 8.3/8.5 duplicate বলে skip | 1 / 1 | — | — | পুনরায় একই problem বাধ্যতামূলক নয়; LCIS example-এর সঠিক output 4; Week Review complete বলে user নিশ্চিত করেছেন, বিস্তারিত উত্তর নথিভুক্ত নয় |
 | ২৫–২৭ অক্টো | W2 D1 ✅ | Topic 9 Big-O 1 — P9.1–P9.6 ও B1-এর নতুন pattern; P9.2/B2 duplicate বলে skip, B3 optional skip | 1 / 1 | — | — | single/nested/sequential loops, halving, fixed inner loop, shared counter, recursion tree; Time ও Auxiliary Space growth আলাদা করা |
-| ২৭ অক্টো | W2 D2 (চলছে) | Topic 9 Big-O 2 — input/auxiliary/output space concept শুরু | 0 / 1 | — | — | Input-এর memory সাধারণত auxiliary space-এ গোনা হয় না; `count`-এর মতো স্থির variable O(1) |
+| ২৭–২৯ অক্টো | W2 D2 (চলছে) | Topic 9 Big-O 2 — P9.7/P9.9 complete; ★ LC 217 + B5 complete; P9.10/Gate pending | 2 / 2 | — | — | LC 217 Set: average O(n) time/O(n) auxiliary; B5: repeated shift O(n²), prefixes slice O(n²) time/output; returned collection output space vs Set auxiliary space আলাদা করা |
 
 ---
 

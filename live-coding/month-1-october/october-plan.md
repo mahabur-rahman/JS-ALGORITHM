@@ -1141,21 +1141,21 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 9.7 — Auxiliary space** ⬜
-- **P9.7** 🟢 ⬜ — **EN:** Space of (a) summing an array with one variable, (b) building a doubled copy, (c) a Set of all elements. → `O(1), O(n), O(n)`
+**Phase 9.7 — Auxiliary space** ✅ (২৯ অক্টো)
+- **P9.7** 🟢 ✅ — sum accumulator auxiliary O(1); returned doubled copy output O(n); internal Set auxiliary O(n)।
 
 **Phase 9.8 — Recursion stack = সর্বোচ্চ গভীরতা** ✅ (W2 D1-এ শেখা; পুনরাবৃত্তি নয়)
 - **P9.8** ⏭️ **SKIP** — W2 D1-এ recursive call depth বনাম call count, `O(n)` ও `O(log n)` stack space বোঝা হয়েছে।
 
-**Phase 9.9 — JS built-in-এর খরচ** ⬜
-- **P9.9 · Cost Table** 🟢 ⬜ — **EN:** Write the cost of `push, pop, shift, unshift, includes, slice, sort, Map.get`. → `1, 1, n, n, n, k, n log n, 1`
+**Phase 9.9 — JS built-in-এর খরচ** ✅ (২৯ অক্টো; common costs আলোচনা)
+- **P9.9 · Cost Table** 🟢 ✅ — `push/pop` average O(1), `shift/unshift/includes` O(n), `slice(0,k)` O(k), `sort` সাধারণত O(n log n), `Map.get` average O(1); arbitrary-position `splice` O(n)।
 
 **Phase 9.10 — Constraint → লক্ষ্য** ⬜
 - **P9.10** 🟢 ⬜ — **EN:** n ≤ 20, n ≤ 2000, n ≤ 2×10⁵, n ≤ 10⁹ — slowest allowed complexity for each? → `2ⁿ, n², n log n, log n`
 
 ### ★ মূল problem
 
-#### ★ B4 · 217. Contains Duplicate 🟢 Easy ⬜ (একমাত্র solve: W2 D2)
+#### ★ B4 · 217. Contains Duplicate 🟢 Easy ✅ (২৯ অক্টো; W2 D2-তে code + submission complete, complexity checkpoint pending; অক্টোবর Week 3 duplicate skip)
 🔗 [LC 217](https://leetcode.com/problems/contains-duplicate/) (হুবহু)
 🌍 **Real-life:** signup-এ একই email দুবার দেওয়া হয়েছে কিনা।
 
@@ -1182,7 +1182,7 @@ Example 3: Input: nums = [1,1,1,3,3,4,3,2,4,2] Output: true
 **🧠 ভাবনা:** `includes` loop-এর ভেতরে — নিজে কতবার চলে? constraint 10⁵ — O(n²) চলবে?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ B5 · Find the Hidden Cost ⬜
+#### ★ B5 · Find the Hidden Cost ✅ (২৯ অক্টো)
 🌍 code দেখতে এক loop-এর, কিন্তু আসলে ধীর।
 **EN:** Give the complexity of each and explain the hidden cost.
 ```js

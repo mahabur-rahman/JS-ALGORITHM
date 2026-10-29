@@ -12,9 +12,12 @@
 // Phase 9.10 — Use input constraints to estimate the slowest feasible complexity.
 
 // ★ B4 — LeetCode 217: Contains Duplicate — SOLVED + submitted (29 Oct).
-// October W3 duplicate is skipped. Complexity explanation is the next checkpoint.
+// Complexity checkpoint passed: average O(n) time, O(n) auxiliary space,
+// O(1) Boolean output space. October W3 duplicate is skipped.
 
-// ★ B5 — Find hidden costs in queue.shift() and string.slice() loops.
+// ★ B5 — COMPLETED (29 Oct): repeated queue.shift() is O(n^2) time,
+// O(1) auxiliary/output space; prefixes with growing slice is O(n^2) time,
+// O(1) auxiliary space, O(n^2) output space.
 // ★ B6 — SKIPPED: duplicates the constraint exercise in Phase 9.10.
 // ○ B7 — Optional new array-recursion variant; if solved here, skip the November duplicate.
 

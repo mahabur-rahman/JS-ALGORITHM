@@ -72,7 +72,7 @@ function g(n) { if (n <= 1) return 1; return g(n / 2) + 1; }
 - Trade-off: space দিয়ে time কেনা।
 
 **Exercise:**
-- [ ] ★ **B4** এই function-এর complexity কত? তারপর এটাকে O(n)-এ নামাও (Set দিয়ে):
+- [x] ★ **B4 · LC 217 Contains Duplicate** — learner Set approach implement করেছে এবং LeetCode-এ submit করেছে (২৯ অক্টো)। Complexity নিজে explain করা পরের checkpoint। অক্টোবর W3-এর একই problem repeat হবে না:
 ```js
 function hasDuplicate(arr) {
   const seen = [];
@@ -83,7 +83,7 @@ function hasDuplicate(arr) {
   return false;
 }
 ```
-- [ ] ★ **B5** লুকানো খরচ খোঁজো — complexity কত, আর কেন?
+- [x] ★ **B5** (২৯ অক্টো) — learner-এর বিশ্লেষণ ঠিক: `process(queue)` Time O(n²), Auxiliary O(1), Output O(1); `prefixes(s)` Time O(n²), Auxiliary O(1), Output O(n²)।
 ```js
 function process(queue) { while (queue.length) { const x = queue.shift(); /* O(1) কাজ */ } }
 function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.push(s.slice(0, i)); return out; }
@@ -91,7 +91,13 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 - ⏭️ ★ **B6** Constraint থেকে আন্দাজ — P9.10-এ একই সীমাগুলো থাকায় duplicate exercise skip।
 - [ ] ○ **B7** Recursive Sum — optional নতুন array-recursion variant; এখানে করলে November-এর একই exercise skip হবে।
 
-**বলো:** *"`includes` inside the loop is O(n) on its own, so the whole thing is O(n²). Using a Set makes each lookup O(1), bringing it down to O(n) time but O(n) space."*
+**B4 checkpoint ✅ (২৯ অক্টো):** learner ব্যাখ্যা করেছে — average Time O(n), Auxiliary Space O(n), Boolean output Space O(1)। Code LeetCode-এ submitted।
+
+**B5 checkpoint ✅ (২৯ অক্টো):** `shift()` loop-এ বারবার বাকি elements সরায়, তাই কাজ `n+(n−1)+…+1 = O(n²)`। Prefixes-এ slice lengths যোগে O(n²) কাজ ও output; output বাদে auxiliary O(1)।
+
+**P9.9 cost table ✅ (আলোচনা ২৯ অক্টো):** `push/pop` average O(1), `shift/unshift/includes` O(n), arbitrary-position `splice` O(n), `slice(0,k)` O(k), `sort` সাধারণত O(n log n), `Map.get` average O(1)।
+
+**এখনো বাকি:** P9.7 space category-র explicit mini-checkpoint এবং P9.10 constraints-to-complexity mini-exercise।
 
 ---
 
