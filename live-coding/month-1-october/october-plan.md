@@ -1205,7 +1205,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 ---
 
-## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ ⬜
+## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ 🟡 শুরু (২৯ অক্টো)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা — প্রায় প্রতিটা screening round-এ একটা string problem।
 
@@ -1218,13 +1218,13 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 ### 📘 Concept phases + ছোট problem
 
 **Phase 10.1 — Immutable** ⬜
-- **P10.1** 🟢 ⬜ — 🌍 ছাপা বইয়ের অক্ষর বদলানো যায় না, নতুন কপি ছাপতে হয়। **EN:** `const s = "Hello"; s[0] = "J"; console.log(s);` → `"Hello"`. Then produce `"Jello"` correctly.
+- **P10.1** 🟢 ✅ (৩০ অক্টো) — string immutability; index assignment-এর strict-mode TypeError দেখা; নতুন string বানানো।
 
 **Phase 10.2 — index · `at` · `slice` · `substring`** ⬜
-- **P10.2 · File Extension** 🟢 ⬜ — 🌍 upload করা file-এর extension। **EN:** `getExt("photo.png")` → `"png"`, `getExt("archive.tar.gz")` → `"gz"`. **বাংলা:** শেষ `.`-এর পরের অংশ (`lastIndexOf` + `slice`)।
+- **P10.2 · File Extension** 🟢 🟡 code done (৩০ অক্টো), complexity checkpoint pending — `getExt("photo.png")` → `"png"`, `getExt("archive.tar.gz")` → `"gz"`; no-dot guard-ও যোগ।
 
 **Phase 10.3 — `split` / `join`** ⬜
-- **P10.3 · Slug** 🟢 ⬜ — 🌍 blog post-এর URL। **EN:** `toSlug("Hello World JS")` → `"hello-world-js"`.
+- **P10.3 · Slug** 🟢 🟡 code drafted (৩০ অক্টো), complexity/check pending — `toSlug("Hello World JS")` → `"hello-world-js"`.
 
 **Phase 10.4 — Character code আর ২৬ ঘরের array** ⬜
 - **P10.4 · Letter Position** 🟢 ⬜ — **EN:** `"a"` → `0`, `"z"` → `25` using `charCodeAt`. Then `String.fromCharCode(97 + 2)` → `"c"`.
@@ -1255,6 +1255,8 @@ Example 2: Input: s = ["H","a","n","n","a","h"]   Output: ["h","a","n","n","a","
 **বাংলা:** অক্ষরের array উল্টে দাও — নতুন array না বানিয়ে, আসলটাতেই। প্রথমে নতুন array দিয়ে (সহজ), তারপর দুই pointer দিয়ে in-place।
 **🧠 ভাবনা:** হাতে করো: প্রথম আর শেষটা অদলবদল, তারপর দ্বিতীয় আর শেষের আগেরটা… কখন থামব? (Two Pointers-এর প্রথম স্বাদ)
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+
+**পুনরাবৃত্তি নিয়ম:** S1 এখানে করলে November-এর R2 recursive Reverse String problem repeat হবে না।
 
 #### ★ S2 · 125. Valid Palindrome 🟢 Easy ⬜
 🔗 [LC 125](https://leetcode.com/problems/valid-palindrome/) (হুবহু)

@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ (২৯ অক্টো)। আগে সমাধান করা একই problem/complexity exercise repeat নয়।
+**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩০ অক্টো)। P10.1 code/concept, P10.2 `getExt` ও P10.3 `toSlug` code হয়েছে; complexity checkpoints বাকি। আগে সমাধান করা একই problem/complexity exercise repeat নয়।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -105,7 +105,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 **পুনরাবৃত্তি নিয়ম:** LC 217 এখানে একবারই solve হবে; October Week 3-এর H1 occurrence skip হবে।
 
-## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★
+## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★ 🟡 শুরু (২৯ অক্টো)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা, normalize করা — প্রায় প্রতিটা screening round-এ একটা string problem থাকে।
 

@@ -1037,7 +1037,7 @@ Example 2: Input: nums = [1,2,3], k = 3   Output: 2
 **বাংলা:** loop নিষেধ — শুধু recursion। প্রতিটার call stack আঁকো।
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n) (stack)
 
-#### ★ R2 · Reverse String (recursive) 🟢 ⬜
+#### ★ R2 · Reverse String (recursive) ⏭️ SKIP if W2 D3 S1 is completed — same reverse-string problem already solved; no repeat.
 🔗 কাছাকাছি: [LC 344](https://leetcode.com/problems/reverse-string/) (recursive করে submit)
 🌍 **Real-life:** আয়নায় লেখা পড়া।
 **EN:** Reverse a string recursively, two ways: (a) with `slice`, (b) with indices (two pointers + recursion). Compare complexity. `"hello"` → `"olleh"`.
