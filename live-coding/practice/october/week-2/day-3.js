@@ -132,20 +132,58 @@
 // // hello-world
 
 
-function toSlug(text) {
-  const convertedText = text.trim().toLowerCase();
+// function toSlug(text) {
+//   const convertedText = text.trim().toLowerCase();
 
-  console.log('trim method apply : ', convertedText)
+//   console.log('trim method apply : ', convertedText)
 
-  const textOfSplit = convertedText.split(/\s+/);
+//   const textOfSplit = convertedText.split(/\s+/);
 
-  console.log('Split method apply : ', textOfSplit)
+//   console.log('Split method apply : ', textOfSplit)
 
-  const result = textOfSplit.join("-");
+//   const result = textOfSplit.join("-");
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(toSlug("Hello World    JS"));
+// console.log(toSlug("Hello World    JS"));
 
-// hello-world
+
+
+// const letter = "d";
+// const letterCode = letter.charCodeAt(0)
+// // console.log(letter, " ", letterCode)
+
+// const aCode = "a".charCodeAt(0)
+// // console.log(aCode)
+
+// // console.log(letterCode - aCode); // 3
+
+
+// const sameLetter = String.fromCharCode(aCode + 3);
+// console.log(sameLetter); // d
+
+
+// Task 1: Letter → Alphabet Index 
+
+
+
+// function getAlphabetIndex(letter) {
+//   const aCode = "a".charCodeAt(0);
+
+//   return letter.charCodeAt(0) - aCode;
+// }
+
+// function getLetterFromIndex(index) {
+//   const aCode = "a".charCodeAt(0);
+
+//   return String.fromCharCode(aCode + index);
+// }
+
+// // Letter → Alphabet Index
+// console.log(getAlphabetIndex("m")); // 12
+// console.log(getAlphabetIndex("z")); // 25
+
+// // Alphabet Index → Letter
+// console.log(getLetterFromIndex(4));  // e
+// console.log(getLetterFromIndex(25)); // z
