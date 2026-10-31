@@ -184,17 +184,95 @@
 // - declare on variable that we keep for each number through loop and push *-
 // - and join and return it
 
-    function repeatDash(n) {
-    let result = [];
+// function repeatDash(n) {
+//   let result = [];
 
-    for (let i = 1; i <= n; i++) {
-        // console.log('Index: ', i)
-        result.push("-*");
+//   for (let i = 1; i <= n; i++) {
+//     // console.log('Index: ', i)
+//     result.push("-*");
+//   }
+
+//   return result.join("");
+// }
+
+// console.log(repeatDash(3)); // "-*-*-*"
+// console.log(repeatDash(1)); // "-*"
+// console.log(repeatDash(2)); // "-*-*"
+
+// Problem — Is Alphanumeric?
+
+// function isAlphaNumeric(ch) {
+//   const code = ch.charCodeAt(0);
+
+//   const isUppercase = code >= 65 && code <= 90;
+//   const isLowercase = code >= 97 && code <= 122;
+//   const isDigit = code >= 48 && code <= 57;
+
+//   return isUppercase || isLowercase || isDigit;
+// }
+
+// console.log(isAlphaNumeric("a")); // true
+// console.log(isAlphaNumeric("7")); // true
+// console.log(isAlphaNumeric(",")); // false
+// console.log(isAlphaNumeric("A")); // true
+// console.log(isAlphaNumeric("@")); // false
+
+// const text = "aba";
+// const counts = {};
+
+// for (const ch of text) {
+//   if (counts[ch] === undefined) {
+//     counts[ch] = 1;
+//   } else {
+//     counts[ch]++;
+//   }
+
+//   console.log("এখনকার character:", ch, "| counts:", counts);
+// }
+
+// const counts = new Map();
+
+// counts.set("a", 1);
+// counts.set("b", 1);
+// counts.set("a", counts.get("a") + 1);
+
+// console.log(counts.get("a")); // ?
+// console.log(counts.get("b")); // ?
+
+// console.log(counts)
+
+// const counts = new Map();
+
+// counts.set("a", 2);
+// counts.set("b", 1);
+
+// console.log(counts)
+
+// for (const [key, value] of counts) {
+//   console.log(typeof key, typeof value);
+// }
+
+// // a 2
+// // b 1
+
+function characterFrequency(s) {
+  const result = {};
+
+  for (const value of s) {
+
+    if (result[value] === undefined) {
+      //   console.log("First time");
+
+      result[value] = 1;
+    } else {
+      //   console.log("Already exists");
+
+      result[value]++;
     }
+  }
 
-    return result.join("");
-    }
+  return result;
+}
 
-    console.log(repeatDash(3)); // "-*-*-*"
-console.log(repeatDash(1)); // "-*"
-console.log(repeatDash(2)); // "-*-*"
+console.log(characterFrequency("hello"));
+// console.log(characterFrequency("aba"));
