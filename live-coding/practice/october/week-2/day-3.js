@@ -39,8 +39,6 @@
 // ○ S3 — Optional: Capitalize Words
 // Do once with split/map/join and once without those methods.
 
-
-
 // const word = "cat";
 
 // console.log(word);    // cat
@@ -69,7 +67,6 @@
 
 // console.log(s);
 
-
 // const text = "hello";
 
 // console.log(text[0]);    // h
@@ -83,20 +80,16 @@
 // console.log(word.slice(-6));       // Script
 // console.log(word.substring(4, 0)); // Java
 
-
 // function getExt(filename) {
 //   const dotIndex = filename.lastIndexOf(".");
 
 //   console.log('dot : ', dotIndex)
 //   return filename.slice(dotIndex + 1);
 
-  
 // }
 
 // console.log(getExt("photo.png"));      // png
 // console.log(getExt("archive.tar.gz")); // gz
-
-
 
 // const colors = "red blue";
 
@@ -106,7 +99,6 @@
 // const label = parts.join("-");
 // console.log(label); // red-blue
 // console.log(colors); // red blue — আগের string অপরিবর্তিত
-
 
 // split text like : ["Hello", "World", "JS"]
 // join with -
@@ -131,7 +123,6 @@
 // console.log(toSlug("  Hello World  "));
 // // hello-world
 
-
 // function toSlug(text) {
 //   const convertedText = text.trim().toLowerCase();
 
@@ -148,8 +139,6 @@
 
 // console.log(toSlug("Hello World    JS"));
 
-
-
 // const letter = "d";
 // const letterCode = letter.charCodeAt(0)
 // // console.log(letter, " ", letterCode)
@@ -159,14 +148,10 @@
 
 // // console.log(letterCode - aCode); // 3
 
-
 // const sameLetter = String.fromCharCode(aCode + 3);
 // console.log(sameLetter); // d
 
-
-// Task 1: Letter → Alphabet Index 
-
-
+// Task 1: Letter → Alphabet Index
 
 // function getAlphabetIndex(letter) {
 //   const aCode = "a".charCodeAt(0);
@@ -187,3 +172,29 @@
 // // Alphabet Index → Letter
 // console.log(getLetterFromIndex(4));  // e
 // console.log(getLetterFromIndex(25)); // z
+
+// console.log("10" < "9");
+// console.log(10 < 9);
+// console.log("apple" < "banana");
+
+// problem: Repeat Dash
+
+// How to think :
+// - using for
+// - declare on variable that we keep for each number through loop and push *-
+// - and join and return it
+
+    function repeatDash(n) {
+    let result = [];
+
+    for (let i = 1; i <= n; i++) {
+        // console.log('Index: ', i)
+        result.push("-*");
+    }
+
+    return result.join("");
+    }
+
+    console.log(repeatDash(3)); // "-*-*-*"
+console.log(repeatDash(1)); // "-*"
+console.log(repeatDash(2)); // "-*-*"
