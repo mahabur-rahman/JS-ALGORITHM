@@ -340,3 +340,14 @@
 
 // console.log(isAnagram("mango", "goman")); // true
 
+// var reverseString = function (s) {
+
+//   return s.reverse()
+
+// };
+
+
+
+
+// console.log(reverseString(["h", "e", "l", "l", "o"]))
+// Expected: ["o", "l", "l", "e", "h"]
