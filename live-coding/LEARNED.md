@@ -246,8 +246,8 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 6 Functions (return vs log, callback, helper-এ ভাগ) | W1 D4 | ✅ সম্পন্ন |
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | ✅ সম্পন্ন — P8.1–P8.4, ★8.1–8.5 ও Gate (২৪ অক্টো) |
-| 9 Big-O (Time · Space · hidden costs · constraints) | W2 D1–D2 | 🟡 D1 সম্পন্ন; D2 শুরু (২৭ অক্টো) |
-| 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | |
+| 9 Big-O (Time · Space · hidden costs · constraints) | W2 D1–D2 | ✅ সম্পন্ন (২৯ অক্টো) |
+| 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | 🟡 Topic 10 Strings চলছে (W2 D3, ৩১ অক্টো) |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |
 | 17–24 Binary Search · Two Pointers · Sliding Window · Prefix Sum · Recursion · Linked List · Stack · Queue | November | |
 | 25–39 Tree · BST · Heap · Intervals · Graph · Backtracking · Greedy · DP · Bit · Trie · Math | December | |
@@ -264,5 +264,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **Build string:** array-তে অংশ জমিয়ে `join("")`; Repeat Dash Time O(n), auxiliary O(n), output O(n)।
 - **Alphanumeric:** code range 48-57, 65-90, 97-122; regex বিকল্প `/^[a-z0-9]$/i`; `charCodeAt(0)` প্রথম character-ই দেখে, তাই one-character constraint দরকার।
 - **Character frequency:** Object ও Map-এ প্রথমবার count 1, পরে increment; lowercase ইংরেজি alphabet হলে সর্বোচ্চ 26 key, তাই extra space O(1); arbitrary character set হলে O(n)। ২৬-ঘরের array variant এখনো practice বাকি।
-- **Anagram:** দৈর্ঘ্য আলাদা হলে সঙ্গে সঙ্গে false; প্রথম string-এর count বাড়িয়ে দ্বিতীয় string-এর অক্ষরে count কমাও; count না থাকলে false। LC 242 object-count approach-এ solve ও submit (৩১ অক্টো); exact problem পুনরায় নয়।
-- **বাকি:** P10.8 26-array ও approach comparison; P10.9 sorting comparison; P10.10 substring/subsequence; P10.11 normalization; ★ S1 Reverse String ও ★ S2 Valid Palindrome।
+- **Anagram:** দৈর্ঘ্য আলাদা হলে সঙ্গে সঙ্গে false; প্রথম string-এর count বাড়িয়ে দ্বিতীয় string-এর অক্ষরে count কমাও; count না থাকলে false। LC 242 object-count approach-এ solve ও submit (৩১ অক্টো); exact problem পুনরায় নয়। Complexity ব্যাখ্যা দেওয়া হয়েছে, learner-এর নিজে ব্যাখ্যার checkpoint বাকি।
+- **Day 3-এ বাকি:** দুই প্রান্তের pointer warm-up (জিজ্ঞেস করা হয়েছে, উত্তর বাকি); ★ S1 Reverse String (LC 344), ★ S2 Valid Palindrome (LC 125); optional S3 Capitalize Words।
+- **পরের string phase-এ বাকি:** P10.8-এর ২৬-ঘরের array ও Object/Map/Array comparison; P10.9 sorting comparison; P10.10 substring/subsequence checkpoint; P10.11 normalization।
+- **কাজের অবস্থা:** progress/plan docs main-এ sync; current branch `october/week-2-day-3`; `practice/october/week-2/day-3.js`-এ uncommitted local edit আছে—user-এর অনুমতি ছাড়া discard বা stage করবে না।

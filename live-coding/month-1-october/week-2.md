@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩১ অক্টো)। P10.1–P10.7 সম্পন্ন; P10.2 `getExt` ও P10.3 `toSlug`-এর complexity-ও আলোচনা হয়েছে। ★ S1 Reverse String ও ★ S2 Valid Palindrome বাকি। P10.8-এর Object ও Map variant হয়েছে, ২৬-ঘরের array variant বাকি। LC 242 Valid Anagram object-count approach-এ submit হয়েছে; পুনরায় submit হবে না, তবে পরিকল্পিত বিকল্প পদ্ধতি বাকি।
+**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩১ অক্টো)। P10.1–P10.7 সম্পন্ন; P10.2 `getExt` ও P10.3 `toSlug`-এর complexity-ও আলোচনা হয়েছে। ★ S1 Reverse String ও ★ S2 Valid Palindrome বাকি। LC 242 Valid Anagram-এর object-count solution submit হয়েছে; একই problem আর solve/submit হবে না। P10.8-এর ২৬-ঘরের array এবং P10.9-এর sorting comparison আলাদা ছোট exercise হিসেবে বাকি।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -147,7 +147,7 @@ console.log("z".charCodeAt(0) - "a".charCodeAt(0));
 - **Normalization:** lowercase, space/punctuation বাদ।
 
 **Problems:**
-- [x] ★ **S4 Valid Anagram** — LC 242 object-count approach-এ ৩১ অক্টোতে solve + submit; exact problem repeat/আবার submit নয়। শেখার বাকি: sort, Map ও ২৬-ঘরের array approach তুলনা; Unicode limitation।
+- [x] ★ **S4 Valid Anagram** — LC 242 object-count approach-এ ৩১ অক্টোতে solve + submit; exact problem repeat/আবার submit নয়। আলাদা pending: complexity নিজে ব্যাখ্যা; P10.8-এর array ও P10.9-এর sorting ধারণা mini exercise-এ শেখা।
 - [ ] ★ **S5 First Unique Character** — প্রথম যে অক্ষর একবারই আছে, তার index; না থাকলে -1। `B` · O(n)
 - [ ] ★ **S6 Longest Common Prefix** — `["flower","flow","flight"]` → `"fl"`। খালি array? একটা শব্দ? `B` · O(total chars)
 - [ ] ★ **S7 Reverse Words in a String** — `"  the sky   is blue "` → `"blue is sky the"`। প্রথমে built-in দিয়ে, তারপর **`split` ছাড়া** নিজে শব্দ খুঁজে। `C`

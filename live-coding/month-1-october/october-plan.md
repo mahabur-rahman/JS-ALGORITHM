@@ -59,12 +59,12 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1, ২৫ অক্টো) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D3, ৩১ অক্টো; D1–D2 সম্পন্ন) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (২৫ অক্টো) শেখার অবস্থান W2 D1 — W1 D7 ও Week 1 সম্পন্ন। পরিকল্পিত দিনের তুলনায় প্রায় ১৩ দিন পিছিয়ে; Gate পাস না করে পরের topic-এ যাব না, duplicate problem repeat বাধ্যতামূলক নয়।
+> এখন (৩১ অক্টো) শেখার অবস্থান W2 D3 — W1 এবং W2 D1–D2 সম্পন্ন। পরিকল্পিত দিনের তুলনায় প্রায় ১৭ দিন পিছিয়ে; ★ problem ও concept শেষ করে এগোবে, আগে সমাধান করা একই problem repeat বাধ্যতামূলক নয়।
 
 ---
 ---
@@ -1205,7 +1205,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 ---
 
-## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ 🟡 শুরু (২৯ অক্টো)
+## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ 🟡 চলছে (৩১ অক্টো)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা — প্রায় প্রতিটা screening round-এ একটা string problem।
 
@@ -1313,7 +1313,7 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ### ★ মূল problem
 
-#### ★ S4 · 242. Valid Anagram 🟢 Easy 🟡 (Object count-এ solve ও submit: ৩১ অক্টো; বিকল্প পদ্ধতি/complexity comparison বাকি)
+#### ★ S4 · 242. Valid Anagram 🟢 Easy ✅ (Object count solution + LC submission: ৩১ অক্টো; একই problem repeat নয়)
 🔗 [LC 242](https://leetcode.com/problems/valid-anagram/) (হুবহু)
 🌍 **Real-life:** শব্দ-ধাঁধা খেলা — অক্ষর সাজিয়ে অন্য শব্দ।
 
@@ -1326,7 +1326,7 @@ Example 2: Input: s = "rat", t = "car"           Output: false
 **Follow up:** What if the inputs contain Unicode characters? How would you adapt your solution?
 **Function:** `var isAnagram = function (s, t) {}`
 
-**বাংলা:** দুটো string-এ কি একই অক্ষর একই সংখ্যায় আছে? তিনভাবে: (ক) sort (খ) Map count (গ) ২৬-ঘরের array। **টেবিল: time/space/কখন।** Unicode হলে কোনটা চলবে না?
+**বাংলা:** দুটো string-এ কি একই অক্ষর একই সংখ্যায় আছে? একটি পদ্ধতিতে solve করে submit করো। এরপর একই LC problem পুনরায় code না করে, sort/count-এর trade-off conceptually তুলনা করো; Map ও ২৬-ঘরের count array P10.8/P10.9-এর ছোট exercise-এ practice হবে। Unicode হলে কোন পদ্ধতিতে কী বদলাতে হবে?
 **🧠 ভাবনা:** দৈর্ঘ্য আলাদা হলে? এক string-এ +1, অন্যটায় −1 করলে শেষে কী দেখতে হবে?
 **⏱️ লক্ষ্য:** count version Time O(n) · Space O(1) (২৬ ঘর)
 

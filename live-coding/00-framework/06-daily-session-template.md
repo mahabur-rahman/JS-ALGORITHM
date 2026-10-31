@@ -32,7 +32,15 @@
 
 ---
 
-## আমার (Claude) সাথে কীভাবে কাজ করবে
+## AI tutor-এর সঙ্গে শেখার পছন্দ ও workflow
+
+- শেখানোর ভাষা বাংলা। আগে অল্প করে concept, trace/console output ও দরকারি edge case বোঝাবে; তারপর problem দেবে।
+- Problem LeetCode-style হবে, English ও বাংলা statement, input/output/constraints এবং বাস্তব উদাহরণসহ। Exact LeetCode match থাকলে সরাসরি link দেবে।
+- Learner চেষ্টা করার আগে complete solution বা final code দেবে না। Code দিলে review, bug/edge case ও complexity শেখাবে; hint চাইলে ছোট hint দেবে।
+- Pattern শেখাই লক্ষ্য—হাজার problem নয়। আগে সমাধান করা একই problem আবার দেবে না; exact LC problem submit হয়ে গেলে সেটি repeat/আবার submit নয়। দরকার হলে একই concept-এর আলাদা variant স্পষ্ট করে বলবে।
+- User নিজে বললে তবেই commit/push/merge করবে। Workspace-এর code বা notes user-এর হয়ে লিখবে না, যদি না user সরাসরি চায়।
+
+## AI tutor-এর সঙ্গে কীভাবে কাজ করবে
 
 | তুমি লিখবে | আমি করব |
 |---|---|
