@@ -20,11 +20,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W2 D3 — Topic 10: Strings ১ শুরু (২৯ অক্টো); W2 D2 ✅ · Week 1 / W1 D7 সম্পূর্ণ · Topic 8 Gate ✅ · ○7.5 Armstrong skip |
-| **পরের কাজ** | W2 D3 — `toSlug` এবং `getExt`-এর Time/Space Complexity নিজে ব্যাখ্যা; আলাদা pending: LC 2629 verdict ও LC 2634 submission result |
-| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D2; October plan অনুযায়ী প্রায় ১৪ দিন পিছিয়ে। |
+| **বর্তমান দিন** | W2 D3 — Topic 10: Strings ১; P10.1–P10.7 সম্পন্ন; W2 D1–D2 ✅ · Week 1 সম্পূর্ণ |
+| **পরের কাজ** | W2 D3-এর ★ S1 LC 344 Reverse String ও ★ S2 LC 125 Valid Palindrome; এরপর P10.8-এর ২৬ ঘরের array variant। LC 242 Valid Anagram object approach-এ submit হয়েছে—একই problem আর submit নয়; বাকি শেখার অংশ আলাদা করে শেষ হবে। |
+| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D3; October plan-এর ক্যালেন্ডার অনুযায়ী প্রায় ১৭ দিন পিছিয়ে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) |
-| **★ শেষ (মোট)** | 23 |
+| **★ শেষ (মোট)** | 24 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -46,7 +46,7 @@
 | ২৪–২৫ অক্টো | W1 D7 ✅ | User-confirmed Week 1 complete; FizzBuzz, First Descent, Reverse Integer; D7.1 LC 674 solution/trace/complexity; 8.3/8.5 duplicate বলে skip | 1 / 1 | — | — | পুনরায় একই problem বাধ্যতামূলক নয়; LCIS example-এর সঠিক output 4; Week Review complete বলে user নিশ্চিত করেছেন, বিস্তারিত উত্তর নথিভুক্ত নয় |
 | ২৫–২৭ অক্টো | W2 D1 ✅ | Topic 9 Big-O 1 — P9.1–P9.6 ও B1-এর নতুন pattern; P9.2/B2 duplicate বলে skip, B3 optional skip | 1 / 1 | — | — | single/nested/sequential loops, halving, fixed inner loop, shared counter, recursion tree; Time ও Auxiliary Space growth আলাদা করা |
 | ২৭–২৯ অক্টো | W2 D2 ✅ | Topic 9 Big-O 2 — P9.7–P9.10; ★ LC 217, B5; Gate LC 349 (code + complexity) | 3 / 3 | — | — | LC 217 Set O(n) average/O(n) aux; B5 repeated `shift` O(n²), prefixes O(n²) time/output; LC 349 `O(n+m)` avg time, `O(n+m)` aux, `O(min(n,m))` output; constraints-inform choice |
-| ২৯–৩০ অক্টো | W2 D3 (চলছে) | Topic 10 Strings 1 — P10.1 complete; P10.2 `getExt` + P10.3 `toSlug` code drafted | 0 / 2 ★ | — | — | String immutable; `lastIndexOf` + `slice`, no-dot guard; `trim/lowercase/split/join`; getExt ও slug-এর complexity checkpoint বাকি |
+| ২৯–৩১ অক্টো | W2 D3 (চলছে) | Topic 10 Strings 1 — P10.1–P10.7 complete; ★ S1/S2 pending; P10.8 Object + Map drafted; LC 242 Valid Anagram submitted early (P10.9) | 0 / 2 ★ | — | — | string immutability, indexing/methods, char code, lexicographic comparison, array + join, alphanumeric by code/regex; frequency Object/Map; anagram count/decrement; P10.8 26-array, P10.9 sort comparison, P10.10, P10.11 এবং S1/S2 বাকি |
 
 ---
 

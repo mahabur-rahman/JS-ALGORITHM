@@ -20,7 +20,7 @@
 | Week 4 | ২৬ অক্টোবর–১ নভেম্বর | Closure & `this` · Class & OOP · Sorting · অক্টোবর review | [week-4.md](week-4.md) |
 
 ## মাস শেষে নিজেকে যাচাই (Week 4 Day 7)
-- [ ] Two Sum, Valid Anagram, Group Anagrams, Maximum Subarray, Product Except Self — প্রতিটা ফাঁকা editor থেকে ২০ মিনিটে
+- [ ] Two Sum, Group Anagrams, Maximum Subarray, Product Except Self — প্রতিটা ফাঁকা editor থেকে ২০ মিনিটে · ⏭️ Valid Anagram: LC 242 ইতিমধ্যে submit, repeat নয়
 - [ ] যেকোনো snippet দেখে complexity বলতে পারি, কারণসহ
 - [ ] `debounce` আর `throttle` লিখতে আর পার্থক্য বলতে পারি
 - [ ] নাম ছাড়া problem দেখে "এটা hashing/sorting/simple traversal" — চিনতে পারি

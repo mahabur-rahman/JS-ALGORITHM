@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩০ অক্টো)। P10.1 code/concept, P10.2 `getExt` ও P10.3 `toSlug` code হয়েছে; complexity checkpoints বাকি। আগে সমাধান করা একই problem/complexity exercise repeat নয়।
+**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩১ অক্টো)। P10.1–P10.7 সম্পন্ন; P10.2 `getExt` ও P10.3 `toSlug`-এর complexity-ও আলোচনা হয়েছে। ★ S1 Reverse String ও ★ S2 Valid Palindrome বাকি। P10.8-এর Object ও Map variant হয়েছে, ২৬-ঘরের array variant বাকি। LC 242 Valid Anagram object-count approach-এ submit হয়েছে; পুনরায় submit হবে না, তবে পরিকল্পিত বিকল্প পদ্ধতি বাকি।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -105,7 +105,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 **পুনরাবৃত্তি নিয়ম:** LC 217 এখানে একবারই solve হবে; October Week 3-এর H1 occurrence skip হবে।
 
-## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★ 🟡 শুরু (২৯ অক্টো)
+## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★ 🟡 চলছে (৩১ অক্টো)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা, normalize করা — প্রায় প্রতিটা screening round-এ একটা string problem থাকে।
 
@@ -147,7 +147,7 @@ console.log("z".charCodeAt(0) - "a".charCodeAt(0));
 - **Normalization:** lowercase, space/punctuation বাদ।
 
 **Problems:**
-- [ ] ★ **S4 Valid Anagram** — তিনভাবে: (ক) sort (খ) Map count (গ) ২৬-ঘরের array। **টেবিল: time/space/কখন।** Unicode থাকলে কোনটা চলবে না? `B`
+- [x] ★ **S4 Valid Anagram** — LC 242 object-count approach-এ ৩১ অক্টোতে solve + submit; exact problem repeat/আবার submit নয়। শেখার বাকি: sort, Map ও ২৬-ঘরের array approach তুলনা; Unicode limitation।
 - [ ] ★ **S5 First Unique Character** — প্রথম যে অক্ষর একবারই আছে, তার index; না থাকলে -1। `B` · O(n)
 - [ ] ★ **S6 Longest Common Prefix** — `["flower","flow","flight"]` → `"fl"`। খালি array? একটা শব্দ? `B` · O(total chars)
 - [ ] ★ **S7 Reverse Words in a String** — `"  the sky   is blue "` → `"blue is sky the"`। প্রথমে built-in দিয়ে, তারপর **`split` ছাড়া** নিজে শব্দ খুঁজে। `C`
@@ -216,7 +216,7 @@ const nested = [[1], [2]]; const c = [...nested]; c[0].push(9); console.log(nest
 ## Day 7 — রবি, ১৮ অক্টোবর — Revision · Practical JS ১ · Week Review
 
 **Re-solve (ফাঁকা editor, timer):**
-- [ ] S2 Valid Palindrome (two pointers version) · [ ] S4 Valid Anagram (count version) · [ ] A2 Merge Sorted Array · [ ] A5 Stock · [ ] W1-এর 8.3
+- [ ] S2 Valid Palindrome (two pointers version) · ⏭️ S4 Valid Anagram — LC 242 ইতিমধ্যে submit, repeat নয় · [ ] A2 Merge Sorted Array · [ ] A5 Stock · [ ] W1-এর 8.3
 
 **Practical JS ১ (Array utility — full-stack interview-এ এমন ছোট function চায়):**
 - [ ] ★ **P1** `chunk(arr, size)` — `[1,2,3,4,5], 2` → `[[1,2],[3,4],[5]]`। size ≤ 0 হলে? `B`

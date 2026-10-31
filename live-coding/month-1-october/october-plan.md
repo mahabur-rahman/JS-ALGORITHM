@@ -1217,26 +1217,26 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 10.1 — Immutable** ⬜
+**Phase 10.1 — Immutable** ✅
 - **P10.1** 🟢 ✅ (৩০ অক্টো) — string immutability; index assignment-এর strict-mode TypeError দেখা; নতুন string বানানো।
 
-**Phase 10.2 — index · `at` · `slice` · `substring`** ⬜
-- **P10.2 · File Extension** 🟢 🟡 code done (৩০ অক্টো), complexity checkpoint pending — `getExt("photo.png")` → `"png"`, `getExt("archive.tar.gz")` → `"gz"`; no-dot guard-ও যোগ।
+**Phase 10.2 — index · `at` · `slice` · `substring`** ✅
+- **P10.2 · File Extension** 🟢 ✅ (৩০ অক্টো) — `getExt("photo.png")` → `"png"`, `getExt("archive.tar.gz")` → `"gz"`; no-dot guard ও complexity সম্পন্ন।
 
-**Phase 10.3 — `split` / `join`** ⬜
-- **P10.3 · Slug** 🟢 🟡 code drafted (৩০ অক্টো), complexity/check pending — `toSlug("Hello World JS")` → `"hello-world-js"`.
+**Phase 10.3 — `split` / `join`** ✅
+- **P10.3 · Slug** 🟢 ✅ (৩০ অক্টো) — `toSlug("Hello World JS")` → `"hello-world-js"`; repeated whitespace ও complexity আলোচনা সম্পন্ন।
 
-**Phase 10.4 — Character code আর ২৬ ঘরের array** ⬜
-- **P10.4 · Letter Position** 🟢 ⬜ — **EN:** `"a"` → `0`, `"z"` → `25` using `charCodeAt`. Then `String.fromCharCode(97 + 2)` → `"c"`.
+**Phase 10.4 — Character code আর ২৬ ঘরের array** ✅
+- **P10.4 · Letter Position** 🟢 ✅ (৩০ অক্টো) — `charCodeAt` দিয়ে letter index এবং `String.fromCharCode` দিয়ে index থেকে letter।
 
-**Phase 10.5 — তুলনা আর ফাঁদ** ⬜
-- **P10.5** 🟢 ⬜ — **EN:** Predict `"10" < "9"`, `10 < 9`, `"apple" < "banana"`. → `true false true`. **বাংলা:** string তুলনা অক্ষর ধরে ধরে হয় (lexicographic)।
+**Phase 10.5 — তুলনা আর ফাঁদ** ✅
+- **P10.5** 🟢 ✅ (৩১ অক্টো) — `"10" < "9"`, `10 < 9`, `"apple" < "banana"` → `true false true`; lexicographic বনাম numeric comparison।
 
-**Phase 10.6 — String বানানো: `+=` বনাম array + `join`** ⬜
-- **P10.6 · Repeat Dash** 🟢 ⬜ — **EN:** Build `"-*-*-*"` for n = 3 using an array and `join("")`.
+**Phase 10.6 — String বানানো: `+=` বনাম array + `join`** ✅
+- **P10.6 · Repeat Dash** 🟢 ✅ (৩১ অক্টো) — array-তে `"-*"` জমিয়ে `join("")`; Time O(n), Auxiliary Space O(n), Output Space O(n)।
 
-**Phase 10.7 — Regex basic + নিজের helper** ⬜
-- **P10.7 · isAlphaNumeric** 🟢 ⬜ — **EN:** Write `isAlphaNumeric(ch)` **without regex**, using char codes (`0-9`, `a-z`, `A-Z`). `"a"` → `true`, `","` → `false`. Then the regex way: `/[a-z0-9]/i.test(ch)`.
+**Phase 10.7 — Regex basic + নিজের helper** ✅
+- **P10.7 · isAlphaNumeric** 🟢 ✅ (৩১ অক্টো) — char code range দিয়ে regex ছাড়া check; `/^[a-z0-9]$/i.test(ch)` দিয়েও check। এক-character constraint গুরুত্বপূর্ণ।
 
 ### ★ মূল problem
 
@@ -1299,11 +1299,11 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 10.8 — Frequency counting তিনভাবে** ⬜
-- **P10.8 · Char Count** 🟢 ⬜ — 🌍 Scrabble খেলায় কোন অক্ষর কয়টা। **EN:** Count characters of `"hello"` using (a) an object (b) a `Map` (c) a 26-length array. → `h1 e1 l2 o1`
+**Phase 10.8 — Frequency counting তিনভাবে** 🟡
+- **P10.8 · Char Count** 🟢 🟡 (৩১ অক্টো) — `"hello"`-এর frequency Object ও Map দিয়ে করা হয়েছে; ২৬-length array implementation ও representations comparison বাকি. Object/Map code push হয়েছে।
 
-**Phase 10.9 — Anagram ধারণা** ⬜
-- **P10.9** 🟢 ⬜ — **EN:** Are `"listen"` and `"silent"` anagrams? Prove it by sorting both, then by comparing counts.
+**Phase 10.9 — Anagram ধারণা** 🟡
+- **P10.9** 🟢 🟡 (৩১ অক্টো) — character count সমান হলে anagram; `"aab"` ও `"aba"` trace সম্পন্ন। Sort করে তুলনা বাকি।
 
 **Phase 10.10 — Substring বনাম subsequence** ⬜
 - **P10.10** 🟢 ⬜ — **EN:** For `"abcde"`: is `"bcd"` a substring? `"ace"`? Is `"ace"` a subsequence? → `yes, no, yes`
@@ -1313,7 +1313,7 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ### ★ মূল problem
 
-#### ★ S4 · 242. Valid Anagram 🟢 Easy ⬜
+#### ★ S4 · 242. Valid Anagram 🟢 Easy 🟡 (Object count-এ solve ও submit: ৩১ অক্টো; বিকল্প পদ্ধতি/complexity comparison বাকি)
 🔗 [LC 242](https://leetcode.com/problems/valid-anagram/) (হুবহু)
 🌍 **Real-life:** শব্দ-ধাঁধা খেলা — অক্ষর সাজিয়ে অন্য শব্দ।
 
@@ -1561,7 +1561,7 @@ Explanation: No transactions are done and the max profit = 0.
 ## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen ⬜
 
 ### 🔁 Re-solve (ফাঁকা editor, timer)
-- ⬜ S2 Valid Palindrome (two pointers) · ⬜ S4 Valid Anagram (count) · ⬜ A2 Merge Sorted Array · ⬜ A5 Stock · ⬜ W1-এর 8.3
+- ⬜ S2 Valid Palindrome (two pointers) · ⏭️ S4 Valid Anagram (LC 242 already submitted; no repeat) · ⬜ A2 Merge Sorted Array · ⬜ A5 Stock · ⬜ W1-এর 8.3
 
 ### 🛠️ Practical JS ১ (full-stack interview-এ এমন ছোট utility চায়)
 
@@ -2557,7 +2557,7 @@ Example: t = 50, calls at 30ms and 60ms → the 30ms call is cancelled, fn runs 
 4. পিছিয়ে আছি? → কোন ★ নভেম্বরের প্রথম সপ্তাহে যাবে।
 
 ### ✅ মাস শেষে নিজেকে যাচাই
-- ⬜ Two Sum, Valid Anagram, Group Anagrams, Maximum Subarray, Product Except Self — প্রতিটা ফাঁকা editor থেকে ২০ মিনিটে
+- ⬜ Two Sum, Group Anagrams, Maximum Subarray, Product Except Self — প্রতিটা ফাঁকা editor থেকে ২০ মিনিটে · ⏭️ Valid Anagram: LC 242 ইতিমধ্যে submit, repeat নয়
 - ⬜ যেকোনো snippet দেখে complexity বলতে পারি, কারণসহ
 - ⬜ `debounce` আর `throttle` লিখতে আর পার্থক্য বলতে পারি
 - ⬜ নাম ছাড়া problem দেখে "এটা hashing/sorting/simple traversal" — চিনতে পারি

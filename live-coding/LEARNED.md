@@ -253,3 +253,16 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 25–39 Tree · BST · Heap · Intervals · Graph · Backtracking · Greedy · DP · Bit · Trie · Math | December | |
 
 পুরো ক্যালেন্ডার: `README.md`।
+
+### Topic 10 — Strings ১ / Frequency / Anagram (W2 D3 চলছে, ৩১ অক্টো)
+
+- **String immutable:** index-এ assign করে character বদলায় না; নতুন string বানাতে হয়। `slice` / `at` index behavior অনুশীলন করা হয়েছে.
+- **File extension:** `lastIndexOf(".")` দিয়ে শেষ dot, `slice(dotIndex + 1)` দিয়ে extension; dot না থাকলে guard। Time O(n), output O(k), auxiliary O(1)।
+- **Slug:** `trim → toLowerCase → split(/\\s+/) → join("-")`; sequential O(n) কাজগুলো মিলিয়ে Time O(n); intermediate storage O(n), output O(n)।
+- **Character code:** `charCodeAt(0) - "a".charCodeAt(0)` → a-z-এর index 0-25; `String.fromCharCode` উল্টো রূপান্তর।
+- **String comparison:** String-এর তুলনা lexicographic; `"10" < "9"` true, কিন্তু Number `10 < 9` false।
+- **Build string:** array-তে অংশ জমিয়ে `join("")`; Repeat Dash Time O(n), auxiliary O(n), output O(n)।
+- **Alphanumeric:** code range 48-57, 65-90, 97-122; regex বিকল্প `/^[a-z0-9]$/i`; `charCodeAt(0)` প্রথম character-ই দেখে, তাই one-character constraint দরকার।
+- **Character frequency:** Object ও Map-এ প্রথমবার count 1, পরে increment; lowercase ইংরেজি alphabet হলে সর্বোচ্চ 26 key, তাই extra space O(1); arbitrary character set হলে O(n)। ২৬-ঘরের array variant এখনো practice বাকি।
+- **Anagram:** দৈর্ঘ্য আলাদা হলে সঙ্গে সঙ্গে false; প্রথম string-এর count বাড়িয়ে দ্বিতীয় string-এর অক্ষরে count কমাও; count না থাকলে false। LC 242 object-count approach-এ solve ও submit (৩১ অক্টো); exact problem পুনরায় নয়।
+- **বাকি:** P10.8 26-array ও approach comparison; P10.9 sorting comparison; P10.10 substring/subsequence; P10.11 normalization; ★ S1 Reverse String ও ★ S2 Valid Palindrome।
