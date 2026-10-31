@@ -305,4 +305,42 @@
 // console.log(characterFrequency("banana"));
 // Map(3) { 'b' => 1, 'a' => 3, 'n' => 2 }
 
+// Anagram custom problem
+
+// function isAnagram(s, t) {
+//   const sLength = s.length;
+//   const tLength = t.length;
+
+//   if (sLength !== tLength) return false;
+
+//   const letterCount = {};
+
+//   for (const fSValue of s) {
+//     // console.log("first string value : ", fSValue);
+
+//     if (letterCount[fSValue]) {
+//       letterCount[fSValue] = letterCount[fSValue] + 1;
+//     } else {
+//       letterCount[fSValue] = 1;
+//     }
+//   }
+
+//   for (const ch of t) {
+//     // console.log('ch : ', ch)
+
+//     if (!letterCount[ch]) return false;
+
+//     // console.log('letter count of ch : ', letterCount[ch]--)
+
+//     letterCount[ch]--;
+//   }
+
+//   return true;
+// }
+
+// console.log(isAnagram("mango", "goman")); // true
+
+
+
+
 
