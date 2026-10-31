@@ -340,7 +340,3 @@
 
 // console.log(isAnagram("mango", "goman")); // true
 
-
-
-
-
