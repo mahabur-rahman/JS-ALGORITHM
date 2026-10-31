@@ -255,24 +255,54 @@
 // // a 2
 // // b 1
 
-function characterFrequency(s) {
-  const result = {};
+// function characterFrequency(s) {
+//   const result = {};
 
-  for (const value of s) {
+//   for (const value of s) {
 
-    if (result[value] === undefined) {
-      //   console.log("First time");
+//     if (result[value] === undefined) {
+//       //   console.log("First time");
 
-      result[value] = 1;
-    } else {
-      //   console.log("Already exists");
+//       result[value] = 1;
+//     } else {
+//       //   console.log("Already exists");
 
-      result[value]++;
-    }
-  }
+//       result[value]++;
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(characterFrequency("hello"));
+// console.log(characterFrequency("hello"));
 // console.log(characterFrequency("aba"));
+
+// const counts = new Map()
+
+// counts.set('a', 1)
+
+// counts.get('a')
+// console.log(counts.has('a'))
+// console.log(counts)
+
+// function characterFrequency(s) {
+//   const counts = new Map();
+
+//   for (const ch of s) {
+//     if (counts.has(ch)) {
+//       counts.set(ch, counts.get(ch) + 1);
+//     } else {
+//       counts.set(ch, 1);
+//     }
+//   }
+
+//   return counts;
+// }
+
+// console.log(characterFrequency("hello"));
+// // Map(4) { 'h' => 1, 'e' => 1, 'l' => 2, 'o' => 1 }
+
+// console.log(characterFrequency("banana"));
+// Map(3) { 'b' => 1, 'a' => 3, 'n' => 2 }
+
+
