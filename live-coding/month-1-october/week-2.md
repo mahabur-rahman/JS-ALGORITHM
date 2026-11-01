@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1 ও W2 D2 সম্পূর্ণ; W2 D3 চলছে (৩১ অক্টো)। P10.1–P10.7 সম্পন্ন; P10.2 `getExt` ও P10.3 `toSlug`-এর complexity-ও আলোচনা হয়েছে। ★ S1 Reverse String ও ★ S2 Valid Palindrome বাকি। LC 242 Valid Anagram-এর object-count solution submit হয়েছে; একই problem আর solve/submit হবে না। P10.8-এর ২৬-ঘরের array এবং P10.9-এর sorting comparison আলাদা ছোট exercise হিসেবে বাকি।
+**বর্তমান অবস্থান:** W2 D1–D3 সম্পন্ন; পরেরটি W2 D4 / Strings 2 (১ নভে)। D3-এ P10.1–P10.7 এবং ★ S1 LC 344 Reverse String ও ★ S2 LC 125 Valid Palindrome-এর code + complexity শেষ। দুই LC submission status নিশ্চিত নয়। LC 242 Valid Anagram object-count দিয়ে solve + submit হয়েছে; পুনরাবৃত্তি নয়। D4-এর P10.8 ২৬-ঘরের array, P10.9 sorting comparison, P10.10 substring/subsequence, P10.11 normalization বাকি। Optional Capitalize Words বাদ দেওয়া যাবে।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -105,7 +105,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 **পুনরাবৃত্তি নিয়ম:** LC 217 এখানে একবারই solve হবে; October Week 3-এর H1 occurrence skip হবে।
 
-## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★ 🟡 চলছে (৩১ অক্টো)
+## Day 3 — বুধ, ১৪ অক্টোবর — Strings ১: ভিত্তি · Methods · Character code ★ ✅ সম্পন্ন (১ নভে)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা, normalize করা — প্রায় প্রতিটা screening round-এ একটা string problem থাকে।
 
@@ -130,9 +130,9 @@ console.log("z".charCodeAt(0) - "a".charCodeAt(0));
 ```
 
 **Problems:**
-- [ ] ★ **S1 Reverse String** — char-এর array in-place উল্টাও (`["h","e","l","l","o"]`)। দুইভাবে: (ক) নতুন array (খ) in-place দুই pointer দিয়ে (Two Pointers-এর প্রথম স্বাদ)। `A` · O(n), O(1)
-- [ ] ★ **S2 Valid Palindrome** — `"A man, a plan, a canal: Panama"` → true। শুধু অক্ষর আর সংখ্যা, case উপেক্ষা। দুইভাবে: (ক) পরিষ্কার করে উল্টে তুলনা (খ) দুই pointer, কোনো নতুন string ছাড়া। **তুলনার টেবিল বানাও।** `B` · O(n), O(1)
-- [ ] ○ **S3** `capitalizeWords("hello world")` → `"Hello World"` — `split/map/join` ছাড়া একবার, সাথে একবার। `A`
+- [x] ★ **S1 Reverse String** — manual two-pointer in-place solution + complexity সম্পন্ন (১ নভে)। November-এর recursive variant-এ একই exact problem হলে repeat নয়; recursion pattern আলাদা শেখাও।
+- [x] ★ **S2 Valid Palindrome** — two pointers, non-alphanumeric skip, case-insensitive compare; solution + O(n)/O(1) complexity সম্পন্ন (১ নভে)।
+- [ ] ○ **S3** `capitalizeWords("hello world")` → `"Hello World"` — Optional; বাদ দেওয়া যাবে।
 
 **বলো:** *"I use two pointers from both ends and skip non-alphanumeric characters, so I don't need to build a new string. That's O(n) time and O(1) extra space."*
 
@@ -216,7 +216,7 @@ const nested = [[1], [2]]; const c = [...nested]; c[0].push(9); console.log(nest
 ## Day 7 — রবি, ১৮ অক্টোবর — Revision · Practical JS ১ · Week Review
 
 **Re-solve (ফাঁকা editor, timer):**
-- [ ] S2 Valid Palindrome (two pointers version) · ⏭️ S4 Valid Anagram — LC 242 ইতিমধ্যে submit, repeat নয় · [ ] A2 Merge Sorted Array · [ ] A5 Stock · [ ] W1-এর 8.3
+- ⏭️ S2 Valid Palindrome — W2 D3-তে complete, re-solve বাধ্যতামূলক নয় · ⏭️ S4 Valid Anagram — LC 242 ইতিমধ্যে submit, repeat নয় · [ ] A2 Merge Sorted Array · [ ] A5 Stock · [ ] W1-এর 8.3
 
 **Practical JS ১ (Array utility — full-stack interview-এ এমন ছোট function চায়):**
 - [ ] ★ **P1** `chunk(arr, size)` — `[1,2,3,4,5], 2` → `[[1,2],[3,4],[5]]`। size ≤ 0 হলে? `B`

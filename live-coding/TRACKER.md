@@ -20,11 +20,11 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W2 D3 — Topic 10: Strings ১; P10.1–P10.7 সম্পন্ন; W2 D1–D2 ✅ · Week 1 সম্পূর্ণ |
-| **পরের কাজ** | Two-pointer warm-up checkpoint: `left`/`right` index-গুলো নিজে চিহ্নিত করো; এরপর ★ S1 LC 344 Reverse String, তারপর ★ S2 LC 125 Valid Palindrome। P10.8 26-array, P10.9 sorting comparison, P10.10 checkpoint ও P10.11 পরে বাকি। LC 242 submit হয়েছে—problem repeat নয়; complexity-টা learner নিজে ব্যাখ্যা করবে। |
-| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D3; October plan-এর ক্যালেন্ডার অনুযায়ী প্রায় ১৭ দিন পিছিয়ে। |
+| **বর্তমান দিন** | W2 D4 শুরু হবে — W2 D1–D3 সম্পন্ন; Topic 10 Strings 1-এর core work শেষ (১ নভে) · Week 1 সম্পূর্ণ |
+| **পরের কাজ** | W2 D4 / Topic 10 Strings 2: P10.8 frequency counting-এর ২৬-ঘরের array পদ্ধতি ও Object/Map/Array trade-off; আগে করা LC 242 problem repeat/submit নয়। LC 344 ও LC 125-এর code + complexity সম্পন্ন, submission status ব্যবহারকারী নিশ্চিত করেননি। |
+| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D4; October plan-এর ক্যালেন্ডার অনুযায়ী প্রায় ১৪ দিন পিছিয়ে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) |
-| **★ শেষ (মোট)** | 24 |
+| **★ শেষ (মোট)** | 26 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -46,7 +46,7 @@
 | ২৪–২৫ অক্টো | W1 D7 ✅ | User-confirmed Week 1 complete; FizzBuzz, First Descent, Reverse Integer; D7.1 LC 674 solution/trace/complexity; 8.3/8.5 duplicate বলে skip | 1 / 1 | — | — | পুনরায় একই problem বাধ্যতামূলক নয়; LCIS example-এর সঠিক output 4; Week Review complete বলে user নিশ্চিত করেছেন, বিস্তারিত উত্তর নথিভুক্ত নয় |
 | ২৫–২৭ অক্টো | W2 D1 ✅ | Topic 9 Big-O 1 — P9.1–P9.6 ও B1-এর নতুন pattern; P9.2/B2 duplicate বলে skip, B3 optional skip | 1 / 1 | — | — | single/nested/sequential loops, halving, fixed inner loop, shared counter, recursion tree; Time ও Auxiliary Space growth আলাদা করা |
 | ২৭–২৯ অক্টো | W2 D2 ✅ | Topic 9 Big-O 2 — P9.7–P9.10; ★ LC 217, B5; Gate LC 349 (code + complexity) | 3 / 3 | — | — | LC 217 Set O(n) average/O(n) aux; B5 repeated `shift` O(n²), prefixes O(n²) time/output; LC 349 `O(n+m)` avg time, `O(n+m)` aux, `O(min(n,m))` output; constraints-inform choice |
-| ২৯–৩১ অক্টো | W2 D3 (চলছে) | Topic 10 Strings 1 — P10.1–P10.7 সম্পন্ন; ★ S1/S2 বাকি; P10.8 Object + Map হয়েছে; LC 242 submitted early | 0 / 2 ★ | — | — | string immutability, indexing/methods, char code, lexicographic comparison, array + join, alphanumeric code/regex; frequency Object/Map; anagram count/decrement; two-pointer warm-up answer বাকি; পরে P10.8 26-array, P10.9 sort, P10.10, P10.11 |
+| ২৯ অক্টো–১ নভে | W2 D3 ✅ | Topic 10 Strings 1 core — P10.1–P10.7; ★ LC 344 Reverse String manual two-pointer in-place + O(n)/O(1); ★ LC 125 Valid Palindrome two-pointer + alphanumeric skip + lowercase compare, O(n)/O(1). LC 242 Valid Anagram object-count solution submit করা হয়েছে (আগে শেষ) | 2 / 2 ★ | — | — | দুই pointer দিয়ে swap; palindrome-এ non-alphanumeric skip, case ignore; empty-cleaned input true; code ও complexity complete। LC 344/125 LeetCode submission status নিশ্চিত নয়; optional Capitalize Words বাদ দেওয়া যাবে |
 
 ---
 

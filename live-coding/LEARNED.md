@@ -254,7 +254,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 পুরো ক্যালেন্ডার: `README.md`।
 
-### Topic 10 — Strings ১ / Frequency / Anagram (W2 D3 চলছে, ৩১ অক্টো)
+### Topic 10 — Strings (W2 D3 সম্পন্ন; W2 D4 পরের session, ১ নভে)
 
 - **String immutable:** index-এ assign করে character বদলায় না; নতুন string বানাতে হয়। `slice` / `at` index behavior অনুশীলন করা হয়েছে.
 - **File extension:** `lastIndexOf(".")` দিয়ে শেষ dot, `slice(dotIndex + 1)` দিয়ে extension; dot না থাকলে guard। Time O(n), output O(k), auxiliary O(1)।
@@ -265,6 +265,9 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **Alphanumeric:** code range 48-57, 65-90, 97-122; regex বিকল্প `/^[a-z0-9]$/i`; `charCodeAt(0)` প্রথম character-ই দেখে, তাই one-character constraint দরকার।
 - **Character frequency:** Object ও Map-এ প্রথমবার count 1, পরে increment; lowercase ইংরেজি alphabet হলে সর্বোচ্চ 26 key, তাই extra space O(1); arbitrary character set হলে O(n)। ২৬-ঘরের array variant এখনো practice বাকি।
 - **Anagram:** দৈর্ঘ্য আলাদা হলে সঙ্গে সঙ্গে false; প্রথম string-এর count বাড়িয়ে দ্বিতীয় string-এর অক্ষরে count কমাও; count না থাকলে false। LC 242 object-count approach-এ solve ও submit (৩১ অক্টো); exact problem পুনরায় নয়। Complexity ব্যাখ্যা দেওয়া হয়েছে, learner-এর নিজে ব্যাখ্যার checkpoint বাকি।
-- **Day 3-এ বাকি:** দুই প্রান্তের pointer warm-up (জিজ্ঞেস করা হয়েছে, উত্তর বাকি); ★ S1 Reverse String (LC 344), ★ S2 Valid Palindrome (LC 125); optional S3 Capitalize Words।
-- **পরের string phase-এ বাকি:** P10.8-এর ২৬-ঘরের array ও Object/Map/Array comparison; P10.9 sorting comparison; P10.10 substring/subsequence checkpoint; P10.11 normalization।
-- **কাজের অবস্থা:** progress/plan docs main-এ sync; current branch `october/week-2-day-3`; `practice/october/week-2/day-3.js`-এ uncommitted local edit আছে—user-এর অনুমতি ছাড়া discard বা stage করবে না।
+- **★ S1 Reverse String (LC 344):** manual two-pointer swap করে আসল array in-place reverse; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি। November-এর recursive reverse variant হলে একই exact problem repeat না করে recursive pattern-টি আলাদা শেখাতে হবে।
+- **★ S2 Valid Palindrome (LC 125):** two pointers, punctuation/space skip, case-insensitive compare; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি।
+- **★ S4 Valid Anagram (LC 242):** object frequency increment/decrement, unequal lengths early false; solve + LeetCode submit (৩১ অক্টো); exact problem আর repeat/submit নয়। Complexity explanation দেওয়া হয়েছে; learner-এর নিজের ভাষায় complexity checkpoint পরে চাইলে করা যাবে।
+- **Day 3 optional:** S3 Capitalize Words; user বাদ দিতে পারেন.
+- **W2 D4 / Strings 2-এ বাকি:** P10.8 ২৬-ঘরের array ও frequency approaches-এর তুলনা; P10.9 sorting comparison; P10.10 substring/subsequence; P10.11 normalization। LC 242 পুনরায় দেবেন না; নতুন variant হলে স্পষ্ট করে আলাদা করে দেবেন।
+- **কাজের অবস্থা:** W2 D3 progress update প্রস্তুত; current task branch `october/week-2-day-3`। Practice file-এর user edits সংরক্ষণ করতে হবে; docs commit করার সময় practice file stage করা যাবে না।

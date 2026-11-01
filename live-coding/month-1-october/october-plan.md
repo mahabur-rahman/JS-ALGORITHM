@@ -1205,7 +1205,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 ---
 
-## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ 🟡 চলছে (৩১ অক্টো)
+## Day 10 · W2 D3 · বুধ ১৪ অক্টো — Topic 10: Strings ১ — ভিত্তি · Methods · Character code ★ ✅ সম্পন্ন (১ নভে)
 
 **Interview-এ যেভাবে আসে:** palindrome, reverse, anagram, শব্দ গোনা — প্রায় প্রতিটা screening round-এ একটা string problem।
 
@@ -1240,7 +1240,7 @@ function prefixes(s) { const out = []; for (let i = 1; i <= s.length; i++) out.p
 
 ### ★ মূল problem
 
-#### ★ S1 · 344. Reverse String 🟢 Easy ⬜
+#### ★ S1 · 344. Reverse String 🟢 Easy ✅ (manual two-pointer solution + complexity: ১ নভে; submission status নিশ্চিত নয়)
 🔗 [LC 344](https://leetcode.com/problems/reverse-string/) (হুবহু)
 🌍 **Real-life:** চিঠির লেখা আয়নায় দেখা।
 
@@ -1258,7 +1258,7 @@ Example 2: Input: s = ["H","a","n","n","a","h"]   Output: ["h","a","n","n","a","
 
 **পুনরাবৃত্তি নিয়ম:** S1 এখানে করলে November-এর R2 recursive Reverse String problem repeat হবে না।
 
-#### ★ S2 · 125. Valid Palindrome 🟢 Easy ⬜
+#### ★ S2 · 125. Valid Palindrome 🟢 Easy ✅ (two-pointer solution + complexity: ১ নভে; submission status নিশ্চিত নয়)
 🔗 [LC 125](https://leetcode.com/problems/valid-palindrome/) (হুবহু)
 🌍 **Real-life:** "নয়ন" সামনে-পেছনে একই — শব্দ খেলার app।
 
@@ -1278,7 +1278,7 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 **🧠 ভাবনা:** (খ)-তে বাজে অক্ষর পেলে কোন pointer সরাব? P10.7-এর helper কাজে লাগাও।
 **⏱️ লক্ষ্য:** (ক) Time O(n) · Space O(n) · (খ) Time O(n) · Space O(1)
 
-#### ○ S3 · Capitalize Words 🟢 ⬜
+#### ○ S3 · Capitalize Words 🟢 ⬜ (ঐচ্ছিক; চাইলে skip)
 🔗 কাছাকাছি: [LC 2129 · Capitalize the Title](https://leetcode.com/problems/capitalize-the-title/)
 🌍 খবরের শিরোনাম। **EN:** `capitalizeWords("hello world")` → `"Hello World"` — once with `split/map/join`, once without. **বাংলা:** প্রতিটা শব্দের প্রথম অক্ষর বড় হাতের।
 
@@ -1561,7 +1561,7 @@ Explanation: No transactions are done and the max profit = 0.
 ## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen ⬜
 
 ### 🔁 Re-solve (ফাঁকা editor, timer)
-- ⬜ S2 Valid Palindrome (two pointers) · ⏭️ S4 Valid Anagram (LC 242 already submitted; no repeat) · ⬜ A2 Merge Sorted Array · ⬜ A5 Stock · ⬜ W1-এর 8.3
+- ⏭️ S2 Valid Palindrome (W2 D3-তে complete; re-solve বাধ্যতামূলক নয়) · ⏭️ S4 Valid Anagram (LC 242 already submitted; no repeat) · ⬜ A2 Merge Sorted Array · ⬜ A5 Stock · ⬜ W1-এর 8.3
 
 ### 🛠️ Practical JS ১ (full-stack interview-এ এমন ছোট utility চায়)
 
