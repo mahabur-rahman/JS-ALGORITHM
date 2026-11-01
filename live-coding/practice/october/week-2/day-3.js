@@ -351,3 +351,26 @@
 
 // console.log(reverseString(["h", "e", "l", "l", "o"]))
 // Expected: ["o", "l", "l", "e", "h"]
+
+
+// var reverseString = function(s) {
+
+//     let left =0;
+//     let right = s.length - 1
+
+
+//     while(left < right){
+
+//         const temp = s[left]; // A['0']
+
+//         s[left] = s[right];
+//         s[right] = temp
+
+//         left++;
+//         right--;
+//     }
+// };
+
+// const arr = ["A", "B", "C", "D"];
+// reverseString(arr);
+// console.log(arr); // ["D", "C", "B", "A"]
