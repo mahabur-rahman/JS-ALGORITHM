@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D3 সম্পন্ন; পরেরটি W2 D4 / Strings 2 (১ নভে)। D3-এ P10.1–P10.7 এবং ★ S1 LC 344 Reverse String ও ★ S2 LC 125 Valid Palindrome-এর code + complexity শেষ। দুই LC submission status নিশ্চিত নয়। LC 242 Valid Anagram object-count দিয়ে solve + submit হয়েছে; পুনরাবৃত্তি নয়। D4-এর P10.8 ২৬-ঘরের array, P10.9 sorting comparison, P10.10 substring/subsequence, P10.11 normalization বাকি। Optional Capitalize Words বাদ দেওয়া যাবে।
+**বর্তমান অবস্থান:** W2 D1–D3 সম্পন্ন; W2 D4 branch তৈরি, session শুরু হয়নি (১ নভে)। D3-এ P10.1–P10.7 এবং ★ S1 LC 344 Reverse String ও ★ S2 LC 125 Valid Palindrome-এর code + complexity শেষ। দুই LC submission status নিশ্চিত নয়। LC 242 Valid Anagram object-count দিয়ে solve + submit হয়েছে; পুনরাবৃত্তি নয়। D4-এর ক্রম: P10.8 ২৬-ঘরের array → P10.9 sort/count trade-off ও LC 242-এর complexity নিজে বলা (নতুন করে code/submit নয়) → P10.10 substring/subsequence → P10.11 normalization → ★ S5 LC 387, ★ S6 LC 14, ★ S7 LC 151 → Topic 10 Gate। Optional S8–S10 বাদ দেওয়া যাবে।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -138,7 +138,7 @@ console.log("z".charCodeAt(0) - "a".charCodeAt(0));
 
 ---
 
-## Day 4 — বৃহস্পতি, ১৫ অক্টোবর — Strings ২: Frequency · Anagram · Prefix ★
+## Day 4 — বৃহস্পতি, ১৫ অক্টোবর — Strings ২: Frequency · Anagram · Prefix ★ (branch তৈরি ১ নভে; session শুরু হয়নি)
 
 **শিখবে:**
 - **Frequency counting:** object, Map, অথবা ২৬ ঘরের array — কখন কোনটা।

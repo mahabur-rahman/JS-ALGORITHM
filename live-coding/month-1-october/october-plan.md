@@ -59,12 +59,12 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D3, ৩১ অক্টো; D1–D2 সম্পন্ন) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D4 প্রস্তুত, ১ নভে; D1–D3 সম্পন্ন) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (৩১ অক্টো) শেখার অবস্থান W2 D3 — W1 এবং W2 D1–D2 সম্পন্ন। পরিকল্পিত দিনের তুলনায় প্রায় ১৭ দিন পিছিয়ে; ★ problem ও concept শেষ করে এগোবে, আগে সমাধান করা একই problem repeat বাধ্যতামূলক নয়।
+> এখন (১ নভে) শেখার অবস্থান W2 D4 — W1 এবং W2 D1–D3 সম্পন্ন। পরিকল্পিত D4 তারিখ ১৫ অক্টোবরের তুলনায় প্রায় ১৭ দিন পরে শুরু; ★ problem ও concept শেষ করে এগোবে, আগে সমাধান করা একই problem repeat বাধ্যতামূলক নয়।
 
 ---
 ---
@@ -1289,7 +1289,7 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ---
 
-## Day 11 · W2 D4 · বৃহস্পতি ১৫ অক্টো — Topic 10: Strings ২ — Frequency · Anagram · Prefix ★ ⬜
+## Day 11 · W2 D4 · বৃহস্পতি ১৫ অক্টো — Topic 10: Strings ২ — Frequency · Anagram · Prefix ★ 🟡 প্রস্তুত (১ নভে; শেখা শুরু হয়নি)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - "কতবার আছে", "একই অক্ষর একই সংখ্যায়" → **frequency count** (object / Map / ২৬-array)।
@@ -1300,16 +1300,28 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 ### 📘 Concept phases + ছোট problem
 
 **Phase 10.8 — Frequency counting তিনভাবে** 🟡
-- **P10.8 · Char Count** 🟢 🟡 (৩১ অক্টো) — `"hello"`-এর frequency Object ও Map দিয়ে করা হয়েছে; ২৬-length array implementation ও representations comparison বাকি. Object/Map code push হয়েছে।
+- **P10.8 · Char Count** 🟢 🟡 (Object ও Map code হয়েছে; Day 4-এ ২৬-length array + representation trade-off বাকি) — `"hello"` → `h:1, e:1, l:2, o:1`। ছোট input-এ lowercase letters-এর index বের করে count array-তে রাখো।
 
 **Phase 10.9 — Anagram ধারণা** 🟡
-- **P10.9** 🟢 🟡 (৩১ অক্টো) — character count সমান হলে anagram; `"aab"` ও `"aba"` trace সম্পন্ন। Sort করে তুলনা বাকি।
+- **P10.9** 🟢 🟡 — count approach-এ anagram ধারণা ও `"aab"`/`"aba"` trace হয়েছে; sort বনাম count-এর time/space trade-off শুধু conceptually তুলনা করো। LC 242 ইতিমধ্যে solve + submit, তাই exact problem পুনরায় code/submit নয়।
 
 **Phase 10.10 — Substring বনাম subsequence** ⬜
 - **P10.10** 🟢 ⬜ — **EN:** For `"abcde"`: is `"bcd"` a substring? `"ace"`? Is `"ace"` a subsequence? → `yes, no, yes`
 
 **Phase 10.11 — Normalization** ⬜
 - **P10.11** 🟢 ⬜ — 🌍 search box-এ "  JavaScript! " আর "javascript" একই ধরা। **EN:** `normalize("  Hello, World! ")` → `"helloworld"`.
+
+**Day 4 sequence (branch: `october/week-2-day-4`; শুরু করার আগে concept, তারপর mini exercise):**
+1. P10.8 — ২৬-ঘরের frequency array; Object/Map/Array কখন বেছে নেবে।
+2. P10.9 — anagram-এ sorting বনাম counting-এর complexity; আগে করা LC 242-এর complexity নিজে ব্যাখ্যা, কিন্তু code/submit repeat নয়।
+3. P10.10 — substring বনাম subsequence; ছোট string trace।
+4. P10.11 — lowercase/trim/punctuation বাদ দিয়ে search text normalize; mini problem।
+5. ★ S5 LC 387 First Unique Character — আগে frequency, পরে প্রথম count-1 character-এর index।
+6. ★ S6 LC 14 Longest Common Prefix — character column ধরে strings মিলিয়ে prefix বানানো।
+7. ★ S7 LC 151 Reverse Words in a String — প্রথম built-in দিয়ে, পরে `split` ছাড়া নিজে word scan।
+8. Topic 10 Gate — তিন ★ problem-এর pattern, edge case ও complexity ব্যাখ্যা।
+
+**Repeat rule:** ★ S4 LC 242 Valid Anagram আগেই solve + submit; Day 4-এ কেবল sorting/counting trade-off শেখা হবে, একই problem আবার code/submit নয়। ○ S8–S10 ঐচ্ছিক; সময়/আগ্রহ না থাকলে বাদ।
 
 ### ★ মূল problem
 

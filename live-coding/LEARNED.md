@@ -247,14 +247,14 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 | 7 Numbers & Math (digit trick, prime √n) | W1 D5 | ✅ সম্পন্ন — Phase 7.1–7.6, ★7.1–7.4 ও Gate; optional Armstrong skipped |
 | 8 Basic Problem Solving (৬ মৌলিক কাজ) | W1 D6 | ✅ সম্পন্ন — P8.1–P8.4, ★8.1–8.5 ও Gate (২৪ অক্টো) |
 | 9 Big-O (Time · Space · hidden costs · constraints) | W2 D1–D2 | ✅ সম্পন্ন (২৯ অক্টো) |
-| 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | 🟡 Topic 10 Strings চলছে (W2 D3, ৩১ অক্টো) |
+| 10–13 Strings · Arrays · Objects · **Hashing** | W2–W3 | 🟡 Topic 10 Strings চলছে; W2 D3 complete, D4 branch প্রস্তুত (১ নভে; session শুরু হয়নি) |
 | 14–16 Closure/`this` · Class · Sorting | W4 | |
 | 17–24 Binary Search · Two Pointers · Sliding Window · Prefix Sum · Recursion · Linked List · Stack · Queue | November | |
 | 25–39 Tree · BST · Heap · Intervals · Graph · Backtracking · Greedy · DP · Bit · Trie · Math | December | |
 
 পুরো ক্যালেন্ডার: `README.md`।
 
-### Topic 10 — Strings (W2 D3 সম্পন্ন; W2 D4 পরের session, ১ নভে)
+### Topic 10 — Strings (W2 D3 সম্পন্ন; W2 D4 branch প্রস্তুত, ১ নভে)
 
 - **String immutable:** index-এ assign করে character বদলায় না; নতুন string বানাতে হয়। `slice` / `at` index behavior অনুশীলন করা হয়েছে.
 - **File extension:** `lastIndexOf(".")` দিয়ে শেষ dot, `slice(dotIndex + 1)` দিয়ে extension; dot না থাকলে guard। Time O(n), output O(k), auxiliary O(1)।
@@ -269,5 +269,6 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **★ S2 Valid Palindrome (LC 125):** two pointers, punctuation/space skip, case-insensitive compare; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি।
 - **★ S4 Valid Anagram (LC 242):** object frequency increment/decrement, unequal lengths early false; solve + LeetCode submit (৩১ অক্টো); exact problem আর repeat/submit নয়। Complexity explanation দেওয়া হয়েছে; learner-এর নিজের ভাষায় complexity checkpoint পরে চাইলে করা যাবে।
 - **Day 3 optional:** S3 Capitalize Words; user বাদ দিতে পারেন.
-- **W2 D4 / Strings 2-এ বাকি:** P10.8 ২৬-ঘরের array ও frequency approaches-এর তুলনা; P10.9 sorting comparison; P10.10 substring/subsequence; P10.11 normalization। LC 242 পুনরায় দেবেন না; নতুন variant হলে স্পষ্ট করে আলাদা করে দেবেন।
-- **কাজের অবস্থা:** W2 D3 progress update প্রস্তুত; current task branch `october/week-2-day-3`। Practice file-এর user edits সংরক্ষণ করতে হবে; docs commit করার সময় practice file stage করা যাবে না।
+- **W2 D4 / Strings 2 checklist:** P10.8 ২৬-ঘরের array + Object/Map/Array trade-off; P10.9 sort/count trade-off (LC 242 re-solve নয়); P10.10 substring/subsequence; P10.11 normalization; ★ S5 LC 387 First Unique Character, ★ S6 LC 14 Longest Common Prefix, ★ S7 LC 151 Reverse Words; শেষে Topic 10 Gate।
+- **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
+- **Branch/workspace:** current branch `october/week-2-day-4`; Day 4 session এখনো শুরু হয়নি। User বলেছেন study content chat-এ দেব, practice code নিজে লিখবেন; practice files-এ lesson/solution যোগ নয়। Existing `day-3.js` local edit সংরক্ষণ করতে হবে; docs commit করার সময় practice file stage করা যাবে না।
