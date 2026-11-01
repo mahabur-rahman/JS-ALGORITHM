@@ -346,18 +346,13 @@
 
 // };
 
-
-
-
 // console.log(reverseString(["h", "e", "l", "l", "o"]))
 // Expected: ["o", "l", "l", "e", "h"]
-
 
 // var reverseString = function(s) {
 
 //     let left =0;
 //     let right = s.length - 1
-
 
 //     while(left < right){
 
@@ -374,3 +369,63 @@
 // const arr = ["A", "B", "C", "D"];
 // reverseString(arr);
 // console.log(arr); // ["D", "C", "B", "A"]
+
+// LeetCode 125 — Valid Palindrome।
+
+// function isAlphaNumeric(ch) {
+//     const code = ch.charCodeAt(0);
+
+//     return (
+//         (code >= 65 && code <= 90) ||   // A-Z
+//         (code >= 97 && code <= 122) ||  // a-z
+//         (code >= 48 && code <= 57)      // 0-9
+//     );
+// }
+
+// var isPalindrome = function (s) {
+//     let left = 0;
+//     let right = s.length - 1;
+
+//     while (left < right) {
+
+//         // Skip non-alphanumeric from left
+//         if (!isAlphaNumeric(s[left])) {
+//             left++;
+//             continue;
+//         }
+
+//         // Skip non-alphanumeric from right
+//         if (!isAlphaNumeric(s[right])) {
+//             right--;
+//             continue;
+//         }
+
+//         // Compare characters (case-insensitive)
+//         if (s[left].toLowerCase() !== s[right].toLowerCase()) {
+//             return false;
+//         }
+
+//         left++;
+//         right--;
+//     }
+
+//     return true;
+// };
+
+// // Test cases
+// console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
+// console.log(isPalindrome("race a car"));                     // false
+// console.log(isPalindrome(" "));                              // true
+// console.log(isPalindrome("0P"));                             // false
+// console.log(isPalindrome("aba"));                            // true
+// console.log(isPalindrome("Madam"));                          // true
+
+
+// var isPalindrome = function (s) {
+
+//     const cleaned = s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+//     const reversed = cleaned.split("").reverse().join("");
+
+//     return cleaned === reversed;
+// };
