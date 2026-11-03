@@ -85,3 +85,14 @@
 // };
 
 // console.log("Final Output:", firstUniqChar("leetcode")); // 0
+
+// চলো, Day 4-এর পরের কাজ—LeetCode 151: Reverse Words in a String
+
+var reverseWords = function (s) {
+  const result = s.trim().split(/\s+/);
+  return result.reverse().join(" ");
+};
+
+console.log(reverseWords("the sky is blue"));
+
+console.log(reverseWords(" Hello    World   "))
