@@ -420,7 +420,6 @@
 // console.log(isPalindrome("aba"));                            // true
 // console.log(isPalindrome("Madam"));                          // true
 
-
 // var isPalindrome = function (s) {
 
 //     const cleaned = s.toLowerCase().replace(/[^a-z0-9]/g, "");
