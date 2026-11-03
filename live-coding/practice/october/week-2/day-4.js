@@ -88,11 +88,34 @@
 
 // চলো, Day 4-এর পরের কাজ—LeetCode 151: Reverse Words in a String
 
-var reverseWords = function (s) {
-  const result = s.trim().split(/\s+/);
-  return result.reverse().join(" ");
-};
+// var reverseWords = function (s) {
+//   const result = s.trim().split(/\s+/);
+//   return result.reverse().join(" ");
+// };
 
-console.log(reverseWords("the sky is blue"));
+// console.log(reverseWords("the sky is blue"));
 
-console.log(reverseWords(" Hello    World   "))
+// console.log(reverseWords(" Hello    World   "))  
+
+
+
+
+// var isSameName = function(a, b) {
+
+//     console.log(a.trim())
+//     console.log(b.trim())
+
+//     const firstResult = a.trim()
+//     const lastResult = b.trim()
+
+//     const firstWord = firstResult.toLowerCase()
+//     const lastWord = lastResult.toLowerCase()
+
+
+//     if(firstWord === lastWord) return true 
+
+//     return false
+
+// };
+
+// console.log(isSameName("  ALICE ", "alice")); 
