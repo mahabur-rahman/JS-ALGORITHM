@@ -1289,7 +1289,7 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ---
 
-## Day 11 · W2 D4 · বৃহস্পতি ১৫ অক্টো — Topic 10: Strings ২ — Frequency · Anagram · Prefix ★ 🟡 প্রস্তুত (১ নভে; শেখা শুরু হয়নি)
+## Day 11 · W2 D4 · বৃহস্পতি ১৫ অক্টো — Topic 10: Strings ২ — Frequency · Anagram · Prefix ★ ✅ সম্পন্ন (৩ নভে)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - "কতবার আছে", "একই অক্ষর একই সংখ্যায়" → **frequency count** (object / Map / ২৬-array)।
@@ -1299,27 +1299,27 @@ Explanation: After removing non-alphanumeric characters, s is "" — an empty st
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 10.8 — Frequency counting তিনভাবে** 🟡
-- **P10.8 · Char Count** 🟢 🟡 (Object ও Map code হয়েছে; Day 4-এ ২৬-length array + representation trade-off বাকি) — `"hello"` → `h:1, e:1, l:2, o:1`। ছোট input-এ lowercase letters-এর index বের করে count array-তে রাখো।
+**Phase 10.8 — Frequency counting তিনভাবে** ✅
+- **P10.8 · Char Count** 🟢 ✅ — Object ও Map আগেই code হয়েছে; Day 4-এ ২৬-length array এবং representation trade-off সম্পন্ন। `letterFrequency("supertuper")`; Time O(n), Auxiliary Space O(1)।
 
-**Phase 10.9 — Anagram ধারণা** 🟡
-- **P10.9** 🟢 🟡 — count approach-এ anagram ধারণা ও `"aab"`/`"aba"` trace হয়েছে; sort বনাম count-এর time/space trade-off শুধু conceptually তুলনা করো। LC 242 ইতিমধ্যে solve + submit, তাই exact problem পুনরায় code/submit নয়।
+**Phase 10.9 — Anagram ধারণা** ✅
+- **P10.9** 🟢 ✅ — sort বনাম count-এর time/space trade-off তুলনা সম্পন্ন; lowercase alphabet-এর fixed array O(1) space। LC 242 পুনরায় code/submit করা হয়নি।
 
-**Phase 10.10 — Substring বনাম subsequence** ⬜
-- **P10.10** 🟢 ⬜ — **EN:** For `"abcde"`: is `"bcd"` a substring? `"ace"`? Is `"ace"` a subsequence? → `yes, no, yes`
+**Phase 10.10 — Substring বনাম subsequence** ✅
+- **P10.10** 🟢 ✅ — `"abcde"` থেকে `"bcd"` substring ও subsequence; `"ace"` subsequence, substring নয়।
 
-**Phase 10.11 — Normalization** ⬜
-- **P10.11** 🟢 ⬜ — 🌍 search box-এ "  JavaScript! " আর "javascript" একই ধরা। **EN:** `normalize("  Hello, World! ")` → `"helloworld"`.
+**Phase 10.11 — Normalization** ✅
+- **P10.11** 🟢 ✅ — `isSameName("  ALICE ", "alice")`; trim + lowercase normalization, Time O(n+m), Auxiliary Space O(n+m)。
 
-**Day 4 sequence (branch: `october/week-2-day-4`; শুরু করার আগে concept, তারপর mini exercise):**
-1. P10.8 — ২৬-ঘরের frequency array; Object/Map/Array কখন বেছে নেবে।
-2. P10.9 — anagram-এ sorting বনাম counting-এর complexity; আগে করা LC 242-এর complexity নিজে ব্যাখ্যা, কিন্তু code/submit repeat নয়।
-3. P10.10 — substring বনাম subsequence; ছোট string trace।
-4. P10.11 — lowercase/trim/punctuation বাদ দিয়ে search text normalize; mini problem।
-5. ★ S5 LC 387 First Unique Character — আগে frequency, পরে প্রথম count-1 character-এর index।
-6. ★ S6 LC 14 Longest Common Prefix — character column ধরে strings মিলিয়ে prefix বানানো।
-7. ★ S7 LC 151 Reverse Words in a String — প্রথম built-in দিয়ে, পরে `split` ছাড়া নিজে word scan।
-8. Topic 10 Gate — তিন ★ problem-এর pattern, edge case ও complexity ব্যাখ্যা।
+**Day 4 sequence (branch: `october/week-2-day-4`; সম্পন্ন ৩ নভে):**
+1. [x] P10.8 — ২৬-ঘরের frequency array; Object/Map/Array trade-off।
+2. [x] P10.9 — anagram sorting/counting complexity; LC 242 repeat নয়।
+3. [x] P10.10 — substring বনাম subsequence।
+4. [x] P10.11 — trim/lowercase normalization mini problem।
+5. [x] ★ S5 LC 387 First Unique Character — two-pass frequency pattern; code, complexity ও submission সম্পন্ন।
+6. [x] ★ S6 LC 14 Longest Common Prefix — code, complexity ও submission সম্পন্ন।
+7. [x] ★ S7 LC 151 Reverse Words in a String — built-in পদ্ধতিতে code, complexity ও submission সম্পন্ন। `split` ছাড়া একই problem-এর বিকল্প implementation repeat না করার পছন্দে বাদ।
+8. [x] Topic 10 Gate — pattern, edge case ও complexity covered।
 
 **Repeat rule:** ★ S4 LC 242 Valid Anagram আগেই solve + submit; Day 4-এ কেবল sorting/counting trade-off শেখা হবে, একই problem আবার code/submit নয়। ○ S8–S10 ঐচ্ছিক; সময়/আগ্রহ না থাকলে বাদ।
 
@@ -1342,7 +1342,7 @@ Example 2: Input: s = "rat", t = "car"           Output: false
 **🧠 ভাবনা:** দৈর্ঘ্য আলাদা হলে? এক string-এ +1, অন্যটায় −1 করলে শেষে কী দেখতে হবে?
 **⏱️ লক্ষ্য:** count version Time O(n) · Space O(1) (২৬ ঘর)
 
-#### ★ S5 · 387. First Unique Character in a String 🟢 Easy ⬜
+#### ★ S5 · 387. First Unique Character in a String 🟢 Easy ✅ (code, complexity, LC submission: ৩ নভে)
 🔗 [LC 387](https://leetcode.com/problems/first-unique-character-in-a-string/) (হুবহু)
 🌍 **Real-life:** লাইনে প্রথম কোন customer একবারই এসেছে।
 
@@ -1359,7 +1359,7 @@ Example 3: Input: s = "aabb"           Output: -1
 **🧠 ভাবনা:** এক pass-এ কি জানা যায় অক্ষরটা পরে আবার আসবে কিনা? না → আগে সব গুনে নাও (pass ১), তারপর ক্রম ধরে খোঁজো (pass ২)।
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1) (২৬ অক্ষর)
 
-#### ★ S6 · 14. Longest Common Prefix 🟢 Easy ⬜
+#### ★ S6 · 14. Longest Common Prefix 🟢 Easy ✅ (code, complexity, LC submission: ৩ নভে)
 🔗 [LC 14](https://leetcode.com/problems/longest-common-prefix/) (হুবহু)
 🌍 **Real-life:** phone-এর contact search — "Rah" লিখলে Rahim, Rahul, Rahman।
 
@@ -1376,7 +1376,7 @@ Explanation: There is no common prefix among the input strings.
 **🧠 ভাবনা:** প্রথম শব্দের প্রতিটা অক্ষর ধরে — বাকি সবার একই জায়গায় কি একই অক্ষর? কখন থামব?
 **⏱️ লক্ষ্য:** Time O(S) — S = সব অক্ষরের মোট · Space O(1)
 
-#### ★ S7 · 151. Reverse Words in a String 🟡 Medium ⬜
+#### ★ S7 · 151. Reverse Words in a String 🟡 Medium ✅ (built-in solution, complexity, LC submission: ৩ নভে; split ছাড়া variant repeat না করার সিদ্ধান্তে বাদ)
 🔗 [LC 151](https://leetcode.com/problems/reverse-words-in-a-string/) (হুবহু)
 🌍 **Real-life:** ইংরেজি থেকে এমন ভাষায় অনুবাদ যেখানে শব্দের ক্রম উল্টো।
 
@@ -1411,7 +1411,7 @@ Example 3: Input: s = "a good   example"    Output: "example good a"
 
 **বলো:** *"Sorting both strings works in O(n log n). Counting characters is O(n), and if the input is only lowercase letters, a fixed array of 26 makes the space O(1)."*
 
-### 🚪 Gate — Topic 10 (Strings) ⬜
+### 🚪 Gate — Topic 10 (Strings) ✅ (৩ নভে)
 
 ---
 

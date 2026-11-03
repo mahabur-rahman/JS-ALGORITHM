@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D3 সম্পন্ন; W2 D4 branch তৈরি, session শুরু হয়নি (১ নভে)। D3-এ P10.1–P10.7 এবং ★ S1 LC 344 Reverse String ও ★ S2 LC 125 Valid Palindrome-এর code + complexity শেষ। দুই LC submission status নিশ্চিত নয়। LC 242 Valid Anagram object-count দিয়ে solve + submit হয়েছে; পুনরাবৃত্তি নয়। D4-এর ক্রম: P10.8 ২৬-ঘরের array → P10.9 sort/count trade-off ও LC 242-এর complexity নিজে বলা (নতুন করে code/submit নয়) → P10.10 substring/subsequence → P10.11 normalization → ★ S5 LC 387, ★ S6 LC 14, ★ S7 LC 151 → Topic 10 Gate। Optional S8–S10 বাদ দেওয়া যাবে।
+**বর্তমান অবস্থান:** W2 D1–D4 সম্পন্ন; W2 D5-এর branch `october/week-2-day-5` তৈরি। D4 (৩ নভে): P10.8 ২৬-ঘরের frequency array; P10.9 sort/count trade-off; P10.10 substring/subsequence; P10.11 normalization; ★ S5 LC 387, ★ S6 LC 14, ★ S7 LC 151—তিনটির code, complexity ও LeetCode submission সম্পন্ন; Topic 10 Gate পাস। LC 242 আগেই করা ছিল, repeat হয়নি। LC 151-এর `split` ছাড়া বিকল্প implementation একই problem পুনরাবৃত্তি না করার নিয়মে বাদ। Optional S8–S10 বাদ। পরের ধাপ W2 D5, Topic 11: Arrays 1।
 
 ## Big-O · Strings · Arrays (শুরু)
 
