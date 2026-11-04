@@ -132,3 +132,13 @@
 // console.log(missingNumber([0, 1]));          // 2
 // console.log(missingNumber([4, 2, 0, 1]));   // 3
 // console.log(missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])); // 8
+
+// var merge = function (nums1, m, nums2, n) {
+
+//   nums1.splice(m, n, ...nums2)
+//   .sort((a, b) => a - b)
+
+//   return nums1
+// };
+
+// console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
