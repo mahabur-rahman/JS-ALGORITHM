@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D4 সম্পন্ন; W2 D5-এর branch `october/week-2-day-5` তৈরি। D4 (৩ নভে): P10.8 ২৬-ঘরের frequency array; P10.9 sort/count trade-off; P10.10 substring/subsequence; P10.11 normalization; ★ S5 LC 387, ★ S6 LC 14, ★ S7 LC 151—তিনটির code, complexity ও LeetCode submission সম্পন্ন; Topic 10 Gate পাস। LC 242 আগেই করা ছিল, repeat হয়নি। LC 151-এর `split` ছাড়া বিকল্প implementation একই problem পুনরাবৃত্তি না করার নিয়মে বাদ। Optional S8–S10 বাদ। পরের ধাপ W2 D5, Topic 11: Arrays 1।
+**বর্তমান অবস্থান:** W2 D1–D5 সম্পন্ন; W2 D6 branch `october/week-2-day-6`-এ Topic 11 Arrays 2 শুরু। D5 (৫ নভে): P11.1–P11.7 সম্পন্ন; LC 268 Missing Number-এর range + `includes` approach code ও submit (O(n²) time/O(n) aux); LC 88 Merge Sorted Array-এর `splice` + numeric `sort` approach code complete (O((m+n) log(m+n)); submission status নিশ্চিত নয়). দুটো problem-এর alternate/optimized version repeat না করার পছন্দে বাদ; optional A3 বাদ। Day 5 Gate বন্ধ।
 
 ## Big-O · Strings · Arrays (শুরু)
 

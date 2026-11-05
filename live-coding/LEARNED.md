@@ -254,7 +254,7 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 
 পুরো ক্যালেন্ডার: `README.md`।
 
-### Topic 10 — Strings (W2 D3 সম্পন্ন; W2 D4 branch প্রস্তুত, ১ নভে)
+### Topic 10 — Strings (W2 D3–D4 সম্পন্ন; W2 D4 complete ৩ নভে)
 
 - **String immutable:** index-এ assign করে character বদলায় না; নতুন string বানাতে হয়। `slice` / `at` index behavior অনুশীলন করা হয়েছে.
 - **File extension:** `lastIndexOf(".")` দিয়ে শেষ dot, `slice(dotIndex + 1)` দিয়ে extension; dot না থাকলে guard। Time O(n), output O(k), auxiliary O(1)।
@@ -269,6 +269,13 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **★ S2 Valid Palindrome (LC 125):** two pointers, punctuation/space skip, case-insensitive compare; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি।
 - **★ S4 Valid Anagram (LC 242):** object frequency increment/decrement, unequal lengths early false; solve + LeetCode submit (৩১ অক্টো); exact problem আর repeat/submit নয়। Complexity explanation দেওয়া হয়েছে; learner-এর নিজের ভাষায় complexity checkpoint পরে চাইলে করা যাবে।
 - **Day 3 optional:** S3 Capitalize Words; user বাদ দিতে পারেন.
-- **W2 D4 / Strings 2 checklist:** P10.8 ২৬-ঘরের array + Object/Map/Array trade-off; P10.9 sort/count trade-off (LC 242 re-solve নয়); P10.10 substring/subsequence; P10.11 normalization; ★ S5 LC 387 First Unique Character, ★ S6 LC 14 Longest Common Prefix, ★ S7 LC 151 Reverse Words; শেষে Topic 10 Gate।
+- **W2 D4 / Strings 2 সম্পন্ন (৩ নভে):** P10.8 frequency array; P10.9 sort/count trade-off; P10.10 substring/subsequence; P10.11 normalization; LC 387, LC 14 ও LC 151 solve, complexity ও submit। LC 242 repeat নয়; LC 151-এর split-free variant repeat না করার পছন্দে বাদ; optional S8–S10 বাদ।
+
+### Topic 11 — Arrays 1 (W2 D5 সম্পন্ন, ৫ নভে)
+
+- **P11.1–P11.7:** `Array.from`/`fill`, shared nested row reference, mutating বনাম non-mutating, numeric `sort` comparator, `slice`/`splice`, `includes`/`indexOf`/`find`, destructuring/swap, shallow spread copy।
+- **LC 268 Missing Number:** range array + `includes` approach code ও submit; Time O(n²), Auxiliary Space O(n)। Linear-time/O(1)-space follow-up একই problem repeat না করার পছন্দে বাদ।
+- **LC 88 Merge Sorted Array:** `splice` + numeric `sort` approach code complete; Time O((m+n) log(m+n)); submission status নিশ্চিত নয়। O(m+n) backward-pointer follow-up repeat না করার পছন্দে বাদ।
+- Optional P11.A3 `removeAt`/`insertAt` বাদ।
 - **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
 - **Branch/workspace:** current branch `october/week-2-day-4`; Day 4 session এখনো শুরু হয়নি। User বলেছেন study content chat-এ দেব, practice code নিজে লিখবেন; practice files-এ lesson/solution যোগ নয়। Existing `day-3.js` local edit সংরক্ষণ করতে হবে; docs commit করার সময় practice file stage করা যাবে না।

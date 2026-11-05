@@ -20,9 +20,9 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W2 D4 branch তৈরি; শেখা এখনো শুরু হয়নি (১ নভে) — W2 D1–D3 ও Day 3-এর core সম্পন্ন · Week 1 সম্পূর্ণ |
-| **পরের কাজ** | Day 4 checklist: P10.8 ২৬-ঘরের frequency array → P10.9 sort/count trade-off + আগে করা LC 242-এর complexity নিজে বলা (code/submit repeat নয়) → P10.10 substring/subsequence → P10.11 normalization → ★ LC 387, LC 14, LC 151 → Topic 10 Gate। ○ S8–S10 optional। |
-| **পিছিয়ে আছি?** | শেখার অবস্থান W2 D4; October plan-এর নির্ধারিত D4 তারিখ ১৫ অক্টোবরের তুলনায় প্রায় ১৭ দিন পরে শুরু হচ্ছে। |
+| **বর্তমান দিন** | W2 D6 — Topic 11 Arrays 2; W2 D1–D5 complete · Week 1 complete |
+| **পরের কাজ** | P11.8 rotation index pattern: `(i + k) % n`; এরপর P11.9, P11.10, LC 189 ও LC 121। আগে solve করা problem repeat নয়। |
+| **পিছিয়ে আছি?** | Plan-এ W2 D6; D5 complete ৫ নভে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) |
 | **★ শেষ (মোট)** | 26 |
 | **★ Day +7 re-solve পাস** | 0 |
@@ -48,6 +48,9 @@
 | ২৭–২৯ অক্টো | W2 D2 ✅ | Topic 9 Big-O 2 — P9.7–P9.10; ★ LC 217, B5; Gate LC 349 (code + complexity) | 3 / 3 | — | — | LC 217 Set O(n) average/O(n) aux; B5 repeated `shift` O(n²), prefixes O(n²) time/output; LC 349 `O(n+m)` avg time, `O(n+m)` aux, `O(min(n,m))` output; constraints-inform choice |
 | ২৯ অক্টো–১ নভে | W2 D3 ✅ | Topic 10 Strings 1 core — P10.1–P10.7; ★ LC 344 Reverse String manual two-pointer in-place + O(n)/O(1); ★ LC 125 Valid Palindrome two-pointer + alphanumeric skip + lowercase compare, O(n)/O(1). LC 242 Valid Anagram object-count solution submit করা হয়েছে (আগে শেষ) | 2 / 2 ★ | — | — | দুই pointer দিয়ে swap; palindrome-এ non-alphanumeric skip, case ignore; empty-cleaned input true; code ও complexity complete। LC 344/125 LeetCode submission status নিশ্চিত নয়; optional Capitalize Words বাদ দেওয়া যাবে |
 | ১ নভে | W2 D4 (branch তৈরি, শেখা শুরু হয়নি) | Topic 10 Strings 2 — পরের checklist P10.8–P10.11, ★ S5–S7, Topic 10 Gate; LC 242 duplicate skip | 0 / 3 ★ (pending) | — | — | প্রতিটি ★ problem-এর আগে concept + ছোট ধাপ; LC 242 repeat নয়; ○ S8–S10 optional |
+| ৩–৫ নভে | W2 D4 ✅ | P10.8–P10.11, LC 387/14/151, Topic 10 Gate; তিন LC submission user-confirmed | 3 / 3 ★ | — | — | LC 151-এর split-free variant repeat না করার পছন্দে বাদ |
+| ৫ নভে | W2 D5 ✅ | P11.1–P11.7; LC 268 range + includes approach; LC 88 splice + numeric sort approach | 2 / 2 ★ | — | — | LC 268 O(n²)/O(n); LC 88 O((m+n) log(m+n)); alternate follow-ups no-repeat পছন্দে বাদ; A3 optional বাদ |
+| ৫ নভে | W2 D6 🟡 শুরু | Topic 11 Arrays 2 — P11.8 rotation index pattern; এরপর P11.9–P11.10, LC 189 ও LC 121 | 0 / 2 ★ | — | — | প্রতিটি নতুন problem-এর আগে concept; solved problem repeat নয় |
 
 ---
 

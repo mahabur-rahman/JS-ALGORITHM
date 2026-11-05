@@ -59,12 +59,12 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D4 প্রস্তুত, ১ নভে; D1–D3 সম্পন্ন) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1–D5 সম্পন্ন; D6 শুরু ৫ নভে) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (১ নভে) শেখার অবস্থান W2 D4 — W1 এবং W2 D1–D3 সম্পন্ন। পরিকল্পিত D4 তারিখ ১৫ অক্টোবরের তুলনায় প্রায় ১৭ দিন পরে শুরু; ★ problem ও concept শেষ করে এগোবে, আগে সমাধান করা একই problem repeat বাধ্যতামূলক নয়।
+> এখন (৫ নভে) শেখার অবস্থান W2 D6 — W1 এবং W2 D1–D5 সম্পন্ন। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
 
 ---
 ---
@@ -1415,7 +1415,7 @@ Example 3: Input: s = "a good   example"    Output: "example good a"
 
 ---
 
-## Day 12 · W2 D5 · শুক্র ১৬ অক্টো — Topic 11: Arrays ১ — ভিত্তি · Mutating টেবিল · খরচ ★ ⬜
+## Day 12 · W2 D5 · শুক্র ১৬ অক্টো — Topic 11: Arrays ১ — ভিত্তি · Mutating টেবিল · খরচ ★ ✅ সম্পন্ন (৫ নভে)
 
 **Interview-এ যেভাবে আসে:** "in-place করো", "extra space ছাড়া", "একবার loop-এ" — এই শর্তগুলোই difficulty বাড়ায়।
 
@@ -1427,33 +1427,33 @@ Example 3: Input: s = "a good   example"    Output: "example good a"
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 11.1 — Array বানানো** ⬜
-- **P11.1 · Seats** 🟢 ⬜ — 🌍 সিনেমা হলের ১০টা সিট নম্বর। **EN:** Create `[1, 2, ..., 10]` with `Array.from({ length: 10 }, (_, i) => i + 1)` and an array of five zeros with `fill`.
+**Phase 11.1 — Array বানানো** ✅
+- **P11.1 · Seats** 🟢 ✅ — `Array.from()` দিয়ে sequence ও `fill()` দিয়ে zero array বানানো হয়েছে।
 
-**Phase 11.2 — 2D array-র ফাঁদ** ⬜
-- **P11.2 · Shared Rows** 🟢 ⬜ — **EN:** `const grid = new Array(2).fill([]); grid[0].push(1);` Predict `grid`. → `[[1],[1]]`. Fix with `Array.from`. **বাংলা:** reference-এর ফাঁদ (Topic 1!) এখানে ফিরে এল।
+**Phase 11.2 — 2D array-র ফাঁদ** ✅
+- **P11.2 · Shared Rows** 🟢 ✅ — `fill([])` shared reference তৈরি করে; `Array.from({ length: 2 }, () => [])` আলাদা row তৈরি করে।
 
-**Phase 11.3 — Mutating বনাম non-mutating** ⬜
+**Phase 11.3 — Mutating বনাম non-mutating** ✅
 | আসল array বদলায় | নতুন array দেয় |
 |---|---|
 | `push pop shift unshift splice sort reverse fill` | `slice map filter concat toSorted toReversed with` |
-- **P11.3 · Sort Trap** 🟢 ⬜ — **EN:** Predict `[10, 9, 1, 2].sort()`. → `[1, 10, 2, 9]` (string হিসেবে!). Fix with `(a, b) => a - b`.
+- **P11.3 · Sort Trap** 🟢 ✅ — default sort string order-এ সাজায়; `(a, b) => a - b` numeric ascending order দেয়। `sort()` মূল array mutate করে।
 
-**Phase 11.4 — `slice` বনাম `splice`** ⬜
-- **P11.4** 🟢 ⬜ — **EN:** `const a = [1,2,3,4,5]`; print `a.slice(1, 3), a` then `a.splice(1, 2), a`. → `[2,3] [1,2,3,4,5]`, `[2,3] [1,4,5]`
+**Phase 11.4 — `slice` বনাম `splice`** ✅
+- **P11.4** 🟢 ✅ — `slice()` নতুন অংশের array দেয়, মূল array বদলায় না; `splice()` মূল array বদলায় এবং removed values দেয়।
 
-**Phase 11.5 — Search methods** ⬜
-- **P11.5** 🟢 ⬜ — **EN:** Predict `[NaN].includes(NaN)` and `[NaN].indexOf(NaN)`. → `true -1`. Use `find` to get the first user with `age > 18`.
+**Phase 11.5 — Search methods** ✅
+- **P11.5** 🟢 ✅ — `includes(NaN)` true, `indexOf(NaN)` -1; `find()` প্রথম শর্তমেলা element দেয়।
 
-**Phase 11.6 — Destructuring আর swap** ⬜
-- **P11.6** 🟢 ⬜ — **EN:** Swap `arr[0]` and `arr[2]` in one line: `[arr[0], arr[2]] = [arr[2], arr[0]]`. Also `const [first, ...rest] = [1,2,3]`.
+**Phase 11.6 — Destructuring আর swap** ✅
+- **P11.6** 🟢 ✅ — array destructuring ও destructuring assignment দিয়ে swap করা হয়েছে।
 
-**Phase 11.7 — Spread copy = shallow** ⬜
-- **P11.7** 🟢 ⬜ — **EN:** `const nested = [[1], [2]]; const c = [...nested]; c[0].push(9);` Predict `nested`. → `[[1,9],[2]]`
+**Phase 11.7 — Spread copy = shallow** ✅
+- **P11.7** 🟢 ✅ — spread outer array copy করে; nested arrays-এর reference shared থাকে।
 
 ### ★ মূল problem
 
-#### ★ A1 · 268. Missing Number 🟢 Easy ⬜
+#### ★ A1 · 268. Missing Number 🟢 Easy ✅ (প্রথম approach submit: ৫ নভে; follow-up repeat নয়)
 🔗 [LC 268](https://leetcode.com/problems/missing-number/) (হুবহু)
 🌍 **Real-life:** রোল কল — ০ থেকে n পর্যন্ত রোলের একজন অনুপস্থিত।
 
@@ -1468,11 +1468,11 @@ Example 3: Input: nums = [9,6,4,2,3,5,7,0,1]   Output: 8
 **Follow up:** Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
 **Function:** `var missingNumber = function (nums) {}`
 
-**বাংলা:** ০ থেকে n-এর মধ্যে একটা সংখ্যা নেই — কোনটা? তিনভাবে: (ক) Set (খ) যোগফলের সূত্র `n(n+1)/2` (গ) XOR (শুধু চেষ্টা)। তুলনা।
+**বাংলা:** ০ থেকে n-এর মধ্যে একটা সংখ্যা নেই — কোনটা? প্রথম approach-এ range array বানিয়ে `includes()` দিয়ে খোঁজা হয়েছে; Time O(n²), Auxiliary Space O(n)। O(n)/O(1) follow-up একই problem পুনরায় solve না করার পছন্দে বাদ।
 **🧠 ভাবনা:** সব থাকলে যোগফল কত হতো? আসল যোগফল কত? পার্থক্যটাই কী?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
 
-#### ★ A2 · 88. Merge Sorted Array 🟢 Easy ⬜
+#### ★ A2 · 88. Merge Sorted Array 🟢 Easy ✅ (splice + sort approach complete; follow-up repeat নয়)
 🔗 [LC 88](https://leetcode.com/problems/merge-sorted-array/) (হুবহু)
 🌍 **Real-life:** দুটো sorted লাইন (দুই শাখার কর্মী, বয়স অনুযায়ী) এক লাইনে মেলানো।
 
@@ -1489,7 +1489,7 @@ Example 3: Input: nums1 = [0], m = 0, nums2 = [1], n = 1  Output: [1]
 
 **বাংলা:** দুটো sorted array মিশিয়ে `nums1`-এর ভেতরেই sorted রাখো। `nums1`-এর শেষে ফাঁকা জায়গা আছে।
 **🧠 ভাবনা:** সামনে থেকে লিখলে কী মুছে যায়? সবচেয়ে বড় জিনিস কোথায় বসবে, আর কোন দুটোর মধ্যে বড়টা?
-**⏱️ লক্ষ্য:** Time O(m + n) · Space O(1)
+**⏱️ User's approach:** `splice` + numeric `sort`; Time O((m+n) log(m+n))। O(m+n) backward-pointer follow-up একই problem পুনরায় solve না করার পছন্দে বাদ। LeetCode submission status নিশ্চিত নয়।
 
 #### ○ A3 · removeAt / insertAt ⬜
 🌍 লাইনের মাঝখান থেকে একজন বের হয়ে গেল — বাকিরা এক ঘর সামনে। **EN:** Write `removeAt(arr, i)` and `insertAt(arr, i, x)` without `splice`, shifting elements yourself. Complexity? **বাংলা:** কেন O(n)?
@@ -1501,7 +1501,7 @@ Example 3: Input: nums1 = [0], m = 0, nums2 = [1], n = 1  Output: [1]
 
 ---
 
-## Day 13 · W2 D6 · শনি ১৭ অক্টো — Topic 11: Arrays ২ — Index নিয়ে কাজ · Rotate · Stock ★ ⬜
+## Day 13 · W2 D6 · শনি ১৭ অক্টো — Topic 11: Arrays ২ — Index নিয়ে কাজ · Rotate · Stock ★ 🟡 শুরু (৫ নভে)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - ঘোরানো / চক্রাকার? → `(i + k) % n`।
@@ -1566,7 +1566,7 @@ Explanation: No transactions are done and the max profit = 0.
 
 **বলো:** *"As I scan the prices, I keep the lowest price seen so far. At each day, the best profit if I sell today is today's price minus that minimum."*
 
-### 🚪 Gate — Topic 11 (Arrays ১) ⬜
+### 🚪 Gate — Topic 11 (Arrays ১) ✅ (৫ নভে; alternate solution no-repeat পছন্দে বাদ)
 
 ---
 
