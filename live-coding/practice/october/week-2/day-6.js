@@ -49,18 +49,53 @@
 //   console.log("বর্তমান দাম:", price, "| এখন পর্যন্ত minimum:", minSoFar);
 // }
 
-var runningMinimum = function (nums) {
-  let min = nums[0];
-  const result = [];
+// var runningMinimum = function (nums) {
+//   let result = [];
 
-  for (let i = 0; i < nums.length; i++) {
-    if (min > nums[i]) {
-      min = nums[i];
-    }
-    result.push(min);
-  }
+//   let min = nums[0];
 
-  return result;
-};
+//   for (let i = 0; i < nums.length; i++) {
+//     if (min > nums[i]) {
+//       min = nums[i];
+//     }
 
-console.log(runningMinimum([7, 1, 5, 3]));
+//     result.push(min);
+//   }
+
+//   return result;
+// };
+
+// console.log(runningMinimum([7, 1, 5, 3]));
+
+// const length = 8;
+// const index = 6;
+// const k = 10;
+
+// const effectiveSteps = k % length;
+// const newIndex = (index + effectiveSteps) % length;
+
+// console.log("কার্যকর ধাপ:", effectiveSteps);
+// console.log("নতুন index:", newIndex);
+
+// const nums = [10, 20, 30, 40];
+
+// console.log("শুরু:", nums);
+
+// const last = nums.pop();
+// console.log("শেষের মান বের করার পর:", nums, "| বের হয়েছে:", last);
+
+// nums.unshift(last);
+// console.log("এক ধাপ ডানে ঘোরানোর পর:", nums);
+
+// 189. Rotate Array — Medium
+
+// var rotate = function (nums, k) {
+//   for (let i = 0; i < k; i++) {
+//     let remove = nums.pop();
+//     nums.unshift(remove);
+//   }
+
+//   return nums;
+// };
+
+// console.log(rotate([1, 2, 3, 4, 5, 6, 7], 3));
