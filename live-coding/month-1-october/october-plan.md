@@ -59,12 +59,12 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1–D5 সম্পন্ন; D6 শুরু ৫ নভে) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1–D6 সম্পন্ন; D7 পরের ধাপ) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (৫ নভে) শেখার অবস্থান W2 D6 — W1 এবং W2 D1–D5 সম্পন্ন। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
+> এখন (৯ নভে) W2 D6 সম্পন্ন; পরের ধাপ W2 D7। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
 
 ---
 ---
@@ -1501,7 +1501,7 @@ Example 3: Input: nums1 = [0], m = 0, nums2 = [1], n = 1  Output: [1]
 
 ---
 
-## Day 13 · W2 D6 · শনি ১৭ অক্টো — Topic 11: Arrays ২ — Index নিয়ে কাজ · Rotate · Stock ★ 🟡 শুরু (৫ নভে)
+## Day 13 · W2 D6 · শনি ১৭ অক্টো — Topic 11: Arrays ২ — Index নিয়ে কাজ · Rotate · Stock ★ ✅ সম্পন্ন (৯ নভে)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - ঘোরানো / চক্রাকার? → `(i + k) % n`।
@@ -1510,18 +1510,18 @@ Example 3: Input: nums1 = [0], m = 0, nums2 = [1], n = 1  Output: [1]
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 11.8 — `(i + k) % n` দিয়ে ঘোরানো** ⬜
-- **P11.8 · Clock** 🟢 ⬜ — 🌍 ঘড়ি: এখন ১০টা, ৫ ঘণ্টা পর কয়টা? **EN:** `(10 + 5) % 12` → `3`. Where does index 4 go after rotating a length-5 array right by 2? → `(4 + 2) % 5 = 1`
+**Phase 11.8 — `(i + k) % n` দিয়ে ঘোরানো** ✅
+- **P11.8 · Clock / index map** 🟢 ✅ — `k % n` দিয়ে full rotations বাদ; index map `(i + effectiveK) % n`; repeated `pop` + `unshift` প্রতি ধাপে O(n), k ধাপে O(kn)।
 
-**Phase 11.9 — Reverse helper (অংশ উল্টানো)** ⬜
-- **P11.9** 🟢 ⬜ — **EN:** Write `reverseRange(arr, l, r)` that reverses `arr` between indices `l` and `r` in-place. `[1,2,3,4,5], 1, 3` → `[1,4,3,2,5]`
+**Phase 11.9 — Reverse helper (অংশ উল্টানো)** ✅
+- **P11.9** 🟢 ✅ — `reverseRange` দুই pointer দিয়ে in-place; Time O(r-l+1), Auxiliary Space O(1)। তিনবার reverse করে rotation-এর state trace করা হয়েছে।
 
-**Phase 11.10 — চলতে চলতে min track** ⬜
-- **P11.10 · Cheapest So Far** 🟢 ⬜ — 🌍 প্রতিদিন বাজারে গিয়ে "এখন পর্যন্ত সবচেয়ে সস্তা দাম" মনে রাখা। **EN:** For `[7, 1, 5, 3]`, print the minimum-so-far at each step. → `7 1 1 1`
+**Phase 11.10 — চলতে চলতে min track** ✅
+- **P11.10 · Running Minimum** 🟢 ✅ — প্রতিটি prefix-এর minimum array-তে রাখা; Time O(n), Auxiliary Space O(1), Output Space O(n)।
 
 ### ★ মূল problem
 
-#### ★ A4 · 189. Rotate Array 🟡 Medium ⬜
+#### ★ A4 · 189. Rotate Array 🟡 Medium ✅ (solution + LC submission: ৯ নভে)
 🔗 [LC 189](https://leetcode.com/problems/rotate-array/) (হুবহু)
 🌍 **Real-life:** carousel/slider-এ ছবি ডানে ঘোরানো।
 
@@ -1531,15 +1531,15 @@ Example 1: Input: nums = [1,2,3,4,5,6,7], k = 3   Output: [5,6,7,1,2,3,4]
 Explanation: rotate 1 step: [7,1,2,3,4,5,6] → 2 steps: [6,7,1,2,3,4,5] → 3 steps: [5,6,7,1,2,3,4]
 Example 2: Input: nums = [-1,-100,3,99], k = 2   Output: [3,99,-1,-100]
 ```
-**Constraints:** `1 <= nums.length <= 10^5` · `0 <= k <= 10^5`
+**Constraints:** `1 <= nums.length <= 10^5` · `-2^31 <= nums[i] <= 2^31 - 1` · `0 <= k <= 10^5`
 **Follow up:** Could you do it in-place with O(1) extra space?
 **Function:** `var rotate = function (nums, k) {}` (in-place)
 
 **বাংলা:** array-কে ডানে k ঘর ঘোরাও। **তিনভাবে:** (ক) নতুন array + `(i + k) % n` (খ) k বার একঘর করে (কেন ধীর?) (গ) তিনবার reverse — O(1) space। k > n হলে?
 **🧠 ভাবনা:** k = n হলে array কেমন দেখায়? তাহলে `k % n`। (গ)-তে: পুরোটা উল্টালে শেষের k-টা সামনে চলে আসে — কিন্তু উল্টো ক্রমে…
-**⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**⏱️ User's submitted approach:** `k %= nums.length`, suffix `splice`, তারপর `unshift`; Time O(n), Auxiliary Space O(k)। O(1) extra-space follow-up একই problem repeat না করার পছন্দে বাদ।
 
-#### ★ A5 · 121. Best Time to Buy and Sell Stock 🟢 Easy ⬜
+#### ★ A5 · 121. Best Time to Buy and Sell Stock 🟢 Easy ✅ (solution + LC submission: ৯ নভে)
 🔗 [LC 121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (হুবহু)
 🌍 **Real-life:** শেয়ার বাজার — কবে কিনলে আর কবে বেচলে সবচেয়ে বেশি লাভ।
 
@@ -1556,9 +1556,9 @@ Explanation: No transactions are done and the max profit = 0.
 
 **বাংলা:** একবার কিনে পরে একবার বেচে সর্বোচ্চ লাভ। লাভ না হলে 0। brute force O(n²) আগে, তারপর এক loop-এ।
 **🧠 ভাবনা:** *"আমি হাতে কী মনে রাখছিলাম?"* — আজ বেচলে সবচেয়ে ভালো কেনার দিন কোনটা ছিল? (P11.10!)
-**⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**⏱️ User's solution:** running minimum + best profit; Time O(n), Auxiliary Space O(1)।
 
-#### ○ A6 · Second Smallest + Second Largest ⬜
+#### ○ A6 · Second Smallest + Second Largest ⏭️ (W1-এ আগেই সম্পন্ন; repeat নয়)
 🌍 অলিম্পিকে রুপা পদক — দুই প্রান্ত থেকে। **EN:** Return `[secondSmallest, secondLargest]` in one loop. **বাংলা:** W1-এর 8.3-এর দুই দিক একসাথে।
 
 ### 🔗 আরো LeetCode
@@ -1566,14 +1566,16 @@ Explanation: No transactions are done and the max profit = 0.
 
 **বলো:** *"As I scan the prices, I keep the lowest price seen so far. At each day, the best profit if I sell today is today's price minus that minimum."*
 
-### 🚪 Gate — Topic 11 (Arrays ১) ✅ (৫ নভে; alternate solution no-repeat পছন্দে বাদ)
+### Day 6 status
+
+P11.8–P11.10 এবং A4/A5 সম্পন্ন। A6 আগেই করা, তাই repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 Arrays-এর final Gate Day 7-এর পরে।
 
 ---
 
 ## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen ⬜
 
 ### 🔁 Re-solve (ফাঁকা editor, timer)
-- ⏭️ S2 Valid Palindrome (W2 D3-তে complete; re-solve বাধ্যতামূলক নয়) · ⏭️ S4 Valid Anagram (LC 242 already submitted; no repeat) · ⬜ A2 Merge Sorted Array · ⬜ A5 Stock · ⬜ W1-এর 8.3
+- ⏭️ S2 Valid Palindrome (W2 D3-তে complete; repeat নয়) · ⏭️ S4 Valid Anagram (LC 242 submitted; repeat নয়) · ⏭️ A2 Merge Sorted Array (W2 D5-এ complete; repeat নয়) · ⏭️ A5 Stock (W2 D6-এ submitted; repeat নয়) · ⏭️ W1-এর 8.3 (আগে complete; repeat নয়)
 
 ### 🛠️ Practical JS ১ (full-stack interview-এ এমন ছোট utility চায়)
 

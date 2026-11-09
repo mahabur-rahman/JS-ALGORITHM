@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D5 সম্পন্ন; W2 D6 branch `october/week-2-day-6`-এ Topic 11 Arrays 2 শুরু। D5 (৫ নভে): P11.1–P11.7 সম্পন্ন; LC 268 Missing Number-এর range + `includes` approach code ও submit (O(n²) time/O(n) aux); LC 88 Merge Sorted Array-এর `splice` + numeric `sort` approach code complete (O((m+n) log(m+n)); submission status নিশ্চিত নয়). দুটো problem-এর alternate/optimized version repeat না করার পছন্দে বাদ; optional A3 বাদ। Day 5 Gate বন্ধ।
+**বর্তমান অবস্থান:** W2 D1–D6 সম্পন্ন; পরের ধাপ D7। D5 (৫ নভে): P11.1–P11.7 সম্পন্ন; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। Alternate solution repeat নয়। D6 (৯ নভে): P11.8–P11.10; LC 189 Rotate Array এবং LC 121 Best Time to Buy and Sell Stock—দুটির code ও submission user-confirmed। LC 189-এর solution O(n) time/O(k) auxiliary space; O(1) follow-up repeat নয়। A6 second min/max W1-এ আগেই করা, তাই skip। Topic 11 final Gate D7-এর পরে।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -197,7 +197,7 @@ const nested = [[1], [2]]; const c = [...nested]; c[0].push(9); console.log(nest
 
 ---
 
-## Day 6 — শনি, ১৭ অক্টোবর — Arrays ২: Index নিয়ে কাজ · Rotate · Stock ★
+## Day 6 — শনি, ১৭ অক্টোবর — Arrays ২: Index নিয়ে কাজ · Rotate · Stock ★ ✅ সম্পন্ন (৯ নভে)
 
 **শিখবে:**
 - index manipulation: `(i + k) % n` দিয়ে ঘোরানো।

@@ -263,11 +263,11 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **String comparison:** String-এর তুলনা lexicographic; `"10" < "9"` true, কিন্তু Number `10 < 9` false।
 - **Build string:** array-তে অংশ জমিয়ে `join("")`; Repeat Dash Time O(n), auxiliary O(n), output O(n)।
 - **Alphanumeric:** code range 48-57, 65-90, 97-122; regex বিকল্প `/^[a-z0-9]$/i`; `charCodeAt(0)` প্রথম character-ই দেখে, তাই one-character constraint দরকার।
-- **Character frequency:** Object ও Map-এ প্রথমবার count 1, পরে increment; lowercase ইংরেজি alphabet হলে সর্বোচ্চ 26 key, তাই extra space O(1); arbitrary character set হলে O(n)। ২৬-ঘরের array variant এখনো practice বাকি।
+- **Character frequency:** Object ও Map-এ প্রথমবার count 1, পরে increment; lowercase ইংরেজি alphabet হলে সর্বোচ্চ 26 key, তাই extra space O(1); arbitrary character set হলে O(n)। P10.8-এ ২৬-ঘরের array variant-ও সম্পন্ন।
 - **Anagram:** দৈর্ঘ্য আলাদা হলে সঙ্গে সঙ্গে false; প্রথম string-এর count বাড়িয়ে দ্বিতীয় string-এর অক্ষরে count কমাও; count না থাকলে false। LC 242 object-count approach-এ solve ও submit (৩১ অক্টো); exact problem পুনরায় নয়। Complexity ব্যাখ্যা দেওয়া হয়েছে, learner-এর নিজে ব্যাখ্যার checkpoint বাকি।
 - **★ S1 Reverse String (LC 344):** manual two-pointer swap করে আসল array in-place reverse; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি। November-এর recursive reverse variant হলে একই exact problem repeat না করে recursive pattern-টি আলাদা শেখাতে হবে।
 - **★ S2 Valid Palindrome (LC 125):** two pointers, punctuation/space skip, case-insensitive compare; Time O(n), Auxiliary Space O(1)। Code ও complexity সম্পন্ন (১ নভে); LC submission status user নিশ্চিত করেননি।
-- **★ S4 Valid Anagram (LC 242):** object frequency increment/decrement, unequal lengths early false; solve + LeetCode submit (৩১ অক্টো); exact problem আর repeat/submit নয়। Complexity explanation দেওয়া হয়েছে; learner-এর নিজের ভাষায় complexity checkpoint পরে চাইলে করা যাবে।
+- **★ S4 Valid Anagram (LC 242):** object frequency increment/decrement, unequal lengths early false; solve + LeetCode submit (৩১ অক্টো); exact problem আর repeat/submit নয়। P10.9-এ sort/count trade-off-ও সম্পন্ন।
 - **Day 3 optional:** S3 Capitalize Words; user বাদ দিতে পারেন.
 - **W2 D4 / Strings 2 সম্পন্ন (৩ নভে):** P10.8 frequency array; P10.9 sort/count trade-off; P10.10 substring/subsequence; P10.11 normalization; LC 387, LC 14 ও LC 151 solve, complexity ও submit। LC 242 repeat নয়; LC 151-এর split-free variant repeat না করার পছন্দে বাদ; optional S8–S10 বাদ।
 
@@ -277,5 +277,14 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **LC 268 Missing Number:** range array + `includes` approach code ও submit; Time O(n²), Auxiliary Space O(n)। Linear-time/O(1)-space follow-up একই problem repeat না করার পছন্দে বাদ।
 - **LC 88 Merge Sorted Array:** `splice` + numeric `sort` approach code complete; Time O((m+n) log(m+n)); submission status নিশ্চিত নয়। O(m+n) backward-pointer follow-up repeat না করার পছন্দে বাদ।
 - Optional P11.A3 `removeAt`/`insertAt` বাদ।
+
+### Topic 11 — Arrays 2 (W2 D6 সম্পন্ন, ৯ নভে)
+
+- **P11.8 Rotation index:** `k % n` দিয়ে পূর্ণ চক্কর বাদ; পুরোনো index `i` যায় `(i + k) % n`-এ। এক ধাপ `pop` + `unshift` O(n), k ধাপ O(kn)।
+- **P11.9 `reverseRange`:** দুই pointer দিয়ে inclusive range in-place reverse; Time O(r-l+1), Auxiliary Space O(1)। তিনবার reverse-এর ধাপ trace করা হয়েছে।
+- **P11.10 Running minimum:** prefix-এর সর্বনিম্ন মানগুলো output array-তে; Time O(n), Auxiliary Space O(1), Output Space O(n)।
+- **LC 189 Rotate Array:** suffix `splice` + `unshift`; solution ও submission user-confirmed; Time O(n), Auxiliary Space O(k)। O(1) follow-up no-repeat পছন্দে বাদ।
+- **LC 121 Best Time to Buy and Sell Stock:** running minimum + best profit; solution, complexity ও submission user-confirmed; Time O(n), Auxiliary Space O(1)।
+- **A6 Second Smallest + Second Largest:** W1-এ আগে করা, repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 final Gate Day 7-এর পরে।
 - **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
-- **Branch/workspace:** current branch `october/week-2-day-4`; Day 4 session এখনো শুরু হয়নি। User বলেছেন study content chat-এ দেব, practice code নিজে লিখবেন; practice files-এ lesson/solution যোগ নয়। Existing `day-3.js` local edit সংরক্ষণ করতে হবে; docs commit করার সময় practice file stage করা যাবে না।
+- **Branch/workspace:** current branch `october/week-2-day-6`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 পরের ধাপ। Day-specific practice code `live-coding/practice/october/week-2/day-6.js`-এ আছে। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; LC 189-এর O(1) follow-up এবং A6 duplicate বাদ।

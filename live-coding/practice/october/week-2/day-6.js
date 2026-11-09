@@ -110,25 +110,25 @@
 
 // LeetCode 121 — Best Time to Buy and Sell Stock
 
-var maxProfit = function (prices) {
-  let minPrice = prices[0];
-  let maxProfit = 0;
+// var maxProfit = function (prices) {
+//   let minPrice = prices[0];
+//   let maxProfit = 0;
 
-  for (let i = 1; i < prices.length; i++) {
-    let todayPrice = prices[i];
+//   for (let i = 1; i < prices.length; i++) {
+//     let todayPrice = prices[i];
 
-    if (todayPrice < minPrice) {
-      minPrice = todayPrice;
-    }
+//     if (todayPrice < minPrice) {
+//       minPrice = todayPrice;
+//     }
 
-    let profit = todayPrice - minPrice;
+//     let profit = todayPrice - minPrice;
 
-    if (profit > maxProfit) {
-      maxProfit = profit;
-    }
-  }
+//     if (profit > maxProfit) {
+//       maxProfit = profit;
+//     }
+//   }
 
-  return maxProfit;
-};
+//   return maxProfit;
+// };
 
-console.log(maxProfit([7, 1, 5, 3, 6, 4])); // 5
+// console.log(maxProfit([7, 1, 5, 3, 6, 4])); // 5
