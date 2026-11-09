@@ -99,3 +99,36 @@
 // };
 
 // console.log(rotate([1, 2, 3, 4, 5, 6, 7], 3));
+
+// const lowestPriceBeforeToday = 3;
+// const todayPrice = 2;
+
+// const profitIfSoldToday = todayPrice - lowestPriceBeforeToday;
+
+// const bestProfitSoFar = Math.max(0, profitIfSoldToday);
+// console.log(bestProfitSoFar)
+
+// LeetCode 121 — Best Time to Buy and Sell Stock
+
+var maxProfit = function (prices) {
+  let minPrice = prices[0];
+  let maxProfit = 0;
+
+  for (let i = 1; i < prices.length; i++) {
+    let todayPrice = prices[i];
+
+    if (todayPrice < minPrice) {
+      minPrice = todayPrice;
+    }
+
+    let profit = todayPrice - minPrice;
+
+    if (profit > maxProfit) {
+      maxProfit = profit;
+    }
+  }
+
+  return maxProfit;
+};
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4])); // 5
