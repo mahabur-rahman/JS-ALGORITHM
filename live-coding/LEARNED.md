@@ -287,4 +287,4 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **LC 121 Best Time to Buy and Sell Stock:** running minimum + best profit; solution, complexity ও submission user-confirmed; Time O(n), Auxiliary Space O(1)।
 - **A6 Second Smallest + Second Largest:** W1-এ আগে করা, repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 final Gate Day 7-এর পরে।
 - **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
-- **Branch/workspace:** current branch `october/week-2-day-6`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 পরের ধাপ। Day-specific practice code `live-coding/practice/october/week-2/day-6.js`-এ আছে। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; LC 189-এর O(1) follow-up এবং A6 duplicate বাদ।
+- **Branch/workspace:** current branch `october/week-2-day-7`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 শুরু (১০ নভে)। Day-specific practice code `live-coding/practice/october/week-2/day-7.js`-এ থাকবে। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; D7 re-solve-এ S2/S4/A2/A5/W1 8.3 skip; P3 optional।
