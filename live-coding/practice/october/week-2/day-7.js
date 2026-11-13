@@ -139,20 +139,79 @@
 // condition :
 // - something mismatch return `null`
 
-function firstRepeatedMessage(logs) {
-  let seen = new Set();
+// function firstRepeatedMessage(logs) {
+//   let seen = new Set();
 
-  for (const log of logs) {
-    // console.log(log);
+//   for (const log of logs) {
+//     // console.log(log);
 
-    if (seen.has(log)) {
-      return log;
-    } else {
-      seen.add(log);
-    }
-  }
+//     if (seen.has(log)) {
+//       return log;
+//     } else {
+//       seen.add(log);
+//     }
+//   }
 
-  return null;
-}
+//   return null;
+// }
 
-console.log(firstRepeatedMessage(["cat", "dog", "bird", "dog", "cat"]));
+// console.log(firstRepeatedMessage(["cat", "dog", "bird", "dog", "cat"]));
+
+// for (let i = 0; i < 5; i += 1) {
+//   console.log(i);
+// }
+// // 0, 1, 2, 3, 4
+
+// for (let i = 5; i > 0; i -= 2) {
+//   console.log(i);
+// }
+// // 5, 3, 1
+
+// const start = 5;
+// const end = 0;
+// const step = 1;
+
+// console.log(start < end) // false
+
+// for(let i = 3; i < 3; i += 1){
+//     console.log(i)
+// }
+
+// P3 — Build a Range
+
+// check condition :
+// - if start === end return []
+// - if step 0 then return RangeError
+// - loop on it
+// - position starts from start and ending before end position
+// - return result like : [0, 1, 2, 3] if step will be : 4
+
+
+// /**
+//  * @param {number} start
+//  * @param {number} end
+//  * @param {number} step
+//  * @return {number[]}
+//  */
+
+// function range(start, end, step = 1) {
+//   if (start === end) return [];
+
+//   if (step === 0) {
+//     throw new RangeError();
+//   }
+
+//   let result = [];
+
+//   for (let i = start; step > 0 ? i < end : i > end; i += step) {
+//     result.push(i);
+//   }
+
+//   return result;
+// }
+
+// console.log(range(0, 5)); // [0, 1, 2, 3, 4]
+// console.log(range(2, 8, 3)); // [2, 5]
+// console.log(range(5, 0, -2)); // [5, 3, 1]
+// console.log(range(3, 3)); // []
+// console.log(range(5, 0, 1)); // []
