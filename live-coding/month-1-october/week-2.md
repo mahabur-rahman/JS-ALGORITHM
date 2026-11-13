@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D6 সম্পন্ন; W2 D7 শুরু ১০ নভে। D5: P11.1–P11.7 সম্পন্ন; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। D6: P11.8–P11.10; LC 189 এবং LC 121 code ও submit। আগে করা problem repeat নয়। D7-তে P1 Chunk Array, P2 Unique By, U1 First Repeated Log Message; P3 Range optional। D5/D6-এর solved problem এবং W1-এর 8.3 repeat নয়। Topic 11 final Gate D7-এর পরে।
+**বর্তমান অবস্থা (১৩ নভে):** W2 D1–D7 সম্পন্ন। D5: P11.1–P11.7; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। D6: P11.8–P11.10; LC 189 এবং LC 121 code ও submit। D7: P1 Chunk Array code/complexity, P2 Unique By, U1 First Repeated Log Message — ৩টি ★ সম্পন্ন; P3 Range optional practice, zero-step guard order issue নথিভুক্ত। আগে করা problem repeat নয়। P1 LC submission status নিশ্চিত নয়। Week Review user-complete বলেছেন; বিস্তারিত reflection নেই। **Topic 11 final Gate এখনো বাকি।**
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -213,17 +213,17 @@ const nested = [[1], [2]]; const c = [...nested]; c[0].push(9); console.log(nest
 
 ---
 
-## Day 7 — রবি, ১৮ অক্টোবর — Revision · Practical JS ১ · Week Review
+## Day 7 — রবি, ১৮ অক্টোবর — Revision · Practical JS ১ · Week Review ✅ সম্পন্ন (১৩ নভে)
 
 **Re-solve (ফাঁকা editor, timer):**
 - ⏭️ S2 Valid Palindrome — আগে complete, repeat নয় · ⏭️ S4 Valid Anagram — LC 242 submit, repeat নয় · ⏭️ A2 Merge Sorted Array — W2 D5-এ complete, repeat নয় · ⏭️ A5 Stock — W2 D6-এ complete, repeat নয় · ⏭️ W1-এর 8.3 — আগে complete, repeat নয়
 
 **Practical JS ১ (Array utility — full-stack interview-এ এমন ছোট function চায়):**
-- [ ] ★ **P1** `chunk(arr, size)` — `[1,2,3,4,5], 2` → `[[1,2],[3,4],[5]]`। size ≤ 0 হলে? `B`
-- [ ] ★ **P2** `uniqueBy(arr, keyFn)` — `uniqueBy(users, u => u.email)` → প্রথমবার দেখা প্রতিটা email-এর user। `B` · O(n)
-- [ ] ○ **P3** `range(start, end, step = 1)` — negative step সহ। `B`
+- [x] ★ **P1** `chunk(arr, size)` — code + complexity সম্পন্ন; LC 2677 submission status নিশ্চিত নয়।
+- [x] ★ **P2** `uniqueBy(arr, keyFn)` — first-seen key-এর item order-সহ রাখা; Time O(n) average, Auxiliary/Output Space O(n)।
+- [x] ○ **P3** `range(start, end, step = 1)` — optional practice ও complexity সম্পন্ন। Known edge case: `step === 0` guard আগে হওয়া দরকার; optional হওয়ায় Day 7 completion আটকে রাখে না।
 
 **Unseen (pattern নাম নেই):**
-- [ ] ★ **U1** *"একটা log message-এর list। এমন প্রথম message খোঁজো যার আগে ঠিক একই message এসেছিল।"* (যেমন `["a","b","a","c","b"]` → `"a"`)
+- [x] ★ **U1** *"একটা log message-এর list। এমন প্রথম message খোঁজো যার আগে ঠিক একই message এসেছিল।"* (যেমন `["a","b","a","c","b"]` → `"a"`) — `Set` scan; Time O(n) average, Auxiliary Space O(n)। LC 2351 কাছাকাছি, হুবহু নয়।
 
-**Week Review:** `TRACKER.md`-এ — কোন problem-এ Hint 3+ লেগেছে? complexity হিসাব কি নিজে থেকে আসছে?
+**Week Review:** ✅ User Day 7 complete বলেছেন। Hint/complexity reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়। Topic 11 final Gate-এর আগে কোনো solved problem repeat নয়।

@@ -59,12 +59,12 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | সপ্তাহ | তারিখ (লক্ষ্য) | Topic | অবস্থা |
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
-| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | 🟡 চলছে (D1–D6 সম্পন্ন; D7 পরের ধাপ) |
+| **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | <span style="color:red">**🔴 DONE**</span> (D1–D7 সম্পন্ন, ১৩ নভে; Topic 11 final Gate বাকি) |
 | **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (১০ নভে) W2 D7 শুরু; W2 D1–D6 সম্পন্ন। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
+> এখন (১৩ নভে) W2 D7 সম্পন্ন; W2 D1–D7 complete। পরের checkpoint Topic 11 final Gate, তারপর W3 D1। আগে সমাধান করা problem পুনরায় solve/submit করবে না।
 
 ---
 ---
@@ -1572,14 +1572,14 @@ P11.8–P11.10 এবং A4/A5 সম্পন্ন। A6 আগেই কর�
 
 ---
 
-## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen 🟡 শুরু (১০ নভে)
+## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen <span style="color:red">**🔴 DONE**</span> (১৩ নভে)
 
 ### 🔁 Re-solve (ফাঁকা editor, timer)
 - ⏭️ S2 Valid Palindrome (W2 D3-তে complete; repeat নয়) · ⏭️ S4 Valid Anagram (LC 242 submitted; repeat নয়) · ⏭️ A2 Merge Sorted Array (W2 D5-এ complete; repeat নয়) · ⏭️ A5 Stock (W2 D6-এ submitted; repeat নয়) · ⏭️ W1-এর 8.3 (আগে complete; repeat নয়)
 
 ### 🛠️ Practical JS ১ (full-stack interview-এ এমন ছোট utility চায়)
 
-#### ★ P1 · 2677. Chunk Array 🟢 Easy ⬜
+#### ★ P1 · 2677. Chunk Array 🟢 Easy ✅ (code + complexity; LC submission status অজানা)
 🔗 [LC 2677](https://leetcode.com/problems/chunk-array/) (হুবহু)
 🌍 **Real-life:** ১০০০ email একবারে না পাঠিয়ে ১০০টা করে ভাগে পাঠানো।
 
@@ -1597,7 +1597,7 @@ Example 4: Input: arr = [], size = 1            Output: []
 **🧠 ভাবনা:** দুটো জিনিস — "এখনকার টুকরা" আর "সব টুকরা"। টুকরা কখন পূর্ণ হয়?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ P2 · Unique By ⬜
+#### ★ P2 · Unique By ✅
 🔗 LeetCode-এ হুবহু নেই
 🌍 **Real-life:** user list থেকে একই email-এর duplicate account বাদ।
 
@@ -1609,13 +1609,15 @@ Example 1: Input: users = [{id:1,email:"a@x"},{id:2,email:"b@x"},{id:3,email:"a@
 **বাংলা:** keyFn যে key দেয়, সেটা প্রথমবার দেখা item-গুলো রাখো।
 **🧠 ভাবনা:** "আগে দেখেছি কিনা" — কোন জিনিস O(1)-এ বলে দেয়?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
+**সম্পন্ন:** `keyFn` দিয়ে key বের করে `Set`-এ রাখা; প্রথম item result-এ রেখে duplicate বাদ। Time O(n) average, Auxiliary Space O(n), Output Space O(n)।
 
-#### ○ P3 · Range ⬜
+#### ○ P3 · Range ✅ (ঐচ্ছিক practice)
 🌍 Python-এর `range`। **EN:** `range(start, end, step = 1)` — supports negative step. `range(0, 5)` → `[0,1,2,3,4]`, `range(5, 0, -2)` → `[5,3,1]`. **বাংলা:** step negative হলে loop-এর শর্ত কীভাবে বদলাবে?
+**সম্পন্ন:** start/end, exclusive end, positive/negative step, default parameter এবং complexity আলোচনা/code হয়েছে। Time ও Output Space O(k), k = তৈরি হওয়া value-র সংখ্যা। **Known edge case:** `step === 0` check `start === end` check-এর আগে রাখলে `range(3, 3, 0)`-এ contract ঠিক থাকবে; এই correction optional এবং Day 7 complete হওয়ার বাধা নয়।
 
 ### 🕵️ Unseen (pattern নাম নেই — আগে লেখো কোন pattern, কেন)
 
-#### ★ U1 · First Repeated Log Message ⬜
+#### ★ U1 · First Repeated Log Message ✅
 🔗 কাছাকাছি: [LC 2351 · First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/)
 🌍 **Real-life:** server log — প্রথম কোন error message দ্বিতীয়বার এল (তার মানে সমস্যা চলছে)।
 
@@ -1626,9 +1628,10 @@ Example 2: Input: logs = ["x","y","z"]           Output: null
 ```
 **বাংলা:** প্রথম কোন message-এর আগে ঠিক একই message এসেছিল?
 **🧠 ভাবনা:** লেখার আগে: Pattern = ___ কারণ ___।
+**সম্পন্ন (১৩ নভে):** `Set` দিয়ে left-to-right scan এবং প্রথম repeated message return; Time O(n) average, Auxiliary Space O(n)। LC 2351 কাছাকাছি, exact same problem নয়।
 
 ### 📝 Week Review
-কোন problem-এ Hint 3+ লেগেছে? complexity হিসাব কি নিজে থেকে আসছে?
+✅ User Day 7 complete নিশ্চিত করেছেন। Hint/complexity reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়।
 
 ---
 

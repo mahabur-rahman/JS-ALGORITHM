@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ২৭ অক্টোবর ২০২৬ · W1 সম্পন্ন; W2 D1 Big-O Time Complexity সম্পন্ন; এখন W2 D2 Space Complexity শুরু
+**শেষ update:** ১৩ নভেম্বর ২০২৬ · W2 D7 সম্পন্ন; পরের checkpoint Topic 11 final Gate
 
 ---
 
@@ -288,3 +288,12 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **A6 Second Smallest + Second Largest:** W1-এ আগে করা, repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 final Gate Day 7-এর পরে।
 - **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
 - **Branch/workspace:** current branch `october/week-2-day-7`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 শুরু (১০ নভে)। Day-specific practice code `live-coding/practice/october/week-2/day-7.js`-এ থাকবে। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; D7 re-solve-এ S2/S4/A2/A5/W1 8.3 skip; P3 optional।
+
+### Topic 11 — Arrays 3 · W2 D7 Practical JS (সম্পন্ন, ১৩ নভে)
+
+- **P1 Chunk Array (LC 2677):** current batch পূর্ণ হলে result-এ রাখা; শেষে অসম্পূর্ণ batch যোগ করা। Time O(n), Output Space O(n); submission status নিশ্চিত নয়।
+- **P2 Unique By:** `keyFn(item)` থেকে key; `Set`-এ key মনে রাখা, result-এ প্রথম item রাখা। Time O(n) average, Auxiliary Space O(n), Output Space O(n)।
+- **U1 First Repeated Log Message:** বাম থেকে ডানে `Set` দিয়ে আগের message দেখা; প্রথম repeat পেলে return। Time O(n) average, Auxiliary Space O(n)। এটি LC 217-এর true/false problem নয়; LC 2351 শুধু কাছাকাছি letter/string variant।
+- **○ P3 Range:** end-exclusive range, positive/negative step, default `step = 1`; Time/Output Space O(k), `k` হলো তৈরি হওয়া value-র সংখ্যা। Optional practice। Known edge case: `step === 0` validation-টি `start === end` check-এর আগে দরকার, নইলে `range(3, 3, 0)` error না দিয়ে `[]` দেয়।
+- **Week Review:** user Day 7 complete বলেছেন; hint/complexity reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়। Topic 11 final Gate এখনো বাকি।
+- **Branch/workspace:** Day 7 branch `october/week-2-day-7`-এ ফিরে থাকা হয়েছে। W3 D1-এর জন্য `october/week-3-day-1` branch ও `live-coding/practice/october/week-3/day-1.js` scaffold তৈরি হয়েছে।
