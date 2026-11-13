@@ -20,9 +20,9 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W2 D6 সম্পন্ন; পরের ধাপ W2 D7 · Week 1 complete |
-| **পরের কাজ** | W2 D7 revision ও practical JS; আগে solve করা LC problem repeat নয়। Topic 11 final Gate D7-এর পরে। |
-| **পিছিয়ে আছি?** | Plan-এ W2 D7; D6 complete ৯ নভে। |
+| **বর্তমান দিন** | W2 D7 — Revision · Practical JS 1; W2 D1–D6 সম্পন্ন · Week 1 complete |
+| **পরের কাজ** | P1 Chunk Array concept; এরপর নতুন P1/P2/U1, আগে solve করা problem repeat নয়। P3 optional। |
+| **পিছিয়ে আছি?** | Plan-এ W2 D7; শুরু ১০ নভে। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) |
 | **★ শেষ (মোট)** | 26 |
 | **★ Day +7 re-solve পাস** | 0 |
@@ -51,6 +51,7 @@
 | ৩–৫ নভে | W2 D4 ✅ | P10.8–P10.11, LC 387/14/151, Topic 10 Gate; তিন LC submission user-confirmed | 3 / 3 ★ | — | — | LC 151-এর split-free variant repeat না করার পছন্দে বাদ |
 | ৫ নভে | W2 D5 ✅ | P11.1–P11.7; LC 268 range + includes approach; LC 88 splice + numeric sort approach | 2 / 2 ★ | — | — | LC 268 O(n²)/O(n); LC 88 O((m+n) log(m+n)); alternate follow-ups no-repeat পছন্দে বাদ; A3 optional বাদ |
 | ৫–৯ নভে | W2 D6 ✅ | P11.8–P11.10; LC 189 Rotate Array; LC 121 Best Time to Buy and Sell Stock | 2 / 2 ★ | — | — | LC 189 O(n) time/O(k) aux; O(1) follow-up repeat নয়; LC 121 O(n)/O(1); A6 duplicate বলে skip |
+| ১০ নভে | W2 D7 🟡 শুরু | Revision · Practical JS 1 — P1 Chunk Array, P2 Unique By, U1 First Repeated Log Message; P3 optional | 0 / 3 ★ | — | — | D3/D5/D6 solved problem repeat নয়; full Topic 11 Gate after this day |
 
 ---
 

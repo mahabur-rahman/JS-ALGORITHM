@@ -64,7 +64,7 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (৯ নভে) W2 D6 সম্পন্ন; পরের ধাপ W2 D7। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
+> এখন (১০ নভে) W2 D7 শুরু; W2 D1–D6 সম্পন্ন। আগে সমাধান করা problem পুনরায় solve/submit না করে নতুন pattern-এ এগোবে।
 
 ---
 ---
@@ -1572,7 +1572,7 @@ P11.8–P11.10 এবং A4/A5 সম্পন্ন। A6 আগেই কর�
 
 ---
 
-## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen ⬜
+## Day 14 · W2 D7 · রবি ১৮ অক্টো — Revision · Practical JS ১ · Unseen 🟡 শুরু (১০ নভে)
 
 ### 🔁 Re-solve (ফাঁকা editor, timer)
 - ⏭️ S2 Valid Palindrome (W2 D3-তে complete; repeat নয়) · ⏭️ S4 Valid Anagram (LC 242 submitted; repeat নয়) · ⏭️ A2 Merge Sorted Array (W2 D5-এ complete; repeat নয়) · ⏭️ A5 Stock (W2 D6-এ submitted; repeat নয়) · ⏭️ W1-এর 8.3 (আগে complete; repeat নয়)

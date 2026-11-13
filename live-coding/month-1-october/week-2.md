@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থান:** W2 D1–D6 সম্পন্ন; পরের ধাপ D7। D5 (৫ নভে): P11.1–P11.7 সম্পন্ন; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। Alternate solution repeat নয়। D6 (৯ নভে): P11.8–P11.10; LC 189 Rotate Array এবং LC 121 Best Time to Buy and Sell Stock—দুটির code ও submission user-confirmed। LC 189-এর solution O(n) time/O(k) auxiliary space; O(1) follow-up repeat নয়। A6 second min/max W1-এ আগেই করা, তাই skip। Topic 11 final Gate D7-এর পরে।
+**বর্তমান অবস্থান:** W2 D1–D6 সম্পন্ন; W2 D7 শুরু ১০ নভে। D5: P11.1–P11.7 সম্পন্ন; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। D6: P11.8–P11.10; LC 189 এবং LC 121 code ও submit। আগে করা problem repeat নয়। D7-তে P1 Chunk Array, P2 Unique By, U1 First Repeated Log Message; P3 Range optional। D5/D6-এর solved problem এবং W1-এর 8.3 repeat নয়। Topic 11 final Gate D7-এর পরে।
 
 ## Big-O · Strings · Arrays (শুরু)
 
@@ -216,7 +216,7 @@ const nested = [[1], [2]]; const c = [...nested]; c[0].push(9); console.log(nest
 ## Day 7 — রবি, ১৮ অক্টোবর — Revision · Practical JS ১ · Week Review
 
 **Re-solve (ফাঁকা editor, timer):**
-- ⏭️ S2 Valid Palindrome — W2 D3-তে complete, re-solve বাধ্যতামূলক নয় · ⏭️ S4 Valid Anagram — LC 242 ইতিমধ্যে submit, repeat নয় · [ ] A2 Merge Sorted Array · [ ] A5 Stock · [ ] W1-এর 8.3
+- ⏭️ S2 Valid Palindrome — আগে complete, repeat নয় · ⏭️ S4 Valid Anagram — LC 242 submit, repeat নয় · ⏭️ A2 Merge Sorted Array — W2 D5-এ complete, repeat নয় · ⏭️ A5 Stock — W2 D6-এ complete, repeat নয় · ⏭️ W1-এর 8.3 — আগে complete, repeat নয়
 
 **Practical JS ১ (Array utility — full-stack interview-এ এমন ছোট function চায়):**
 - [ ] ★ **P1** `chunk(arr, size)` — `[1,2,3,4,5], 2` → `[[1,2],[3,4],[5]]`। size ≤ 0 হলে? `B`
