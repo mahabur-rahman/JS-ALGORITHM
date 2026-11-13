@@ -100,33 +100,59 @@
 // console.log(result); // [{ id: 1, email: "a@x" }]
 // console.log(seen);   // Set(1) { "a@x" }
 
-    // /**
-    //  * @param {Array} arr
-    //  * @param {Function} keyFn
-    //  * @return {Array}
-    //  */
+// /**
+//  * @param {Array} arr
+//  * @param {Function} keyFn
+//  * @return {Array}
+//  */
 
-    // function uniqueBy(arr, keyFn) {
-    //   let result = [];
-    //   let seen = new Set();
+// function uniqueBy(arr, keyFn) {
+//   let result = [];
+//   let seen = new Set();
 
-    //   for (const item of arr) {
-    //     const key = keyFn(item);
+//   for (const item of arr) {
+//     const key = keyFn(item);
 
-    //     if (!seen.has(key)) {
-    //       seen.add(key);
-    //       result.push(item);
-    //     }
-    //   }
+//     if (!seen.has(key)) {
+//       seen.add(key);
+//       result.push(item);
+//     }
+//   }
 
-    //   return result;
-    // }
+//   return result;
+// }
 
-    // const users = [
-    //   { id: 1, email: "a@x" },
-    //   { id: 2, email: "b@x" },
-    //   { id: 3, email: "a@x" },
-    //   { id: 4, email: "c@x" },
-    // ];
+// const users = [
+//   { id: 1, email: "a@x" },
+//   { id: 2, email: "b@x" },
+//   { id: 3, email: "a@x" },
+//   { id: 4, email: "c@x" },
+// ];
 
-    // console.log(uniqueBy(users, (user) => user.email));
+// console.log(uniqueBy(users, (user) => user.email));
+
+// Thought from me :
+// - loop every logs using for..of loop
+// - keep trace log value that first time happens
+// - then return them
+
+// condition :
+// - something mismatch return `null`
+
+function firstRepeatedMessage(logs) {
+  let seen = new Set();
+
+  for (const log of logs) {
+    // console.log(log);
+
+    if (seen.has(log)) {
+      return log;
+    } else {
+      seen.add(log);
+    }
+  }
+
+  return null;
+}
+
+console.log(firstRepeatedMessage(["cat", "dog", "bird", "dog", "cat"]));
