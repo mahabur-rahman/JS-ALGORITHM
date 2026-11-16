@@ -100,13 +100,29 @@
 //     }
 //   }
 
-
 //   return candidate;
 // }
 
 // console.log(majorityElement([2, 2, 1, 1, 1, 2, 2]));
 // Expected output: 2
 
+// var maxSubArray = function (nums) {
+//   let sum = 0 ;
 
+//   for (let start = 0; start < nums.length; start++) {
+//     for (let end = start; end < nums.length; end++) {
+//       const subArr = nums.slice(start, end + 1);
 
+//       const calculation = subArr.reduce((acc, curr) => acc + curr, 0);
 
+//       result.push(calculation);
+//     }
+//   }
+
+//   const maxSum = Math.max(...result);
+
+//   return maxSum;
+// };
+
+// console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+// // Expected output: 6

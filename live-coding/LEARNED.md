@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৩ নভেম্বর ২০২৬ · W2 D7 সম্পন্ন; পরের checkpoint Topic 11 final Gate
+**শেষ update:** ১৬ নভেম্বর ২০২৬ · W3 D1 সম্পন্ন; পরের ধাপ W3 D2
 
 ---
 
@@ -285,9 +285,9 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **P11.10 Running minimum:** prefix-এর সর্বনিম্ন মানগুলো output array-তে; Time O(n), Auxiliary Space O(1), Output Space O(n)।
 - **LC 189 Rotate Array:** suffix `splice` + `unshift`; solution ও submission user-confirmed; Time O(n), Auxiliary Space O(k)। O(1) follow-up no-repeat পছন্দে বাদ।
 - **LC 121 Best Time to Buy and Sell Stock:** running minimum + best profit; solution, complexity ও submission user-confirmed; Time O(n), Auxiliary Space O(1)।
-- **A6 Second Smallest + Second Largest:** W1-এ আগে করা, repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 final Gate Day 7-এর পরে।
+- **A6 Second Smallest + Second Largest:** W1-এ আগে করা, repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 final Gate W3 D2-এর পরে।
 - **Optional:** Day 3 S3 Capitalize Words বাদ দেওয়া যায়; Day 4 ○ S8 Isomorphic Strings, S9 String Compression, S10 Ransom Note বাদ দেওয়া যায়।
-- **Branch/workspace:** current branch `october/week-2-day-7`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 শুরু (১০ নভে)। Day-specific practice code `live-coding/practice/october/week-2/day-7.js`-এ থাকবে। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; D7 re-solve-এ S2/S4/A2/A5/W1 8.3 skip; P3 optional।
+- **Branch/workspace (সেই সময়):** `october/week-2-day-7`; W2 D6 সম্পন্ন (৯ নভে), W2 D7 শুরু (১০ নভে)। Day-specific practice code `live-coding/practice/october/week-2/day-7.js`-এ। User-এর no-repeat পছন্দ: আগে solve করা problem আবার code/submit নয়; D7 re-solve-এ S2/S4/A2/A5/W1 8.3 skip; P3 optional।
 
 ### Topic 11 — Arrays 3 · W2 D7 Practical JS (সম্পন্ন, ১৩ নভে)
 
@@ -295,5 +295,15 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **P2 Unique By:** `keyFn(item)` থেকে key; `Set`-এ key মনে রাখা, result-এ প্রথম item রাখা। Time O(n) average, Auxiliary Space O(n), Output Space O(n)।
 - **U1 First Repeated Log Message:** বাম থেকে ডানে `Set` দিয়ে আগের message দেখা; প্রথম repeat পেলে return। Time O(n) average, Auxiliary Space O(n)। এটি LC 217-এর true/false problem নয়; LC 2351 শুধু কাছাকাছি letter/string variant।
 - **○ P3 Range:** end-exclusive range, positive/negative step, default `step = 1`; Time/Output Space O(k), `k` হলো তৈরি হওয়া value-র সংখ্যা। Optional practice। Known edge case: `step === 0` validation-টি `start === end` check-এর আগে দরকার, নইলে `range(3, 3, 0)` error না দিয়ে `[]` দেয়।
-- **Week Review:** user Day 7 complete বলেছেন; hint/complexity reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়। Topic 11 final Gate এখনো বাকি।
-- **Branch/workspace:** Day 7 branch `october/week-2-day-7`-এ ফিরে থাকা হয়েছে। W3 D1-এর জন্য `october/week-3-day-1` branch ও `live-coding/practice/october/week-3/day-1.js` scaffold তৈরি হয়েছে।
+- **Week Review:** user Day 7 complete বলেছেন; hint/complexity reflection-এর বিস্তারিত উত্তর নথিভুক্ত নয়। Topic 11 final Gate W3 D2-এর পরে।
+- **Branch/workspace:** Day 7 branch-এ docs sync করার পর W3 D1 branch `october/week-3-day-1` ও `live-coding/practice/october/week-3/day-1.js` তৈরি হয়; বর্তমানে W3 D1 branch-এ আছি।
+
+### Topic 11 — Arrays 3 · W3 D1 (সম্পন্ন, ১৬ নভে)
+
+- **P11.11 Subarrays:** contiguous segment; n(n+1)/2টি। `slice`/`reduce` brute force Time O(n³), Output Space O(n²), temporary Auxiliary Space O(n)।
+- **P11.12 All Subarray Sums:** প্রতি start-এ running sum reset, end বাড়ালে শুধু নতুন value যোগ। Time O(n²), Auxiliary Space O(1), Output Space O(n²)।
+- **P11.13 Best Sum Ending at Each Index:** extend বনাম restart; `currentBest = max(nums[i], currentBest + nums[i])`. Time O(n), Auxiliary Space O(1), Output Space O(n)।
+- **P11.14 Vote Cancellation:** আলাদা candidate pair cancel; count শূন্য হলে নতুন candidate। Time O(n), Auxiliary Space O(1)।
+- **A7 LC 53 Maximum Subarray:** Kadane—current ending sum ও global maximum আলাদা track; Time O(n), Auxiliary Space O(1); user submission confirmed (১৬ নভে)।
+- **A8 LC 169 Majority Element:** Boyer–Moore; majority guaranteed, তাই শেষ candidate return; Time O(n), Auxiliary Space O(1); user submission confirmed (১৬ নভে)।
+- **○ A9 Maximum Subarray with Indices:** user আপাতত optional হিসেবে বাদ দিয়েছেন।

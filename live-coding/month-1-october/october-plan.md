@@ -60,11 +60,11 @@ Loop-এর পরে  → কী ফেরত দেব?              (return c
 |---|---|---|---|
 | **W1** | ৫–১১ অক্টো | Variables · Types · Operators · Conditions · Loops · Functions · Numbers · Basic Problem Solving | <span style="color:red">**🔴 DONE**</span> (W1 D7 সম্পন্ন, ২৫ অক্টো) |
 | **W2** | ১২–১৮ অক্টো | Big-O · Strings · Arrays ১ | <span style="color:red">**🔴 DONE**</span> (D1–D7 সম্পন্ন, ১৩ নভে; Topic 11 final Gate বাকি) |
-| **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | ⬜ |
+| **W3** | ১৯–২৫ অক্টো | Arrays ২ (Kadane, prefix/suffix) · Objects · **Hashing** | 🟡 চলছে (D1 সম্পন্ন ১৬ নভে; D2 পরের ধাপ) |
 | **W4** | ২৬ অক্টো–১ নভে | Closure & `this` · Class · Sorting · মাসের review | ⬜ |
 
 > তারিখ **লক্ষ্য, বাধ্যবাধকতা না।** Gate পাস না করে পরের topic-এ যাব না। পিছিয়ে গেলে ○ কমাব।
-> এখন (১৩ নভে) W2 D7 সম্পন্ন; W2 D1–D7 complete। পরের checkpoint Topic 11 final Gate, তারপর W3 D1। আগে সমাধান করা problem পুনরায় solve/submit করবে না।
+> এখন (১৬ নভে) W2 সম্পন্ন এবং W3 D1 সম্পন্ন। পরের ধাপ W3 D2; Topic 11 final Gate W3 D2-এর পরে। আগে সমাধান করা problem পুনরায় solve/submit করবে না।
 
 ---
 ---
@@ -1568,7 +1568,7 @@ Explanation: No transactions are done and the max profit = 0.
 
 ### Day 6 status
 
-P11.8–P11.10 এবং A4/A5 সম্পন্ন। A6 আগেই করা, তাই repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 Arrays-এর final Gate Day 7-এর পরে।
+P11.8–P11.10 এবং A4/A5 সম্পন্ন। A6 আগেই করা, তাই repeat নয়। Day 6-এর আলাদা Gate নেই; Topic 11 Arrays-এর final Gate W3 D2-এর পরে।
 
 ---
 
@@ -1643,7 +1643,7 @@ Example 2: Input: logs = ["x","y","z"]           Output: null
 
 ---
 
-## Day 15 · W3 D1 · সোম ১৯ অক্টো — Topic 11: Arrays ৩ — Kadane · Majority ★ ⬜
+## Day 15 · W3 D1 · সোম ১৯ অক্টো — Topic 11: Arrays ৩ — Kadane · Majority ★ ✅ সম্পন্ন (১৬ নভে)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - **"এখানে শেষ হওয়া সেরা":** প্রতিটা index-এ জিজ্ঞেস করো — আগের অংশের সাথে **জুড়ব**, নাকি এখান থেকে **নতুন শুরু**? (DP-র প্রথম স্বাদ)
@@ -1652,21 +1652,21 @@ Example 2: Input: logs = ["x","y","z"]           Output: null
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 11.11 — সব subarray দেখা (brute force)** ⬜
-- **P11.11 · List Subarrays** 🟢 ⬜ — 🌍 টানা কয়েক দিনের বিক্রির সব সম্ভাব্য সময়কাল। **EN:** Print every contiguous subarray of `[1, 2, 3]`. → `[1] [1,2] [1,2,3] [2] [2,3] [3]` (n(n+1)/2 = 6)
+**Phase 11.11 — সব subarray দেখা (brute force)** ✅
+- **P11.11 · List Subarrays** 🟢 ✅ — 🌍 টানা কয়েক দিনের বিক্রির সব সম্ভাব্য সময়কাল। **EN:** Print every contiguous subarray of `[1, 2, 3]`. → `[1] [1,2] [1,2,3] [2] [2,3] [3]` (n(n+1)/2 = 6); brute `slice`/`reduce` approach Time O(n³), output O(n²), temporary auxiliary O(n)।
 
-**Phase 11.12 — Running sum দিয়ে একটা loop বাদ** ⬜
-- **P11.12** 🟢 ⬜ — **EN:** For each start `i`, extend `j` and keep a running sum instead of re-adding. Print the sums for `[1, 2, 3]`. **বাংলা:** একই যোগ বারবার না করে আগেরটার সাথে শুধু নতুনটা যোগ।
+**Phase 11.12 — Running sum দিয়ে একটা loop বাদ** ✅
+- **P11.12** 🟢 ✅ — **EN:** For each start `i`, extend `j` and keep a running sum instead of re-adding. Print the sums for `[1, 2, 3]`. **বাংলা:** একই যোগ বারবার না করে আগেরটার সাথে শুধু নতুনটা যোগ। Time O(n²), Auxiliary Space O(1), Output Space O(n²)।
 
-**Phase 11.13 — জুড়ব নাকি নতুন শুরু** ⬜
-- **P11.13 · Mood Streak** 🟢 ⬜ — 🌍 প্রতিদিনের মুড স্কোর; আগের দিনগুলো মিলিয়ে মোট নেতিবাচক হলে ভুলে গিয়ে আজ থেকে নতুন শুরু। **EN:** For `[-2, 1, -3, 4]`, print at each index `max(nums[i], prev + nums[i])`. → `-2 1 -2 4`
+**Phase 11.13 — জুড়ব নাকি নতুন শুরু** ✅
+- **P11.13 · Mood Streak** 🟢 ✅ — 🌍 প্রতিদিনের মুড স্কোর; আগের দিনগুলো মিলিয়ে মোট নেতিবাচক হলে ভুলে গিয়ে আজ থেকে নতুন শুরু। **EN:** For `[-2, 1, -3, 4]`, print at each index `max(nums[i], prev + nums[i])`. → `-2 1 -2 4`; Time O(n), Auxiliary Space O(1), Output Space O(n)।
 
-**Phase 11.14 — Cancellation (voting)** ⬜
-- **P11.14 · Election Pairs** 🟢 ⬜ — 🌍 ভোটে দুই প্রার্থীর একজন-একজন করে ভোট বাতিল — শেষে যার ভোট টেকে। **EN:** Trace `candidate`/`count` for `[2, 2, 1, 1, 1, 2, 2]`. → final candidate `2`
+**Phase 11.14 — Cancellation (voting)** ✅
+- **P11.14 · Election Pairs** 🟢 ✅ — 🌍 ভোটে দুই প্রার্থীর একজন-একজন করে ভোট বাতিল — শেষে যার ভোট টেকে। **EN:** Trace `candidate`/`count` for `[2, 2, 1, 1, 1, 2, 2]`. → final candidate `2`; Time O(n), Auxiliary Space O(1)।
 
 ### ★ মূল problem
 
-#### ★ A7 · 53. Maximum Subarray 🟡 Medium ⬜
+#### ★ A7 · 53. Maximum Subarray 🟡 Medium ✅ (solution + LC submission: ১৬ নভে)
 🔗 [LC 53](https://leetcode.com/problems/maximum-subarray/) (হুবহু)
 🌍 **Real-life:** দোকানের লাভ-ক্ষতির ইতিহাস — কোন টানা সময়ে সবচেয়ে বেশি মোট লাভ?
 
@@ -1685,8 +1685,9 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 **বাংলা:** পাশাপাশি element-এর কোন অংশের যোগফল সবচেয়ে বেশি — সেই যোগফল। ধাপে ধাপে: (ক) O(n³) সব subarray (খ) O(n²) running sum (গ) O(n) Kadane। **সব negative হলে?** তিনটার টেবিল।
 **🧠 ভাবনা:** P11.13 মনে করো। দুটো জিনিস মনে রাখো — "এখানে শেষ হওয়া সেরা" আর "এ পর্যন্ত সবচেয়ে সেরা"। শুরুর value 0 দিলে সব negative-এ কী ভুল হয়?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**সম্পন্ন:** brute force ভাবনা থেকে O(n³), running sum-এ O(n²), Kadane-এ O(n) time/O(1) auxiliary space; user LeetCode submission complete বলেছেন।
 
-#### ★ A8 · 169. Majority Element 🟢 Easy ⬜
+#### ★ A8 · 169. Majority Element 🟢 Easy ✅ (solution + LC submission: ১৬ নভে)
 🔗 [LC 169](https://leetcode.com/problems/majority-element/) (হুবহু)
 🌍 **Real-life:** ভোটে কে অর্ধেকের বেশি ভোট পেল।
 
@@ -1702,8 +1703,9 @@ Example 2: Input: nums = [2,2,1,1,1,2,2]     Output: 2
 **বাংলা:** অর্ধেকের বেশিবার আসা সংখ্যা। (ক) Map count (খ) sort করে মাঝখান — কেন কাজ করে? (গ) Boyer–Moore O(1) space।
 **🧠 ভাবনা:** অর্ধেকের বেশি থাকলে, বাকি সবাই মিলে একে একে বাতিল করলেও কে টিকে থাকে?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(1)
+**সম্পন্ন:** Boyer–Moore cancellation; Time O(n), Auxiliary Space O(1); user LeetCode submission complete বলেছেন।
 
-#### ○ A9 · Maximum Subarray with Indices ⬜
+#### ○ A9 · Maximum Subarray with Indices ⏭️ (user আপাতত optional বাদ দিয়েছেন)
 🌍 শুধু মোট লাভ না — কোন দিন থেকে কোন দিন। **EN:** Return `[start, end, sum]` for the max subarray. `[-2,1,-3,4,-1,2,1,-5,4]` → `[3, 6, 6]`. **বাংলা:** "নতুন শুরু" কখন হলো, সেটা মনে রাখো।
 
 **বলো:** *"At each index I decide: extend the previous subarray, or start fresh from here. I start fresh when the running sum becomes worse than the current element alone."*

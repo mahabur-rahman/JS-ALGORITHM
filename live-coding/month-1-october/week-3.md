@@ -4,6 +4,8 @@
 
 ## Arrays (শেষ) · Objects · Hashing (Map & Set) ★★
 
+**Progress (১৬ নভে):** W3 D1 সম্পন্ন। P11.11–P11.14 এবং LC 53/169 code, complexity ও submission সম্পন্ন; A9 optional হিসেবে বাদ। পরের ধাপ W3 D2; Topic 11 final Gate D2-এর পরে।
+
 **সপ্তাহের লক্ষ্য:**
 1. "আমি হাতে কী মনে রাখছিলাম?" → সেটাই variable — এই চিন্তা দিয়ে Kadane, Product Except Self-এর মতো classic problem নিজে বের করা।
 2. **Hashing** — interview-এর সবচেয়ে বেশি ব্যবহৃত অস্ত্র। সপ্তাহ শেষে nested loop দেখলেই মাথায় আসবে: *"এখানে Map দিলে কি একটা loop বাদ যায়?"*
@@ -18,9 +20,9 @@
 - **Voting / cancellation কৌশল (Boyer–Moore):** দুটো আলাদা জিনিস একে অপরকে বাতিল করে।
 
 **Problems:**
-- [ ] ★ **A7 Maximum Subarray** — সবচেয়ে বড় যোগফলের contiguous subarray। ধাপে ধাপে: (ক) O(n³) সব subarray (খ) O(n²) running sum (গ) O(n) Kadane। **সব negative হলে?** তিনটার টেবিল। `D` · O(n), O(1)
-- [ ] ★ **A8 Majority Element** — n/2-এর বেশিবার আছে এমন element। (ক) Map count (খ) sort করে মাঝখান (কেন কাজ করে?) (গ) Boyer–Moore O(1) space। `B`
-- [ ] ○ **A9** Maximum subarray-র **index** (start, end) ফেরত দাও, শুধু যোগফল না। `C`
+- [x] ★ **A7 Maximum Subarray** — সবচেয়ে বড় যোগফলের contiguous subarray। ধাপে ধাপে: (ক) O(n³) সব subarray (খ) O(n²) running sum (গ) O(n) Kadane। **সব negative হলে?** তিনটার টেবিল। `D` · O(n), O(1) — LeetCode submission confirmed (১৬ নভে)।
+- [x] ★ **A8 Majority Element** — n/2-এর বেশিবার আছে এমন element। (ক) Map count (খ) sort করে মাঝখান (কেন কাজ করে?) (গ) Boyer–Moore O(1) space। `B` — LeetCode submission confirmed (১৬ নভে)।
+- ⏭️ ○ **A9** Maximum subarray-র **index** (start, end) ফেরত দাও, শুধু যোগফল না। `C` — user আপাতত optional বাদ দিয়েছেন।
 
 **বলো:** *"At each index I decide: extend the previous subarray, or start fresh from here. I start fresh when the running sum becomes worse than the current element alone."*
 

@@ -19,7 +19,7 @@
 | Week 3 | ১৯–২৫ অক্টোবর | Arrays (Kadane, prefix/suffix) · Objects · **Hashing** | [week-3.md](week-3.md) |
 | Week 4 | ২৬ অক্টোবর–১ নভেম্বর | Closure & `this` · Class & OOP · Sorting · অক্টোবর review | [week-4.md](week-4.md) |
 
-**Progress (১৩ নভে):** Week 1 ও Week 2 সম্পন্ন। Week 2 Day 7-এর P1/P2/U1 শেষ; P3 optional practice। পরের checkpoint Topic 11 final Gate, তারপর Week 3 Day 1।
+**Progress (১৬ নভে):** Week 1 ও Week 2 সম্পন্ন; Week 3 Day 1-ও সম্পন্ন। পরের ধাপ Week 3 Day 2; Topic 11 final Gate Day 2-এর পরে। Day 1-এর A9 optional হিসেবে বাদ।
 
 ## মাস শেষে নিজেকে যাচাই (Week 4 Day 7)
 - [ ] Two Sum, Group Anagrams, Maximum Subarray, Product Except Self — প্রতিটা ফাঁকা editor থেকে ২০ মিনিটে · ⏭️ Valid Anagram: LC 242 ইতিমধ্যে submit, repeat নয়

@@ -20,12 +20,12 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W2 D7 — Revision · Practical JS 1 সম্পন্ন (১৩ নভে); W2 D1–D6 এবং Week 1 সম্পন্ন |
-| **পরের কাজ** | Topic 11 final Gate; এরপর W3 D1। আগে solve করা problem repeat নয়। |
-| **বর্তমান branch** | `october/week-2-day-7`; W3 D1 branch ও scaffold তৈরি করে এখানে ফিরে এসেছি। |
-| **পিছিয়ে আছি?** | W2 D7 সম্পন্ন ১৩ নভে; লক্ষ্য তারিখ ছিল ১৮ অক্টো। |
-| **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) |
-| **★ শেষ (মোট)** | 29 |
+| **বর্তমান দিন** | W3 D1 — Arrays 3: Kadane · Majority সম্পন্ন (১৬ নভে); Week 2 সম্পন্ন |
+| **পরের কাজ** | W3 D2 — Prefix/Suffix ও in-place array techniques; Topic 11 final Gate W3 D2-এর পরে। আগে solve করা problem repeat নয়। |
+| **বর্তমান branch** | `october/week-3-day-1` |
+| **পিছিয়ে আছি?** | W3 D1 সম্পন্ন ১৬ নভে; calendar date ছিল ১৯ অক্টো। |
+| **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) · ✅ Topic 10 Strings (৫ নভে) |
+| **★ শেষ (মোট)** | 31 |
 | **★ Day +7 re-solve পাস** | 0 |
 | **Mock interview দেওয়া** | 0 / 6 |
 
@@ -53,6 +53,7 @@
 | ৫ নভে | W2 D5 ✅ | P11.1–P11.7; LC 268 range + includes approach; LC 88 splice + numeric sort approach | 2 / 2 ★ | — | — | LC 268 O(n²)/O(n); LC 88 O((m+n) log(m+n)); alternate follow-ups no-repeat পছন্দে বাদ; A3 optional বাদ |
 | ৫–৯ নভে | W2 D6 ✅ | P11.8–P11.10; LC 189 Rotate Array; LC 121 Best Time to Buy and Sell Stock | 2 / 2 ★ | — | — | LC 189 O(n) time/O(k) aux; O(1) follow-up repeat নয়; LC 121 O(n)/O(1); A6 duplicate বলে skip |
 | ১০–১৩ নভে | W2 D7 ✅ | P1 Chunk Array (LC 2677; code/complexity), P2 Unique By, U1 First Repeated Log Message — ৩টি ★ সম্পন্ন; P3 Range ঐচ্ছিকভাবে practice | 3 / 3 ★ | — | — | P1-এর LeetCode submission নিশ্চিত নয়। P3-তে `step === 0` guard equality check-এর আগে দরকার; optional, Day 7 completion আটকে রাখে না। Week Review user-complete বলেছেন; reflection-এর উত্তর নেই। Topic 11 final Gate বাকি |
+| ১৬ নভে | W3 D1 ✅ | P11.11–P11.14; LC 53 Maximum Subarray ও LC 169 Majority Element — code, complexity ও submission সম্পন্ন; A9 ঐচ্ছিক বাদ | 2 / 2 ★ | — | — | Subarray count `n(n+1)/2`; brute O(n³) → running sum O(n²) → Kadane O(n); Boyer–Moore O(n)/O(1); আগে করা problem repeat নয়। Topic 11 Gate W3 D2-এর পরে |
 
 ---
 
@@ -151,3 +152,4 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 | ১৩ অক্টোবর | নিয়ম ৬–৮ যোগ (real-life example, solve-এর আগে ভাবনা, complexity মাপার পদ্ধতি) · `LEARNED.md` তৈরি · Claude `practice/`-এ কিছু লিখবে না | তোমার অনুরোধ |
 | ১৫ অক্টোবর | Tracker ও Learned-কে W1 D4-এর সাম্প্রতিক plan marker-এর সাথে sync · একবারে একটি concept/problem ধাপে শেখানোর পছন্দ নথিভুক্ত · P6.6 Valid PIN-এ resume point নিশ্চিত | তোমার অনুরোধ |
 | ১৩ নভেম্বর | W2 D7-এর ৩টি ★ complete ও optional P3 status sync; main update; W3 D1 branch/scaffold তৈরি | তোমার অনুরোধ |
+| ১৬ নভেম্বর | W3 D1 complete; LC 53 ও LC 169 submission confirm; A9 optional বাদ; docs sync ও main merge | তোমার অনুরোধ |

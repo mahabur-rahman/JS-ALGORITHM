@@ -2,7 +2,7 @@
 
 > 📌 **বিস্তারিত plan এখন [october-plan.md](october-plan.md)-এ** — প্রতিটা concept phase, ছোট problem, LeetCode format (English + বাংলা + real-life), আর DONE চিহ্ন ওখানে। এই file শুধু সংক্ষিপ্ত reference।
 
-**বর্তমান অবস্থা (১৩ নভে):** W2 D1–D7 সম্পন্ন। D5: P11.1–P11.7; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। D6: P11.8–P11.10; LC 189 এবং LC 121 code ও submit। D7: P1 Chunk Array code/complexity, P2 Unique By, U1 First Repeated Log Message — ৩টি ★ সম্পন্ন; P3 Range optional practice, zero-step guard order issue নথিভুক্ত। আগে করা problem repeat নয়। P1 LC submission status নিশ্চিত নয়। Week Review user-complete বলেছেন; বিস্তারিত reflection নেই। **Topic 11 final Gate এখনো বাকি।**
+**Progress (১৬ নভে):** W2 D1–D7 সম্পন্ন। D5: P11.1–P11.7; LC 268 code ও submit; LC 88 `splice` + numeric `sort` solution complete, submission status নিশ্চিত নয়। D6: P11.8–P11.10; LC 189 এবং LC 121 code ও submit। D7: P1 Chunk Array code/complexity, P2 Unique By, U1 First Repeated Log Message — ৩টি ★ সম্পন্ন; P3 Range optional practice, zero-step guard issue নথিভুক্ত। W3 D1-ও এখন সম্পন্ন; পরের ধাপ W3 D2। Topic 11 final Gate W3 D2-এর পরে। আগে করা problem repeat নয়।
 
 ## Big-O · Strings · Arrays (শুরু)
 
