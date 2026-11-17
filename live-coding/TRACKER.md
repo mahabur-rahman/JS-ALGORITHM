@@ -20,10 +20,10 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W3 D1 — Arrays 3: Kadane · Majority সম্পন্ন (১৬ নভে); Week 2 সম্পন্ন |
-| **পরের কাজ** | W3 D2 — Prefix/Suffix ও in-place array techniques; Topic 11 final Gate W3 D2-এর পরে। আগে solve করা problem repeat নয়। |
-| **বর্তমান branch** | `october/week-3-day-1` |
-| **পিছিয়ে আছি?** | W3 D1 সম্পন্ন ১৬ নভে; calendar date ছিল ১৯ অক্টো। |
+| **বর্তমান দিন** | W3 D3 — Topic 12: Objects; W3 D1 ও D2 সম্পন্ন (১৭ নভে) |
+| **পরের কাজ** | W3 D3-এর Objects concept দিয়ে শুরু; আগে solve করা exact problem repeat নয়। |
+| **বর্তমান branch** | `october/week-3-day-3` |
+| **পিছিয়ে আছি?** | W3 D2 সম্পন্ন ১৭ নভে; calendar date ছিল ২০ অক্টো। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) · ✅ Topic 10 Strings (৫ নভে) |
 | **★ শেষ (মোট)** | 31 |
 | **★ Day +7 re-solve পাস** | 0 |
@@ -153,3 +153,4 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 | ১৫ অক্টোবর | Tracker ও Learned-কে W1 D4-এর সাম্প্রতিক plan marker-এর সাথে sync · একবারে একটি concept/problem ধাপে শেখানোর পছন্দ নথিভুক্ত · P6.6 Valid PIN-এ resume point নিশ্চিত | তোমার অনুরোধ |
 | ১৩ নভেম্বর | W2 D7-এর ৩টি ★ complete ও optional P3 status sync; main update; W3 D1 branch/scaffold তৈরি | তোমার অনুরোধ |
 | ১৬ নভেম্বর | W3 D1 complete; LC 53 ও LC 169 submission confirm; A9 optional বাদ; docs sync ও main merge | তোমার অনুরোধ |
+| ১৭ নভেম্বর | W3 D2 complete; P11.15–P11.17 ও LC 238 status sync; A11/A12 optional বাদ; docs main-এ merge; W3 D3 branch ও file তৈরি | তোমার অনুরোধ |

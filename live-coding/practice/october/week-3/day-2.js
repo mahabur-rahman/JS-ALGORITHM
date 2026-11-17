@@ -90,27 +90,27 @@
 // console.log(productExceptSelf([1, 2, 3, 4]));
 // // [24, 12, 8, 6]
 
-  /**
-   * @param {number[]} nums
-   * @return {number}
-   */
-  var findMissingNumber = function (nums) {
-    const seen = new Set();
+  // /**
+  //  * @param {number[]} nums
+  //  * @return {number}
+  //  */
+  // var findMissingNumber = function (nums) {
+  //   const seen = new Set();
 
-    for (const num of nums) {
-      // console.log(num)
+  //   for (const num of nums) {
+  //     // console.log(num)
 
-      if (!seen.has(num)) {
-        seen.add(num);
-      }
-    }
+  //     if (!seen.has(num)) {
+  //       seen.add(num);
+  //     }
+  //   }
 
-    for (let i = 1; i <= nums.length; i++) {
-      if (!seen.has(i)) {
-        return i;
-      }
-    }
+  //   for (let i = 1; i <= nums.length; i++) {
+  //     if (!seen.has(i)) {
+  //       return i;
+  //     }
+  //   }
 
-  };
+  // };
 
-  console.log(findMissingNumber([1, 2, 2, 4]));
+  // console.log(findMissingNumber([1, 2, 2, 4]));

@@ -307,3 +307,12 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **A7 LC 53 Maximum Subarray:** Kadane—current ending sum ও global maximum আলাদা track; Time O(n), Auxiliary Space O(1); user submission confirmed (১৬ নভে)।
 - **A8 LC 169 Majority Element:** Boyer–Moore; majority guaranteed, তাই শেষ candidate return; Time O(n), Auxiliary Space O(1); user submission confirmed (১৬ নভে)।
 - **○ A9 Maximum Subarray with Indices:** user আপাতত optional হিসেবে বাদ দিয়েছেন।
+
+### Topic 11 — Arrays 4 · W3 D2 (সম্পন্ন, ১৭ নভে)
+
+- **P11.15 Left Products:** prefix product দিয়ে প্রতিটি index-এর বাঁ পাশের গুণফল; Time O(n), Auxiliary Space O(1), Output Space O(n)।
+- **P11.16 Right Products:** ডান থেকে চলা suffix product দিয়ে প্রতিটি index-এর ডান পাশের গুণফল; Time O(n), Auxiliary Space O(1), Output Space O(n)।
+- **P11.17 Seat Marker:** `value - 1` index-কে negative marker করার concept ও `[3,1,3]` trace আলোচনা হয়েছে। Missing value practice-টি Set দিয়ে সঠিকভাবে solve হয়েছে; Time O(n) average, Auxiliary Space O(n)। User Day 2 complete হিসেবে ধরতে বলেছেন; in-place marking implementation করা হয়নি।
+- **A10 LC 238 Product of Array Except Self:** user one-pass prefix/suffix solution submit করেছেন; Time O(n), Auxiliary Space O(1), Output Space O(n)।
+- **Optional A11 LC 448 ও A12 LC 287:** user আপাতত বাদ দিয়েছেন। Topic 11 Gate user-confirmed complete।
+- **পরের ধাপ:** W3 D3 — Topic 12 Objects; practice file ও branch `october/week-3-day-3`।
