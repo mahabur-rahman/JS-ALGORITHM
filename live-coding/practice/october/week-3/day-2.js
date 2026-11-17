@@ -14,17 +14,34 @@
 
 // - return left array
 
-function leftProducts(nums) {
-  let left = [];
-  let product = 1;
+// function leftProducts(nums) {
+//   let left = [];
+//   let product = 1;
 
-  for (let i = 0; i < nums.length; i++) {
-    left.push(product);
+//   for (let i = 0; i < nums.length; i++) {
+//     left.push(product);
 
-    product = product * nums[i];
+//     product = product * nums[i];
+//   }
+
+//   return left;
+// }
+
+// console.log(leftProducts([3, 1, 7, 5]));
+
+function rightProducts(nums) {
+  const result = [];
+  let productAfter = 1;
+
+  for (let i = nums.length - 1; i >= 0; i--) {
+    // console.log('index: ', i, " | ", nums[i])
+
+    result[i] = productAfter;
+
+    productAfter *= nums[i];
   }
 
-  return left;
+  return result;
 }
 
-console.log(leftProducts([3, 1, 7, 5]));
+console.log(rightProducts([1, 2, 3, 4]));
