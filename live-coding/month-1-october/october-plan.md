@@ -1712,7 +1712,7 @@ Example 2: Input: nums = [2,2,1,1,1,2,2]     Output: 2
 
 ---
 
-## Day 16 · W3 D2 · মঙ্গল ২০ অক্টো — Topic 11: Arrays ৪ — Prefix/Suffix · In-place কৌশল ★ ⬜
+## Day 16 · W3 D2 · মঙ্গল ২০ অক্টো — Topic 11: Arrays ৪ — Prefix/Suffix · In-place কৌশল ★ ✅ সম্পন্ন (১৭ নভে)
 
 **🧠 এই topic-এ কীভাবে ভাবব:**
 - "আমাকে ছাড়া বাকি সবার…" → **আমার বাঁয়ের সব** × **আমার ডানের সব**।
@@ -1721,18 +1721,18 @@ Example 2: Input: nums = [2,2,1,1,1,2,2]     Output: 2
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 11.15 — Prefix product / sum** ⬜
-- **P11.15 · Left Products** 🟢 ⬜ — **EN:** For `[1, 2, 3, 4]`, build `left[i]` = product of everything before `i`. → `[1, 1, 2, 6]`
+**Phase 11.15 — Prefix product / sum** ✅
+- **P11.15 · Left Products** 🟢 ✅ — **EN:** For `[1, 2, 3, 4]`, build `left[i]` = product of everything before `i`. → `[1, 1, 2, 6]`
 
-**Phase 11.16 — Suffix (ডান থেকে)** ⬜
-- **P11.16 · Right Products** 🟢 ⬜ — **EN:** Build `right[i]` = product of everything after `i`. → `[24, 12, 4, 1]`. Multiply with `left` → ?
+**Phase 11.16 — Suffix (ডান থেকে)** ✅
+- **P11.16 · Right Products** 🟢 ✅ — **EN:** Build `right[i]` = product of everything after `i`. → `[24, 12, 4, 1]`. Multiply with `left` → ?
 
-**Phase 11.17 — Index-কে marker হিসেবে** ⬜
-- **P11.17 · Seat Marker** 🟢 ⬜ — 🌍 হলের সিট নম্বর ১..n — বসা মানুষ নিজের সিটে চিহ্ন দেয়। **EN:** For `[3, 1, 3]` (values 1..3), mark `arr[v - 1]` negative for each value. Which index stays positive? → index 1, so `2` is missing.
+**Phase 11.17 — Index-কে marker হিসেবে** ✅ — concept ও trace সম্পন্ন; practice solution Set approach-এ (`O(n)` auxiliary space)।
+- **P11.17 · Seat Marker** 🟢 ✅ — 🌍 হলের সিট নম্বর ১..n — বসা মানুষ নিজের সিটে চিহ্ন দেয়। **EN:** For `[3, 1, 3]` (values 1..3), mark `arr[v - 1]` negative for each value. Which index stays positive? → index 1, so `2` is missing. Learner instead solved missing value correctly using a Set; negative-marking implementation not written.
 
 ### ★ মূল problem
 
-#### ★ A10 · 238. Product of Array Except Self 🟡 Medium ⬜
+#### ★ A10 · 238. Product of Array Except Self 🟡 Medium ✅ (১৭ নভে)
 🔗 [LC 238](https://leetcode.com/problems/product-of-array-except-self/) (হুবহু)
 🌍 **Real-life:** দলের প্রত্যেকের জন্য "বাকি সবার মিলিত অবদান" — নিজেকে বাদ দিয়ে।
 
@@ -1766,7 +1766,7 @@ Example 2: Input: nums = [-1,1,0,-3,3]   Output: [0,0,9,0,0]
 
 **বলো:** *"For each index, the answer is the product of everything to its left times everything to its right. I compute left products in one pass and multiply by right products in a second pass."*
 
-### 🚪 Gate — Topic 11 (Arrays সম্পূর্ণ) ⬜
+### 🚪 Gate — Topic 11 (Arrays সম্পূর্ণ) ✅ User-confirmed (১৭ নভে)
 
 ---
 

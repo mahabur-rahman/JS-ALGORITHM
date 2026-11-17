@@ -4,7 +4,7 @@
 
 ## Arrays (শেষ) · Objects · Hashing (Map & Set) ★★
 
-**Progress (১৬ নভে):** W3 D1 সম্পন্ন। P11.11–P11.14 এবং LC 53/169 code, complexity ও submission সম্পন্ন; A9 optional হিসেবে বাদ। পরের ধাপ W3 D2; Topic 11 final Gate D2-এর পরে।
+**Progress (১৭ নভে):** W3 D1 ও D2 সম্পন্ন। D1-এ P11.11–P11.14 এবং LC 53/169 code, complexity ও submission সম্পন্ন; A9 optional বাদ। D2-এ P11.15–P11.17 এবং LC 238 সম্পন্ন; A11/A12 optional বাদ। পরের ধাপ W3 D3 — Objects।
 
 **সপ্তাহের লক্ষ্য:**
 1. "আমি হাতে কী মনে রাখছিলাম?" → সেটাই variable — এই চিন্তা দিয়ে Kadane, Product Except Self-এর মতো classic problem নিজে বের করা।
@@ -28,7 +28,7 @@
 
 ---
 
-## Day 2 — মঙ্গল, ২০ অক্টোবর — Arrays ৪: Prefix/Suffix ধারণা · In-place কৌশল ★
+## Day 2 — মঙ্গল, ২০ অক্টোবর — Arrays ৪: Prefix/Suffix ধারণা · In-place কৌশল ★ ✅ সম্পন্ন (১৭ নভে)
 
 **শিখবে:**
 - **Prefix / suffix ধারণা:** "আমার বাঁয়ে সবকিছুর গুণফল" × "ডানে সবকিছুর গুণফল"।
@@ -36,9 +36,11 @@
 - **Index-কে marker হিসেবে ব্যবহার** (value 1..n হলে `arr[value - 1]`-কে negative করে "দেখেছি" চিহ্ন)।
 
 **Problems:**
-- [ ] ★ **A10 Product of Array Except Self** — ভাগ (`/`) ছাড়া, O(n)। (ক) দুটো array (prefix, suffix) (খ) output array ছাড়া O(1) extra space। **0 থাকলে ভাগের উপায় কেন ভাঙে?** `D`
-- [ ] ○ **A11 Find All Numbers Disappeared** — 1..n-এর মধ্যে যেগুলো নেই। Set দিয়ে, তারপর index-marker দিয়ে O(1) extra। `C`
-- [ ] ○ **A12 Find the Duplicate Number** — 1..n, একটা সংখ্যা বারবার। Set দিয়ে; (fast/slow দিয়ে O(1) — W7-এ ফিরে আসবে)। `C`
+- [x] ★ **A10 Product of Array Except Self** — ভাগ (`/`) ছাড়া, O(n); এক-pass prefix/suffix, Time O(n), Auxiliary Space O(1), Output Space O(n); LeetCode submission user-confirmed (১৭ নভে)।
+- [ ] ○ **A11 Find All Numbers Disappeared** — 1..n-এর মধ্যে যেগুলো নেই। Set দিয়ে, তারপর index-marker দিয়ে O(1) extra। ⏭️ User optional বাদ দিয়েছেন।
+- [ ] ○ **A12 Find the Duplicate Number** — 1..n, একটা সংখ্যা বারবার। Set দিয়ে; (fast/slow দিয়ে O(1) — W7-এ ফিরে আসবে)। ⏭️ User optional বাদ দিয়েছেন।
+
+**P11.15–P11.17 practice সম্পন্ন:** Left Products ও Right Products O(n); Seat Marker missing-value practice Set দিয়ে সঠিকভাবে solve (Time O(n) average, Auxiliary Space O(n)); negative index-marking concept ও trace আলোচনা হয়েছে, in-place O(1) implementation করা হয়নি। User Day 2 complete হিসেবে গণ্য করতে বলেছেন।
 
 **বলো:** *"For each index, the answer is the product of everything to its left times everything to its right. I compute left products in one pass and multiply by right products in a second pass."*
 
