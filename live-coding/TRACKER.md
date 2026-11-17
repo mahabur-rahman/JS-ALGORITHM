@@ -54,6 +54,7 @@
 | ৫–৯ নভে | W2 D6 ✅ | P11.8–P11.10; LC 189 Rotate Array; LC 121 Best Time to Buy and Sell Stock | 2 / 2 ★ | — | — | LC 189 O(n) time/O(k) aux; O(1) follow-up repeat নয়; LC 121 O(n)/O(1); A6 duplicate বলে skip |
 | ১০–১৩ নভে | W2 D7 ✅ | P1 Chunk Array (LC 2677; code/complexity), P2 Unique By, U1 First Repeated Log Message — ৩টি ★ সম্পন্ন; P3 Range ঐচ্ছিকভাবে practice | 3 / 3 ★ | — | — | P1-এর LeetCode submission নিশ্চিত নয়। P3-তে `step === 0` guard equality check-এর আগে দরকার; optional, Day 7 completion আটকে রাখে না। Week Review user-complete বলেছেন; reflection-এর উত্তর নেই। Topic 11 final Gate বাকি |
 | ১৬ নভে | W3 D1 ✅ | P11.11–P11.14; LC 53 Maximum Subarray ও LC 169 Majority Element — code, complexity ও submission সম্পন্ন; A9 ঐচ্ছিক বাদ | 2 / 2 ★ | — | — | Subarray count `n(n+1)/2`; brute O(n³) → running sum O(n²) → Kadane O(n); Boyer–Moore O(n)/O(1); আগে করা problem repeat নয়। Topic 11 Gate W3 D2-এর পরে |
+| ১৭ নভে | W3 D2 ✅ | P11.15 Left Products, P11.16 Right Products, P11.17 missing value with Set; LC 238 Product Except Self solve, submit ও complexity complete; A11/A12 optional বাদ | 1 / 1 ★ | — | — | LC 238 O(n) time/O(1) auxiliary/O(n) output; P11.17 Set approach O(n) auxiliary, index-marker trace discussed but in-place version not coded; user-confirmed complete |
 
 ---
 
