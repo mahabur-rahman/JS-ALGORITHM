@@ -170,35 +170,35 @@
 // - if role is admin push it to result {} and if role is user push to result object again like this : {[{}, {}]}
 // - finally return result
 
-var groupBy = function (items, key) {
-  let result = {};
+// var groupBy = function (items, key) {
+//   let result = {};
 
-  for (const item of items) {
+//   for (const item of items) {
    
-    const group = item[key]
+//     const group = item[key]
 
     
 
-    if(!result[group]){
-        result[group] = []
-    }
+//     if(!result[group]){
+//         result[group] = []
+//     }
 
-    result[group].push(item)
-  }
+//     result[group].push(item)
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-console.log(
-  groupBy(
-    [
-      { name: "Asha", role: "admin" },
-      { name: "Rafi", role: "user" },
-      { name: "Mina", role: "admin" },
-    ],
-    "role",
-  ),
-);
+// console.log(
+//   groupBy(
+//     [
+//       { name: "Asha", role: "admin" },
+//       { name: "Rafi", role: "user" },
+//       { name: "Mina", role: "admin" },
+//     ],
+//     "role",
+//   ),
+// );
 
 // {
 //   admin: [
@@ -209,3 +209,5 @@ console.log(
 //     { name: "Rafi", role: "user" }
 //   ]
 // }
+
+
