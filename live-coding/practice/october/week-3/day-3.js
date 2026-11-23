@@ -174,10 +174,8 @@
 //   let result = {};
 
 //   for (const item of items) {
-   
-//     const group = item[key]
 
-    
+//     const group = item[key]
 
 //     if(!result[group]){
 //         result[group] = []
@@ -210,4 +208,30 @@
 //   ]
 // }
 
+/**
+ * @param {Function} fn
+ * @return {Object}
+ */
+// Array.prototype.groupBy = function (fn) {
+//   const result = {};
 
+//   for (const item of this) {
+//     const group = fn(item);
+
+//     if (!result[group]) {
+//       result[group] = [];
+//     }
+
+//     result[group].push(item)
+//   }
+
+//   return result
+// };
+
+// const array = [{ id: "1" }, { id: "1" }, { id: "2" }];
+
+// const fn = (item) => item.id;
+
+
+
+// console.log(array.groupBy(fn))
