@@ -232,6 +232,203 @@
 
 // const fn = (item) => item.id;
 
-
-
 // console.log(array.groupBy(fn))
+
+// const words = ["tea", "coffee", "tea"];
+// const counts = {};
+
+// for(const word of words) {
+//     if(counts[word] === undefined){
+//         counts[word] = 1
+//     }else {
+//         counts[word]++
+//     }
+// }
+
+// console.log(counts); // { tea: 2, coffee: 1 }
+
+// O2 — Count Words and Find the Most Frequent
+
+/**
+ * @param {string[]} words
+ * @return {Object}
+ */
+// var countWords = function (words) {
+//   const counts = {};
+
+//   let maxCount = 0;
+//   let mostFrequent = "";
+
+//   for (const word of words) {
+//     // console.log(word)
+
+//     if (counts[word] === undefined) {
+//       counts[word] = 1;
+//     } else {
+//       counts[word]++;
+//     }
+//   }
+
+//   for (const word in counts) {
+//     if (counts[word] > maxCount) {
+//       maxCount = counts[word];
+//       mostFrequent = word;
+//     }
+//   }
+
+//   return {
+//     counts,
+//     mostFrequent,
+//   };
+// };
+
+// const words = ["cat", "dog", "cat", "bird", "dog", "cat"];
+
+// console.log(countWords(words));
+
+// {
+//   counts: {
+//     cat: 3,
+//     dog: 2,
+//     bird: 1
+//   },
+//   mostFrequent: "cat"
+// }
+
+// 819. Most Common Word
+
+/**
+ * @param {string} paragraph
+ * @param {string[]} banned
+ * @return {string}
+ */
+
+// Thinking : --------------------
+
+// - at first string er upor e ami loop calaite pari (for..of)
+
+// - trace every word count in object like : {bob : 2, hit: 10, ....}
+
+// - and then loop again in object using for..in and then checks with banned word
+
+// - then checks every word in banned array if it has then skip it \
+
+// - return most frequent word as a lowercase
+
+/**
+ * @param {string} paragraph
+ * @param {string[]} banned
+ * @return {string}
+ */
+// var mostCommonWord = function (paragraph, banned) {
+//   // Step 1: Convert to lowercase
+//   const lowerParagraph = paragraph.toLowerCase();
+
+//   // Step 2: Remove punctuation
+//   const cleanParagraph = lowerParagraph.replace(/[!?',;.]/g, "");
+
+//   // Step 3: Split paragraph into words
+//   const words = cleanParagraph.split(" ");
+
+//   // Step 4: Create frequency object
+//   const counts = {};
+
+//   // Step 5: Count word frequency
+//   for (const word of words) {
+//     if (counts[word] === undefined) {
+//       counts[word] = 1;
+//     } else {
+//       counts[word]++;
+//     }
+//   }
+
+//   // Step 6: Create banned Set
+//   const bannedSet = new Set(banned);
+
+//   // Step 7: Find most frequent non-banned word
+//   let maxCount = 0;
+//   let mostFrequent = "";
+
+//   for (const word in counts) {
+//     if (bannedSet.has(word)) {
+//       continue;
+//     }
+
+//     if (counts[word] > maxCount) {
+//       maxCount = counts[word];
+//       mostFrequent = word;
+//     }
+//   }
+
+//   return mostFrequent;
+// };
+
+// // Test case
+// const paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+// const banned = ["hit"];
+
+// console.log(mostCommonWord(paragraph, banned)); // "ball"
+
+
+/**
+ * @param {string} paragraph
+ * @param {string[]} banned
+ * @return {string}
+ */
+var mostCommonWord = function(paragraph, banned) {
+
+  // convert paragraph into lowerCase 
+  const lowercasePara = paragraph.toLocaleLowerCase()
+
+  // remove punctuation from paragraph 
+  const removePunctuation = lowercasePara.replace(/[!?',;.]/g, "")
+
+
+  // split paragraph into an array
+const splitPara = removePunctuation.split(" ")
+
+// create an empty frequency object 
+const result = {}
+
+
+// use for..of loop to count word 
+for(const word of splitPara){
+  
+  if(result[word] === undefined){
+    result[word] = 1
+  }else {
+    result[word]++
+  }
+}
+
+const bannedSet = new Set(banned)
+
+let maxCount = 0;
+let mostFrequent = ""
+
+
+// use for..in loop iterate through frequency object 
+
+for(const word in result){
+
+  if(bannedSet.has(word)){
+    continue
+  }
+
+  if(result[word] > maxCount){
+    maxCount = result[word]
+    mostFrequent = word
+  }
+}
+
+
+
+return mostFrequent
+};
+
+const paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+const banned = ["hit"];
+
+console.log(mostCommonWord(paragraph, banned));
+
+// Expected: "ball"
