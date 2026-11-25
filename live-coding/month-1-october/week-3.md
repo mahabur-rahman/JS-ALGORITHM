@@ -4,7 +4,7 @@
 
 ## Arrays (শেষ) · Objects · Hashing (Map & Set) ★★
 
-**Progress (১৭ নভে):** W3 D1 ও D2 সম্পন্ন। D1-এ P11.11–P11.14 এবং LC 53/169 code, complexity ও submission সম্পন্ন; A9 optional বাদ। D2-এ P11.15–P11.17 এবং LC 238 সম্পন্ন; A11/A12 optional বাদ। পরের ধাপ W3 D3 — Objects।
+**Progress (২৫ নভে):** W3 D1–D3 সম্পন্ন। D1-এ LC 53/169, D2-তে LC 238 এবং D3-তে LC 2631/819 submission confirmed; optional problem বাদ। D3-এর Flatten Object code কাজ করে, তবে recursive `Object.assign()` merge-এর কারণে তার time O(nh) হতে পারে—user Day 3 complete বলেছেন। পরের ধাপ W3 D4 — Hashing 1।
 
 **সপ্তাহের লক্ষ্য:**
 1. "আমি হাতে কী মনে রাখছিলাম?" → সেটাই variable — এই চিন্তা দিয়ে Kadane, Product Except Self-এর মতো classic problem নিজে বের করা।
@@ -46,7 +46,7 @@
 
 ---
 
-## Day 3 — বুধ, ২১ অক্টোবর — Objects
+## Day 3 — বুধ, ২১ অক্টোবর — Objects ✅ সম্পন্ন (২৫ নভে; user-confirmed)
 
 **Interview-এ যেভাবে আসে:** full-stack round-এ খুব common — API response transform, group করা, nested data থেকে মান বের করা।
 
@@ -69,10 +69,9 @@ const c = { ...u }; c.address.city = "X"; console.log(u.address.city);
 console.log("toString" in {}, Object.hasOwn({}, "toString"));
 ```
 
-**Problems:**
-- [ ] ★ **O1** `groupBy(items, key)` — `groupBy(users, "role")` → `{ admin: [...], user: [...] }`। key না থাকা item কোথায় যাবে? `B` · O(n)
-- [ ] ★ **O2** `countBy(words)` → `{ apple: 2, pear: 1 }` — তারপর **সবচেয়ে বেশি আসা শব্দ** ফেরত দাও (টাই হলে কোনটা? — সিদ্ধান্ত লেখো)। `B`
-- [ ] ★ **O3** `flattenObject({ a: { b: 1, c: { d: 2 } }, e: 3 })` → `{ "a.b": 1, "a.c.d": 2, e: 3 }`। array এলে কী করবে — সিদ্ধান্ত। `C`
+- [x] ★ **O1** `groupBy(items, "role")` — custom solution; কাছাকাছি LC 2631-ও submit complete।
+- [x] ★ **O2** `countBy(words)` + most frequent — custom solution ও কাছাকাছি LC 819 submit complete।
+- [x] ★ **O3** `flattenObject(...)` — output ঠিক; current recursive merge-এর complexity O(nh) হতে পারে। User Day 3 complete বলেছেন; optimization বাদ।
 - [ ] ○ **O4** `get(obj, "a.b.c", defaultValue)` — পথের মাঝে `null` থাকলে? `B`
 - [ ] ○ **O5** `invert({ a: "x", b: "y" })` → `{ x: "a", y: "b" }` — duplicate value হলে? `A`
 
@@ -81,6 +80,8 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 ---
 
 ## Day 4 — বৃহস্পতি, ২২ অক্টোবর — Hashing ১: Map/Set API · ৪টা ব্যবহার ★★
+
+**No-repeat sync:** Set-এর `add/has` ও duplicate/intersection ব্যবহার আগেই হয়েছে (LC 217, LC 349, P2 Unique By, U1 First Repeated Log)। Frequency Map-ও characterFrequency-তে হয়েছে। এগুলোর problem আবার নয়; নতুন অংশ হবে Map-এর type-preserving key, array key-র reference behavior, আর আগে লেখা brute-force Two Sum-এ complement lookup ধারণা। H2-এর পুরো problem/LeetCode submission আবার assign হবে না।
 
 **পড়বে:** `04-patterns-and-skeletons.md` — অংশ ১ (Data/lookup) + skeleton 3.1, 3.2।
 **Skeleton drill:** 3.1 আর 3.2 ফাঁকা editor-এ ৩ বার, দেখে না।
@@ -118,7 +119,7 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 
 **Problems:**
 - ⏭️ ★ **H1 Contains Duplicate** — W2 D2-তে LC 217 একবার solve হবে; একই problem repeat নয়।
-- [ ] ★ **H2 Two Sum** — index ফেরত। brute force → Map। **কেন "আগে check, পরে store" — উল্টো করলে কোন input-এ ভুল?** `B` · O(n), O(n)
+- ⏭️ ★ **H2 Two Sum — পুরো problem repeat নয়:** `codeAbc/twoSum.js`-এ brute-force version আগে লেখা। নতুন শেখা হবে শুধু Map complement lookup-এর walkthrough; নতুন solution/submission নয়।
 - ⏭️ ★ **H3 Intersection of Two Arrays** — W2 D2 Topic 9 Gate-এ সম্পন্ন; Week 3-তে একই problem repeat নয়।
 - [ ] ○ **H4 Jewels and Stones** `A`
 

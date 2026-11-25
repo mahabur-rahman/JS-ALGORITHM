@@ -316,3 +316,12 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **A10 LC 238 Product of Array Except Self:** user one-pass prefix/suffix solution submit করেছেন; Time O(n), Auxiliary Space O(1), Output Space O(n)।
 - **Optional A11 LC 448 ও A12 LC 287:** user আপাতত বাদ দিয়েছেন। Topic 11 Gate user-confirmed complete।
 - **পরের ধাপ:** W3 D3 — Topic 12 Objects; practice file ও branch `october/week-3-day-3`।
+
+### Topic 12 — Objects · W3 D3 (user-confirmed সম্পন্ন, ২৫ নভে)
+
+- **P12.1–P12.8:** dynamic bracket key; `in` বনাম `Object.hasOwn`; `entries/fromEntries`; object key coercion ও order; shallow/deep copy; reference equality; nested destructuring/default; JSON serialization ও shallow freeze।
+- **O1 Group By:** custom object grouping + official LC 2631 submission confirmed; average Time O(n), output O(n)।
+- **O2 Count By + Most Frequent:** object frequency + stable first-seen tie; official LC 819 submission confirmed। punctuation remove না করে whitespace-এ বদলাতে হবে; `Object.create(null)` দিয়ে prototype-key collision এড়ানো।
+- **O3 Flatten Object:** recursive path join দিয়ে output সঠিক; implementation প্রতিটি recursive call-এ নতুন result বানিয়ে `Object.assign` করে, তাই nested case-এ Time worst-case O(nh) হতে পারে (n = properties, h = depth)। Space output/temporary object O(n), recursion stack O(h)। Learner Day 3 complete বলেছেন; shared-accumulator optimization করা হয়নি।
+- **Optional O4 Safe Get ও O5 Invert:** বাদ।
+- **পরের ধাপ:** W3 D4 — Topic 13 Hashing 1; branch/file `october/week-3-day-4`। আগে করা Set, frequency, duplicate, intersection ও Two Sum exact problem repeat নয়। `codeAbc/twoSum.js`-এ brute force আছে; শুধু Map complement-lookup-এর নতুন optimization concept সংক্ষেপে দেখানো যাবে, পূর্ণ problem আবার নয়।
