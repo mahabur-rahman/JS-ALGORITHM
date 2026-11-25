@@ -1770,7 +1770,7 @@ Example 2: Input: nums = [-1,1,0,-3,3]   Output: [0,0,9,0,0]
 
 ---
 
-## Day 17 · W3 D3 · বুধ ২১ অক্টো — Topic 12: Objects ⬜
+## Day 17 · W3 D3 · বুধ ২১ অক্টো — Topic 12: Objects ✅ User-confirmed complete (২৫ নভে)
 
 **Interview-এ যেভাবে আসে:** full-stack round-এ খুব common — API response transform, group করা, nested data থেকে মান বের করা।
 
@@ -1782,33 +1782,33 @@ Example 2: Input: nums = [-1,1,0,-3,3]   Output: [0,0,9,0,0]
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 12.1 — dot বনাম bracket · dynamic key** ⬜
-- **P12.1 · Settings Toggle** 🟢 ⬜ — 🌍 settings page-এ যে option-এ click, সেটা বদলাও। **EN:** `toggle(settings, "darkMode")` flips the boolean at that key and returns a new object. `{ darkMode: false }` → `{ darkMode: true }`
+**Phase 12.1 — dot বনাম bracket · dynamic key** ✅
+- **P12.1 · Settings Toggle** 🟢 ✅ — 🌍 settings page-এ যে option-এ click, সেটা বদলাও। `toggle(settings, key)`-এ bracket notation; new object return, original unchanged.
 
-**Phase 12.2 — key আছে কিনা** ⬜
-- **P12.2** 🟢 ⬜ — **EN:** Predict `"toString" in {}`, `Object.hasOwn({}, "toString")`, `({ a: undefined }).a !== undefined`. → `true false false`. **বাংলা:** তিন উপায়ের পার্থক্য।
+**Phase 12.2 — key আছে কিনা** ✅ — `in`, `Object.hasOwn`, value `undefined` পার্থক্য আলোচনা হয়েছে।
+- **P12.2** 🟢 ✅ — key-existence ধারণা আলোচনা।
 
-**Phase 12.3 — Iteration: `keys / values / entries / fromEntries`** ⬜
-- **P12.3 · Price Increase** 🟢 ⬜ — 🌍 মেনুর সব দাম ১০% বাড়াও। **EN:** `{ tea: 10, coffee: 20 }` → `{ tea: 11, coffee: 22 }` using `entries` + `fromEntries`.
+**Phase 12.3 — Iteration: `keys / values / entries / fromEntries`** ✅
+- **P12.3 · Price Increase** 🟢 ✅ — `for...in` এবং `entries` + `fromEntries`—দুই approach-এ solve; output ঠিক, O(k) time।
 
-**Phase 12.4 — Object-কে map হিসেবে ব্যবহারের ফাঁদ** ⬜
-- **P12.4** 🟢 ⬜ — **EN:** Predict: `const o = {}; o[1] = "a"; o["1"] = "b"; console.log(o);` and `Object.keys({ b: 1, 2: 1, a: 1, 1: 1 })`. → `{ '1': 'b' }`, `['1','2','b','a']`
+**Phase 12.4 — Object-কে map হিসেবে ব্যবহারের ফাঁদ** ✅ — object key conversion/order নিয়ে prediction ও correction সম্পন্ন।
+- **P12.4** 🟢 ✅ — numeric-like keys আগে ascending order-এ; অন্য string key insertion order-এ।
 
-**Phase 12.5 — Copy: shallow বনাম deep** ⬜
-- **P12.5** 🟢 ⬜ — **EN:** `const u = { name: "R", address: { city: "D" } }; const c = { ...u }; c.address.city = "X";` → `u.address.city`? → `"X"`. Fix with `structuredClone`.
+**Phase 12.5 — Copy: shallow বনাম deep** ✅ — concept, console trace ও `structuredClone` আলোচনা হয়েছে।
+- **P12.5** 🟢 ✅ — spread shallow copy; nested reference shared.
 
-**Phase 12.6 — তুলনা reference দিয়ে** ⬜
-- **P12.6** 🟢 ⬜ — **EN:** Predict `{} === {}` and `const a = {}; const b = a; a === b`. → `false true`
+**Phase 12.6 — তুলনা reference দিয়ে** ✅
+- **P12.6** 🟢 ✅ — আলাদা object false; shared reference true.
 
-**Phase 12.7 — Destructuring: default · rename · nested** ⬜
-- **P12.7** 🟢 ⬜ — 🌍 API response থেকে দরকারি অংশ। **EN:** From `{ data: { user: { name: "Rahim" } } }`, extract `name` as `userName` with default `"Guest"` in one line.
+**Phase 12.7 — Destructuring: default · rename · nested** ✅
+- **P12.7** 🟢 ✅ — nested field, rename, default practice complete.
 
-**Phase 12.8 — JSON আর freeze** ⬜
-- **P12.8** 🟢 ⬜ — **EN:** `JSON.stringify({ a: 1, b: undefined, c: () => 1 })` → `'{"a":1}'`. `Object.freeze` shallow কেন?
+**Phase 12.8 — JSON আর freeze** ✅ — `JSON.stringify` object property বাদ দেওয়া ও shallow freeze আলোচনা হয়েছে.
+- **P12.8** 🟢 ✅ — concept review.
 
 ### ★ মূল problem
 
-#### ★ O1 · Group By ⬜
+#### ★ O1 · Group By ✅ (custom solution + LC 2631 submission confirmed, ২৩ নভে)
 🔗 কাছাকাছি: [LC 2631 · Group By](https://leetcode.com/problems/group-by/) (ওখানে `array.groupBy(fn)` হিসেবে)
 🌍 **Real-life:** admin panel-এ user-দের role অনুযায়ী ভাগ।
 
@@ -1823,7 +1823,7 @@ Example 1: Input: items = [{n:"A",role:"admin"},{n:"B",role:"user"},{n:"C",role:
 **🧠 ভাবনা:** প্রতিটা item-এ: group-এর নাম কী? সেই ঘর আছে? না থাকলে খালি array বানাও, তারপর push।
 **⏱️ লক্ষ্য:** Time O(n) · Space O(n)
 
-#### ★ O2 · Count By + Most Frequent ⬜
+#### ★ O2 · Count By + Most Frequent ✅ (custom solution + LC 819 submission confirmed, ২৪ নভে)
 🔗 কাছাকাছি: [LC 819 · Most Common Word](https://leetcode.com/problems/most-common-word/)
 🌍 **Real-life:** product review-এ সবচেয়ে বেশি আসা শব্দ।
 
@@ -1835,7 +1835,7 @@ Example 1: Input: words = ["apple","pear","apple"]   Output: { apple: 2, pear: 1
 **🧠 ভাবনা:** দুটো আলাদা কাজ — count বানানো, তারপর max খোঁজা (W1-এর min/max!)। এক loop-এ দুটো করা যায়?
 **⏱️ লক্ষ্য:** Time O(n) · Space O(k) — k = আলাদা শব্দ
 
-#### ★ O3 · Flatten Object 🟡 ⬜
+#### ★ O3 · Flatten Object 🟡 ✅ User-confirmed complete (২৫ নভে; implementation note নিচে)
 🔗 LeetCode-এ হুবহু নেই (কাছাকাছি: [LC 2625 · Flatten Deeply Nested Array](https://leetcode.com/problems/flatten-deeply-nested-array/))
 🌍 **Real-life:** nested settings-কে `.env`-এর মতো `"db.host"` ধাঁচে লেখা।
 
@@ -1846,6 +1846,8 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 **বাংলা:** nested object-কে এক স্তরে আনো, key হবে পথ দিয়ে জোড়া। array এলে কী করবে — সিদ্ধান্ত।
 **🧠 ভাবনা:** value যদি object হয় → "আবার একই কাজ, ভেতরে, পথ লম্বা করে" (recursion)। helper-এ কী কী পাঠাবে? (বর্তমান object, এখন পর্যন্ত পথ, result)
 **⏱️ লক্ষ্য:** Time O(মোট key) · Space O(গভীরতা + output)
+
+**Implementation note (২৫ নভে):** learner-এর recursive-return + `Object.assign()` code output ঠিক দেয়, তবে nested result ancestor-এ merge হওয়ায় Time worst-case O(nh), যেখানে `h` nesting depth। Learner Day 3 complete ঘোষণা করেছেন; O(n) shared-result refactor করা হয়নি।
 
 #### ○ O4 · Safe Get ⬜
 🌍 lodash-এর `_.get`। **EN:** `get(obj, "a.b.c", defaultValue)` — returns the default if any step is missing or `null`. **বাংলা:** পথের মাঝে `null` থাকলে?
@@ -1858,7 +1860,7 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 
 **বলো:** *"I iterate over the items once and use the key's value as a property name, creating an empty array the first time I see it."*
 
-### 🚪 Gate — Topic 12 (Objects) ⬜
+### 🚪 Gate — Topic 12 (Objects) ✅ User-confirmed complete (২৫ নভে)
 
 ---
 
@@ -1879,11 +1881,11 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 
 ### 📘 Concept phases + ছোট problem
 
-**Phase 13.1 — Set** ⬜
-- **P13.1 · Unique Visitors** 🟢 ⬜ — 🌍 website-এ আজ কতজন আলাদা মানুষ এসেছে। **EN:** `["u1","u2","u1","u3"]` → `3` using `new Set(...).size`.
+**Phase 13.1 — Set** 🟡 আগের Set pattern পুনরায় problem নয়; `size` শুধু ছোট code demo-তে দেখা হবে।
+- **P13.1 · Unique Visitors** ⏭️ — Set দিয়ে distinct/duplicate কাজ LC 217, LC 349, P2 ও U1-এ হয়েছে; একই problem আবার নয়।
 
-**Phase 13.2 — Map** ⬜
-- **P13.2 · Word Count Map** 🟢 ⬜ — **EN:** Count `["a","b","a"]` with `map.set(x, (map.get(x) ?? 0) + 1)`. Why `?? 0`? (না দিলে `undefined + 1` = `NaN`)
+**Phase 13.2 — Map** 🟡 Frequency pattern আগে Map `characterFrequency`-তে হয়েছে; নতুন word-count problem repeat নয়। `?? 0` ও `Map.get/set` semantics ছোট concept demo-তে দরকার হলে দেখা হবে।
+- **P13.2 · Word Count Map** ⏭️ — frequency counting problem আগেই করা; repeat নয়।
 
 **Phase 13.3 — Map বনাম Object** ⬜
 - **P13.3** 🟢 ⬜ — **EN:** Put key `1` (number) in a Map and an object; read back the key type. → Map keeps `number`, object makes `"1"`.
@@ -1891,7 +1893,7 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 **Phase 13.4 — Array key-র ফাঁদ** ⬜
 - **P13.4** 🟢 ⬜ — **EN:** `map.set([1,2], "x"); map.get([1,2])` → `undefined`. Why? Fix with string key `"1,2"`.
 
-**Phase 13.5 — Next-line drill: Two Sum (চিন্তা → লাইন)** ⬜
+**Phase 13.5 — Map complement lookup: পুরোনো Two Sum-এর শুধু নতুন optimization walkthrough** ⬜ — `codeAbc/twoSum.js`-এ brute-force solution আগে লেখা, তাই H2 পুরো problem/LeetCode submission পুনরায় নয়।
 ```
 চিন্তা: "প্রতিটা সংখ্যার জন্য target - num আগে দেখেছি কিনা" → দ্রুত lookup + index → Map
 লাইন:  ?
@@ -1914,10 +1916,11 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 **বাংলা:** (ক) O(n²) (খ) sort করে পাশাপাশি তুলনা (গ) Set। **তিনটার time/space টেবিল।**
 **⏱️ লক্ষ্য:** Set: Time O(n) · Space O(n) — sort: O(n log n) · O(1)
 
-#### ★ H2 · 1. Two Sum 🟢 Easy ⬜
+#### ★ H2 · 1. Two Sum 🟢 Easy ⏭️ exact problem repeat নয় (brute-force version `codeAbc/twoSum.js`-এ আগে লেখা)
 🔗 [LC 1](https://leetcode.com/problems/two-sum/) (হুবহু)
 🌍 **Real-life:** gift card-এ ঠিক ৯০০ টাকা — কোন দুটো জিনিস কিনলে পুরোটা খরচ হয়?
 
+**Status:** নতুন problem হিসেবে পুনরায় solve/submit নয়। শুধু আগের brute-force approach-এ Map complement lookup কীভাবে loop কমায়, সেটি concept walkthrough-তে আলোচনা করা যেতে পারে।
 **EN:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 ```
 Example 1: Input: nums = [2,7,11,15], target = 9   Output: [0,1]
