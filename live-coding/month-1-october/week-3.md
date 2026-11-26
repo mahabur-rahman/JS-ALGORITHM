@@ -4,7 +4,7 @@
 
 ## Arrays (শেষ) · Objects · Hashing (Map & Set) ★★
 
-**Progress (২৫ নভে):** W3 D1–D3 সম্পন্ন। D1-এ LC 53/169, D2-তে LC 238 এবং D3-তে LC 2631/819 submission confirmed; optional problem বাদ। D3-এর Flatten Object code কাজ করে, তবে recursive `Object.assign()` merge-এর কারণে তার time O(nh) হতে পারে—user Day 3 complete বলেছেন। পরের ধাপ W3 D4 — Hashing 1।
+**Progress (২৬ নভে):** W3 D1–D4 সম্পন্ন। D1-এ LC 53/169, D2-তে LC 238, D3-তে LC 2631/819 submission confirmed। D4-এ Map API ও key আচরণ, custom Map Commands এবং complexity সম্পন্ন; আগে করা Set/frequency/Two Sum problem repeat হয়নি। পরের ধাপ W3 D5 — Hashing 2।
 
 **সপ্তাহের লক্ষ্য:**
 1. "আমি হাতে কী মনে রাখছিলাম?" → সেটাই variable — এই চিন্তা দিয়ে Kadane, Product Except Self-এর মতো classic problem নিজে বের করা।
@@ -79,9 +79,11 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 
 ---
 
-## Day 4 — বৃহস্পতি, ২২ অক্টোবর — Hashing ১: Map/Set API · ৪টা ব্যবহার ★★
+## Day 4 — বৃহস্পতি, ২২ অক্টোবর — Hashing ১: Map/Set API · ৪টা ব্যবহার ★★ ✅ সম্পন্ন (২৬ নভে)
 
 **No-repeat sync:** Set-এর `add/has` ও duplicate/intersection ব্যবহার আগেই হয়েছে (LC 217, LC 349, P2 Unique By, U1 First Repeated Log)। Frequency Map-ও characterFrequency-তে হয়েছে। এগুলোর problem আবার নয়; নতুন অংশ হবে Map-এর type-preserving key, array key-র reference behavior, আর আগে লেখা brute-force Two Sum-এ complement lookup ধারণা। H2-এর পুরো problem/LeetCode submission আবার assign হবে না।
+
+**Progress (২৬ নভে):** Map `set/get/has/size/delete`, Map iteration, type-sensitive key, array reference key, `??` default ও complement lookup ধারণা আলোচনা হয়েছে। Custom Map Commands solve; Time O(q), Auxiliary Space O(k), Output Space O(r)। H1/H3/H2 exact problem repeat নয়; H4 optional বাদ। User Day 4 complete বলেছেন।
 
 **পড়বে:** `04-patterns-and-skeletons.md` — অংশ ১ (Data/lookup) + skeleton 3.1, 3.2।
 **Skeleton drill:** 3.1 আর 3.2 ফাঁকা editor-এ ৩ বার, দেখে না।
@@ -102,28 +104,15 @@ console.log("toString" in {}, Object.hasOwn({}, "toString"));
 - **ফাঁদ:** array-কে key দিলে reference ধরে → `map.set([1,2], x)` পরে `map.get([1,2])` undefined। সমাধান: `"1,2"` string key।
 - **Recognition:** *"আমি কি বারবার কিছু খুঁজছি?"* → Hashing।
 
-**Next-line drill (Two Sum — চিন্তা → লাইন):**
-```
-চিন্তা: "প্রতিটা সংখ্যার জন্য target - num খুঁজতে হবে, আগে দেখেছি কিনা" → দ্রুত lookup → Map (index-ও লাগবে)
-লাইন:  ?
-চিন্তা: "প্রতিটা সংখ্যা দেখতে হবে, index-ও লাগবে"
-লাইন:  ?
-চিন্তা: "আমার জোড়া কত?"
-লাইন:  ?
-চিন্তা: "জোড়া কি আগে দেখেছি?"
-লাইন:  ?
-চিন্তা: "না দেখলে নিজেকে রেখে দিই"
-লাইন:  ?
-```
-প্রতিটা `?` নিজে লেখো — তারপর পুরো function।
+**Two Sum status:** আগে করা problem; complement lookup ধারণা আলোচনা সম্পন্ন। কোনো নতুন code drill বা submission নেই।
 
 **Problems:**
 - ⏭️ ★ **H1 Contains Duplicate** — W2 D2-তে LC 217 একবার solve হবে; একই problem repeat নয়।
-- ⏭️ ★ **H2 Two Sum — পুরো problem repeat নয়:** `codeAbc/twoSum.js`-এ brute-force version আগে লেখা। নতুন শেখা হবে শুধু Map complement lookup-এর walkthrough; নতুন solution/submission নয়।
+- ⏭️ ★ **H2 Two Sum — repeat নয়:** `codeAbc/twoSum.js`-এ brute-force version আগে লেখা; Map complement lookup walkthrough সম্পন্ন, নতুন solution/submission নয়।
 - ⏭️ ★ **H3 Intersection of Two Arrays** — W2 D2 Topic 9 Gate-এ সম্পন্ন; Week 3-তে একই problem repeat নয়।
-- [ ] ○ **H4 Jewels and Stones** `A`
+- [ ] ○ **H4 Jewels and Stones** `A` ⏭️ Optional বাদ
 
-**বলো:** *"For each number, I check whether its complement is already in the map. If yes, I've found the pair. If not, I store the current number with its index. One pass, O(n) time and O(n) space."*
+**Interview communication:** Map lookup pattern-এর সংক্ষিপ্ত ব্যাখ্যা ইতিমধ্যে আলোচনা হয়েছে; পুনরায় drill নয়।
 
 ---
 

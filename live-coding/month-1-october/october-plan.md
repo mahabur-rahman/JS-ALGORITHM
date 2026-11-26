@@ -1864,7 +1864,9 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 
 ---
 
-## Day 18 · W3 D4 · বৃহস্পতি ২২ অক্টো — Topic 13: Hashing ১ — Map/Set API · ৪টা ব্যবহার ★★ ⬜
+## Day 18 · W3 D4 · বৃহস্পতি ২২ অক্টো — Topic 13: Hashing ১ — Map/Set API · ৪টা ব্যবহার ★★ ✅ User-confirmed complete (২৬ নভে)
+
+**Day status (২৬ নভে):** `Map` API, type/reference key আচরণ, `??` default, Map iteration/delete ও lookup ধারণা আলোচনা; custom Map Commands code/complexity সম্পন্ন। আগে করা Set/frequency/Two Sum problem পুনরায় নয়; H4 optional বাদ। H2-এর Map optimization ধারণা walkthrough হয়েছে, পূর্ণ problem নতুন করে code/submit করা হয়নি।
 
 **পড়বে:** `04-patterns-and-skeletons.md` — অংশ ১ (Data/lookup) + skeleton 3.1, 3.2। **Skeleton drill:** 3.1 আর 3.2 ফাঁকা editor-এ ৩ বার, দেখে না।
 
@@ -1887,25 +1889,14 @@ Example 1: Input: { a: { b: 1, c: { d: 2 } }, e: 3 }   Output: { "a.b": 1, "a.c.
 **Phase 13.2 — Map** 🟡 Frequency pattern আগে Map `characterFrequency`-তে হয়েছে; নতুন word-count problem repeat নয়। `?? 0` ও `Map.get/set` semantics ছোট concept demo-তে দরকার হলে দেখা হবে।
 - **P13.2 · Word Count Map** ⏭️ — frequency counting problem আগেই করা; repeat নয়।
 
-**Phase 13.3 — Map বনাম Object** ⬜
-- **P13.3** 🟢 ⬜ — **EN:** Put key `1` (number) in a Map and an object; read back the key type. → Map keeps `number`, object makes `"1"`.
+**Phase 13.3 — Map বনাম Object** ✅
+- **P13.3** 🟢 ✅ — Number `5` ও string `"5"` Map-এ আলাদা key; existing number key update size বাড়ায় না.
 
-**Phase 13.4 — Array key-র ফাঁদ** ⬜
-- **P13.4** 🟢 ⬜ — **EN:** `map.set([1,2], "x"); map.get([1,2])` → `undefined`. Why? Fix with string key `"1,2"`.
+**Phase 13.4 — Array key-র ফাঁদ** ✅
+- **P13.4** 🟢 ✅ — Map array key-তে contents নয়, reference compare করে; নতুন `[1,2]` key আলাদা.
 
-**Phase 13.5 — Map complement lookup: পুরোনো Two Sum-এর শুধু নতুন optimization walkthrough** ⬜ — `codeAbc/twoSum.js`-এ brute-force solution আগে লেখা, তাই H2 পুরো problem/LeetCode submission পুনরায় নয়।
-```
-চিন্তা: "প্রতিটা সংখ্যার জন্য target - num আগে দেখেছি কিনা" → দ্রুত lookup + index → Map
-লাইন:  ?
-চিন্তা: "প্রতিটা সংখ্যা দেখতে হবে, index-ও লাগবে"
-লাইন:  ?
-চিন্তা: "আমার জোড়া কত?"
-লাইন:  ?
-চিন্তা: "জোড়া কি আগে দেখেছি?"
-লাইন:  ?
-চিন্তা: "না দেখলে নিজেকে রেখে দিই"
-লাইন:  ?
-```
+**Phase 13.5 — Map complement lookup: পুরোনো Two Sum-এর নতুন optimization ধারণা** ✅ — `codeAbc/twoSum.js`-এ brute-force solution আগে লেখা, তাই H2 পুনরায় solve/submit নয়।
+**সমাপ্তি নোট:** Map-এ complement lookup-এর ধারণা ও “আগে check, পরে store” reasoning আলোচনা হয়েছে। Two Sum আগে brute force-এ করা, তাই এই problem-এর নতুন implementation drill বা submission আর দেওয়া হবে না।
 
 ### ★ মূল problem
 
@@ -1950,7 +1941,7 @@ Example 2: Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]   Output: [9,4]
 **বাংলা:** দুটোতেই আছে এমন আলাদা সংখ্যা। (ক) Set (খ) দুটোই sorted হলে দুই pointer।
 **⏱️ লক্ষ্য:** Time O(n + m) · Space O(n)
 
-#### ○ H4 · 771. Jewels and Stones 🟢 ⬜
+#### ○ H4 · 771. Jewels and Stones 🟢 ⏭️ Optional বাদ (২৬ নভে)
 🔗 [LC 771](https://leetcode.com/problems/jewels-and-stones/) (হুবহু)
 🌍 পাথরের থলেতে কয়টা আসল রত্ন।
 **EN:** `jewels` are the types of stones that are jewels; count how many of `stones` are jewels (case-sensitive). `jewels = "aA", stones = "aAAbbbb"` → `3`; `"z","ZZ"` → `0`.

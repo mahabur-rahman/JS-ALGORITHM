@@ -1,7 +1,8 @@
-// // W3 D4 — Topic 13: Hashing 1 — Map/Set API
-// // Branch: october/week-3-day-4
-// // Follow the no-repeat checklist in live-coding/month-1-october/october-plan.md.
-// // Previously completed Set/frequency/Two Sum problems are not to be repeated.
+// W3 D4 — Topic 13: Hashing 1 — COMPLETE (user-confirmed 26 Nov 2026)
+// Branch: october/week-3-day-4
+// Map API, type/reference keys, nullish defaults, delete/iteration, and
+// Map lookup concept covered. Custom processCommands exercise and complexity
+// completed. Earlier Set/frequency/Two Sum problems were not repeated.
 
 // // const scores = new Map();
 
