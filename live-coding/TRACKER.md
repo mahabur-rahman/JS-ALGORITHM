@@ -20,10 +20,10 @@
 
 | | |
 |---|---|
-| **বর্তমান দিন** | W3 D4 — Topic 13: Hashing 1; W3 D1–D3 সম্পন্ন (২৫ নভে) |
-| **পরের কাজ** | W3 D4: Map/Set-এর নতুন semantics; আগে করা exact problem repeat নয়। |
+| **বর্তমান দিন** | W3 D4 — Topic 13: Hashing 1 সম্পন্ন (২৬ নভে); W3 D1–D3-ও সম্পন্ন |
+| **পরের কাজ** | W3 D5 — Hashing 2: Grouping · Top K; আগে করা exact problem repeat নয়। |
 | **বর্তমান branch** | `october/week-3-day-4` |
-| **পিছিয়ে আছি?** | W3 D3 সম্পন্ন ২৫ নভে; calendar date ছিল ২১ অক্টো। |
+| **পিছিয়ে আছি?** | W3 D4 সম্পন্ন ২৬ নভে; calendar date ছিল ২২ অক্টো। |
 | **শেষ পাস করা Gate** | ✅ Topic 1 Variables & Memory (৬ অক্টো) · ✅ Topic 2 Data Types (৭ অক্টো) · ✅ Topic 3 Operators & Coercion (৮ অক্টো) · ✅ Topic 4 Conditions (৯ অক্টো) · ✅ Topic 5 Loops (১৮ অক্টো) · ✅ Topic 6 Functions (১৮ অক্টো) · ✅ Topic 7 Numbers & Math (২১ অক্টো) · ✅ Topic 8 Basic Problem Solving (২৪ অক্টো) · ✅ Topic 9 Big-O (২৯ অক্টো) · ✅ Topic 10 Strings (৫ নভে) · ✅ Topic 11 Arrays (১৭ নভে) · ✅ Topic 12 Objects (২৫ নভে, user-confirmed) |
 | **★ শেষ (মোট)** | 31 |
 | **★ Day +7 re-solve পাস** | 0 |
@@ -56,6 +56,7 @@
 | ১৬ নভে | W3 D1 ✅ | P11.11–P11.14; LC 53 Maximum Subarray ও LC 169 Majority Element — code, complexity ও submission সম্পন্ন; A9 ঐচ্ছিক বাদ | 2 / 2 ★ | — | — | Subarray count `n(n+1)/2`; brute O(n³) → running sum O(n²) → Kadane O(n); Boyer–Moore O(n)/O(1); আগে করা problem repeat নয়। Topic 11 Gate W3 D2-এর পরে |
 | ১৭ নভে | W3 D2 ✅ | P11.15 Left Products, P11.16 Right Products, P11.17 missing value with Set; LC 238 Product Except Self solve, submit ও complexity complete; A11/A12 optional বাদ | 1 / 1 ★ | — | — | LC 238 O(n) time/O(1) auxiliary/O(n) output; P11.17 Set approach O(n) auxiliary, index-marker trace discussed but in-place version not coded; user-confirmed complete |
 | ২৫ নভে | W3 D3 ✅ | Topic 12 Objects; P12.1–P12.8; O1 + LC 2631, O2 + LC 819 submissions; O3 Flatten Object code complete; O4/O5 optional বাদ | 3 / 3 ★ | — | — | O3 output correct; recursive merge Time worst O(nh) discussed, optimization not done; user asked to count Day 3 complete; Day 4 no-repeat rule documented |
+| ২৬ নভে | W3 D4 ✅ | Topic 13 Hashing 1: Map API, type/reference keys, `??`, delete/iteration; custom Process Map Commands + complexity | 1 / 1 ★ (adapted) | — | — | Time O(q) avg, auxiliary O(k), output O(r); Set/frequency/LC 217/349 and Two Sum full problem not repeated; H4 optional বাদ |
 
 ---
 
@@ -157,3 +158,4 @@ _final-days Day 4-এর প্রশ্নের উত্তর এখান�
 | ১৬ নভেম্বর | W3 D1 complete; LC 53 ও LC 169 submission confirm; A9 optional বাদ; docs sync ও main merge | তোমার অনুরোধ |
 | ১৭ নভেম্বর | W3 D2 complete; P11.15–P11.17 ও LC 238 status sync; A11/A12 optional বাদ; docs main-এ merge; W3 D3 branch ও file তৈরি | তোমার অনুরোধ |
 | ২৫ নভেম্বর | W3 D3 user-confirmed complete; P12.1–P12.8, O1/O2 LeetCode submissions ও O3 complexity note sync; Day 4 duplicate topics/problem skip note; main merge এবং D4 branch/file | তোমার অনুরোধ |
+| ২৬ নভেম্বর | W3 D4 user-confirmed complete; Map Commands + complexity, no-repeat skips ও optional বাদ sync | তোমার অনুরোধ |

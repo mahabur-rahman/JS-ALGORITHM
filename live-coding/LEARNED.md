@@ -4,7 +4,7 @@
 > Progress (কোথায় আছি, কত ★, re-solve-এর তারিখ) → `TRACKER.md`। এখানে শুধু **কী শিখলাম, কোন নিয়ম, কোন ফাঁদ**।
 > Re-solve বা interview-এর আগে শুধু এই file পড়লেই পুরো মনে পড়বে।
 
-**শেষ update:** ১৬ নভেম্বর ২০২৬ · W3 D1 সম্পন্ন; পরের ধাপ W3 D2
+**শেষ update:** ২৬ নভেম্বর ২০২৬ · W3 D4 সম্পন্ন; পরের ধাপ W3 D5
 
 ---
 
@@ -324,4 +324,13 @@ Hint লাগলে: `W1 D4 checkPassword — Hint 2` (একবারে এ�
 - **O2 Count By + Most Frequent:** object frequency + stable first-seen tie; official LC 819 submission confirmed। punctuation remove না করে whitespace-এ বদলাতে হবে; `Object.create(null)` দিয়ে prototype-key collision এড়ানো।
 - **O3 Flatten Object:** recursive path join দিয়ে output সঠিক; implementation প্রতিটি recursive call-এ নতুন result বানিয়ে `Object.assign` করে, তাই nested case-এ Time worst-case O(nh) হতে পারে (n = properties, h = depth)। Space output/temporary object O(n), recursion stack O(h)। Learner Day 3 complete বলেছেন; shared-accumulator optimization করা হয়নি।
 - **Optional O4 Safe Get ও O5 Invert:** বাদ।
-- **পরের ধাপ:** W3 D4 — Topic 13 Hashing 1; branch/file `october/week-3-day-4`। আগে করা Set, frequency, duplicate, intersection ও Two Sum exact problem repeat নয়। `codeAbc/twoSum.js`-এ brute force আছে; শুধু Map complement-lookup-এর নতুন optimization concept সংক্ষেপে দেখানো যাবে, পূর্ণ problem আবার নয়।
+- **তৎকালীন পরের ধাপ:** W3 D4 — Topic 13 Hashing 1; branch/file `october/week-3-day-4`। Day 4 এখন সম্পন্ন। আগে করা Set, frequency, duplicate, intersection ও Two Sum exact problem repeat নয়।
+
+### Topic 13 — Hashing 1 · W3 D4 (user-confirmed সম্পন্ন, ২৬ নভে)
+
+- **Map API:** `set/get/has/size/delete`; `for...of`-এ `[key, value]` pair এবং insertion order। Missing key-তে `get()` → `undefined`; `??` দিয়ে default নেওয়া যায়।
+- **Map key semantics:** number `5` এবং string `"5"` আলাদা key; existing key update করলে `size` বাড়ে না। Array key contents নয়, reference অনুযায়ী মেলে।
+- **Lookup pattern:** value → index Map-এ রেখে complement দ্রুত check; আগে check, তারপর store—ধারণা walkthrough করা হয়েছে। Two Sum brute-force version আগে থাকায় full problem/LeetCode solve repeat করা হয়নি।
+- **Custom `processCommands(commands)`:** `SET/GET/HAS/DELETE/SIZE`; Time O(q) average, Auxiliary Space O(k), Output Space O(r), মোট worst-case O(q)।
+- **No-repeat/optional:** Set unique/duplicate, LC 217, LC 349, Map frequency আগেই হয়েছে; পুনরায় নয়। H4 Jewels and Stones optional বাদ। Day 4 user নির্দেশে complete।
+- **পরের ধাপ:** W3 D5 — Topic 13 Hashing 2: Grouping · Top K।
